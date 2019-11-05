@@ -72,7 +72,7 @@ function DesignColorPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-5">Astro’s primary palette is red, black and white. It is the base of the application and is displayed most frequently across the components. The palette is used to provide accessibility, simplicity and consistency throughout the application.</p>  
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Astro’s primary palette is red, black and white. It is the base of the application and is displayed most frequently across the components. The palette is used to provide accessibility, simplicity and consistency throughout the application.</p>  
             <div className="flex flex-wrap -mx-4 mb-12">
               <div className="px-4 mb-8">
                 <div className="bg-red-600 color-sample"></div>
@@ -114,7 +114,7 @@ function DesignColorPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-5">Astro’s secondary palette is light green and blue. It is a complementary color to the primary colors but does not compete with them. </p>  
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Astro’s secondary palette is light green and blue. It is a complementary color to the primary colors but does not compete with them. </p>  
             <div className="flex flex-wrap -mx-4 mb-12">
               <div className="px-4 mb-8">
                 <div className="bg-green-800 color-sample"></div>
@@ -146,7 +146,7 @@ function DesignColorPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-5">Astro’s grey color palette provides the design system with an element of flexibility. The greys are used for background surfaces, text, icons, divider lines and disabled states.</p>  
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Astro’s grey color palette provides the design system with an element of flexibility. The greys are used for background surfaces, text, icons, divider lines and disabled states.</p>  
             <div className="flex flex-wrap -mx-4 mb-12"> 
               <div className="px-4 mb-8">
                 <div className="bg-greyStatus-100 color-sample"></div>
@@ -218,7 +218,7 @@ function DesignColorPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-5">The status colors are used for badges, statuses, alerts and within forms and toasts. They are used to let the user know the status of content or of a particular process.</p>  
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The status colors are used for badges, statuses, alerts and within forms and toasts. They are used to let the user know the status of content or of a particular process.</p>  
             <div className="flex flex-wrap -mx-4 mb-12"> 
               <div className="px-4 mb-8">
                 <div className="bg-status-100 color-sample"></div>
@@ -266,7 +266,7 @@ function DesignColorPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-5">The data visualization palette is used to interpret data. Within a particular graph, each color is assigned a data point and the infographic reflects each value.</p>  
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The data visualization palette is used to interpret data. Within a particular graph, each color is assigned a data point and the infographic reflects each value.</p>  
             <div className="flex flex-wrap -mx-4 mb-12"> 
               <div className="px-4 mb-8">
                 <div className="bg-data-100 color-sample"></div>

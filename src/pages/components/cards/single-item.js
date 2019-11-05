@@ -103,8 +103,8 @@ function ComponentsCardsSingleItemPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5">Single item cards display information in a clear and simple hierarchical order. They can contain text, data, badges and links. There’s a maximum of 8 subtitles in the body. Please use a single item group template if there are more. </p>
-            <p className="mb-5">The maximum height of the card is 55% of the device height. If the content overflows, please use the “View More” element. </p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Single item cards display information in a clear and simple hierarchical order. They can contain text, data, badges and links. There’s a maximum of 8 subtitles in the body. Please use a single item group template if there are more. </p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The maximum height of the card is 55% of the device height. If the content overflows, please use the “View More” element. </p>
             <Tabs>
               <TabList>
                 <Tab>01</Tab>
@@ -139,7 +139,7 @@ function ComponentsCardsSingleItemPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5">The card details refer to elements that make up the card surface areas.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img src={cardSingleItemDetails1} className="" width="586" />
             </div> 
@@ -154,7 +154,7 @@ function ComponentsCardsSingleItemPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img src={cardSingleItemPadding1} className="" width="363" />
             </div> 

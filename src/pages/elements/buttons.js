@@ -117,9 +117,9 @@ function ElementsButtonsPage() {
                 <li className="as-grid-10 relative mb-12"><span className="list-circle">2</span><img src={typesPrimary2} className="inline-block" width="295" height="50" /> </li>
                 <li className="as-grid-10 relative"><span className="list-circle">3</span><img src={typesPrimary3} className="inline-block" width="295" height="50" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm">1. Primary Enabled: used to submit information, continue in a process or leave the application.</p>
-              <p className="as-type-regular text-sm">2. Primary Pressed: used when a user presses the button to submit information, continue in a process or leave the application.</p>
-              <p className="as-type-regular text-sm">3. Primary Disabled: used when the user hasn’t met the requirements to move to the next step.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Primary Enabled: used to submit information, continue in a process or leave the application.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Primary Pressed: used when a user presses the button to submit information, continue in a process or leave the application.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Primary Disabled: used when the user hasn’t met the requirements to move to the next step.</p>
             </div> 
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Secondary Button
@@ -132,7 +132,7 @@ function ElementsButtonsPage() {
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="relative"><span className="list-circle">1</span><img src={typesSecondary1} className="inline-block" width="174" height="30" /></li>
               </ol>  
-              <p className="as-type-regular text-sm">The secondary button is used for less important tasks or when space does not allow for the use of the primary button. </p>
+              <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">The secondary button is used for less important tasks or when space does not allow for the use of the primary button. </p>
             </div>
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Text Button
@@ -146,8 +146,8 @@ function ElementsButtonsPage() {
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesText1} className="inline-block" width="74" height="23" /></li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={typesText2} className="inline-block" width="168" height="22" /></li>
               </ol>  
-              <p className="as-type-regular text-sm">1. Text Button Underlined: used for less pronounced actions.</p>
-              <p className="as-type-regular text-sm">2. Text Button Suggestions: Let’s user know how to interact with Astro</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Text Button Underlined: used for less pronounced actions.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Text Button Suggestions: Let’s user know how to interact with Astro</p>
             </div>            
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Next Step Button
@@ -161,8 +161,8 @@ function ElementsButtonsPage() {
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesNextStep1} className="inline-block" width="92" height="30" /></li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={typesNextStep2} className="inline-block" width="147" height="30" /></li>
               </ol>  
-              <p className="as-type-regular text-sm">1. Default State: used as a continuation of the conversation. The user is presented with content and a next step action to take.</p>
-              <p className="as-type-regular text-sm">2. Pressed State: When a user presses the default state button they are presented the pressed state.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Default State: used as a continuation of the conversation. The user is presented with content and a next step action to take.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Pressed State: When a user presses the default state button they are presented the pressed state.</p>
             </div>            
           </section>
 
@@ -182,11 +182,11 @@ function ElementsButtonsPage() {
               <li className="as-grid-4 relative"><span className="list-circle">4</span><img src={voice4} className="inline-block" width="60" height="80" /> </li>
               <li className="as-grid-4 relative"><span className="list-circle">5</span><img src={voice5} className="inline-block" width="60" height="80" /> </li>
             </ol>  
-            <p className="as-type-regular text-sm">1. Active - Astro is ready to listen and take action.</p>
-            <p className="as-type-regular text-sm">2. Listening - Astro is listening to the user.</p>
-            <p className="as-type-regular text-sm">3. Talking - Astro is responding to the user.</p>
-            <p className="as-type-regular text-sm">4. Thinking - Astro is processing information.</p>
-            <p className="as-type-regular text-sm">5. Delayed - Shows when Astro takes more than 3 seconds to execute a command.</p>
+            <p className="as-type-regular text-sm text-greyStatus-600">1. Active - Astro is ready to listen and take action.</p>
+            <p className="as-type-regular text-sm text-greyStatus-600">2. Listening - Astro is listening to the user.</p>
+            <p className="as-type-regular text-sm text-greyStatus-600">3. Talking - Astro is responding to the user.</p>
+            <p className="as-type-regular text-sm text-greyStatus-600">4. Thinking - Astro is processing information.</p>
+            <p className="as-type-regular text-sm text-greyStatus-600">5. Delayed - Shows when Astro takes more than 3 seconds to execute a command.</p>
           </section>
 
           <section id="usage" name="usage" className="mb-24"> 
@@ -198,7 +198,7 @@ function ElementsButtonsPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5">Buttons communicate actions that users can take. They are typically placed throughout the UI. Here are a variety of applications to help showcase how buttons are used within Astro.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Buttons communicate actions that users can take. They are typically placed throughout the UI. Here are a variety of applications to help showcase how buttons are used within Astro.</p>
             <Tabs>
               <TabList>
                 <Tab>Primary</Tab>
@@ -245,7 +245,7 @@ function ElementsButtonsPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5">A detailed representation of padding, alignment and maximum character count.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">A detailed representation of padding, alignment and maximum character count.</p> 
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Primary
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
@@ -323,7 +323,7 @@ function ElementsButtonsPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4">Below is a list of guidelines for typography to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for typography to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
 
               <div className="w-grid px-4 mb-8">
@@ -331,42 +331,42 @@ function ElementsButtonsPage() {
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img src={guidance1} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not use primary CTA in content cards</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use primary CTA in content cards</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img src={guidance2} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not use primary and secondary buttons together.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use primary and secondary buttons together.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img src={guidance3} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not use microphone and primary button together.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use microphone and primary button together.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img src={guidance4} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not use microphone and secondary button together.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use microphone and secondary button together.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img src={guidance5} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not use text button suggestion for anything other then suggested voice.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use text button suggestion for anything other then suggested voice.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img src={guidance6} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not use text button suggestion for anything other then suggested voice.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use text button suggestion for anything other then suggested voice.</p>
               </div>
             </div> 
           </section>

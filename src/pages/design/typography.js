@@ -100,7 +100,7 @@ function DesignTypographyPage() {
                 </ReactTooltip>
               </div>              
             </Heading> 
-            <p className="mb-4">Astro’s primary typeface is Helvetica Neue. It is a modern and versatile font that is legible in various styles, sizes and weights. Helvetica Neue is the only font used in the Astro design system, and only the regular and medium weights are used.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Astro’s primary typeface is Helvetica Neue. It is a modern and versatile font that is legible in various styles, sizes and weights. Helvetica Neue is the only font used in the Astro design system, and only the regular and medium weights are used.</p>
             <div className="flex w-full my-8">
               <div className="w-1/3 mr-16">
                 <p className="text-sm uppercase as-type-regular">Helvetica Neue Regular</p>
@@ -183,7 +183,7 @@ function DesignTypographyPage() {
               </ReactTooltip>
             </Heading> 
 
-            <p className="mb-5">The Astro type scale includes a range of contrasting styles that provide consistency, rhythm, hierarchy, and contrast. The goal is to present content in the simplest and most efficient way possible. The Astro type scale consists of 13 type styles, each with its own unique application and meaning.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The Astro type scale includes a range of contrasting styles that provide consistency, rhythm, hierarchy, and contrast. The goal is to present content in the simplest and most efficient way possible. The Astro type scale consists of 13 type styles, each with its own unique application and meaning.</p>
             <div className="mb-12">
               <table className="w-full">
                 <thead className="">
@@ -313,7 +313,7 @@ function DesignTypographyPage() {
                     <div className="lightrectangle"></div>
                   </div>
                 </div> 
-                <p className="as-type-regular text-white">Did you know my typography system uses a single font: Helvetica Neue and only 2 weights: Regular and Medium.</p>
+                <p className="as-type-regular text-white tracking-wider">Did you know my typography system uses a single font: Helvetica Neue and only 2 weights: Regular and Medium.</p>
               </div>
               <div className="pl-10 border-l border-grey-500"> 
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
@@ -342,13 +342,13 @@ function DesignTypographyPage() {
               </ReactTooltip>              
             </Heading> 
 
-            <p className="mb-5">The type scale appears as text in components and the overall layout.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
             <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <li className="as-grid-10 relative"><span className="list-circle">1</span><img src={applyingTypeScale1} className="inline-block" width="335" height="332" /> </li>
               <li className="as-grid-10 relative"><span className="list-circle">2</span><img src={applyingTypeScale2} className="inline-block" width="335" height="332" /> </li>
             </ol> 
-            <p className="as-type-regular text-sm">1. Scale Categories</p>
-            <p className="as-type-regular text-sm">2. Actual Values</p>
+            <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p>
+            <p className="as-type-regular text-sm text-greyStatus-600">2. Actual Values</p>
           </section>
 
           <section id="guidance" name="guidance" className="mb-24">
@@ -369,7 +369,7 @@ function DesignTypographyPage() {
               </ReactTooltip>               
             </Heading> 
 
-            <p className="mb-4">Below is a list of guidelines for typography to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for typography to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
 
               <div className="w-grid px-4 mb-8">
@@ -377,35 +377,35 @@ function DesignTypographyPage() {
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img src={guidance1} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not use any weight that is not regular or medium.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use any weight that is not regular or medium.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img src={guidance2} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not use adjust kerning or tracking.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use adjust kerning or tracking.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img src={guidance3} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not make different levels of hierarchy the same weight.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not make different levels of hierarchy the same weight.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img src={guidance4} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not make any level of hierarchy the same size or scale as another.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not make any level of hierarchy the same size or scale as another.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img src={guidance5} className="mb-3" width="290" />
-                <p className="text-sm mb-3">Do not separate chunks of text.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not separate chunks of text.</p>
               </div>
             </div> 
           </section>
@@ -428,7 +428,7 @@ function DesignTypographyPage() {
               </ReactTooltip>               
             </Heading> 
 
-            <p className="mb-4">Astro’s type scale system is AA Compliant. Each category has been tested and approved to meet the AA Compliance standards.</p>  
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Astro’s type scale system is AA Compliant. Each category has been tested and approved to meet the AA Compliance standards.</p>  
  
           </section>   
 

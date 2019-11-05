@@ -100,7 +100,7 @@ function ComponentsCardsSingleItemPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5">The overlay for a single item card displays all the possible content that is not contained in the card, which can include text, data, and links. </p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The overlay for a single item card displays all the possible content that is not contained in the card, which can include text, data, and links. </p>
             <Tabs>
               <TabList>
                 <Tab>01</Tab> 
@@ -123,7 +123,7 @@ function ComponentsCardsSingleItemPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5">The card details refer to elements that make up the card surface areas.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
               <img src={overlaySingleItemDetails1} className="" width="586" />
             </div> 
@@ -138,7 +138,7 @@ function ComponentsCardsSingleItemPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
               <img src={overlaySingleItemPadding1} className="" width="363" />
             </div> 

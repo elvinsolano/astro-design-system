@@ -46,7 +46,7 @@ function Header({ siteTitle }) {
               <Link
                 to="/content"
                 className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid"
+                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Content
@@ -55,7 +55,7 @@ function Header({ siteTitle }) {
               <Link
                 to="/design"
                 className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid"
+                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Design
@@ -64,7 +64,7 @@ function Header({ siteTitle }) {
               <Link
                 to="/elements"
                 className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid"
+                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Elements
@@ -73,7 +73,7 @@ function Header({ siteTitle }) {
               <Link
                 to="/components"
                 className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid"
+                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Components
@@ -82,7 +82,7 @@ function Header({ siteTitle }) {
               <Link
                 to="/applications"
                 className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid"
+                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Applications
