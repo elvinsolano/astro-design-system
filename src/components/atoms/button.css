@@ -1,0 +1,16 @@
+
+.gw-button-primary {
+  @apply bg-gradient-button-primary;
+  @apply cursor-pointer;
+  @apply rounded-button;
+  @apply shadow-md;
+  @apply text-white;
+}
+
+.gw-button-secondary {
+  @apply bg-gradient-button-secondary;
+  @apply cursor-pointer;
+  @apply rounded-button;
+  @apply shadow-md;
+  @apply text-white;
+}

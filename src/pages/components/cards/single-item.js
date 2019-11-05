@@ -1,0 +1,168 @@
+import React, { Component, useState } from "react"; 
+import Scrollspy from 'react-scrollspy';  
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import {Link} from 'gatsby'; 
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+import Layout from "../../../components/layout";
+import SEO from "../../../components/seo"; 
+import { Row, Col, Button } from 'tailwind-react-ui';
+import Heading from '../../../components/atoms/heading';
+
+import cardSingleItem1 from "../../../images/01-card-single-item.png"; 
+import cardSingleItem2 from "../../../images/02-card-single-item.png"; 
+import cardSingleItem3 from "../../../images/03-card-single-item.png"; 
+
+import cardSingleItemDetails1 from "../../../images/01-card-single-item-details.png"; 
+import cardSingleItemPadding1 from "../../../images/01-card-single-item-padding.png";  
+
+function ComponentsCardsSingleItemPage() { 
+
+  return (
+    <Layout>
+      <SEO
+        title="Design"
+        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+      />
+
+      <aside className="fixed overflow-y-auto pt-20 bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+        <nav>
+          <ul className="">
+            <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full font-semibold bg-grey-300">Cards</div></li> 
+            <li><Link to="components/cards/single-item" className="block text-sm text-black pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Single Item</Link>
+              <Scrollspy items={ ['ui-examples', 'details', 'padding'] } offset={-80} className="block" currentClassName="is-current">
+                <li><Link to="components/cards/single-item#ui-examples-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 pl-16 py-2 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/single-item#details-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
+                <li><Link to="components/cards/single-item#padding-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
+              </Scrollspy>    
+            </li>  
+            <li><a href="single-item-grouping" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Single item with Grouping</a></li>
+            <li><a href="list" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">List</a></li>
+            <li><a href="grouped-lists" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Grouped Lists</a></li>
+            <li><a href="two-column" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Two Columns</a></li>
+            <li><a href="mail" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Mail</a></li>
+            <li><a href="profile" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Profile</a></li>
+            <li><a href="information" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Information</a></li>
+            <li><a href="progress-bar" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Progress Bar</a></li>
+            <li><a href="highlighted-item-detail" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</a></li>
+            <li><a href="tasks" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Tasks</a></li>
+            <li><a href="circle-graph" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Circle Graph</a></li>
+            <li><a href="profile-list" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Profile List</a></li>
+            <li><a href="sliding-cards" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Sliding Cards***</a></li>
+          </ul>
+          <ul className="">
+            <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full font-semibold bg-grey-300">Overlay</div></li>
+            <li><a href="../../overlays/single-item" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Single Item</a></li>
+            <li><a href="../../overlays/single-item-grouping" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Single item with Grouping</a></li>
+            <li><a href="../../overlays/list" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">List</a></li>
+            <li><a href="../../overlays/grouped-lists" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Grouped Lists</a></li>
+            <li><a href="../../overlays/two-columns" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Two Columns</a></li>
+            <li><a href="../../overlays/mail" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Mail</a></li>
+            <li><a href="../../overlays/profile" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Profile</a></li>
+            <li><a href="../../overlays/information" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Information</a></li>
+            <li><a href="../../overlays/progress-bar" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Progress Bar</a></li>
+            <li><a href="../../overlays/highlighted-item-detail" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</a></li>
+            <li><a href="../../overlays/tasks" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Tasks</a></li>
+            <li><a href="../../overlays/circle-graph" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Circle Graph</a></li>
+            <li><a href="../../overlays/profile-list" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Profile List</a></li>
+            <li><a href="../../overlays/sliding-cards" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Sliding Cards***</a></li>
+          </ul> 
+          <ul className="">
+            <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full bg-grey-300">Popovers</div></li>
+            <li><a href="../../popovers/single-item" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Single Item</a></li>
+            <li><a href="../../popovers/single-item-grouping" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Single item with Grouping</a></li> 
+          </ul>                    
+        </nav>
+      </aside>
+
+      
+      <div className="flex flex-col flex-1 mx-auto pt-20 w-full pb-5.5">
+        <main className="ml-64 pl-16 pr-16 pt-16">
+
+          <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
+            <Heading level="1" className="as-h1 as-type-medium">Single Item</Heading>
+            <div className="flex items-center">
+              <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
+              <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
+                <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#e0301e" d="M11.636 26.182l-11.636-14.545h23.273z"></path>
+                  <path fill="#e0301e" d="M5.818 0h11.636v14.545h-11.636v-14.545z"></path>
+                  <path fill="#e0301e" d="M0 29.091h23.273v2.909h-23.273v-2.909z"></path>  
+                </svg> 
+                Sketch File
+              </button>
+            </div>
+          </div> 
+
+          <section id="ui-examples" name="ui-examples" className="mb-24"> 
+            <span id="ui-examples-anchor" className="page-anchor"></span> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
+              <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading> 
+            <p className="mb-5">Single item cards display information in a clear and simple hierarchical order. They can contain text, data, badges and links. There’s a maximum of 8 subtitles in the body. Please use a single item group template if there are more. </p>
+            <p className="mb-5">The maximum height of the card is 55% of the device height. If the content overflows, please use the “View More” element. </p>
+            <Tabs>
+              <TabList>
+                <Tab>01</Tab>
+                <Tab>02</Tab>
+                <Tab>03</Tab>
+              </TabList>
+          
+              <TabPanel>                  
+                <div className="h-355 mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                  <img src={cardSingleItem1} className="" width="335" />
+                </div> 
+              </TabPanel>
+              <TabPanel>
+                <div className="h-355 mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                  <img src={cardSingleItem2} className="" width="335" />
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div className="h-355 mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                  <img src={cardSingleItem3} className="" width="335" />
+                </div>
+              </TabPanel>
+            </Tabs>
+          </section>   
+
+          <section id="details" name="details" className="mb-24"> 
+            <span id="details-anchor" className="page-anchor"></span> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Details
+            <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#details'}>
+              <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+              </svg> 
+            </CopyToClipboard>
+            </Heading> 
+            <p className="mb-5">The card details refer to elements that make up the card surface areas.</p>
+            <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+              <img src={cardSingleItemDetails1} className="" width="586" />
+            </div> 
+          </section>             
+
+          <section id="padding" name="padding" className="mb-24"> 
+            <span id="padding-anchor" className="page-anchor"></span> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Padding
+              <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#padding'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading> 
+            <p className="mb-5">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+              <img src={cardSingleItemPadding1} className="" width="363" />
+            </div> 
+          </section>             
+        </main>
+      </div>
+    </Layout>
+  );
+}
+
+export default ComponentsCardsSingleItemPage;

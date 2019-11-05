@@ -1,0 +1,25 @@
+
+@font-face {
+  font-family: "MaterialIcons";
+  src: url('/build/assets/fonts/MaterialIcons-Regular.eot');
+	src: url('/build/assets/fonts/MaterialIcons-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/build/assets/fonts/MaterialIcons-Regular.ttf') format('truetype'),
+		url('/build/assets/fonts/MaterialIcons-Regular.woff') format('woff'),
+		url('/build/assets/fonts/MaterialIcons-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('/build/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('/build/assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url('/build/assets/fonts/HelveticaNeue-Roman.woff') format('woff');
+}
+

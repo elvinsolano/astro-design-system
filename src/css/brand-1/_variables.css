@@ -1,0 +1,40 @@
+/**
+ * Do not edit directly
+ * Generated on Tue, 05 Nov 2019 15:49:13 GMT
+ */
+
+:root {
+ --asset-font-icon-name: "MaterialIcons";
+ --asset-font-icon-ttf: "assets/fonts/MaterialIcons-Regular.ttf";
+ --asset-font-icon-eot: "assets/fonts/MaterialIcons-Regular.eot";
+ --asset-font-icon-woff: "assets/fonts/MaterialIcons-Regular.woff";
+ --asset-font-icon-woff-2: "assets/fonts/MaterialIcons-Regular.woff2";
+ --asset-font-opensans-name: "Open Sans";
+ --asset-font-opensans-ttf: "assets/fonts/OpenSans-Regular.ttf";
+ --asset-font-roboto-name: "Roboto";
+ --asset-font-roboto-ttf: "assets/fonts/Roboto-Regular.ttf";
+ --asset-font-helvetica-name: "Helvetica Neue";
+ --asset-font-helvetica-woff: "assets/fonts/HelveticaNeue-Roman.woff";
+ --colors-orange-300: #FC9E00;
+ --colors-orange-400: #F86400;
+ --colors-teal-300: #088FBE;
+ --colors-teal-400: #31E4D8;
+ --font-family-sans: Open Sans, Arial, sans-serif;
+ --font-family-serif: 'Crimson Text', Georgia, Time New Roman, serif;
+ --font-family-mono: MaterialIcons;
+ --size-font-xs: 0.75rem;
+ --size-font-sm: 0.875rem;
+ --size-font-base: 1rem; /* Base 16px font size */
+ --size-font-lg: 1.125rem;
+ --size-font-xl: 1.25rem;
+ --size-font-2-xl: 1.5rem; /* 24px */
+ --size-font-3-xl: 1.875rem;
+ --size-font-4-xl: 2.5rem; /* 40px */
+ --size-font-5-xl: 3rem;
+ --size-font-6-xl: 4rem;
+ --breakpoint-width-narrow: 480px;
+ --breakpoint-width-tablet: 768px;
+ --breakpoint-width-medium: 840px;
+ --breakpoint-width-wide: 1024px;
+ --breakpoint-width-max: 1440px;
+}

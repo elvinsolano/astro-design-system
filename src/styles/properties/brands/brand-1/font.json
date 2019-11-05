@@ -1,0 +1,15 @@
+{
+  "font": {
+    "family": {
+      "sans": {
+        "value": "Open Sans, Arial, sans-serif"
+      },
+      "serif": {
+        "value": "'Crimson Text', Georgia, Time New Roman, serif"
+      },
+      "mono": {
+        "value": "{asset.font.icon.name.value}"
+      }
+    }
+  }
+}

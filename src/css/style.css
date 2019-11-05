@@ -1,0 +1,27 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/base.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/base";
+ */
+
+
+@import "brand-1/fonts.css";
+@import "brand-1/_variables.css";
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/* TODO: Look for Glob include */
+
+@import "../components/atoms/typography.css";
+@import "../components/atoms/button.css";
+@import "../components/atoms/colors.css";

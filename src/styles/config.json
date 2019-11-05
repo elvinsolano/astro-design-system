@@ -1,0 +1,15 @@
+{
+  "source": [
+    "src/styles/properties/**/*.json"
+  ],
+  "platforms": {
+    "css": {
+      "transforms": ["attribute/cti", "name/cti/kebab", "time/seconds", "content/icon", "size/rem", "color/css", "size/px"],
+      "buildPath": "src/global/",
+      "files": [{
+        "destination": "_variables.css",
+        "format": "css/host"
+      }]
+    }
+  }
+}

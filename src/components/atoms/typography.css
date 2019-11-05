@@ -1,0 +1,257 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: HelveticaNeueRegular;
+  src: url('../assets/fonts/HelveticaNeueLTW10-55Roman.ttf');
+}
+@font-face {
+  font-family: HelveticaNeueMedium;
+  src: url('../assets/fonts/HelveticaNeueLTW10-65Medium.ttf');
+}
+
+.as-type-regular {
+  font-family: HelveticaNeueRegular;
+}
+.as-type-medium {
+  font-family: HelveticaNeueMedium;
+}
+p, li, div, a, button {
+  font-family: HelveticaNeueRegular;
+}
+/* img {
+  width: 25%;
+  height: 25%;
+} */
+
+.as-h0 { 
+  font-size: 250px;
+  line-height: 1;
+}
+.as-h1 {
+  /* @apply font-serif; */ 
+  font-size: 36px;
+}
+.as-h2 {
+  /* @apply font-sans;
+  @apply text-2xl; */ 
+  font-size: 28px;
+}
+.as-h3 { 
+  font-size: 20px;
+}
+
+.as-type-jumbo {
+  font-size: 50px;
+  line-height: 53px;
+}
+.as-type-title1 {
+  font-size: 28px;
+  line-height: 34px;
+}
+.as-type-title2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.as-type-title3 {
+  font-size: 18px;
+  line-height: 30px;
+}
+.as-type-title4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.as-type-subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+.as-type-body {
+  font-size: 14px;
+  line-height: 23px;
+}
+.as-type-label {
+  font-size: 12px;
+  line-height: 18px;
+}
+.as-type-small {
+  font-size: 12px;
+  line-height: 18px;
+}
+.as-type-badge {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.is-current {
+  position: relative;
+} 
+
+.is-current:before {
+  content: "";
+  background-color: #E0301E;
+  position: absolute;
+  left: 50px;
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.is-current a{
+  background-color: #E8E8E8;
+  font-family: HelveticaNeueMedium
+} 
+
+pre { 
+  font-family: monospace;
+  font-size: 14px; 
+  display: block; 
+}
+.list-circle {
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  font-family: HelveticaNeueMedium;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  margin-right: 20px;
+}
+ 
+.DarkAndLightRectangleStyle {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  top: -7%;
+} 
+.lightrectangle {
+  background-color: #E0301E;
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  margin: auto; 
+  animation-name: pulseRec; 
+  animation-duration: 1s; 
+  animation-timing-function: ease-in-out; 
+  animation-delay: 0s; 
+  animation-direction: alternate; 
+  animation-iteration-count: infinite; 
+  animation-fill-mode: none; 
+  animation-play-state: running; 
+} 
+.darkrectangle {
+  background-color:  rgba(224, 48, 30, 0.5);
+  height: 12px;
+  width: 12px;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  margin: auto; 
+  animation-name: pulseRec; 
+  animation-duration: 1s; 
+  animation-timing-function: ease-in; 
+  animation-delay: 0s; 
+  animation-direction: alternate; 
+  animation-iteration-count: infinite; 
+  animation-fill-mode: none; 
+  animation-play-state: running;
+} 
+@keyframes pulseRec {
+  0% { 
+  }
+  100% {
+    transform: scale(.7);
+  }
+}
+
+.page-anchor {
+  display: block;
+  position: relative;
+  top: -160px;
+  visibility: hidden;
+}
+
+.copy-code {
+  position: absolute;
+  top: 1.45rem;
+  right: 1.45rem;
+}
+
+.color-sample {
+  width: 209px;
+  height: 209px;
+}
+.color-description {
+  background-color: #F7F7F7;
+}
+.react-tabs {
+  background-color: transparent;
+}
+.react-tabs ul {
+  display: flex;
+  margin-bottom: 20px;
+}
+.react-tabs ul li {
+  border-bottom: 1px solid #ABABAB;
+  min-width: 60px;
+  padding: 5px 20px 10px;
+  cursor: pointer;
+}
+.react-tabs ul li[aria-selected="true"] {
+  border-bottom: 2px solid #E0301E; 
+  font-weight: bold;
+}
+.font-semibold {
+  font-family: HelveticaNeueMedium;
+  font-weight: 400;
+}
+.focus\:font-semibold:focus {
+  font-family: HelveticaNeueMedium;
+  font-weight: 400;
+}
+
+.as-grid-1 {
+  min-width: 41.25px;
+}
+.as-grid-4 {
+  min-width: 165px;
+}
+.as-grid-10 {
+  min-width: 410px;
+}
+
+.tooltip > div {
+  padding: 6px 10px;
+  border: 2px solid #4EAD58;
+  background-color: #E7FFE9 !important;
+  color: black !important;
+  font-family: HelveticaNeueMedium;
+}
+
+.tooltip > div:after {
+  border-left-color: #4EAD58 !important;
+  border-right-color: #4EAD58 !important;
+}
+
+.h-355 {
+  height: 355px;
+}
+
+aside nav ul li a:active {
+  font-family: HelveticaNeueMedium !important;
+  background-color: #BCBCBC !important;
+}

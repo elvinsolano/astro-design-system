@@ -1,0 +1,32 @@
+{
+  "colors": {
+    "orange": {
+      "300": {
+        "value": "#FC9E00",
+        "attributes": {
+          "button": "primary"
+        }
+      },
+      "400": {
+        "value": "#F86400",
+        "attributes": {
+          "button": "gradient"
+        }
+      }
+    },
+    "teal": {
+      "300": {
+        "value": "#088FBE",
+        "attributes": {
+          "button": "secondary"
+        }
+      },
+      "400": {
+        "value": "#31E4D8",
+        "attributes": {
+          "button": "gradient"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "size": {
+    "font": {
+      "xs": { "value": "0.75" },
+      "sm": { "value": "0.875" },
+      "base": { "value": "1", "comment": "Base 16px font size" },
+      "lg": { "value": "1.125" },
+      "xl": { "value": "1.25" },
+      "2xl": { "value": "1.5", "comment": "24px" },
+      "3xl": { "value": "1.875" },
+      "4xl": { "value": "2.5", "comment": "40px" },
+      "5xl": { "value": "3" },
+      "6xl": { "value": "4" }
+    }
+  }
+}
