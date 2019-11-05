@@ -18,10 +18,10 @@ function ApplicationsMenuNavigationPage() {
       <aside className="fixed overflow-y-auto pt-20 bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
         <nav>
         <ul className="">  
-            <li><a href="story-examples" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Story Examples</a></li> 
-            <li><a href="menu-navigation" className="block text-sm text-black pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Menu/Navigation</a></li>
-            <li><a href="nudges" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Nudges</a></li>
-            <li><a href="discover" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Discover</a></li>
+            <li><a href="story-examples" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Story Examples</a></li> 
+            <li><a href="menu-navigation" className="block text-sm text-grey-400 pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Menu/Navigation</a></li>
+            <li><a href="nudges" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Nudges</a></li>
+            <li><a href="discover" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Discover</a></li>
           </ul> 
         </nav>
       </aside>

@@ -18,7 +18,7 @@ function DesignPictogramsPage() {
       <aside className="fixed overflow-y-auto pt-20 bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
         <nav>
           <ul className=""> 
-            <li><a href="logo" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Logo</a>
+            <li><a href="logo" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Logo</a>
               <ul className="hidden">
                 <li><a href="logo#overview" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Overview</a></li>
                 <li><a href="logo#types" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Types</a></li>
@@ -28,7 +28,7 @@ function DesignPictogramsPage() {
                 <li><a href="logo#guidance" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Guidance</a></li>
               </ul>
             </li>
-            <li><a href="color" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Color</a>
+            <li><a href="color" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Color</a>
               <ul className="hidden">
                 <li><a href="color#primary" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="block text-sm text-grey-400 pl-16 py-2 w-full bg-grey-200 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Primary</a></li>
                 <li><a href="color#secondary" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Secondary</a></li>
@@ -37,7 +37,7 @@ function DesignPictogramsPage() {
                 <li><a href="color#data-visualization" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Data Visualization</a></li>
               </ul>              
             </li>
-            <li><a href="typography" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Typography</a>
+            <li><a href="typography" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Typography</a>
               <ul className="hidden">
                 <li><a href="typography#typeface" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Typeface</a></li>
                 <li><a href="typography#type-scale" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Type Scale</a></li>
@@ -46,16 +46,16 @@ function DesignPictogramsPage() {
                 <li><a href="typography#accessibility" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Accessibility</a></li>
               </ul>
             </li>
-            <li><a href="icons" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Icons</a></li>
-            <li><a href="pictograms" className="block text-sm text-black pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Pictograms</a>
+            <li><a href="icons" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Icons</a></li>
+            <li><a href="pictograms" className="block text-sm text-grey-400 pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Pictograms</a>
               <ul className="block">
                 <li><a href="pictograms#types" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Types</a></li>
                 <li><a href="pictograms#guidance" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold" activeClassName="active-link">Guidance</a></li>
               </ul>              
             </li>
-            <li><a href="screen-anatomy" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Screen Anatomy</a></li>
-            <li><a href="motion" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Motion</a></li>
-            <li><a href="sound" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Sound</a></li>
+            <li><a href="screen-anatomy" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Screen Anatomy</a></li>
+            <li><a href="motion" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Motion</a></li>
+            <li><a href="sound" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Sound</a></li>
           </ul> 
         </nav>
       </aside>

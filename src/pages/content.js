@@ -17,10 +17,10 @@ function ContentPage() {
       <aside className="fixed overflow-y-auto pt-20 bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
         <nav>
           <ul className="">  
-            <li><a href="content/intro" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Intro</a></li>
-            <li><a href="content/guidelines" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Guidelines</a></li>
-            <li><a href="content/voice-tone" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Voice and Tone</a></li>
-            <li><a href="content/vocabulary" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Vocabulary (do's/don't)</a></li>
+            <li><a href="content/intro" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Intro</a></li>
+            <li><a href="content/guidelines" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Guidelines</a></li>
+            <li><a href="content/voice-tone" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Voice and Tone</a></li>
+            <li><a href="content/vocabulary" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Vocabulary (do's/don't)</a></li>
           </ul>
         </nav>
       </aside>

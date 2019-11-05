@@ -59,7 +59,7 @@ function ElementsButtonsPage() {
       <aside className="fixed overflow-y-auto pt-20 bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
         <nav>
           <ul className="">  
-            <li><Link to="buttons" className="block text-sm text-black pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100" activeClassName="block text-sm text-black pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Buttons and CTA's</Link>
+            <li><Link to="buttons" className="block text-sm text-grey-400 pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100" activeClassName="block text-sm text-grey-400 pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Buttons and CTA's</Link>
               <Scrollspy items={ ['types', 'voice', 'usage', 'specs', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="elements/buttons#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Types</Link></li> 
                 <li><Link to="elements/buttons#voice-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 " activeClassName="active-link">Voice Button</Link></li>
@@ -68,12 +68,12 @@ function ElementsButtonsPage() {
                 <li><Link to="elements/buttons#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
               </Scrollspy>             
             </li>
-            <li><a href="dividers" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Dividers</a></li>
-            <li><a href="alerts" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Alerts and Notifications</a></li>
-            <li><a href="badges" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Badges</a></li>
-            <li><a href="charts" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Charts</a></li>
-            <li><a href="form-fields" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Form Fields</a></li>
-            <li><a href="loaders" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100">Loaders</a></li>
+            <li><a href="dividers" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Dividers</a></li>
+            <li><a href="alerts" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Alerts and Notifications</a></li>
+            <li><a href="badges" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Badges</a></li>
+            <li><a href="charts" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Charts</a></li>
+            <li><a href="form-fields" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Form Fields</a></li>
+            <li><a href="loaders" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Loaders</a></li>
           </ul> 
         </nav>
       </aside>

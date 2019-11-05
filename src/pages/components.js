@@ -17,42 +17,42 @@ function ContactPage() {
         <nav>
           <ul className="">
             <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full bg-grey-300">Cards</div></li> 
-            <li><Link to="components/cards/single-item" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single Item</Link></li>
-            <li><Link to="components/cards/single-item-grouping" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single item with Grouping</Link></li>
-            <li><Link to="components/cards/list" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">List</Link></li>
-            <li><Link to="components/cards/grouped-lists" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Grouped Lists</Link></li>
-            <li><Link to="components/cards/two-column" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Two Columns</Link></li>
-            <li><Link to="components/cards/mail" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Mail</Link></li>
-            <li><Link to="components/cards/profile" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Profile</Link></li>
-            <li><Link to="components/cards/information" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Information</Link></li>
-            <li><Link to="components/cards/progress-bar" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Progress Bar</Link></li>
-            <li><Link to="components/cards/highlighted-item-detail" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Highlighted Item &amp; Detail</Link></li>
-            <li><Link to="components/cards/tasks" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Tasks</Link></li>
-            <li><Link to="components/cards/circle-graph" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Circle Graph</Link></li>
-            <li><Link to="components/cards/profile-list" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Profile List</Link></li>
-            <li><Link to="components/cards/sliding-cards" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Sliding Cards***</Link></li>
+            <li><Link to="components/cards/single-item" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single Item</Link></li>
+            <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single item with Grouping</Link></li>
+            <li><Link to="components/cards/list" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">List</Link></li>
+            <li><Link to="components/cards/grouped-lists" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Grouped Lists</Link></li>
+            <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Two Columns</Link></li>
+            <li><Link to="components/cards/mail" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Mail</Link></li>
+            <li><Link to="components/cards/profile" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Profile</Link></li>
+            <li><Link to="components/cards/information" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Information</Link></li>
+            <li><Link to="components/cards/progress-bar" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Progress Bar</Link></li>
+            <li><Link to="components/cards/highlighted-item-detail" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Highlighted Item &amp; Detail</Link></li>
+            <li><Link to="components/cards/tasks" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Tasks</Link></li>
+            <li><Link to="components/cards/circle-graph" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Circle Graph</Link></li>
+            <li><Link to="components/cards/profile-list" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Profile List</Link></li>
+            <li><Link to="components/cards/sliding-cards" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Sliding Cards***</Link></li>
           </ul>
           <ul className="">
             <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full bg-grey-300">Overlay</div></li>
-            <li><Link to="components/overlays/single-item" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single Item</Link></li>
-            <li><Link to="components/overlays/single-item-grouping" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single item with Grouping</Link></li>
-            <li><Link to="components/overlays/list" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">List</Link></li>
-            <li><Link to="components/overlays/grouped-lists" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Grouped Lists</Link></li>
-            <li><Link to="components/overlays/two-columns" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Two Columns</Link></li>
-            <li><Link to="components/overlays/mail" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Mail</Link></li>
-            <li><Link to="components/overlays/profile" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Profile</Link></li>
-            <li><Link to="components/overlays/information" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Information</Link></li>
-            <li><Link to="components/overlays/progress-bar" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Progress Bar</Link></li>
-            <li><Link to="components/overlays/highlighted-item-detail" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Highlighted Item &amp; Detail</Link></li>
-            <li><Link to="components/overlays/tasks" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Tasks</Link></li>
-            <li><Link to="components/overlays/circle-graph" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Circle Graph</Link></li>
-            <li><Link to="components/overlays/profile-list" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Profile List</Link></li>
-            <li><Link to="components/overlays/sliding-cards" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Sliding Cards***</Link></li>
+            <li><Link to="components/overlays/single-item" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single Item</Link></li>
+            <li><Link to="components/overlays/single-item-grouping" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single item with Grouping</Link></li>
+            <li><Link to="components/overlays/list" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">List</Link></li>
+            <li><Link to="components/overlays/grouped-lists" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Grouped Lists</Link></li>
+            <li><Link to="components/overlays/two-columns" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Two Columns</Link></li>
+            <li><Link to="components/overlays/mail" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Mail</Link></li>
+            <li><Link to="components/overlays/profile" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Profile</Link></li>
+            <li><Link to="components/overlays/information" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Information</Link></li>
+            <li><Link to="components/overlays/progress-bar" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Progress Bar</Link></li>
+            <li><Link to="components/overlays/highlighted-item-detail" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Highlighted Item &amp; Detail</Link></li>
+            <li><Link to="components/overlays/tasks" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Tasks</Link></li>
+            <li><Link to="components/overlays/circle-graph" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Circle Graph</Link></li>
+            <li><Link to="components/overlays/profile-list" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Profile List</Link></li>
+            <li><Link to="components/overlays/sliding-cards" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Sliding Cards***</Link></li>
           </ul> 
           <ul className="">
             <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full bg-grey-300">Popovers</div></li>
-            <li><Link to="components/popovers/single-item" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single Item</Link></li>
-            <li><Link to="components/popovers/single-item-grouping" className="block text-sm text-black pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single item with Grouping</Link></li> 
+            <li><Link to="components/popovers/single-item" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single Item</Link></li>
+            <li><Link to="components/popovers/single-item-grouping" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Single item with Grouping</Link></li> 
           </ul>                   
         </nav>
       </aside>
