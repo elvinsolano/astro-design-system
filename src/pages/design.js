@@ -37,7 +37,7 @@ function DesignPage() {
           <section className="flex flex-col md:flex-row items-center">
             <div className="md:w-2/3 md:mr-8">
               <blockquote className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify">
-                Design
+                Design!
 
                 The point is... to live one's life in the full complexity of what
                 one is, which is something much darker, more contradictory, more of
