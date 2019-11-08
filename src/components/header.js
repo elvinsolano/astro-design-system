@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import React, { useState } from "react";
 
 import { TailwindThemeProvider } from 'tailwind-react-ui';
 
@@ -43,19 +43,19 @@ function Header({ siteTitle }) {
             } md:block md:flex md:items-center w-full md:w-auto`}
           >
             <div className="text-sm text-grey-600">
-              <Link
+              {/* <Link
                 to="/content"
-                className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
+                className="block md:inline-block mt-6 md:mt-0 px-6 no-underline pb-21"
+                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Content
-              </Link>
+              </Link> */}
 
               <Link
                 to="/design"
-                className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
+                className="block md:inline-block mt-6 md:mt-0 px-6 no-underline pb-21"
+                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Design
@@ -63,8 +63,8 @@ function Header({ siteTitle }) {
 
               <Link
                 to="/elements"
-                className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
+                className="block md:inline-block mt-6 md:mt-0 px-6 no-underline pb-21"
+                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Elements
@@ -72,21 +72,21 @@ function Header({ siteTitle }) {
 
               <Link
                 to="/components"
-                className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
+                className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-21"
+                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Components
               </Link>
 
-              <Link
+              {/* <Link
                 to="/applications"
-                className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-6"
-                activeClassName="text-white pb-6 border-b-4 border-red-600 border-solid as-type-medium"
+                className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-21"
+                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Applications
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

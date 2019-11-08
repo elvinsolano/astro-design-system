@@ -21,7 +21,7 @@ function IndexPage() {
           non blandit dui. Nulla lectus nunc, eleifend non blandit at, ultrices
           ut lacus. Nulla ut fermentum leo, </p>
 
-        <div class="my-10">
+        <div className="my-10">
           <Heading level="3" className="gw-h2">How are you feeling?</Heading>
           <Row className="mt-8 flex flex-wrap list-reset">
             <Col w="1/3" className="w-1/3 text-center p-2">
@@ -65,7 +65,7 @@ function IndexPage() {
           </Row>
         </div>
 
-        <div class="my-10">
+        <div className="my-10">
           <Heading level="3" className="gw-h2">Has Anything Changed?</Heading>
           <Row>
             <Col w="1/2" text="center" p="2">

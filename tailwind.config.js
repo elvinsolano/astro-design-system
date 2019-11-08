@@ -70,7 +70,7 @@ module.exports = {
       },
       width: {
         grid: "320px"
-      }
+      }, 
     }, 
     container: {
       center: true
