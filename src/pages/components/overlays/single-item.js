@@ -23,57 +23,57 @@ function ComponentsCardsSingleItemPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
  
-      <aside className="fixed overflow-y-auto pt-20 bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
         <nav>
           <ul className="">
-            <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full font-semibold bg-grey-300">Cards</div></li> 
-            <li><Link to="components/cards/single-item" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Single Item</Link></li>
-            <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
-            <li><Link to="components/cards/list" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">List</Link></li>
-            <li><Link to="components/cards/grouped-lists" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Grouped Lists</Link></li>
-            <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Two Columns</Link></li>
-            <li><Link to="components/cards/mail" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Mail</Link></li>
-            <li><Link to="components/cards/profile" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Profile</Link></li>
-            <li><Link to="components/cards/information" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Information</Link></li>
-            <li><Link to="components/cards/progress-bar" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Progress Bar</Link></li>
-            <li><Link to="components/cards/highlighted-item-detail" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
-            <li><Link to="components/cards/tasks" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Tasks</Link></li>
-            <li><Link to="components/cards/circle-graph" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Circle Graph</Link></li>
-            <li><Link to="components/cards/profile-list" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Profile List</Link></li>
-            <li><Link to="components/cards/sliding-cards" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Sliding Cards***</Link></li>
+            <li><div className="block text-white uppercase text-sm w-full font-semibold bg-grey-300">Cards</div></li> 
+            <li><Link to="components/cards/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li>
+            <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
+            <li><Link to="components/cards/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
+            <li><Link to="components/cards/grouped-lists" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Grouped Lists</Link></li>
+            <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Columns</Link></li>
+            <li><Link to="components/cards/mail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Mail</Link></li>
+            <li><Link to="components/cards/profile" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile</Link></li>
+            <li><Link to="components/cards/information" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Information</Link></li>
+            <li><Link to="components/cards/progress-bar" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Progress Bar</Link></li>
+            <li><Link to="components/cards/highlighted-item-detail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
+            <li><Link to="components/cards/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Tasks</Link></li>
+            <li><Link to="components/cards/circle-graph" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Circle Graph</Link></li>
+            <li><Link to="components/cards/profile-list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile List</Link></li>
+            <li><Link to="components/cards/sliding-cards" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Sliding Cards***</Link></li>
           </ul>
           <ul className="">
-            <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full font-semibold bg-grey-300">Overlay</div></li>
-            <li><Link to="components/overlay/single-item" className="block text-sm text-grey-400 pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Single Item</Link>
+            <li><div className="block text-white uppercase text-sm w-full font-semibold bg-grey-300">Overlay</div></li>
+            <li><Link to="components/overlays/single-item" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Single Item</Link>
               <Scrollspy items={ ['ui-examples', 'details', 'padding'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/overlay/single-item#ui-examples" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 pl-16 py-2 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
-                <li><Link to="components/overlay/single-item#details" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
-                <li><Link to="components/overlay/single-item#specs" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
+                <li><Link to="components/overlays/single-item#ui-examples" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/overlays/single-item#details" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
+                <li><Link to="components/overlays/single-item#specs" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
               </Scrollspy>   
             </li>
-            <li><Link to="components/overlay/single-item-grouping" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
-            <li><Link to="components/overlay/list" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">List</Link></li>
-            <li><Link to="components/overlay/grouped-lists" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Grouped Lists</Link></li>
-            <li><Link to="components/overlay/two-columns" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Two Columns</Link></li>
-            <li><Link to="components/overlay/mail" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Mail</Link></li>
-            <li><Link to="components/overlay/profile" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Profile</Link></li>
-            <li><Link to="components/overlay/information" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Information</Link></li>
-            <li><Link to="components/overlay/progress-bar" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Progress Bar</Link></li>
-            <li><Link to="components/overlay/highlighted-item-detail" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
-            <li><Link to="components/overlay/tasks" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Tasks</Link></li>
-            <li><Link to="components/overlay/circle-graph" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Circle Graph</Link></li>
-            <li><Link to="components/overlay/profile-list" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Profile List</Link></li>
-            <li><Link to="components/overlay/sliding-cards" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Sliding Cards***</Link></li>
+            <li><Link to="components/overlays/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
+            <li><Link to="components/overlays/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
+            <li><Link to="components/overlays/grouped-lists" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Grouped Lists</Link></li>
+            <li><Link to="components/overlays/two-columns" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Columns</Link></li>
+            <li><Link to="components/overlays/mail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Mail</Link></li>
+            <li><Link to="components/overlays/profile" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile</Link></li>
+            <li><Link to="components/overlays/information" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Information</Link></li>
+            <li><Link to="components/overlays/progress-bar" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Progress Bar</Link></li>
+            <li><Link to="components/overlays/highlighted-item-detail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
+            <li><Link to="components/overlays/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Tasks</Link></li>
+            <li><Link to="components/overlays/circle-graph" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Circle Graph</Link></li>
+            <li><Link to="components/overlays/profile-list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile List</Link></li>
+            <li><Link to="components/overlays/sliding-cards" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Sliding Cards***</Link></li>
           </ul> 
           <ul className="">
-            <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full bg-grey-300">Popovers</div></li>
-            <li><Link to="components/popovers/single-item" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Single Item</Link></li>
-            <li><Link to="components/popovers/single-item-grouping" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Single item with Grouping</Link></li> 
+            <li><div className="block text-white uppercase text-sm w-full bg-grey-300">Popovers</div></li>
+            <li><Link to="components/popovers/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li>
+            <li><Link to="components/popovers/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li> 
           </ul>                    
         </nav>
       </aside>
 
-      <div className="flex flex-col flex-1 mx-auto pt-20 w-full pb-5.5">  
+      <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">  
         <main className="ml-64 pl-16 pr-16 pt-16">
 
         <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">

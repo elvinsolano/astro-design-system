@@ -21,14 +21,14 @@ function DesignPage() {
       <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
         <nav>
           <ul className=""> 
-            <li><Link to="design/logo" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Logo</Link></li>
-            <li><Link to="design/color" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Color</Link></li>
-            <li><Link to="design/typography" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Typography</Link></li>
-            <li><Link to="design/icons" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Icons</Link></li>
-            <li><Link to="design/pictograms" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Pictograms</Link></li>
-            <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Screen Anatomy</Link></li>
-            <li><Link to="design/motion" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Motion</Link></li>
-            <li><Link to="design/sound" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Sound</Link></li>
+            <li><Link to="design/logo" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Logo</Link></li>
+            <li><Link to="design/color" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Color</Link></li>
+            <li><Link to="design/typography" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Typography</Link></li>
+            <li><Link to="design/icons" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Icons</Link></li>
+            <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Pictograms</Link></li>
+            <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Screen Anatomy</Link></li>
+            <li><Link to="design/motion" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Motion</Link></li>
+            <li><Link to="design/sound" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Sound</Link></li>
           </ul> 
         </nav>
       </aside>

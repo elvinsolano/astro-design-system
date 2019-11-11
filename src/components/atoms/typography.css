@@ -298,6 +298,24 @@ aside nav ul li a:active {
 .as-nav {
   padding-top: 70px;
 }
+.as-nav ul li a {
+  line-height: 21px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  padding-left: 40px;
+}
+.as-nav ul li > ul li a {
+  line-height: 21px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  padding-left: 64px;
+}
+.as-nav ul li div {
+  line-height: 21px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  padding-left: 40px;
+}
 .as-body {
   padding-top: 70px;
 }

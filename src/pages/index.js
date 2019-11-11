@@ -1,10 +1,8 @@
-import React from 'react';
-import { Row, Col, Button } from 'tailwind-react-ui';
+import React, { useState } from "react"; 
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-
-import Heading from '../components/atoms/heading';
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import dogIllustration from "../images/dog-illustration.svg";
 
 function IndexPage() {
   return (
@@ -14,33 +12,38 @@ function IndexPage() {
         keywords={[`ServCo`, `GenWorth`]}
       />
 
-      <div className="flex flex-col flex-1 mx-auto pt-20 w-full pb-5.5">
-        <aside className="fixed bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
-          <nav>
-            <ul className="">  
-              <li><a href="#" className="block text-sm text-grey-400 pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Intro</a></li>
-              <li><a href="#" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Guidelines</a></li>
-              <li><a href="#" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Voice and Tone</a></li>
-              <li><a href="#" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Vocabulary (do's/don't)</a></li>
-            </ul>
-          </nav>
-        </aside>
+      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+        <nav>
+          <ul className="">  
+            <li><a href="#" className="block text-sm text-grey-400 pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Intro</a></li>
+            <li><a href="#" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Guidelines</a></li>
+            <li><a href="#" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Voice and Tone</a></li>
+            <li><a href="#" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Vocabulary (do's/don't)</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className="ml-64 pl-16 pr-16 pt-16">
-          <section className="">
+          <section className="flex flex-col md:flex-row items-center">
+            <div className="md:w-2/3 md:mr-8">
+              <blockquote className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify">
+                Elements
 
-            <div className="flex justify-between rounded py-1 px-3 bg-grey-100 mb-16">
-              <Heading level="2" className="gw-h1">Headline 1</Heading>
-              <div className="flex items-center">
-                <p className="uppercase text-xs mr-4">Updated 11/25/19</p>
-                <button className="bg-white border rounded-full border-solid px-4 py-2">Sketch File</button>
-              </div>
-            </div> 
-            <p className="mb-2">Headline 2</p> 
-            <p className="mb-2">Body Copy 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur libero ligula, elementum varius placerat at, semper vel ante. Integer malesuada ante vitae ante ultrices, quis vestibulum nisi facilisis.</p>
-            <div className="rounded py-1 px-3 bg-grey-100 mb-16">
-              content
+                The point is... to live one's life in the full complexity of what
+                one is, which is something much darker, more contradictory, more of
+                a maelstrom of impulses and passions, of cruelty, ecstacy, and
+                madness, than is apparent to the civilized being who glides on the
+                surface and fits smoothly into the world.
+              </blockquote>
+
+              <cite className="font-bold mt-4 text-right text-xs uppercase block">
+                – Thomas Nagel
+              </cite>
             </div>
 
+            <figure className="w-2/3 md:w-1/3">
+              <img src={dogIllustration} alt="A dog relaxing" />
+            </figure>
           </section>
         </main>
       </div>

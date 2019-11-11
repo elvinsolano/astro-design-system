@@ -38,6 +38,19 @@ exports.components = {
   "component---src-pages-elements-form-fields-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/elements/form-fields.js"))),
   "component---src-pages-elements-loaders-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/elements/loaders.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/index.js"))),
-  "component---src-pages-landing-login-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/landing-login.js")))
+  "component---src-pages-landing-login-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/landing-login.js"))),
+  "component---src-pages-components-cards-single-item-grouping-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/single-item-grouping.js"))),
+  "component---src-pages-components-cards-list-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/list.js"))),
+  "component---src-pages-components-cards-grouped-lists-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/grouped-lists.js"))),
+  "component---src-pages-components-cards-two-column-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/two-column.js"))),
+  "component---src-pages-components-cards-mail-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/mail.js"))),
+  "component---src-pages-components-cards-profile-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/profile.js"))),
+  "component---src-pages-components-cards-information-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/information.js"))),
+  "component---src-pages-components-cards-progress-bar-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/progress-bar.js"))),
+  "component---src-pages-components-cards-highlighted-item-detail-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/highlighted-item-detail.js"))),
+  "component---src-pages-components-cards-tasks-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/tasks.js"))),
+  "component---src-pages-components-cards-circle-graph-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/circle-graph.js"))),
+  "component---src-pages-components-cards-profile-list-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/profile-list.js"))),
+  "component---src-pages-components-cards-sliding-cards-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/sliding-cards.js")))
 }
 

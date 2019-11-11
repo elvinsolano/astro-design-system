@@ -40,12 +40,12 @@ function DesignTypographyPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
       
-      <aside className="fixed overflow-y-auto pt-20 bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
         <nav>
           <ul className=""> 
-            <li><Link to="design/logo" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Logo</Link></li>
-            <li><Link to="design/color" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Color</Link></li>
-            <li><Link to="design/typography" className="block text-sm text-grey-400 pl-12 py-2 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Typography</Link>
+            <li><Link to="design/logo" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Logo</Link></li>
+            <li><Link to="design/color" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Color</Link></li>
+            <li><Link to="design/typography" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Typography</Link>
               <Scrollspy items={ ['typeface', 'type-scale', 'applying-type-scale', 'guidance', 'compliance'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="design/typography#typeface-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Typeface</Link></li>
                 <li><Link to="design/typography#type-scale-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Type Scale</Link></li>                
@@ -54,16 +54,16 @@ function DesignTypographyPage() {
                 <li><Link to="design/typography#compliance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Compliance</Link></li>
               </Scrollspy>              
             </li>
-            <li><Link to="design/icons" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Icons</Link></li>
-            <li><Link to="design/pictograms" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Pictograms</Link> </li>
-            <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
-            <li><Link to="design/motion" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Motion</Link></li>
-            <li><Link to="design/sound" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Sound</Link></li>
+            <li><Link to="design/icons" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Icons</Link></li>
+            <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Pictograms</Link> </li>
+            <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
+            <li><Link to="design/motion" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Motion</Link></li>
+            <li><Link to="design/sound" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Sound</Link></li>
           </ul> 
         </nav>
       </aside>
  
-      <div className="flex flex-col flex-1 mx-auto pt-20 w-full pb-5.5">
+      <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className="ml-64 pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">

@@ -17,11 +17,11 @@ function DesignColorPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
-      <aside className="fixed overflow-y-auto pt-20 bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
         <nav>
           <ul className=""> 
-            <li><Link to="design/logo" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Logo</Link></li>
-            <li><Link to="design/color" className="block text-sm text-grey-400 pl-12 py-2 w-full active bg-grey-700">Color</Link>
+            <li><Link to="design/logo" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Logo</Link></li>
+            <li><Link to="design/color" className="block text-sm text-grey-400 w-full active bg-grey-700">Color</Link>
               <Scrollspy items={ ['primary', 'secondary', 'greys', 'status', 'data-visualization'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="design/color#primary-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 pl-16 py-2 w-full bg-grey-200 font-semibold hover:bg-grey-100">Primary</Link></li>
                 <li><Link to="design/color#secondary-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Secondary</Link></li>
@@ -30,12 +30,12 @@ function DesignColorPage() {
                 <li><Link to="design/color#data-visualization-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Data Visualization</Link></li>
               </Scrollspy>           
             </li>
-            <li><Link to="design/typography" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Typography</Link></li>
-            <li><Link to="design/icons" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Icons</Link></li>
-            <li><Link to="design/pictograms" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Pictograms</Link></li>
-            <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
-            <li><Link to="design/motion" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Motion</Link></li>
-            <li><Link to="design/sound" className="block text-sm text-grey-400 pl-12 py-2 w-full hover:bg-grey-100">Sound</Link></li>
+            <li><Link to="design/typography" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Typography</Link></li>
+            <li><Link to="design/icons" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Icons</Link></li>
+            <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Pictograms</Link></li>
+            <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
+            <li><Link to="design/motion" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Motion</Link></li>
+            <li><Link to="design/sound" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Sound</Link></li>
           </ul> 
         </nav>
       </aside>
@@ -43,7 +43,7 @@ function DesignColorPage() {
 
 
 
-      <div className="flex flex-col flex-1 mx-auto pt-20 w-full pb-5.5">
+      <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className="ml-64 pl-16 pr-16 pt-16">
  
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
