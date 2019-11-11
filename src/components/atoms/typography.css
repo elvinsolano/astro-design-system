@@ -272,8 +272,32 @@ aside nav ul li a:active {
 
 .border-b-5 {
   border-bottom-width: 5px;
-}
-
+} 
 .pb-21 {
   padding-bottom: 21px;
+}
+.as-header {
+  height: 70px;
+}
+.as-header-link-wrapper {
+  padding-top: 25px; 
+  padding-bottom: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.as-header-link {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 18px;
+}
+.as-header-link-active {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 18px;
+}
+.as-nav {
+  padding-top: 70px;
+}
+.as-body {
+  padding-top: 70px;
 }

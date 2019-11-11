@@ -8,9 +8,9 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-black fixed w-full z-50 h-20">
+    <header className="bg-black fixed w-full z-50 as-header">
       <nav>
-        <div className="flex flex-wrap items-center justify-between pt-8 pr-8 pb-0 pl-12">
+        <div className="flex flex-wrap items-center justify-between as-header-link-wrapper">
           <Link to="/" className="flex self-start no-underline text-white">
             <svg
               className="fill-current mr-2"
@@ -45,8 +45,8 @@ function Header({ siteTitle }) {
             <div className="text-sm text-grey-600">
               {/* <Link
                 to="/content"
-                className="block md:inline-block mt-6 md:mt-0 px-6 no-underline pb-21"
-                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
+                className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline"
+                activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Content
@@ -54,8 +54,8 @@ function Header({ siteTitle }) {
 
               <Link
                 to="/design"
-                className="block md:inline-block mt-6 md:mt-0 px-6 no-underline pb-21"
-                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
+                className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
+                activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Design
@@ -63,8 +63,8 @@ function Header({ siteTitle }) {
 
               <Link
                 to="/elements"
-                className="block md:inline-block mt-6 md:mt-0 px-6 no-underline pb-21"
-                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
+                className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
+                activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Elements
@@ -72,8 +72,8 @@ function Header({ siteTitle }) {
 
               <Link
                 to="/components"
-                className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-21"
-                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
+                className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
+                activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Components
@@ -81,8 +81,8 @@ function Header({ siteTitle }) {
 
               {/* <Link
                 to="/applications"
-                className="block md:inline-block mt-4 md:mt-0 px-6 no-underline pb-21"
-                activeClassName="text-white pb-21 border-b-5 border-red-600 border-solid as-type-medium"
+                className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline"
+                activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
               >
                 Applications
