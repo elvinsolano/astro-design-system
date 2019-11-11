@@ -94,7 +94,7 @@ function ElementsLoadersPage() {
                 </CopyToClipboard>            
               </Heading>  
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img src={typesPullDownLoader1} className="inline-block" width="18" height="17" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesPullDownLoader1} className="inline-block" width="18" height="17" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">A pull down loader is used when a user wants to refresh a page or section.</p> 
             </div> 
