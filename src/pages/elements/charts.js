@@ -18,7 +18,7 @@ import typesStrengthChart3 from "../../assets/elements/charts/types/strength-cha
 import typesStrengthChart4 from "../../assets/elements/charts/types/strength-chart/04 Medium.png";
 import typesStrengthChart5 from "../../assets/elements/charts/types/strength-chart/05 Med High.png";
 import typesStrengthChart6 from "../../assets/elements/charts/types/strength-chart/06 High.png";
-import typesStrengthChart7 from "../../assets/elements/charts/types/strength-chart/07 Very High.png";
+//import typesStrengthChart7 from "../../assets/elements/charts/types/strength-chart/07 Very High.png";
 import typesTimelineChart1 from "../../assets/elements/charts/types/timeline-chart/01 Filled.png";
 import typesTimelineChart2 from "../../assets/elements/charts/types/timeline-chart/02 Empty.png";
 
@@ -163,7 +163,7 @@ function ElementsChartsPage() {
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">4</span><img src={typesStrengthChart4} className="inline-block" width="30" height="8" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">5</span><img src={typesStrengthChart5} className="inline-block" width="30" height="8" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">6</span><img src={typesStrengthChart6} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">7</span><img src={typesStrengthChart7} className="inline-block" width="30" height="8" /> </li>
+                {/* <li className="as-grid-4 relative"><span className="list-circle">7</span><img src={typesStrengthChart7} className="inline-block" width="30" height="8" /> </li> */}
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Zero</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Low</p>
