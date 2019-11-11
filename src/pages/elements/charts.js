@@ -9,44 +9,44 @@ import SEO from "../../components/seo";
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../components/atoms/heading';
 
-// import typesCircleChart1 from "../../assets/elements/charts/types/circle-chart/01 Circle Chart.png";
-// import typesHorizontalChart1 from "../../assets/elements/charts/types/horizontal-chart/01 Horizontal Chart.png";
-// import typesDoughnutChart1 from "../../assets/elements/charts/types/doughnut-chart/01 Doughnut Chart.png";
-// import typesStrengthChart1 from "../../assets/elements/charts/types/strength-chart/01 Zero.png";
-// import typesStrengthChart2 from "../../assets/elements/charts/types/strength-chart/02 Low.png";
-// import typesStrengthChart3 from "../../assets/elements/charts/types/strength-chart/03 Med Low.png";
-// import typesStrengthChart4 from "../../assets/elements/charts/types/strength-chart/04 Medium.png";
-// import typesStrengthChart5 from "../../assets/elements/charts/types/strength-chart/05 Med High.png";
-// import typesStrengthChart6 from "../../assets/elements/charts/types/strength-chart/06 High.png";
-// import typesStrengthChart7 from "../../assets/elements/charts/types/strength-chart/07 Very High.png";
-// import typesTimelineChart1 from "../../assets/elements/charts/types/timeline-chart/01 Filled.png";
-// import typesTimelineChart2 from "../../assets/elements/charts/types/timeline-chart/02 Empty.png";
+import typesCircleChart1 from "../../assets/elements/charts/types/circle-chart/01 Circle Chart.png";
+import typesHorizontalChart1 from "../../assets/elements/charts/types/horizontal-chart/01 Horizontal Chart.png";
+import typesDoughnutChart1 from "../../assets/elements/charts/types/doughnut-chart/01 Doughnut Chart.png";
+import typesStrengthChart1 from "../../assets/elements/charts/types/strength-chart/01 Zero.png";
+import typesStrengthChart2 from "../../assets/elements/charts/types/strength-chart/02 Low.png";
+import typesStrengthChart3 from "../../assets/elements/charts/types/strength-chart/03 Med Low.png";
+import typesStrengthChart4 from "../../assets/elements/charts/types/strength-chart/04 Medium.png";
+import typesStrengthChart5 from "../../assets/elements/charts/types/strength-chart/05 Med High.png";
+import typesStrengthChart6 from "../../assets/elements/charts/types/strength-chart/06 High.png";
+import typesStrengthChart7 from "../../assets/elements/charts/types/strength-chart/07 Very High.png";
+import typesTimelineChart1 from "../../assets/elements/charts/types/timeline-chart/01 Filled.png";
+import typesTimelineChart2 from "../../assets/elements/charts/types/timeline-chart/02 Empty.png";
 
-// import usage1 from "../../assets/elements/charts/usage/01 Circle Chart.png";  
-// import usage2 from "../../assets/elements/charts/usage/02 Doughnut Chart.png";
-// import usage3 from "../../assets/elements/charts/usage/03 Horizontal Chart.png"; 
-// import usage4 from "../../assets/elements/charts/usage/04 Strength Chart.png"; 
-// import usage5 from "../../assets/elements/charts/usage/05 Timeline Chart.png"; 
+import usage1 from "../../assets/elements/charts/usage/01 Circle Chart.png";  
+import usage2 from "../../assets/elements/charts/usage/02 Doughnut Chart.png";
+import usage3 from "../../assets/elements/charts/usage/03 Horizontal Chart.png"; 
+import usage4 from "../../assets/elements/charts/usage/04 Strength Chart.png"; 
+import usage5 from "../../assets/elements/charts/usage/05 Timeline Chart.png"; 
 
-// import specsCircleChart1 from "../../assets/elements/charts/specs/circle-chart/01 Circle Chart.png";
-// import specsDoughnutChart1 from "../../assets/elements/charts/specs/doughnut-chart/01 Doughnut Chart.png";
-// import specsHorizontalChart1 from "../../assets/elements/charts/specs/horizontal-chart/01 Horizontal Chart.png";
-// import specsStrengthChart1 from "../../assets/elements/charts/specs/strength-chart/01 Zero.png";
-// import specsStrengthChart2 from "../../assets/elements/charts/specs/strength-chart/02 Low.png";
-// import specsStrengthChart3 from "../../assets/elements/charts/specs/strength-chart/03 Med Low.png";
-// import specsStrengthChart4 from "../../assets/elements/charts/specs/strength-chart/04 Medium.png";
-// import specsStrengthChart5 from "../../assets/elements/charts/specs/strength-chart/05 Med High.png";
-// import specsStrengthChart6 from "../../assets/elements/charts/specs/strength-chart/06 High.png";
-// import specsStrengthChart7 from "../../assets/elements/charts/specs/strength-chart/07 Very High.png";
-// import specsTimelineChart1 from "../../assets/elements/charts/specs/timeline-chart/01 Filled.png";
-// import specsTimelineChart2 from "../../assets/elements/charts/specs/timeline-chart/02 Empty.png";
+import specsCircleChart1 from "../../assets/elements/charts/specs/circle-chart/01 Circle Chart.png";
+import specsDoughnutChart1 from "../../assets/elements/charts/specs/doughnut-chart/01 Doughnut Chart.png";
+import specsHorizontalChart1 from "../../assets/elements/charts/specs/horizontal-chart/01 Horizontal Chart.png";
+import specsStrengthChart1 from "../../assets/elements/charts/specs/strength-chart/01 Zero.png";
+import specsStrengthChart2 from "../../assets/elements/charts/specs/strength-chart/02 Low.png";
+import specsStrengthChart3 from "../../assets/elements/charts/specs/strength-chart/03 Med Low.png";
+import specsStrengthChart4 from "../../assets/elements/charts/specs/strength-chart/04 Medium.png";
+import specsStrengthChart5 from "../../assets/elements/charts/specs/strength-chart/05 Med High.png";
+import specsStrengthChart6 from "../../assets/elements/charts/specs/strength-chart/06 High.png";
+import specsStrengthChart7 from "../../assets/elements/charts/specs/strength-chart/07 Very High.png";
+import specsTimelineChart1 from "../../assets/elements/charts/specs/timeline-chart/01 Filled.png";
+import specsTimelineChart2 from "../../assets/elements/charts/specs/timeline-chart/02 Empty.png";
 
-// import guidance1 from "../../assets/elements/charts/guidance/01 Guidance.png";  
-// import guidance2 from "../../assets/elements/charts/guidance/02 Guidance.png";  
-// import guidance3 from "../../assets/elements/charts/guidance/03 Guidance.png";  
-// import guidance4 from "../../assets/elements/charts/guidance/04 Guidance.png";  
-// import guidance5 from "../../assets/elements/charts/guidance/05 Guidance.png";  
-// import guidance6 from "../../assets/elements/charts/guidance/06 Guidance.png";  
+import guidance1 from "../../assets/elements/charts/guidance/01 Guidance.png";  
+import guidance2 from "../../assets/elements/charts/guidance/02 Guidance.png";  
+import guidance3 from "../../assets/elements/charts/guidance/03 Guidance.png";  
+import guidance4 from "../../assets/elements/charts/guidance/04 Guidance.png";  
+import guidance5 from "../../assets/elements/charts/guidance/05 Guidance.png";  
+import guidance6 from "../../assets/elements/charts/guidance/06 Guidance.png";  
 
 function ElementsChartsPage() { 
 
@@ -115,7 +115,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesCircleChart1} className="inline-block" width="150" height="150" /> </li> */}
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesCircleChart1} className="inline-block" width="150" height="150" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
             </div> 
@@ -129,7 +129,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesDoughnutChart1} className="inline-block" width="150" height="150" /> </li> */}
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesDoughnutChart1} className="inline-block" width="150" height="150" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
             </div> 
@@ -143,7 +143,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesHorizontalChart1} className="inline-block" width="335" height="37" /> </li> */}
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesHorizontalChart1} className="inline-block" width="335" height="37" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
             </div> 
@@ -157,13 +157,13 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img src={typesStrengthChart1} className="inline-block" width="30" height="8" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img src={typesStrengthChart1} className="inline-block" width="30" height="8" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img src={typesStrengthChart2} className="inline-block" width="30" height="8" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img src={typesStrengthChart3} className="inline-block" width="30" height="8" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">4</span><img src={typesStrengthChart4} className="inline-block" width="30" height="8" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">5</span><img src={typesStrengthChart5} className="inline-block" width="30" height="8" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">6</span><img src={typesStrengthChart6} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">7</span><img src={typesStrengthChart7} className="inline-block" width="30" height="8" /> </li> */}
+                <li className="as-grid-4 relative"><span className="list-circle">7</span><img src={typesStrengthChart7} className="inline-block" width="30" height="8" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Zero</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Low</p>
@@ -183,8 +183,8 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesTimelineChart1} className="inline-block" width="10" height="98" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={typesTimelineChart2} className="inline-block" width="10" height="97" /> </li> */}
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesTimelineChart1} className="inline-block" width="10" height="98" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={typesTimelineChart2} className="inline-block" width="10" height="97" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Timeline Chart.</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Timeline Chart.</p> 
@@ -213,27 +213,27 @@ function ElementsChartsPage() {
           
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  {/* <img src={usage1} className="" width="375px" />  */}
+                  <img src={usage1} className="" width="375px" /> 
                 </div> 
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  {/* <img src={usage2} className="" width="375px" />  */}
+                  <img src={usage2} className="" width="375px" /> 
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  {/* <img src={usage3} className="" width="375px" />  */}
+                  <img src={usage3} className="" width="375px" /> 
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  {/* <img src={usage4} className="" width="375px" />  */}
+                  <img src={usage4} className="" width="375px" /> 
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  {/* <img src={usage5} className="" width="375px" />  */}
+                  <img src={usage5} className="" width="375px" /> 
                 </div>
               </TabPanel> 
             </Tabs>
@@ -259,7 +259,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={specsCircleChart1} className="inline-block" width="505" height="228" /> </li> */}
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={specsCircleChart1} className="inline-block" width="505" height="228" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Circle Chart</p> 
             </div> 
@@ -273,7 +273,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={specsDoughnutChart1} className="inline-block" width="420" height="190" /> </li> */}
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={specsDoughnutChart1} className="inline-block" width="420" height="190" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Doughnut Chart</p> 
             </div> 
@@ -287,7 +287,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={specsHorizontalChart1} className="inline-block" width="489" height="147" /> </li> */}
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={specsHorizontalChart1} className="inline-block" width="489" height="147" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Horizontal Chart</p> 
             </div> 
@@ -301,13 +301,13 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img src={specsStrengthChart1} className="inline-block" width="136" height="46" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img src={specsStrengthChart1} className="inline-block" width="136" height="46" /> </li>
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img src={specsStrengthChart2} className="inline-block" width="40" height="47" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img src={specsStrengthChart3} className="inline-block" width="32" height="47" /> </li>
                 <li className="as-grid-4 relative mb-12 mr-12"><span className="list-circle">4</span><img src={specsStrengthChart4} className="inline-block" width="152" height="46" /> </li>
                 <li className="as-grid-4 relative mb-12 mr-12"><span className="list-circle">5</span><img src={specsStrengthChart5} className="inline-block" width="30" height="8" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">6</span><img src={specsStrengthChart6} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">7</span><img src={specsStrengthChart7} className="inline-block" width="171" height="46" /> </li> */}
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">7</span><img src={specsStrengthChart7} className="inline-block" width="171" height="46" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Strength Chart</p> 
               <p className="as-type-regular text-sm text-greyStatus-600">2. Strength Chart</p> 
@@ -327,8 +327,8 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                {/* <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img src={specsTimelineChart1} className="inline-block" width="165" height="106" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={specsTimelineChart2} className="inline-block" width="164" height="98" /> </li> */}
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img src={specsTimelineChart1} className="inline-block" width="165" height="106" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={specsTimelineChart2} className="inline-block" width="164" height="98" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Timeline Chart</p> 
               <p className="as-type-regular text-sm text-greyStatus-600">2. Timeline Chart</p> 
@@ -353,42 +353,42 @@ function ElementsChartsPage() {
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                {/* <img src={guidance1} className="mb-3" width="290" /> */}
+                <img src={guidance1} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use dividers on forms.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                {/* <img src={guidance2} className="mb-3" width="290" /> */}
+                <img src={guidance2} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a light divider on a black background.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                {/* <img src={guidance3} className="mb-3" width="290" /> */}
+                <img src={guidance3} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a dark divider on a card.</p>
               </div> 
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                {/* <img src={guidance4} className="mb-3" width="290" /> */}
+                <img src={guidance4} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use dividers on forms.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                {/* <img src={guidance5} className="mb-3" width="290" /> */}
+                <img src={guidance5} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a light divider on a black background.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                {/* <img src={guidance6} className="mb-3" width="290" /> */}
+                <img src={guidance6} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a dark divider on a card.</p>
               </div> 
             </div> 
