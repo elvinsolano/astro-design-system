@@ -61,6 +61,7 @@ exports.components = {
   "component---src-pages-components-overlays-information-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/information.js"))),
   "component---src-pages-components-overlays-progress-bar-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/progress-bar.js"))),
   "component---src-pages-components-overlays-highlighted-item-detail-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/highlighted-item-detail.js"))),
-  "component---src-pages-components-overlays-tasks-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/tasks.js")))
+  "component---src-pages-components-overlays-tasks-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/tasks.js"))),
+  "component---src-pages-components-overlays-circle-graph-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/circle-graph.js")))
 }
 

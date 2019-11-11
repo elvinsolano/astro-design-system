@@ -58,6 +58,7 @@ exports.components = {
   "component---src-pages-components-overlays-information-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/information.js" /* webpackChunkName: "component---src-pages-components-overlays-information-js" */),
   "component---src-pages-components-overlays-progress-bar-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/progress-bar.js" /* webpackChunkName: "component---src-pages-components-overlays-progress-bar-js" */),
   "component---src-pages-components-overlays-highlighted-item-detail-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/highlighted-item-detail.js" /* webpackChunkName: "component---src-pages-components-overlays-highlighted-item-detail-js" */),
-  "component---src-pages-components-overlays-tasks-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/tasks.js" /* webpackChunkName: "component---src-pages-components-overlays-tasks-js" */)
+  "component---src-pages-components-overlays-tasks-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/tasks.js" /* webpackChunkName: "component---src-pages-components-overlays-tasks-js" */),
+  "component---src-pages-components-overlays-circle-graph-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/circle-graph.js" /* webpackChunkName: "component---src-pages-components-overlays-circle-graph-js" */)
 }
 
