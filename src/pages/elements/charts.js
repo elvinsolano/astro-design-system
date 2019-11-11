@@ -37,7 +37,8 @@ import specsStrengthChart3 from "../../assets/elements/charts/specs/strength-cha
 import specsStrengthChart4 from "../../assets/elements/charts/specs/strength-chart/04 Medium.png";
 import specsStrengthChart5 from "../../assets/elements/charts/specs/strength-chart/05 Med High.png";
 import specsStrengthChart6 from "../../assets/elements/charts/specs/strength-chart/06 High.png";
-import specsStrengthChart7 from "../../assets/elements/charts/specs/strength-chart/07 Very High.png";
+// import specsStrengthChart7 from "../../assets/elements/charts/specs/strength-chart/07 Very High.png";
+
 import specsTimelineChart1 from "../../assets/elements/charts/specs/timeline-chart/01 Filled.png";
 import specsTimelineChart2 from "../../assets/elements/charts/specs/timeline-chart/02 Empty.png";
 
@@ -307,7 +308,7 @@ function ElementsChartsPage() {
                 <li className="as-grid-4 relative mb-12 mr-12"><span className="list-circle">4</span><img src={specsStrengthChart4} className="inline-block" width="152" height="46" /> </li>
                 <li className="as-grid-4 relative mb-12 mr-12"><span className="list-circle">5</span><img src={specsStrengthChart5} className="inline-block" width="30" height="8" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">6</span><img src={specsStrengthChart6} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">7</span><img src={specsStrengthChart7} className="inline-block" width="171" height="46" /> </li>
+                {/* <li className="as-grid-4 relative mr-12"><span className="list-circle">7</span><img src={specsStrengthChart7} className="inline-block" width="171" height="46" /> </li> */}
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Strength Chart</p> 
               <p className="as-type-regular text-sm text-greyStatus-600">2. Strength Chart</p> 
@@ -315,7 +316,7 @@ function ElementsChartsPage() {
               <p className="as-type-regular text-sm text-greyStatus-600">4. Strength Chart</p> 
               <p className="as-type-regular text-sm text-greyStatus-600">5. Strength Chart</p> 
               <p className="as-type-regular text-sm text-greyStatus-600">6. Strength Chart</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">7. Strength Chart</p> 
+              {/* <p className="as-type-regular text-sm text-greyStatus-600">7. Strength Chart</p>  */}
             </div> 
 
             <div className="mb-16">
