@@ -77,7 +77,7 @@ function ComponentsOverlaysSingleItemPage() {
         <main className="ml-64 pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Single Item</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Single Item with Grouping</Heading>
             <div className="flex items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
               <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
