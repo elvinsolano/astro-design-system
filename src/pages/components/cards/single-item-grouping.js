@@ -3,6 +3,7 @@ import Scrollspy from 'react-scrollspy';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import {Link} from 'gatsby'; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'lazysizes';
 
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo"; 
@@ -107,17 +108,17 @@ function ComponentsCardsSingleItemGroupingPage() {
           
               <TabPanel>                  
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img src={uiexamplesSingleItemGroupingCard1} className="" width="335" />
+                  <img data-src={uiexamplesSingleItemGroupingCard1} className="lazyload " width="335" />
                 </div> 
               </TabPanel>
               <TabPanel>
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img src={uiexamplesSingleItemGroupingCard2} className="" width="335" />
+                  <img data-src={uiexamplesSingleItemGroupingCard2} className="lazyload " width="335" />
                 </div>
               </TabPanel>
               <TabPanel>
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img src={uiexamplesSingleItemGroupingCard3} className="" width="335" />
+                  <img data-src={uiexamplesSingleItemGroupingCard3} className="lazyload " width="335" />
                 </div>
               </TabPanel>
             </Tabs>
@@ -134,7 +135,7 @@ function ComponentsCardsSingleItemGroupingPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={detailsSingleItemGroupingCard1} className="" width="597" />
+              <img data-src={detailsSingleItemGroupingCard1} className="lazyload " width="597" />
             </div> 
           </section>             
 
@@ -149,7 +150,7 @@ function ComponentsCardsSingleItemGroupingPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={paddingSingleItemGroupingCard1} className="" width="365" />
+              <img data-src={paddingSingleItemGroupingCard1} className="lazyload " width="365" />
             </div> 
           </section>             
         </main>

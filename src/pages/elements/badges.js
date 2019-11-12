@@ -4,6 +4,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ReactTooltip from 'react-tooltip';
 import {Link} from 'gatsby';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'lazysizes';
 
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"; 
@@ -97,11 +98,11 @@ function ElementsBadgesPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img src={typesSystemBadges1} className="inline-block" width="67" height="20" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img src={typesSystemBadges2} className="inline-block" width="87" height="20" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img src={typesSystemBadges3} className="inline-block" width="81" height="20" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">4</span><img src={typesSystemBadges4} className="inline-block" width="133" height="20" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">5</span><img src={typesSystemBadges5} className="inline-block" width="111" height="20" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={typesSystemBadges1} className="lazyload inline-block" width="67" height="20" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesSystemBadges2} className="lazyload inline-block" width="87" height="20" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={typesSystemBadges3} className="lazyload inline-block" width="81" height="20" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">4</span><img data-src={typesSystemBadges4} className="lazyload inline-block" width="133" height="20" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={typesSystemBadges5} className="lazyload inline-block" width="111" height="20" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Red: Urgent - Communicates urgency, e.g. past due invoices, late flight status.</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Yellow: Warning - Communicates a warning, e.g. gate changes.</p>
@@ -119,7 +120,7 @@ function ElementsBadgesPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="relative"><span className="list-circle">1</span><img src={typesNudgeCounter1} className="inline-block" width="30" height="24" /></li>
+                <li className="relative"><span className="list-circle">1</span><img data-src={typesNudgeCounter1} className="lazyload inline-block" width="30" height="24" /></li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">1. A nudge counter shows how many nudges are unread above the menu and within the quick access menu.</p>
             </div> 
@@ -143,14 +144,14 @@ function ElementsBadgesPage() {
           
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usage1} className="mr-12" width="375px" />
-                  <img src={usage2} className="" width="375px" /> 
+                  <img data-src={usage1} className="lazyload mr-12" width="375px" />
+                  <img data-src={usage2} className="lazyload " width="375px" /> 
                 </div> 
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usage3} className="mr-12" width="375px" />
-                  <img src={usage4} className="" width="375px" /> 
+                  <img data-src={usage3} className="lazyload mr-12" width="375px" />
+                  <img data-src={usage4} className="lazyload " width="375px" /> 
                 </div>
               </TabPanel> 
             </Tabs>
@@ -176,11 +177,11 @@ function ElementsBadgesPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-8 relative mb-12"><span className="list-circle">1</span><img src={specsSystemBadges1} className="inline-block" width="224" height="146" /> </li>
-                <li className="as-grid-6 relative mb-12"><span className="list-circle">2</span><img src={specsSystemBadges2} className="inline-block" width="147" height="146" /> </li>
-                <li className="as-grid-6 relative mb-12"><span className="list-circle">3</span><img src={specsSystemBadges3} className="inline-block" width="147" height="146" /> </li>
-                <li className="as-grid-8 relative mb-12"><span className="list-circle">4</span><img src={specsSystemBadges4} className="inline-block" width="147" height="146" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">5</span><img src={specsSystemBadges5} className="inline-block" width="137" height="146" /> </li>
+                <li className="as-grid-8 relative mb-12"><span className="list-circle">1</span><img data-src={specsSystemBadges1} className="lazyload inline-block" width="224" height="146" /> </li>
+                <li className="as-grid-6 relative mb-12"><span className="list-circle">2</span><img data-src={specsSystemBadges2} className="lazyload inline-block" width="147" height="146" /> </li>
+                <li className="as-grid-6 relative mb-12"><span className="list-circle">3</span><img data-src={specsSystemBadges3} className="lazyload inline-block" width="147" height="146" /> </li>
+                <li className="as-grid-8 relative mb-12"><span className="list-circle">4</span><img data-src={specsSystemBadges4} className="lazyload inline-block" width="147" height="146" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={specsSystemBadges5} className="lazyload inline-block" width="137" height="146" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Red: Urgent - Communicates urgency, e.g. past due invoices, late flight status.</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Yellow: Warning - Communicates a warning, e.g. gate changes.</p>
@@ -198,7 +199,7 @@ function ElementsBadgesPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="relative"><span className="list-circle">1</span><img src={specsNudgeCounter1} className="inline-block" width="256" height="100" /></li>
+                <li className="relative"><span className="list-circle">1</span><img data-src={specsNudgeCounter1} className="lazyload inline-block" width="256" height="100" /></li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">1. A nudge counter shows how many nudges are unread above the menu and within the quick access menu.</p>
             </div> 

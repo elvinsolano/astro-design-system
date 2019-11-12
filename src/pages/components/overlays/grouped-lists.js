@@ -3,6 +3,7 @@ import Scrollspy from 'react-scrollspy';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import {Link} from 'gatsby'; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'lazysizes';
 
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo"; 
@@ -104,7 +105,7 @@ function ComponentsOverlaysGroupedListPage() {
           
               <TabPanel>                  
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img src={uiexamplesGroupedListOverlay1} className="" width="335" />
+                  <img data-src={uiexamplesGroupedListOverlay1} className="lazyload " width="335" />
                 </div> 
               </TabPanel> 
             </Tabs>
@@ -121,7 +122,7 @@ function ComponentsOverlaysGroupedListPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={detailsGroupedListOverlay1} className="" width="656" />
+              <img data-src={detailsGroupedListOverlay1} className="lazyload " width="656" />
             </div> 
           </section>             
 
@@ -136,7 +137,7 @@ function ComponentsOverlaysGroupedListPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={paddingGroupedListOverlay1} className="" width="398" />
+              <img data-src={paddingGroupedListOverlay1} className="lazyload " width="398" />
             </div> 
           </section>             
         </main>

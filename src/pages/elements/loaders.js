@@ -4,6 +4,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ReactTooltip from 'react-tooltip';
 import {Link} from 'gatsby';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'lazysizes';
 
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"; 

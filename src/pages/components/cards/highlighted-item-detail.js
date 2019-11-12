@@ -3,6 +3,7 @@ import Scrollspy from 'react-scrollspy';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import {Link} from 'gatsby'; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'lazysizes';
 
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo"; 
@@ -103,7 +104,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
           
               <TabPanel>                  
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img src={uiexamplesHighlightedItemDetailCard1} className="" width="335" />
+                  <img data-src={uiexamplesHighlightedItemDetailCard1} className="lazyload " width="335" />
                 </div> 
               </TabPanel>  
             </Tabs>
@@ -120,7 +121,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={detailsHighlightedItemDetailCard1} className="" width="597" />
+              <img data-src={detailsHighlightedItemDetailCard1} className="lazyload " width="597" />
             </div> 
           </section>             
 
@@ -135,7 +136,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={paddingHighlightedItemDetailCard1} className="" width="364" />
+              <img data-src={paddingHighlightedItemDetailCard1} className="lazyload " width="364" />
             </div> 
           </section>             
         </main>

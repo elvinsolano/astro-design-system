@@ -3,6 +3,7 @@ import Scrollspy from 'react-scrollspy';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import {Link} from 'gatsby';  
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'lazysizes';
 
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"; 
@@ -114,9 +115,9 @@ function ElementsButtonsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-10 relative mb-12"><span className="list-circle">1</span><img src={typesPrimary1} className="inline-block" width="295" height="50" /> </li>
-                <li className="as-grid-10 relative mb-12"><span className="list-circle">2</span><img src={typesPrimary2} className="inline-block" width="295" height="50" /> </li>
-                <li className="as-grid-10 relative"><span className="list-circle">3</span><img src={typesPrimary3} className="inline-block" width="295" height="50" /> </li>
+                <li className="as-grid-10 relative mb-12"><span className="list-circle">1</span><img data-src={typesPrimary1} className="lazyload inline-block" width="295" height="50" /> </li>
+                <li className="as-grid-10 relative mb-12"><span className="list-circle">2</span><img data-src={typesPrimary2} className="lazyload inline-block" width="295" height="50" /> </li>
+                <li className="as-grid-10 relative"><span className="list-circle">3</span><img data-src={typesPrimary3} className="lazyload inline-block" width="295" height="50" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Primary Enabled: used to submit information, continue in a process or leave the application.</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Primary Pressed: used when a user presses the button to submit information, continue in a process or leave the application.</p>
@@ -132,7 +133,7 @@ function ElementsButtonsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="relative"><span className="list-circle">1</span><img src={typesSecondary1} className="inline-block" width="174" height="30" /></li>
+                <li className="relative"><span className="list-circle">1</span><img data-src={typesSecondary1} className="lazyload inline-block" width="174" height="30" /></li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">The secondary button is used for less important tasks or when space does not allow for the use of the primary button. </p>
             </div>
@@ -145,8 +146,8 @@ function ElementsButtonsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesText1} className="inline-block" width="74" height="23" /></li>
-                <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={typesText2} className="inline-block" width="168" height="22" /></li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesText1} className="lazyload inline-block" width="74" height="23" /></li>
+                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesText2} className="lazyload inline-block" width="168" height="22" /></li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Text Button Underlined: used for less pronounced actions.</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Text Button Suggestions: Let’s user know how to interact with Astro</p>
@@ -160,8 +161,8 @@ function ElementsButtonsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesNextStep1} className="inline-block" width="92" height="30" /></li>
-                <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={typesNextStep2} className="inline-block" width="147" height="30" /></li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesNextStep1} className="lazyload inline-block" width="92" height="30" /></li>
+                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesNextStep2} className="lazyload inline-block" width="147" height="30" /></li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Default State: used as a continuation of the conversation. The user is presented with content and a next step action to take.</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Pressed State: When a user presses the default state button they are presented the pressed state.</p>
@@ -178,11 +179,11 @@ function ElementsButtonsPage() {
               </CopyToClipboard>
             </Heading> 
             <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-              <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={voice1} className="inline-block" width="60" height="80" /> </li>
-              <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={voice2} className="inline-block" width="60" height="80" /> </li>
-              <li className="as-grid-4 relative"><span className="list-circle">3</span><img src={voice3} className="inline-block" width="60" height="80" /> </li>
-              <li className="as-grid-4 relative"><span className="list-circle">4</span><img src={voice4} className="inline-block" width="60" height="80" /> </li>
-              <li className="as-grid-4 relative"><span className="list-circle">5</span><img src={voice5} className="inline-block" width="60" height="80" /> </li>
+              <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={voice1} className="lazyload inline-block" width="60" height="80" /> </li>
+              <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={voice2} className="lazyload inline-block" width="60" height="80" /> </li>
+              <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={voice3} className="lazyload inline-block" width="60" height="80" /> </li>
+              <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={voice4} className="lazyload inline-block" width="60" height="80" /> </li>
+              <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={voice5} className="lazyload inline-block" width="60" height="80" /> </li>
             </ol>  
             <p className="as-type-regular text-sm text-greyStatus-600">1. Active - Astro is ready to listen and take action.</p>
             <p className="as-type-regular text-sm text-greyStatus-600">2. Listening - Astro is listening to the user.</p>
@@ -212,27 +213,27 @@ function ElementsButtonsPage() {
           
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usage1} className="" width="375px" />
+                  <img data-src={usage1} className="lazyload " width="375px" />
                 </div> 
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usage2} className="" width="375px" />
+                  <img data-src={usage2} className="lazyload " width="375px" />
                 </div>
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usage3} className="" width="375px" />
+                  <img data-src={usage3} className="lazyload " width="375px" />
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usage4} className="" width="375px" />
+                  <img data-src={usage4} className="lazyload " width="375px" />
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usage5} className="" width="375px" />
+                  <img data-src={usage5} className="lazyload " width="375px" />
                 </div>
               </TabPanel>
             </Tabs>
@@ -257,9 +258,9 @@ function ElementsButtonsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap justify-start">
-                <li className="w-full relative mb-12"><span className="list-circle">1</span><img src={specsPrimary1} className="inline-block" width="398" height="208" /></li>
-                <li className="w-full relative mb-12"><span className="list-circle">2</span><img src={specsPrimary2} className="inline-block" width="295" height="178" /> </li>
-                <li className="w-full relative"><span className="list-circle">3</span><img src={specsPrimary3} className="inline-block" width="295" height="174" /> </li>
+                <li className="w-full relative mb-12"><span className="list-circle">1</span><img data-src={specsPrimary1} className="lazyload inline-block" width="398" height="208" /></li>
+                <li className="w-full relative mb-12"><span className="list-circle">2</span><img data-src={specsPrimary2} className="lazyload inline-block" width="295" height="178" /> </li>
+                <li className="w-full relative"><span className="list-circle">3</span><img data-src={specsPrimary3} className="lazyload inline-block" width="295" height="174" /> </li>
               </ol>
             </div> 
             <div className="mb-16">
@@ -271,7 +272,7 @@ function ElementsButtonsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-10 relative"><span className="list-circle">1</span><img src={specsSecondary1} className="inline-block" width="278" height="221" /></li> 
+                <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={specsSecondary1} className="lazyload inline-block" width="278" height="221" /></li> 
               </ol>
             </div> 
             <div className="mb-16">
@@ -283,8 +284,8 @@ function ElementsButtonsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-10 relative"><span className="list-circle">1</span><img src={specsText1} className="inline-block" width="237" height="72" /></li> 
-                <li className="as-grid-10 relative"><span className="list-circle">2</span><img src={specsText2} className="inline-block" width="331" height="88" /></li> 
+                <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={specsText1} className="lazyload inline-block" width="237" height="72" /></li> 
+                <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={specsText2} className="lazyload inline-block" width="331" height="88" /></li> 
               </ol>
             </div> 
             <div className="mb-16">
@@ -296,8 +297,8 @@ function ElementsButtonsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-10 relative"><span className="list-circle">1</span><img src={specsNextStep1} className="inline-block" width="244" height="156" /></li> 
-                <li className="as-grid-10 relative"><span className="list-circle">2</span><img src={specsNextStep2} className="inline-block" width="147" height="85" /></li> 
+                <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={specsNextStep1} className="lazyload inline-block" width="244" height="156" /></li> 
+                <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={specsNextStep2} className="lazyload inline-block" width="147" height="85" /></li> 
               </ol>
             </div> 
             <div className="mb-16">
@@ -309,7 +310,7 @@ function ElementsButtonsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-10 relative"><span className="list-circle">1</span><img src={specsVoice1} className="inline-block" width="291" height="124" /></li>  
+                <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={specsVoice1} className="lazyload inline-block" width="291" height="124" /></li>  
               </ol>
             </div> 
           </section>          
@@ -332,42 +333,42 @@ function ElementsButtonsPage() {
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img src={guidance1} className="mb-3" width="290" />
+                <img data-src={guidance1} className="lazyload mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use primary CTA in content cards</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img src={guidance2} className="mb-3" width="290" />
+                <img data-src={guidance2} className="lazyload mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use primary and secondary buttons together.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance3} className="mb-3" width="290" />
+                <img data-src={guidance3} className="lazyload mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use microphone and primary button together.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance4} className="mb-3" width="290" />
+                <img data-src={guidance4} className="lazyload mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use microphone and secondary button together.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance5} className="mb-3" width="290" />
+                <img data-src={guidance5} className="lazyload mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use text button suggestion for anything other then suggested voice.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance6} className="mb-3" width="290" />
+                <img data-src={guidance6} className="lazyload mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use text button suggestion for anything other then suggested voice.</p>
               </div>
             </div> 

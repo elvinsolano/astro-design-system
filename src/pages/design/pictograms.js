@@ -4,6 +4,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ReactTooltip from 'react-tooltip';
 import {Link} from 'gatsby';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'lazysizes';
 
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
@@ -105,12 +106,12 @@ function DesignPictogramsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img src={typesSystem1} className="inline-block" width="96" height="84" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img src={typesSystem2} className="inline-block" width="53" height="99" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img src={typesSystem3} className="inline-block" width="137" height="77" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">4</span><img src={typesSystem4} className="inline-block" width="225" height="68" /> </li> 
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">5</span><img src={typesSystem5} className="inline-block" width="133" height="149" /> </li> 
-                <li className="as-grid-4 relative"><span className="list-circle">6</span><img src={typesSystem6} className="inline-block" width="149" height="201" /> </li> 
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesSystem1} className="inline-block" width="96" height="84" /> </li> 
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={typesSystem2} className="inline-block" width="53" height="99" /> </li> 
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img data-src={typesSystem3} className="inline-block" width="137" height="77" /> </li> 
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">4</span><img data-src={typesSystem4} className="inline-block" width="225" height="68" /> </li> 
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">5</span><img data-src={typesSystem5} className="inline-block" width="133" height="149" /> </li> 
+                <li className="as-grid-4 relative"><span className="list-circle">6</span><img data-src={typesSystem6} className="inline-block" width="149" height="201" /> </li> 
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">System pictograms help tell our story by visualizing key concepts and information in an approachable and human way. Used in a supportive role, pictograms help emphasize and navigate important information to make concepts easy to understand.</p>
             </div> 
@@ -124,11 +125,11 @@ function DesignPictogramsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img src={typesAnimated1} className="inline-block" width="125" height="150" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img src={typesAnimated2} className="inline-block" width="143" height="149" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img src={typesAnimated3} className="inline-block" /> </li> 
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img src={typesAnimated4} className="inline-block" width="150" height="9" /> </li> 
-                <li className="as-grid-4 relative"><span className="list-circle">5</span><img src={typesAnimated5} className="inline-block" width="16" height="12" /> </li>  
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesAnimated1} className="inline-block" width="125" height="150" /> </li> 
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={typesAnimated2} className="inline-block" width="143" height="149" /> </li> 
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img data-src={typesAnimated3} className="inline-block" /> </li> 
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img data-src={typesAnimated4} className="inline-block" width="150" height="9" /> </li> 
+                <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={typesAnimated5} className="inline-block" width="16" height="12" /> </li>  
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">Animated pictograms can enable a pictogram to perform in a way that adds polish and delight. They can use simple or complex motion based on the level of emphasis preferred.</p>
             </div>  
@@ -151,56 +152,56 @@ function DesignPictogramsPage() {
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img src={guidance1} className="mb-3" width="290" />
+                <img data-src={guidance1} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use unapproved colors.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img src={guidance2} className="mb-3" width="290" />
+                <img data-src={guidance2} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use soft drop shadows.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance3} className="mb-3" width="290" />
+                <img data-src={guidance3} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use gradients.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance4} className="mb-3" width="290" />
+                <img data-src={guidance4} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use too many layers or shadows.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance5} className="mb-3" width="290" />
+                <img data-src={guidance5} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not distort logo.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance6} className="mb-3" width="290" />
+                <img data-src={guidance6} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not make too small.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance7} className="mb-3" width="290" />
+                <img data-src={guidance7} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use loading profile as a real loader. Only animation.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img src={guidance8} className="mb-3" width="290" />
+                <img data-src={guidance8} className="mb-3" width="290" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not loop any animations.</p>
               </div>
             </div> 

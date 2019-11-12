@@ -3,6 +3,7 @@ import Scrollspy from 'react-scrollspy';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import {Link} from 'gatsby'; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'lazysizes';
 
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo"; 
@@ -106,7 +107,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
           
               <TabPanel>                  
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img src={uiexamplesHighlightedItemDetailOverlay1} className="" width="335" />
+                  <img data-src={uiexamplesHighlightedItemDetailOverlay1} className="lazyload " width="335" />
                 </div> 
               </TabPanel> 
             </Tabs>
@@ -123,7 +124,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={detailsHighlightedItemDetailOverlay1} className="" width="656" />
+              <img data-src={detailsHighlightedItemDetailOverlay1} className="lazyload " width="656" />
             </div> 
           </section>             
 
@@ -138,7 +139,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={paddingHighlightedItemDetailOverlay1} className="" width="393" />
+              <img data-src={paddingHighlightedItemDetailOverlay1} className="lazyload " width="393" />
             </div> 
           </section>             
         </main>

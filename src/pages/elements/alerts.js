@@ -4,6 +4,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ReactTooltip from 'react-tooltip';
 import {Link} from 'gatsby';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'lazysizes';
 
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"; 
@@ -69,7 +70,7 @@ function ElementsAlertsPage() {
 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
             <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              {/* <li className="as-grid-10 relative"><span className="list-circle">1</span><img src={applyingTypeScale1} className="inline-block" width="335" height="332" /> </li> */}
+              {/* <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" /> </li> */}
             </ol> 
             <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p> 
           </section>
