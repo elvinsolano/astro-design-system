@@ -143,13 +143,13 @@ function ElementsBadgesPage() {
           
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usage1} className="" width="375px" />
+                  <img src={usage1} className="mr-12" width="375px" />
                   <img src={usage2} className="" width="375px" /> 
                 </div> 
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usage3} className="" width="375px" />
+                  <img src={usage3} className="mr-12" width="375px" />
                   <img src={usage4} className="" width="375px" /> 
                 </div>
               </TabPanel> 

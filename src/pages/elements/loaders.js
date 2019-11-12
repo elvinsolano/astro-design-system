@@ -108,7 +108,7 @@ function ElementsLoadersPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">A general loader is most commonly used for password reset and when items or information take a long time to load.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={typesGeneralLoader1} className="inline-block" width="251" height="220" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={typesGeneralLoader2} className="inline-block" width="40" height="40" /> </li>
               </ol>  
@@ -181,7 +181,7 @@ function ElementsLoadersPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img src={specsGeneralLoader1} className="inline-block" width="423" height="320" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img src={specsGeneralLoader2} className="inline-block" width="200" height="40" /> </li>
               </ol>  

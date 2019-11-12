@@ -143,7 +143,7 @@ function ElementsDividersPage() {
           
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img src={usageLightDividers1} className="" width="375px" />
+                  <img src={usageLightDividers1} className="mr-12" width="375px" />
                   <img src={usageLightDividers2} className="" width="375px" /> 
                 </div> 
               </TabPanel>
