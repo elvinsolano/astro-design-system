@@ -13,7 +13,7 @@ function ContactPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       /> 
       
-      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid">
         <nav>
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full bg-grey-300">Cards</div></li> 
@@ -57,7 +57,7 @@ function ContactPage() {
         </nav>
       </aside>
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">  
-        <main className="ml-64 pl-16 pr-16 pt-16">
+        <main className=" pl-16 pr-16 pt-16">
           <section>
             <form className="mx-auto md:w-1/2">
               <p className="leading-loose mb-8">

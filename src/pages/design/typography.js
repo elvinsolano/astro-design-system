@@ -40,7 +40,7 @@ function DesignTypographyPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
       
-      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid">
         <nav>
           <ul className=""> 
             <li><Link to="design/logo" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Logo</Link></li>
@@ -64,7 +64,7 @@ function DesignTypographyPage() {
       </aside>
  
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
-        <main className="ml-64 pl-16 pr-16 pt-16">
+        <main className=" pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Typography</Heading>

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 function Sidebar() {
   return ( 
-    <aside className="fixed bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+    <aside className="fixed as-nav bg-white top-auto h-full border-r border-grey-500 border-solid">
       <nav>
         <ul className="">
           <li><div className="block text-white uppercase text-sm pl-12 py-2 w-full bg-grey-300">Section 1 Header</div></li>

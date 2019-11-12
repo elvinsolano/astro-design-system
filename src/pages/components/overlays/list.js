@@ -23,7 +23,7 @@ function ComponentsOverlaysListPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
-      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid">
         <nav>
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full font-semibold bg-grey-300">Cards</div></li> 
@@ -72,7 +72,7 @@ function ComponentsOverlaysListPage() {
 
       
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
-        <main className="ml-64 pl-16 pr-16 pt-16">
+        <main className=" pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">List</Heading>

@@ -53,7 +53,7 @@ function Layout({ children }) {
       <div className="flex flex-col flex-1 mx-auto pt-20 w-full pb-5.5">
         <Sidebar />
 
-        <main className="ml-64 pl-16 pr-16 pt-16">
+        <main className="pl-16 pr-16 pt-16">
           {children}
         </main>
       </div> 

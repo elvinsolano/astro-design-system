@@ -13,7 +13,7 @@ function ElementsAlertsPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
-      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid w-64">
+      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid">
         <nav>
           <ul className="">  
             <li><a href="buttons" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Buttons and CTA's</a></li>
@@ -27,7 +27,7 @@ function ElementsAlertsPage() {
         </nav>
       </aside>
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
-        <main className="ml-64 pl-16 pr-16 pt-16">
+        <main className=" pl-16 pr-16 pt-16">
           <section className="">
 
             <div className="flex justify-between rounded py-1 px-3 bg-grey-100 mb-16">
