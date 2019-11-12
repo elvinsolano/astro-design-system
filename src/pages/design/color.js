@@ -21,7 +21,7 @@ function DesignColorPage() {
         <nav>
           <ul className=""> 
             <li><Link to="design/logo" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Logo</Link></li>
-            <li><Link to="design/color" className="block text-sm text-grey-400 w-full active bg-grey-700">Color</Link>
+            <li><Link to="design/color" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Color</Link>
               <Scrollspy items={ ['primary', 'secondary', 'greys', 'status', 'data-visualization'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="design/color#primary-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 pl-16 py-2 w-full bg-grey-200 font-semibold hover:bg-grey-100">Primary</Link></li>
                 <li><Link to="design/color#secondary-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Secondary</Link></li>
