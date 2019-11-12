@@ -43,9 +43,9 @@ function ComponentsOverlaysGroupedListPage() {
           </ul>
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full font-semibold bg-grey-300">Overlay</div></li>
-            <li><Link to="components/overlays/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link>            </li>
-            <li><Link to="components/overlays/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
+            <li><Link to="components/overlays/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li> 
             <li><Link to="components/overlays/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
+            <li><Link to="components/overlays/list-icon" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List with Icons</Link></li>
             <li><Link to="components/overlays/grouped-lists" className="block text-sm text-grey-400 w-full hover:bg-grey-100 active bg-grey-700 font-semibold">Grouped Lists</Link>
               <Scrollspy items={ ['ui-examples', 'details', 'padding'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="components/overlays/single-item#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
@@ -54,8 +54,7 @@ function ComponentsOverlaysGroupedListPage() {
               </Scrollspy>              
             </li>
             <li><Link to="components/overlays/two-columns" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Column</Link></li>
-            <li><Link to="components/overlays/profile" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile</Link></li>
-            <li><Link to="components/overlays/information" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Information</Link></li>
+            <li><Link to="components/overlays/profile" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile</Link></li> 
             <li><Link to="components/overlays/progress-bar" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Progress Bar</Link></li>
             <li><Link to="components/overlays/highlighted-item-detail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
             <li><Link to="components/overlays/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Tasks</Link></li>

@@ -9,11 +9,11 @@ import SEO from "../../../components/seo";
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
 
-import uiexamplesSingleItemOverlay1 from "../../../assets/components/overlays/Single Item Overlay/UI Examples/Single Item Overlay 01.png"; 
-import detailsSingleItemOverlay1 from "../../../assets/components/overlays/Single Item Overlay/Details/Single Item Overlay Details.png";
-import paddingSingleItemOverlay1 from "../../../assets/components/overlays/Single Item Overlay/Padding/Single Item Overlay Padding.png"; 
+import uiexamplesListIconOverlay1 from "../../../assets/components/overlays/List with Icons Overlay/UI Examples/List with Icons Overlay 01.png";  
+import detailsListIconOverlay1 from "../../../assets/components/overlays/List with Icons Overlay/Details/List with Icons Overlay Details.png";
+import paddingListIconOverlay1 from "../../../assets/components/overlays/List with Icons Overlay/Padding/List with Icons Overlay Padding.png"; 
 
-function ComponentsOverlaysSingleItemPage() { 
+function ComponentsOverlaysListIconPage() { 
 
   return (
     <Layout>
@@ -43,19 +43,17 @@ function ComponentsOverlaysSingleItemPage() {
           </ul>
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full font-semibold bg-grey-300">Overlay</div></li>
-            <li><Link to="components/overlays/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li>
-            <li><Link to="components/overlays/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100 active bg-grey-700 font-semibold">Single item with Grouping</Link>
+            <li><Link to="components/overlays/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li> 
+            <li><Link to="components/overlays/list-icon" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
+            <li><Link to="components/overlays/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100 active bg-grey-700 font-semibold">List with Icons</Link>
               <Scrollspy items={ ['ui-examples', 'details', 'padding'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="components/overlays/single-item#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
                 <li><Link to="components/overlays/single-item#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/overlays/single-item#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
               </Scrollspy>               
-            </li>
-            <li><Link to="components/overlays/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
+            </li> 
             <li><Link to="components/overlays/grouped-lists" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Grouped Lists</Link></li>
-            <li><Link to="components/overlays/two-columns" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Column</Link></li> 
-            <li><Link to="components/overlays/profile" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile</Link></li>
-            <li><Link to="components/overlays/information" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Information</Link></li>
+            <li><Link to="components/overlays/two-columns" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Column</Link></li>   
             <li><Link to="components/overlays/progress-bar" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Progress Bar</Link></li>
             <li><Link to="components/overlays/highlighted-item-detail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
             <li><Link to="components/overlays/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Tasks</Link></li> 
@@ -74,7 +72,7 @@ function ComponentsOverlaysSingleItemPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Single Item with Grouping</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">List Icon</Heading>
             <div className="flex items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
               <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
@@ -100,14 +98,14 @@ function ComponentsOverlaysSingleItemPage() {
             <p className="mb-5 text-greyStatus-600 tracking-wider">The overlay for a single item card displays all the possible content that is not contained in the card, which can include text, data, and links.</p>
             <Tabs>
               <TabList>
-                <Tab>01</Tab> 
+                <Tab>01</Tab>  
               </TabList>
           
               <TabPanel>                  
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img src={uiexamplesSingleItemOverlay1} className="" width="335" />
+                  <img src={uiexamplesListIconOverlay1} className="" width="335" />
                 </div> 
-              </TabPanel> 
+              </TabPanel>  
             </Tabs>
           </section>   
 
@@ -122,7 +120,7 @@ function ComponentsOverlaysSingleItemPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={detailsSingleItemOverlay1} className="" width="688" />
+              <img src={detailsListIconOverlay1} className="" width="688" />
             </div> 
           </section>             
 
@@ -137,7 +135,7 @@ function ComponentsOverlaysSingleItemPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={paddingSingleItemOverlay1} className="" width="395" />
+              <img src={paddingListIconOverlay1} className="" width="396" />
             </div> 
           </section>             
         </main>
@@ -146,5 +144,5 @@ function ComponentsOverlaysSingleItemPage() {
   );
 }
 
-export default ComponentsOverlaysSingleItemPage;
+export default ComponentsOverlaysListIconPage;
  
