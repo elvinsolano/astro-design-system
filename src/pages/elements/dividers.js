@@ -99,10 +99,10 @@ function ElementsDividersPage() {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesLightDividers1} className="inline-block" width="295" height="1" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesLightDividers2} className="inline-block" width="295" height="1" /> </li>
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={typesLightDividers3} className="inline-block" width="295" height="1" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesLightDividers4} className="inline-block" width="295" height="1" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesLightDividers1} className="lazyload inline-block" width="295" height="1" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesLightDividers2} className="lazyload inline-block" width="295" height="1" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={typesLightDividers3} className="lazyload inline-block" width="295" height="1" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesLightDividers4} className="lazyload inline-block" width="295" height="1" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Light Divider: Small</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Light Divider: Large</p>
@@ -120,7 +120,7 @@ function ElementsDividersPage() {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDarkDividers1} className="inline-block" width="295" height="1" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDarkDividers1} className="lazyload inline-block" width="295" height="1" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Dark Divider: Large</p> 
             </div> 

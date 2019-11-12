@@ -117,7 +117,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesCircleChart1} className="inline-block" width="150" height="150" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesCircleChart1} className="lazyload inline-block" width="150" height="150" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
             </div> 
@@ -131,7 +131,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDoughnutChart1} className="inline-block" width="150" height="150" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDoughnutChart1} className="lazyload inline-block" width="150" height="150" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
             </div> 
@@ -145,7 +145,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesHorizontalChart1} className="inline-block" width="335" height="37" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesHorizontalChart1} className="lazyload inline-block" width="335" height="37" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
             </div> 
@@ -159,13 +159,13 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={typesStrengthChart1} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesStrengthChart2} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={typesStrengthChart3} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">4</span><img data-src={typesStrengthChart4} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={typesStrengthChart5} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">6</span><img data-src={typesStrengthChart6} className="inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">7</span><img data-src={typesStrengthChart7} className="inline-block" width="30" height="8" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={typesStrengthChart1} className="lazyload inline-block" width="30" height="8" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesStrengthChart2} className="lazyload inline-block" width="30" height="8" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={typesStrengthChart3} className="lazyload inline-block" width="30" height="8" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">4</span><img data-src={typesStrengthChart4} className="lazyload inline-block" width="30" height="8" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={typesStrengthChart5} className="lazyload inline-block" width="30" height="8" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">6</span><img data-src={typesStrengthChart6} className="lazyload inline-block" width="30" height="8" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">7</span><img data-src={typesStrengthChart7} className="lazyload inline-block" width="30" height="8" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Zero</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Low</p>
@@ -185,8 +185,8 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesTimelineChart1} className="inline-block" width="10" height="98" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesTimelineChart2} className="inline-block" width="10" height="97" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesTimelineChart1} className="lazyload inline-block" width="10" height="98" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesTimelineChart2} className="lazyload inline-block" width="10" height="97" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Timeline Chart.</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Timeline Chart.</p> 
