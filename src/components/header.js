@@ -53,7 +53,7 @@ function Header({ siteTitle }) {
               </Link> */}
 
               <Link
-                to="/design/logo"
+                to="/design"
                 className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
                 activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
@@ -62,7 +62,7 @@ function Header({ siteTitle }) {
               </Link>
 
               <Link
-                to="/elements/buttons"
+                to="/elements"
                 className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
                 activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"
@@ -71,7 +71,7 @@ function Header({ siteTitle }) {
               </Link>
 
               <Link
-                to="/components/cards/single-item"
+                to="/components"
                 className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
                 activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                 partiallyActive="true"

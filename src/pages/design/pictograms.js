@@ -126,7 +126,7 @@ function DesignPictogramsPage() {
               <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img src={typesAnimated1} className="inline-block" width="125" height="150" /> </li> 
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img src={typesAnimated2} className="inline-block" width="143" height="149" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img src={typesAnimated3} className="inline-block" width="38" height="38" /> </li> 
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img src={typesAnimated3} className="inline-block" /> </li> 
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img src={typesAnimated4} className="inline-block" width="150" height="9" /> </li> 
                 <li className="as-grid-4 relative"><span className="list-circle">5</span><img src={typesAnimated5} className="inline-block" width="16" height="12" /> </li>  
               </ol>  
