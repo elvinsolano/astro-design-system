@@ -296,6 +296,7 @@ aside nav ul li a:active {
   padding-bottom: 18px;
 }
 .as-nav {
+  width: 230px;
   padding-top: 70px;
 }
 .as-nav ul li a {
@@ -318,4 +319,8 @@ aside nav ul li a:active {
 }
 .as-body {
   padding-top: 70px;
+}
+
+.as-body main {
+  margin-left: 230px;
 }
