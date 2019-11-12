@@ -30,7 +30,7 @@ function ComponentsOverlaysInformationPage() {
             <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
             <li><Link to="components/cards/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
             <li><Link to="components/cards/grouped-lists" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Grouped Lists</Link></li>
-            <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Columns</Link></li>
+            <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Column</Link></li>
             <li><Link to="components/cards/mail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Mail</Link></li>
             <li><Link to="components/cards/profile" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile</Link></li>
             <li><Link to="components/cards/information" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Information</Link></li>
@@ -43,12 +43,11 @@ function ComponentsOverlaysInformationPage() {
           </ul>
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full font-semibold bg-grey-300">Overlay</div></li>
-            <li><Link to="components/overlays/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link>            </li>
+            <li><Link to="components/overlays/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li>
             <li><Link to="components/overlays/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
             <li><Link to="components/overlays/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
             <li><Link to="components/overlays/grouped-lists" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Grouped Lists</Link></li>
-            <li><Link to="components/overlays/two-columns" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Columns</Link></li>
-            <li><Link to="components/overlays/mail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Mail</Link></li>
+            <li><Link to="components/overlays/two-columns" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Column</Link></li> 
             <li><Link to="components/overlays/profile" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile</Link></li>
             <li><Link to="components/overlays/information" className="block text-sm text-grey-400 w-full hover:bg-grey-100 active bg-grey-700 font-semibold">Information</Link>
               <Scrollspy items={ ['ui-examples', 'details', 'padding'] } offset={-80} className="block" currentClassName="is-current">
@@ -59,10 +58,8 @@ function ComponentsOverlaysInformationPage() {
             </li>
             <li><Link to="components/overlays/progress-bar" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Progress Bar</Link></li>
             <li><Link to="components/overlays/highlighted-item-detail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
-            <li><Link to="components/overlays/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Tasks</Link></li>
-            <li><Link to="components/overlays/circle-graph" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Circle Graph</Link></li>
-            <li><Link to="components/overlays/profile-list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile List</Link></li>
-            <li><Link to="components/overlays/sliding-cards" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Sliding Cards***</Link></li>
+            <li><Link to="components/overlays/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Tasks</Link></li> 
+            <li><Link to="components/overlays/profile-list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile List</Link></li> 
           </ul> 
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full bg-grey-300">Popovers</div></li>

@@ -30,7 +30,7 @@ function ComponentsOverlaysGroupedListPage() {
             <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
             <li><Link to="components/cards/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
             <li><Link to="components/cards/grouped-lists" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Grouped Lists</Link></li>
-            <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Columns</Link></li>
+            <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Column</Link></li>
             <li><Link to="components/cards/mail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Mail</Link></li>
             <li><Link to="components/cards/profile" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile</Link></li>
             <li><Link to="components/cards/information" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Information</Link></li>
@@ -53,16 +53,13 @@ function ComponentsOverlaysGroupedListPage() {
                 <li><Link to="components/overlays/single-item#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
               </Scrollspy>              
             </li>
-            <li><Link to="components/overlays/two-columns" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Columns</Link></li>
-            <li><Link to="components/overlays/mail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Mail</Link></li>
+            <li><Link to="components/overlays/two-columns" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Column</Link></li>
             <li><Link to="components/overlays/profile" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile</Link></li>
             <li><Link to="components/overlays/information" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Information</Link></li>
             <li><Link to="components/overlays/progress-bar" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Progress Bar</Link></li>
             <li><Link to="components/overlays/highlighted-item-detail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
             <li><Link to="components/overlays/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Tasks</Link></li>
-            <li><Link to="components/overlays/circle-graph" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Circle Graph</Link></li>
             <li><Link to="components/overlays/profile-list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile List</Link></li>
-            <li><Link to="components/overlays/sliding-cards" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Sliding Cards***</Link></li>
           </ul> 
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full bg-grey-300">Popovers</div></li>
@@ -125,7 +122,7 @@ function ComponentsOverlaysGroupedListPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={detailsGroupedListOverlay1} className="" width="690" />
+              <img src={detailsGroupedListOverlay1} className="" width="656" />
             </div> 
           </section>             
 
@@ -140,7 +137,7 @@ function ComponentsOverlaysGroupedListPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img src={paddingGroupedListOverlay1} className="" width="402" />
+              <img src={paddingGroupedListOverlay1} className="" width="398" />
             </div> 
           </section>             
         </main>
