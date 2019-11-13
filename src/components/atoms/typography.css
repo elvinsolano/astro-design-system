@@ -114,7 +114,7 @@ pre {
   display: block; 
 }
 .list-circle {
-  background-color: black;
+  background-color: #575757;
   border-radius: 50%;
   display: inline-block;
   color: white;
@@ -333,6 +333,7 @@ aside nav ul li a:active {
 .as-body main {
   margin-left: 230px;
   max-width: 1084px;
+  padding: 60px 40px 60px 60px;
 }
 
 .navbar {

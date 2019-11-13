@@ -1,47 +1,14 @@
-import React, { Component } from "react";
-import classnames from "classnames"; 
-import { Link } from "gatsby"; 
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
 
-export default class Navbar extends Component {
-  constructor(props) {
-    super(props);
+import { TailwindThemeProvider } from 'tailwind-react-ui';
 
-    this.state = {
-      prevScrollpos: window.pageYOffset,
-      visible: true
-    };
-  }
+function Header({ siteTitle }) {
+  const [isExpanded, toggleExpansion] = useState(false);
 
-  // Adds an event listener when the component is mount.
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  // Remove the event listener when the component is unmount.
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  // Hide or show the menu.
-  handleScroll = () => {
-    const { prevScrollpos } = this.state;
-
-    const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos > currentScrollPos;
-
-    this.setState({
-      prevScrollpos: currentScrollPos,
-      visible
-    });
-  };
-
-  render() {
-    return (
-    <header 
-    className={classnames("bg-black fixed w-full z-50 as-header navbar", {
-      "navbar--hidden": !this.state.visible
-    })}
-    >
+  return (
+    <header className="bg-black fixed w-full z-50 as-header">
       <nav>
         <div className="flex flex-wrap items-center justify-between as-header-link-wrapper">
           <Link to="/" className="flex self-start no-underline text-white">
@@ -58,7 +25,7 @@ export default class Navbar extends Component {
 
           <button
             className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white"
-            // onClick={() => toggleExpansion(!isExpanded)}
+            onClick={() => toggleExpansion(!isExpanded)}
           >
             <svg
               className="fill-current h-3 w-3"
@@ -71,10 +38,9 @@ export default class Navbar extends Component {
           </button>
 
           <div
-            // className={`${
-            //   isExpanded ? `block` : `hidden`
-            // } md:block md:flex md:items-center w-full md:w-auto`}
-              className="block"
+            className={`${
+              isExpanded ? `block` : `hidden`
+            } md:block md:flex md:items-center w-full md:w-auto`}
           >
             <div className="text-sm text-grey-600">
               {/* <Link
@@ -126,7 +92,15 @@ export default class Navbar extends Component {
         </div>
       </nav>
     </header>
-  
-    );
-  }
-}
+  );
+} 
+
+Header.propTypes = {
+  siteTitle: PropTypes.string
+};
+
+Header.defaultProps = {
+  siteTitle: ``
+};
+
+export default Header;
