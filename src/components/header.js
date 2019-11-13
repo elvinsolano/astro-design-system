@@ -5,28 +5,34 @@ import { Link } from "gatsby";
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      prevScrollpos: window.pageYOffset,
-      visible: true
-    };
+    if (typeof window !== `undefined`) {
+      this.state = {
+        prevScrollpos: window.pageYOffset,
+        visible: true
+      };    
+    }
   }
 
   // Adds an event listener when the component is mount.
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    if (typeof window !== `undefined`) {
+      window.addEventListener("scroll", this.handleScroll);
+    };
   }
 
   // Remove the event listener when the component is unmount.
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    if (typeof window !== `undefined`) {
+      window.removeEventListener("scroll", this.handleScroll);
+    };
   }
 
   // Hide or show the menu.
   handleScroll = () => {
     const { prevScrollpos } = this.state;
-
-    const currentScrollPos = window.pageYOffset;
+    
+    const currentScrollPos = typeof window !== `undefined` ? window.pageYOffset : null;
+    
     const visible = prevScrollpos > currentScrollPos;
 
     this.setState({
