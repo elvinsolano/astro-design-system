@@ -3,6 +3,9 @@
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.025em;
 }
+body {
+  background-color: black;
+}
 
 @font-face {
   font-family: HelveticaNeueRegular;
@@ -295,9 +298,14 @@ aside nav ul li a:active {
   padding-right: 30px;
   padding-bottom: 18px;
 }
+.as-nav-logo {
+  height: 70px;
+  padding: 25px 0 0 40px;
+  background-color: #DEDEDE;
+}
 .as-nav {
   width: 230px;
-  padding-top: 70px;
+  /* padding-top: 70px; */
 }
 .as-nav ul li a {
   line-height: 21px;
@@ -319,6 +327,7 @@ aside nav ul li a:active {
 }
 .as-body {
   padding-top: 70px;
+  background-color: white;
 }
 
 .as-body main {
@@ -326,3 +335,13 @@ aside nav ul li a:active {
   max-width: 1084px;
 }
 
+.navbar {
+  width: 100%; 
+  position: fixed;
+  top: 0;
+  transition: top 0.4s;
+}
+
+.navbar--hidden {
+  top: -70px;
+}
