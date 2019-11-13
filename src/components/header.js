@@ -44,7 +44,7 @@ export default class Navbar extends Component {
     return (
     <header 
     className={classnames("bg-black fixed w-full z-50 as-header navbar", {
-      "navbar--hidden": !this.state.visible
+      // "navbar--hidden": !this.state.visible
     })}
     >
       <nav>
