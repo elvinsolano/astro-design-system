@@ -104,7 +104,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
           
               <TabPanel>                  
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesHighlightedItemDetailCard1} className="lazyload " width="335" />
+                  <img data-src={uiexamplesHighlightedItemDetailCard1} className="lazyload " width="335" alt="Cards Highlighted Item Detail UI Examples" />
                 </div> 
               </TabPanel>  
             </Tabs>
@@ -121,7 +121,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsHighlightedItemDetailCard1} className="lazyload " width="597" />
+              <img data-src={detailsHighlightedItemDetailCard1} className="lazyload " width="597" alt="Cards Highlighted Item Detail Padding" />
             </div> 
           </section>             
 
@@ -136,7 +136,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={paddingHighlightedItemDetailCard1} className="lazyload " width="364" />
+              <img data-src={paddingHighlightedItemDetailCard1} className="lazyload " width="364" alt="Cards Highlighted Item Detail Padding" />
             </div> 
           </section>             
         </main>

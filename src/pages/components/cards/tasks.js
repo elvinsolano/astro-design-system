@@ -104,7 +104,7 @@ function ComponentsCardsTasksPage() {
           
               <TabPanel>                  
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesTasksCard1} className="lazyload " width="335" />
+                  <img data-src={uiexamplesTasksCard1} className="lazyload " width="335" alt="Cards Tasks UI Examples" />
                 </div> 
               </TabPanel>  
             </Tabs>
@@ -121,7 +121,7 @@ function ComponentsCardsTasksPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsTasksCard1} className="lazyload " width="594" />
+              <img data-src={detailsTasksCard1} className="lazyload " width="594" alt="Cards Tasks Details" />
             </div> 
           </section>             
 
@@ -136,7 +136,7 @@ function ComponentsCardsTasksPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={paddingTasksCard1} className="lazyload " width="365" />
+              <img data-src={paddingTasksCard1} className="lazyload " width="365" alt="Cards Tasks Padding" />
             </div> 
           </section>             
         </main>

@@ -101,17 +101,11 @@ function ComponentsCardsSingleItemPage() {
             <p className="mb-5 text-greyStatus-600 tracking-wider">Single item cards display information in a clear and simple hierarchical order. They can contain text, data, badges and links. There’s a maximum of 8 subtitles in the body. Please use a single item group template if there are more. </p>
             <p className="mb-5 text-greyStatus-600 tracking-wider">The maximum height of the card is 55% of the device height. If the content overflows, please use the “View More” element. </p>
             <Tabs>
-              <TabList>
+              <TabList> 
                 <Tab>01</Tab>
                 <Tab>02</Tab>
-                <Tab>03</Tab>
               </TabList>
-          
-              <TabPanel>                  
-                <div className="h-355 mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesSingleItemCard1} className="lazyload " width="335" />
-                </div> 
-              </TabPanel>
+           
               <TabPanel>
                 <div className="h-355 mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                   <img data-src={uiexamplesSingleItemCard2} className="lazyload " width="335" />

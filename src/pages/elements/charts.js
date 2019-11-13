@@ -117,7 +117,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesCircleChart1} className="lazyload inline-block" width="150" height="150" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesCircleChart1} className="lazyload inline-block" width="150" height="150" alt="Charts Types Circle Charts" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
             </div> 
@@ -131,7 +131,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDoughnutChart1} className="lazyload inline-block" width="150" height="150" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDoughnutChart1} className="lazyload inline-block" width="150" height="150" alt="Charts Types Doughnut Charts" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
             </div> 
@@ -145,7 +145,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesHorizontalChart1} className="lazyload inline-block" width="335" height="37" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesHorizontalChart1} className="lazyload inline-block" width="335" height="37" alt="Charts Types Horizontal Charts" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
             </div> 
@@ -159,13 +159,13 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={typesStrengthChart1} className="lazyload inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesStrengthChart2} className="lazyload inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={typesStrengthChart3} className="lazyload inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">4</span><img data-src={typesStrengthChart4} className="lazyload inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={typesStrengthChart5} className="lazyload inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">6</span><img data-src={typesStrengthChart6} className="lazyload inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">7</span><img data-src={typesStrengthChart7} className="lazyload inline-block" width="30" height="8" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={typesStrengthChart1} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Zero" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesStrengthChart2} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Low" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={typesStrengthChart3} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Med Low" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">4</span><img data-src={typesStrengthChart4} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Medium" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={typesStrengthChart5} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Med High" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">6</span><img data-src={typesStrengthChart6} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts High" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">7</span><img data-src={typesStrengthChart7} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Very High" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Zero</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Low</p>
@@ -185,8 +185,8 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesTimelineChart1} className="lazyload inline-block" width="10" height="98" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesTimelineChart2} className="lazyload inline-block" width="10" height="97" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesTimelineChart1} className="lazyload inline-block" width="10" height="98" alt="Charts Types Timeline Charts 1" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesTimelineChart2} className="lazyload inline-block" width="10" height="97" alt="Charts Types Timeline Charts 2" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Timeline Chart.</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Timeline Chart.</p> 
@@ -215,27 +215,27 @@ function ElementsChartsPage() {
           
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img data-src={usage1} className="lazyload " width="375px" /> 
+                  <img data-src={usage1} className="lazyload " width="375px" alt="Charts Usage Circle Chart" /> 
                 </div> 
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img data-src={usage2} className="lazyload " width="375px" /> 
+                  <img data-src={usage2} className="lazyload " width="375px" alt="Charts Usage Doughnut Chart" /> 
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img data-src={usage3} className="lazyload " width="375px" /> 
+                  <img data-src={usage3} className="lazyload " width="375px" alt="Charts Usage Horizontal Chart" /> 
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img data-src={usage4} className="lazyload " width="375px" /> 
+                  <img data-src={usage4} className="lazyload " width="375px" alt="Charts Usage Strength Chart" /> 
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img data-src={usage5} className="lazyload " width="375px" /> 
+                  <img data-src={usage5} className="lazyload " width="375px" alt="Charts Usage Timeline Chart" /> 
                 </div>
               </TabPanel> 
             </Tabs>
@@ -261,7 +261,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsCircleChart1} className="lazyload inline-block" width="505" height="228" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsCircleChart1} className="lazyload inline-block" width="505" height="228" alt="Charts Specs Circle Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Circle Chart</p> 
             </div> 
@@ -275,7 +275,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsDoughnutChart1} className="lazyload inline-block" width="420" height="190" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsDoughnutChart1} className="lazyload inline-block" width="420" height="190" alt="Charts Specs Doughnut Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Doughnut Chart</p> 
             </div> 
@@ -289,7 +289,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsHorizontalChart1} className="lazyload inline-block" width="489" height="147" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsHorizontalChart1} className="lazyload inline-block" width="489" height="147" alt="Charts Specs Horizontal Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Horizontal Chart</p> 
             </div> 
@@ -303,13 +303,13 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={specsStrengthChart1} className="lazyload inline-block" width="136" height="46" /> </li>
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={specsStrengthChart2} className="lazyload inline-block" width="40" height="47" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={specsStrengthChart3} className="lazyload inline-block" width="32" height="47" /> </li>
-                <li className="as-grid-4 relative mb-12 mr-12"><span className="list-circle">4</span><img data-src={specsStrengthChart4} className="lazyload inline-block" width="152" height="46" /> </li>
-                <li className="as-grid-4 relative mb-12 mr-12"><span className="list-circle">5</span><img data-src={specsStrengthChart5} className="lazyload inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">6</span><img data-src={specsStrengthChart6} className="lazyload inline-block" width="30" height="8" /> </li>
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">7</span><img data-src={specsStrengthChart7} className="lazyload inline-block" width="171" height="46" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={specsStrengthChart1} className="lazyload inline-block" width="136" height="46" alt="Charts Specs Strength Chart" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={specsStrengthChart2} className="lazyload inline-block" width="40" height="47" alt="Charts Specs Strength Chart" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={specsStrengthChart3} className="lazyload inline-block" width="32" height="47" alt="Charts Specs Strength Chart" /> </li>
+                <li className="as-grid-4 relative mb-12 mr-12"><span className="list-circle">4</span><img data-src={specsStrengthChart4} className="lazyload inline-block" width="152" height="46" alt="Charts Specs Strength Chart" /> </li>
+                <li className="as-grid-4 relative mb-12 mr-12"><span className="list-circle">5</span><img data-src={specsStrengthChart5} className="lazyload inline-block" width="30" height="8" alt="Charts Specs Strength Chart" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">6</span><img data-src={specsStrengthChart6} className="lazyload inline-block" width="30" height="8" alt="Charts Specs Strength Chart" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">7</span><img data-src={specsStrengthChart7} className="lazyload inline-block" width="171" height="46" alt="Charts Specs Strength Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Strength Chart</p> 
               <p className="as-type-regular text-sm text-greyStatus-600">2. Strength Chart</p> 
@@ -329,8 +329,8 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={specsTimelineChart1} className="lazyload inline-block" width="165" height="106" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={specsTimelineChart2} className="lazyload inline-block" width="164" height="98" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={specsTimelineChart1} className="lazyload inline-block" width="165" height="106" alt="Charts Specs Timeline Chart" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={specsTimelineChart2} className="lazyload inline-block" width="164" height="98" alt="Charts Specs Timeline Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Timeline Chart</p> 
               <p className="as-type-regular text-sm text-greyStatus-600">2. Timeline Chart</p> 
@@ -355,42 +355,42 @@ function ElementsChartsPage() {
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidance1} className="lazyload mb-3" width="290" />
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Charts Guidance 1" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use dividers on forms.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidance2} className="lazyload mb-3" width="290" />
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Charts Guidance 2" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a light divider on a black background.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidance3} className="lazyload mb-3" width="290" />
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Charts Guidance 3" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a dark divider on a card.</p>
               </div> 
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidance4} className="lazyload mb-3" width="290" />
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Charts Guidance 4" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use dividers on forms.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidance5} className="lazyload mb-3" width="290" />
+                <img data-src={guidance5} className="lazyload mb-3" width="290"  alt="Charts Guidance 5"/>
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a light divider on a black background.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidance6} className="lazyload mb-3" width="290" />
+                <img data-src={guidance6} className="lazyload mb-3" width="290"  alt="Charts Guidance 6"/>
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a dark divider on a card.</p>
               </div> 
             </div> 

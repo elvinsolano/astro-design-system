@@ -104,7 +104,7 @@ function ComponentsOverlaysSingleItemPage() {
           
               <TabPanel>                  
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesSingleItemOverlay1} className="lazyload " width="335" />
+                  <img data-src={uiexamplesSingleItemOverlay1} className="lazyload " width="335" alt="Overlays Single Item UI Examples" />
                 </div> 
               </TabPanel> 
             </Tabs>
@@ -121,7 +121,7 @@ function ComponentsOverlaysSingleItemPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsSingleItemOverlay1} className="lazyload " width="688" />
+              <img data-src={detailsSingleItemOverlay1} className="lazyload " width="688" alt="Overlays Single Item Details" />
             </div> 
           </section>             
 
@@ -136,7 +136,7 @@ function ComponentsOverlaysSingleItemPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={paddingSingleItemOverlay1} className="lazyload " width="395" />
+              <img data-src={paddingSingleItemOverlay1} className="lazyload " width="395" alt="Overlays Single Item Padding" />
             </div> 
           </section>             
         </main>

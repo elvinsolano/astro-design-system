@@ -345,8 +345,8 @@ function DesignTypographyPage() {
 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
             <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" /> </li>
-              <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={applyingTypeScale2} className="lazyload inline-block" width="335" height="332" /> </li>
+              <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Scale Categories"/> </li>
+              <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={applyingTypeScale2} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Actual Values"/> </li>
             </ol> 
             <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p>
             <p className="as-type-regular text-sm text-greyStatus-600">2. Actual Values</p>
@@ -377,35 +377,35 @@ function DesignTypographyPage() {
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidance1} className="lazyload mb-3" width="290" />
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use any weight that is not regular or medium.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidance2} className="lazyload mb-3" width="290" />
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Typography Guidance 2" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use adjust kerning or tracking.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidance3} className="lazyload mb-3" width="290" />
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Typography Guidance 3" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not make different levels of hierarchy the same weight.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidance4} className="lazyload mb-3" width="290" />
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Typography Guidance 4" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not make any level of hierarchy the same size or scale as another.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidance5} className="lazyload mb-3" width="290" />
+                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Typography Guidance 5" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not separate chunks of text.</p>
               </div>
             </div> 

@@ -104,7 +104,7 @@ function ComponentsOverlaysProgressBarPage() {
           
               <TabPanel>                  
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesProgressBarOverlay1} className="lazyload " width="335" />
+                  <img data-src={uiexamplesProgressBarOverlay1} className="lazyload " width="335" alt="Overlays Progress Bar UI Examples" />
                 </div> 
               </TabPanel> 
             </Tabs>
@@ -121,7 +121,7 @@ function ComponentsOverlaysProgressBarPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsProgressBarOverlay1} className="lazyload " width="683" />
+              <img data-src={detailsProgressBarOverlay1} className="lazyload " width="683" alt="Overlays Progress Bar Details" />
             </div> 
           </section>             
 
@@ -136,7 +136,7 @@ function ComponentsOverlaysProgressBarPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={paddingProgressBarOverlay1} className="lazyload " width="404" />
+              <img data-src={paddingProgressBarOverlay1} className="lazyload " width="404" alt="Overlays Progress Bar Padding" />
             </div> 
           </section>             
         </main>

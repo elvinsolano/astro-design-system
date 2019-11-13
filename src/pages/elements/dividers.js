@@ -99,10 +99,10 @@ function ElementsDividersPage() {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesLightDividers1} className="lazyload inline-block" width="295" height="1" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesLightDividers2} className="lazyload inline-block" width="295" height="1" /> </li>
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={typesLightDividers3} className="lazyload inline-block" width="295" height="1" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesLightDividers4} className="lazyload inline-block" width="295" height="1" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesLightDividers1} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers Small" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesLightDividers2} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers Large" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={typesLightDividers3} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers XL" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesLightDividers4} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers XXL" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Light Divider: Small</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Light Divider: Large</p>
@@ -120,7 +120,7 @@ function ElementsDividersPage() {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDarkDividers1} className="lazyload inline-block" width="295" height="1" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDarkDividers1} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Dark Dividers Large" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Dark Divider: Large</p> 
             </div> 
@@ -144,13 +144,13 @@ function ElementsDividersPage() {
           
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img data-src={usageLightDividers1} className="lazyload mr-12" width="375px" />
-                  <img data-src={usageLightDividers2} className="lazyload " width="375px" /> 
+                  <img data-src={usageLightDividers1} className="lazyload mr-12" width="375px" alt="Dividers Usage Light Dividers 1" />
+                  <img data-src={usageLightDividers2} className="lazyload " width="375px" alt="Dividers Usage Light Dividers 2" /> 
                 </div> 
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
-                  <img data-src={usageDarkDividers1} className="lazyload " width="375px" /> 
+                  <img data-src={usageDarkDividers1} className="lazyload " width="375px" alt="Dividers Usage Dark Dividers 1" /> 
                 </div>
               </TabPanel> 
             </Tabs>
@@ -177,10 +177,10 @@ function ElementsDividersPage() {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={specsLightDividers1} className="lazyload inline-block" width="445" height="82" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={specsLightDividers2} className="lazyload inline-block" width="485" height="82" /> </li>
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={specsLightDividers3} className="lazyload inline-block" width="475" height="82" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={specsLightDividers4} className="lazyload inline-block" width="469" height="82" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={specsLightDividers1} className="lazyload inline-block" width="445" height="82" alt="Dividers Specs Light Dividers Small" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={specsLightDividers2} className="lazyload inline-block" width="485" height="82" alt="Dividers Specs Light Dividers Large" /> </li>
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={specsLightDividers3} className="lazyload inline-block" width="475" height="82" alt="Dividers Specs Light Dividers XL" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={specsLightDividers4} className="lazyload inline-block" width="469" height="82" alt="Dividers Specs Light Dividers XXL" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Light Divider: Small</p>
               <p className="as-type-regular text-sm text-greyStatus-600">2. Light Divider: Large</p>
@@ -198,7 +198,7 @@ function ElementsDividersPage() {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsDarkDividers1} className="lazyload inline-block" width="485" height="81" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsDarkDividers1} className="lazyload inline-block" width="485" height="81" alt="Dividers Specs Dark Dividers Large" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Dark Divider: Large</p> 
             </div> 
@@ -222,21 +222,21 @@ function ElementsDividersPage() {
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidanceDividers1} className="lazyload mb-3" width="290" />
+                <img data-src={guidanceDividers1} className="lazyload mb-3" width="290" alt="Dividers Guidance 1" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use dividers on forms.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidanceDividers2} className="lazyload mb-3" width="290" />
+                <img data-src={guidanceDividers2} className="lazyload mb-3" width="290" alt="Dividers Guidance 2" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a light divider on a black background.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidanceDividers3} className="lazyload mb-3" width="290" />
+                <img data-src={guidanceDividers3} className="lazyload mb-3" width="290" alt="Dividers Guidance 3" />
                 <p className="text-sm mb-3 text-greyStatus-600">Don’t use a dark divider on a card.</p>
               </div> 
             </div> 

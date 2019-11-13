@@ -104,7 +104,7 @@ function ComponentsOverlaysProfilePage() {
           
               <TabPanel>                  
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesProfileOverlay1} className="lazyload " width="335" />
+                  <img data-src={uiexamplesProfileOverlay1} className="lazyload " width="335" alt="Overlays Profile List UI Examples" />
                 </div> 
               </TabPanel> 
             </Tabs>
@@ -121,7 +121,7 @@ function ComponentsOverlaysProfilePage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsProfileOverlay1} className="lazyload " width="688" />
+              <img data-src={detailsProfileOverlay1} className="lazyload " width="688" alt="Overlays Profile List Details" />
             </div> 
           </section>             
 
@@ -136,7 +136,7 @@ function ComponentsOverlaysProfilePage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={paddingProfileOverlay1} className="lazyload " width="398" />
+              <img data-src={paddingProfileOverlay1} className="lazyload " width="398" alt="Overlays Profile List Padding" />
             </div> 
           </section>             
         </main>

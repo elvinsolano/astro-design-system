@@ -106,12 +106,12 @@ function ComponentsOverlaysListPage() {
           
               <TabPanel>                  
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesListOverlay1} className="lazyload " width="335" />
+                  <img data-src={uiexamplesListOverlay1} className="lazyload " width="335" alt="Overlays List UI Examples 1" />
                 </div> 
               </TabPanel>  
               <TabPanel>                  
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesListOverlay2} className="lazyload " width="335" />
+                  <img data-src={uiexamplesListOverlay2} className="lazyload " width="335" alt="Overlays List UI Examples 2" />
                 </div> 
               </TabPanel>  
             </Tabs>
@@ -128,7 +128,7 @@ function ComponentsOverlaysListPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsListOverlay1} className="lazyload " width="690" />
+              <img data-src={detailsListOverlay1} className="lazyload " width="690" alt="Overlays List Details" />
             </div> 
           </section>             
 
@@ -143,7 +143,7 @@ function ComponentsOverlaysListPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={paddingListOverlay1} className="lazyload " width="402" />
+              <img data-src={paddingListOverlay1} className="lazyload " width="402" alt="Overlays List Padding" />
             </div> 
           </section>             
         </main>

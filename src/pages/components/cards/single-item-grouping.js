@@ -108,17 +108,17 @@ function ComponentsCardsSingleItemGroupingPage() {
           
               <TabPanel>                  
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesSingleItemGroupingCard1} className="lazyload " width="335" />
+                  <img data-src={uiexamplesSingleItemGroupingCard1} className="lazyload " width="335" alt="Cards Single Item Grouping UI Examples 1" />
                 </div> 
               </TabPanel>
               <TabPanel>
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesSingleItemGroupingCard2} className="lazyload " width="335" />
+                  <img data-src={uiexamplesSingleItemGroupingCard2} className="lazyload " width="335" alt="Cards Single Item Grouping UI Examples 2" />
                 </div>
               </TabPanel>
               <TabPanel>
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesSingleItemGroupingCard3} className="lazyload " width="335" />
+                  <img data-src={uiexamplesSingleItemGroupingCard3} className="lazyload " width="335" alt="Cards Single Item Grouping UI Examples 3" />
                 </div>
               </TabPanel>
             </Tabs>
@@ -135,7 +135,7 @@ function ComponentsCardsSingleItemGroupingPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsSingleItemGroupingCard1} className="lazyload " width="597" />
+              <img data-src={detailsSingleItemGroupingCard1} className="lazyload " width="597" alt="Cards Single Item Grouping Details" />
             </div> 
           </section>             
 
@@ -150,7 +150,7 @@ function ComponentsCardsSingleItemGroupingPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={paddingSingleItemGroupingCard1} className="lazyload " width="365" />
+              <img data-src={paddingSingleItemGroupingCard1} className="lazyload " width="365" alt="Cards Single Item Grouping Padding" />
             </div> 
           </section>             
         </main>

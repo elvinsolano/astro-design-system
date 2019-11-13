@@ -95,6 +95,39 @@ function Header({ siteTitle }) {
   );
 }
 
+
+
+// export default class Navbar extends Component {
+//   constructor(props) {
+//     super(props);
+
+//     this.state = {
+//       prevScrollpos: window.pageYOffset,
+//       visible: true
+//     };
+//   }
+ 
+//   componentDidMount() {
+//     window.addEventListener("scroll", this.handleScroll);
+//   }
+ 
+//   componentWillUnmount() {
+//     window.removeEventListener("scroll", this.handleScroll);
+//   }
+ 
+//   handleScroll = () => {
+//     const { prevScrollpos } = this.state;
+
+//     const currentScrollPos = window.pageYOffset;
+//     const visible = prevScrollpos > currentScrollPos;
+
+//     this.setState({
+//       prevScrollpos: currentScrollPos,
+//       visible
+//     });
+//   }; 
+// }
+
 Header.propTypes = {
   siteTitle: PropTypes.string
 };

@@ -106,12 +106,12 @@ function ComponentsCardsProgressBarPage() {
           
               <TabPanel>                  
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesProgressBarCard1} className="lazyload " width="335" />
+                  <img data-src={uiexamplesProgressBarCard1} className="lazyload " width="335" alt="Cards Progress Bar UI Examples 1" />
                 </div> 
               </TabPanel> 
               <TabPanel>                  
                 <div className=" mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesProgressBarCard2} className="lazyload " width="335" />
+                  <img data-src={uiexamplesProgressBarCard2} className="lazyload " width="335" alt="Cards Progress Bar UI Examples 2" />
                 </div> 
               </TabPanel>  
             </Tabs>
@@ -128,7 +128,7 @@ function ComponentsCardsProgressBarPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsProgressBarCard1} className="lazyload " width="597" />
+              <img data-src={detailsProgressBarCard1} className="lazyload " width="597" alt="Cards Progress Bar Details" />
             </div> 
           </section>             
 
@@ -143,7 +143,7 @@ function ComponentsCardsProgressBarPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={paddingProgressBarCard1} className="lazyload " width="355" />
+              <img data-src={paddingProgressBarCard1} className="lazyload " width="355" alt="Cards Progress Bar Padding" />
             </div> 
           </section>             
         </main>

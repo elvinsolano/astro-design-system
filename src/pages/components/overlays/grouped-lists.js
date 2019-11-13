@@ -105,7 +105,7 @@ function ComponentsOverlaysGroupedListPage() {
           
               <TabPanel>                  
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <img data-src={uiexamplesGroupedListOverlay1} className="lazyload " width="335" />
+                  <img data-src={uiexamplesGroupedListOverlay1} className="lazyload " width="335" alt="Overlays Grouped Lists UI Examples" />
                 </div> 
               </TabPanel> 
             </Tabs>
@@ -122,7 +122,7 @@ function ComponentsOverlaysGroupedListPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsGroupedListOverlay1} className="lazyload " width="656" />
+              <img data-src={detailsGroupedListOverlay1} className="lazyload " width="656" alt="Overlays Grouped Lists Details" />
             </div> 
           </section>             
 
@@ -137,7 +137,7 @@ function ComponentsOverlaysGroupedListPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={paddingGroupedListOverlay1} className="lazyload " width="398" />
+              <img data-src={paddingGroupedListOverlay1} className="lazyload " width="398" alt="Overlays Grouped Lists Padding" />
             </div> 
           </section>             
         </main>

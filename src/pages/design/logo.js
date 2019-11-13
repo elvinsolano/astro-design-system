@@ -119,7 +119,7 @@ function DesignLogoPage() {
             </Heading>  
             <p className="mb-4 text-greyStatus-600 tracking-wider">The Astro logo is made of three rectangles that connect to form the A icon. The concept reflects Astro's core purpose to connect us and simplify the way we work.</p>  
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={overviewLogo1} className="lazyload" width="950" />
+              <img data-src={overviewLogo1} className="lazyload" width="950" alt="Logo Overview" />
             </div> 
           </section>   
 
@@ -145,31 +145,31 @@ function DesignLogoPage() {
               <div className="flex flex-wrap -mx-4 mb-12">
                 <div className="px-4 mb-8"> 
                   <div className="bg-black p-16">
-                    <img data-src={typesFullLockUpLogo1} className="lazyload" width="150" />
+                    <img data-src={typesFullLockUpLogo1} className="lazyload" width="150" alt="Logo Types Full Lock Up Primary" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Primary</p>
                 </div>
                 <div className="px-4 mb-8"> 
                   <div className="bg-white p-16 border border-grey-200 border-solid">
-                    <img data-src={typesFullLockUpLogo2} className="lazyload" width="150" />
+                    <img data-src={typesFullLockUpLogo2} className="lazyload" width="150" alt="Logo Types Full Lock Up Secondary" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Secondary</p>  
                 </div>
                 <div className="px-4 mb-8">
                   <div className="bg-black p-16">
-                    <img data-src={typesFullLockUpLogo3} className="lazyload" width="150" />
+                    <img data-src={typesFullLockUpLogo3} className="lazyload" width="150" alt="Logo Types Full Lock Up Tertiary" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Tertiary</p> 
                 </div>              
                 <div className="px-4 mb-8">
                   <div className="bg-white p-16 border border-grey-200 border-solid">
-                    <img data-src={typesFullLockUpLogo4} className="lazyload" width="150" />
+                    <img data-src={typesFullLockUpLogo4} className="lazyload" width="150" alt="Logo Types Full Lock Up Monotone Black" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Monotone Black</p> 
                 </div>              
                 <div className="px-4 mb-8">
                   <div className="bg-black p-16">
-                    <img data-src={typesFullLockUpLogo5} className="lazyload" width="150" />
+                    <img data-src={typesFullLockUpLogo5} className="lazyload" width="150" alt="Logo Types Full Lock Up Monotone White" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Monotone White</p> 
                 </div>              
@@ -187,31 +187,31 @@ function DesignLogoPage() {
               <div className="flex flex-wrap -mx-4 mb-12">
                 <div className="px-4 mb-8"> 
                   <div className="bg-black p-16">
-                    <img data-src={typesIconLogo1} className="lazyload" width="150" />
+                    <img data-src={typesIconLogo1} className="lazyload" width="150" alt="Logo Types Icon Primary" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Primary</p>
                 </div>
                 <div className="px-4 mb-8"> 
                   <div className="bg-white p-16 border border-grey-200 border-solid">
-                    <img data-src={typesIconLogo2} className="lazyload" width="150" />
+                    <img data-src={typesIconLogo2} className="lazyload" width="150" alt="Logo Types Icon Secondary" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Secondary</p>  
                 </div>
                 <div className="px-4 mb-8">
                   <div className="bg-black p-16">
-                    <img data-src={typesIconLogo3} className="lazyload" width="150" />
+                    <img data-src={typesIconLogo3} className="lazyload" width="150" alt="Logo Types Icon Tertiary" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Tertiary</p> 
                 </div>              
                 <div className="px-4 mb-8">
                   <div className="bg-white p-16 border border-grey-200 border-solid">
-                    <img data-src={typesIconLogo4} className="lazyload" width="150" />
+                    <img data-src={typesIconLogo4} className="lazyload" width="150" alt="Logo Types Icon Monotone Black" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Monotone Black</p> 
                 </div>              
                 <div className="px-4 mb-8">
                   <div className="bg-black p-16 border border-grey-200 border-solid">
-                    <img data-src={typesIconLogo5} className="lazyload" width="150" />
+                    <img data-src={typesIconLogo5} className="lazyload" width="150" alt="Logo Types Icon Monotone White" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Monotone White</p> 
                 </div>              
@@ -229,13 +229,13 @@ function DesignLogoPage() {
               <div className="flex flex-wrap -mx-4 mb-12">
                 <div className="px-4 mb-8"> 
                   <div className="bg-black p-16 as-grid-11 flex justify-center">
-                    <img data-src={typesWordmarkLogo1} className="lazyload" width="268" />
+                    <img data-src={typesWordmarkLogo1} className="lazyload" width="268" alt="Logo Types Wordmark Primary" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Primary</p>
                 </div>
                 <div className="px-4 mb-8"> 
                   <div className="bg-white p-16 as-grid-11 flex justify-center border border-grey-200 border-solid">
-                    <img data-src={typesWordmarkLogo2} className="lazyload" width="268" />
+                    <img data-src={typesWordmarkLogo2} className="lazyload" width="268" alt="Logo Types Wordmark Secondary" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Secondary</p>  
                 </div>           
@@ -253,13 +253,13 @@ function DesignLogoPage() {
               <div className="flex flex-wrap -mx-4 mb-12">
                 <div className="px-4 mb-8"> 
                   <div className="bg-white">
-                    <img data-src={typesAppLogo1} className="lazyload" width="205" />
+                    <img data-src={typesAppLogo1} className="lazyload" width="205" alt="Logo Types App iOS" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">iOS</p>
                 </div>
                 <div className="px-4 mb-8"> 
                   <div className="bg-white">
-                    <img data-src={typesAppLogo2} className="lazyload" width="205" />
+                    <img data-src={typesAppLogo2} className="lazyload" width="205" alt="Logo Types App Android" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Android</p>  
                 </div>             
@@ -286,7 +286,7 @@ function DesignLogoPage() {
             </Heading>  
             <p className="mb-4 text-greyStatus-600 tracking-wider">Our logo is based on simple on the letter “A” for Astro. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space around the A is measured and kept in proportion by using a single, square block.</p>  
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-              <img data-src={constructionLogo1} className="lazyload" width="322" />
+              <img data-src={constructionLogo1} className="lazyload" width="322" alt="Logo Construction" />
             </div> 
           </section>  
 
@@ -318,22 +318,22 @@ function DesignLogoPage() {
           
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex justify-center">
-                  <img data-src={usageLogo1} className="lazyload" width="375px" />
+                  <img data-src={usageLogo1} className="lazyload" width="375px" alt="Logo Usage Full Lock Up" />
                 </div> 
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex justify-center">
-                  <img data-src={usageLogo2} className="lazyload" width="375px" />
+                  <img data-src={usageLogo2} className="lazyload" width="375px" alt="Logo Usage Icon" />
                 </div>
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex justify-center">
-                  <img data-src={usageLogo3} className="lazyload" width="768" />
+                  <img data-src={usageLogo3} className="lazyload" width="768" alt="Logo Usage Wordmark" />
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-12 px-20 bg-placeholder-300 flex justify-center">
-                  <img data-src={usageLogo4} className="lazyload" width="375px" />
+                  <img data-src={usageLogo4} className="lazyload" width="375px" alt="Logo Usage App" />
                 </div>
               </TabPanel>
             </Tabs>
@@ -363,19 +363,19 @@ function DesignLogoPage() {
             <div className="flex flex-wrap -mx-4 mb-12">
               <div className="px-4 mb-8"> 
                 <div className="as-grid-11 bg-black p-10 min-h-330 flex align-center">
-                  <img data-src={clearspaceLogo1} className="lazyload m-auto" width="205" />
+                  <img data-src={clearspaceLogo1} className="lazyload m-auto" width="205" alt="Logo Clearspace Full Lock-Up" />
                 </div>
                 <p className="text-sm text-grey-400 py-2">Full Lock-Up</p>
               </div>
               <div className="px-4 mb-8">
                 <div className="as-grid-11 bg-black p-10 min-h-330 flex align-center">
-                  <img data-src={clearspaceLogo2} className="lazyload m-auto" width="205" />
+                  <img data-src={clearspaceLogo2} className="lazyload m-auto" width="205" alt="Logo Clearspace Icon" />
                 </div>
                 <p className="text-sm text-grey-400 py-2">Icon</p>  
               </div>
               <div className="px-4 mb-8">
                 <div className="as-grid-11 bg-black p-10 min-h-330 flex align-center">
-                  <img data-src={clearspaceLogo3} className="lazyload m-auto" width="365" />
+                  <img data-src={clearspaceLogo3} className="lazyload m-auto" width="365" alt="Logo Clearspace Wordmark" />
                 </div>
                 <p className="text-sm text-grey-400 py-2">Wordmark</p> 
               </div>           
@@ -400,42 +400,42 @@ function DesignLogoPage() {
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidanceLogo1} className="lazyload mb-3" width="290" />
+                <img data-src={guidanceLogo1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not apply any effects to the logo.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidanceLogo2} className="lazyload mb-3" width="290" />
+                <img data-src={guidanceLogo2} className="lazyload mb-3" width="290" alt="Logo Guidance 2" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not put logo over any unapproved background colors.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidanceLogo3} className="lazyload mb-3" width="290" />
+                <img data-src={guidanceLogo3} className="lazyload mb-3" width="290" alt="Logo Guidance 3" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use any unapproved fill colors.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidanceLogo4} className="lazyload mb-3" width="290" />
+                <img data-src={guidanceLogo4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not skew or stretch the logo.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidanceLogo5} className="lazyload mb-3" width="290" />
+                <img data-src={guidanceLogo5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not crop the logo.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidanceLogo6} className="lazyload mb-3" width="290" />
+                <img data-src={guidanceLogo6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use the logo over complex imagery.</p>
               </div>
             </div> 
