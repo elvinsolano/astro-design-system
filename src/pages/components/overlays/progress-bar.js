@@ -107,7 +107,7 @@ function ComponentsOverlaysProgressBarPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The overlay for an information card displays all the possible content that is not contained in the card, which can include text, data, and links.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The overlay for a progress bar card displays all the possible content that is not contained in the card, which can include text, data, and links.</p>
             <Tabs>
               <TabList>
                 <Tab>01</Tab> 

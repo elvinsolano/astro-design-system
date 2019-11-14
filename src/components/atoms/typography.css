@@ -217,7 +217,7 @@ pre {
 }
 .react-tabs ul li[aria-selected="true"] {
   border-bottom: 2px solid #E0301E; 
-  font-weight: bold;
+  font-family: HelveticaNeueMedium;
 }
 .font-semibold {
   font-family: HelveticaNeueMedium;

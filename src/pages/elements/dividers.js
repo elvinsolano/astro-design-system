@@ -108,8 +108,8 @@ function ElementsDividersPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Light dividers are used to divide different content lists and categories over white in cards and overlays.</p>
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesLightDividers1} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers Small" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesLightDividers2} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers Large" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={typesLightDividers3} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers XL" /> </li>
@@ -129,8 +129,8 @@ function ElementsDividersPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Dark dividers are used to divide different content lists and categories over black in main canvas area.</p>
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDarkDividers1} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Dark Dividers Large" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Dark Divider: Large</p> 
@@ -146,7 +146,7 @@ function ElementsDividersPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Dividers communicate that a new section or area is starting. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
             <Tabs>
               <TabList>
                 <Tab>Light Dividers</Tab>

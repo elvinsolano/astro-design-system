@@ -261,16 +261,16 @@ function DesignTypographyPage() {
                     <td className="p-4 border-r border-grey-105"><p className="as-type-subtitle as-type-medium">Subtitle 1</p></td>
                     <td className="p-4 border-r border-grey-105">Helvetica Neue</td>
                     <td className="p-4 border-r border-grey-105">Regular</td>
-                    <td className="p-4 border-r border-grey-105">18 px</td>
-                    <td className="p-4 border-r border-grey-105">24 px</td>
+                    <td className="p-4 border-r border-grey-105">16 px</td>
+                    <td className="p-4 border-r border-grey-105">22 px</td>
                     <td className="p-4">Sentence</td>
                   </tr>
                   <tr className="bg-grey-100">
                     <td className="p-4 border-r border-grey-105"><p className="as-type-subtitle as-type-regular">Subtitle 2</p></td>
                     <td className="p-4 border-r border-grey-105">Helvetica Neue</td>
                     <td className="p-4 border-r border-grey-105">Regular</td>
-                    <td className="p-4 border-r border-grey-105">18 px</td>
-                    <td className="p-4 border-r border-grey-105">24 px</td>
+                    <td className="p-4 border-r border-grey-105">16 px</td>
+                    <td className="p-4 border-r border-grey-105">22 px</td>
                     <td className="p-4">Sentence</td>
                   </tr>
                   <tr className="">

@@ -337,7 +337,7 @@ function ElementsButtonsPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for typography to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for buttons to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
 
               <div className="w-grid px-4 mb-8">

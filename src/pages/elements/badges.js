@@ -194,11 +194,11 @@ function ElementsBadgesPage() {
                 <li className="as-grid-8 relative mb-12"><span className="list-circle">4</span><img data-src={specsSystemBadges4} className="lazyload inline-block" width="147" height="146" alt="Badges Specs System Badges Blue" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={specsSystemBadges5} className="lazyload inline-block" width="137" height="146" alt="Badges Specs System Badges Grey" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Red: Urgent - Communicates urgency, e.g. past due invoices, late flight status.</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Yellow: Warning - Communicates a warning, e.g. gate changes.</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">3. Green: Good - Communicates a validation that information is up to date.</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">4. Blue: Trending or Urgent - Communicates a status of the information it is attached to (VIP and Trending).</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">5. Grey: Neutral - Used as a label to group.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Red Badge</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Yellow Badge</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Green Badge</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Blue Badge</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">5. Grey Badge</p>
             </div> 
             
             <div className="mb-16">
@@ -212,7 +212,7 @@ function ElementsBadgesPage() {
               <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="relative"><span className="list-circle">1</span><img data-src={specsNudgeCounter1} className="lazyload inline-block" width="256" height="100" alt="Badges Specs Nudge Counter" /></li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">1. A nudge counter shows how many nudges are unread above the menu and within the quick access menu.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">1. Nudge Counter</p>
             </div> 
             
           </section>  

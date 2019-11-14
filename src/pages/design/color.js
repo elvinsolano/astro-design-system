@@ -88,7 +88,7 @@ function DesignColorPage() {
               <div className="px-4 mb-8">
                 <div className="bg-red-600 color-sample"></div>
                 <div className="color-description p-2">
-                  <p className="text-grey-400 mb-2">Red</p>
+                  <p className="text-grey-400 mb-2">Primary 1</p>
                   <p className="text-sm text-grey-400 ">HEX - #E0301E</p>
                   <p className="text-sm text-grey-400 ">RGB - 224 48 30</p>
                   <p className="text-sm text-grey-400 ">CMYK - 0 79 87 12</p> 
@@ -97,7 +97,7 @@ function DesignColorPage() {
               <div className="px-4 mb-8">
                 <div className="bg-black color-sample"></div>
                 <div className="color-description p-2">
-                  <p className="text-grey-400 mb-2">Black</p>
+                  <p className="text-grey-400 mb-2">Primary 2</p>
                   <p className="text-sm text-grey-400 ">HEX - #000000</p>
                   <p className="text-sm text-grey-400 ">RGB - 0 0 0</p>
                   <p className="text-sm text-grey-400 ">CMYK - 0 0 0 100</p>  
@@ -106,7 +106,7 @@ function DesignColorPage() {
               <div className="px-4 mb-8">
                 <div className="bg-white color-sample border-grey-500 border-solid border"></div>
                 <div className="color-description p-2">
-                  <p className="text-grey-400 mb-2">White</p>
+                  <p className="text-grey-400 mb-2">Primary 3</p>
                   <p className="text-sm text-grey-400 ">HEX - #FFFFFF</p>
                   <p className="text-sm text-grey-400 ">RGB - 225 225 225</p>
                   <p className="text-sm text-grey-400 ">CMYK - 0 0 0 0</p>  
@@ -130,15 +130,15 @@ function DesignColorPage() {
               <div className="px-4 mb-8">
                 <div className="bg-green-800 color-sample"></div>
                 <div className="color-description p-2">
-                  <p className="text-grey-400 mb-2">Light Green</p>
+                  <p className="text-grey-400 mb-2">Secondary 1</p>
                   <p className="text-sm text-grey-400 ">HEX - #22992E</p>
-                  <p className="text-sm text-grey-400 ">RGB - 33 129 45</p> 
+                  <p className="text-sm text-grey-400 ">RGB - 34 153 46</p> 
                 </div>
               </div>
               <div className="px-4 mb-8">
                 <div className="bg-blue-600 color-sample"></div>
                 <div className="color-description p-2">
-                  <p className="text-grey-400 mb-2">Blue</p>
+                  <p className="text-grey-400 mb-2">Secondary 2</p>
                   <p className="text-sm text-grey-400 ">HEX - #3F88C5</p>
                   <p className="text-sm text-grey-400 ">RGB - 63 136 197</p> 
                 </div>
@@ -216,7 +216,27 @@ function DesignColorPage() {
                 </div>
               </div>              
             </div> 
+
+            <div className="flex justify-between bg-black p-10 rounded-sm">
+              <div className="flex items-start mr-10 w-2/3">
+                <div className="mr-4 -mt-1">
+                  <div className="DarkAndLightRectangleStyle">
+                    <div className="darkrectangle"></div>
+                    <div className="lightrectangle"></div>
+                  </div>
+                </div> 
+                <p className="as-type-regular text-white tracking-wider">Did you know all body copy in the Astro design system uses Grey 7 and not Black.</p>
+              </div>
+              <div className="pl-10 border-l border-grey-500"> 
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#333" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
+                  <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
+                </svg> 
+              </div>
+            </div> 
           </section>  
+
+
   
           <section id="status" name="status" className="mb-24"> 
             <span id="status-anchor" className="page-anchor"></span>

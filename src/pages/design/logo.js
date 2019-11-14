@@ -295,7 +295,7 @@ function DesignLogoPage() {
                 URL Copied
               </ReactTooltip>               
             </Heading>  
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Our logo is based on simple on the letter “A” for Astro. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space around the A is measured and kept in proportion by using a single, square block.</p>  
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Our logo is based on simplifying the letter “A” for Astro. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space around the A is measured and kept in proportion by using a single, square block.</p>  
             <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={constructionLogo1} className="lazyload" width="322" alt="Logo Construction" />
             </div> 
@@ -318,7 +318,7 @@ function DesignLogoPage() {
                 URL Copied
               </ReactTooltip>               
             </Heading>  
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Our logo is based on simple on the letter “A” for Astro. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space around the A is measured and kept in proportion by using a single, square block.</p>  
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Logo usage is based on applying the specific logos variations based on device type, presentation surface and communications objective.</p>  
             <Tabs>
               <TabList>
                 <Tab>Full Lock Up</Tab>
@@ -405,7 +405,7 @@ function DesignLogoPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for typography to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

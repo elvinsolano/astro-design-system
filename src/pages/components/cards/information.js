@@ -109,7 +109,7 @@ function ComponentsCardsInformationPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The profile card is used to display an individual's information. It consists of an image with additional data points.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The information card is used to display contact details. It consists of a main header, a badge, subtitle content, and links to subtitle content.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab> 

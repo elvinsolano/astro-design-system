@@ -23,10 +23,10 @@ import specsPullDownLoader1 from "../../assets/elements/loaders/specs/pull-down-
 import specsGeneralLoader1 from "../../assets/elements/loaders/specs/general-loader/01 General Loader with Text Specs.png"; 
 import specsGeneralLoader2 from "../../assets/elements/loaders/specs/general-loader/02 General Loader Specs.png"; 
 
-import guidanceDividers1 from "../../assets/elements/loaders/guidance/01 Loaders Guidance.png";
-import guidanceDividers2 from "../../assets/elements/loaders/guidance/02 Loaders Guidance.png";
-import guidanceDividers3 from "../../assets/elements/loaders/guidance/03 Loaders Guidance.png";
-import guidanceDividers4 from "../../assets/elements/loaders/guidance/04 Loaders Guidance.png";  
+import guidance1 from "../../assets/elements/loaders/guidance/01 Loaders Guidance.png";
+import guidance2 from "../../assets/elements/loaders/guidance/02 Loaders Guidance.png";
+import guidance3 from "../../assets/elements/loaders/guidance/03 Loaders Guidance.png";
+import guidance4 from "../../assets/elements/loaders/guidance/04 Loaders Guidance.png";  
 
 function ElementsLoadersPage() { 
 
@@ -178,27 +178,26 @@ function ElementsLoadersPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading>  
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={specsPullDownLoader1} className="inline-block" width="264" height="93" alt="Loaders Specs Pull Down Loader" /> </li>
+              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start"> 
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsPullDownLoader1} className="lazyload inline-block" width="264" height="93" alt="Loaders Specs Pull Down Loader" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Pull Down Loaders</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Pull Down Loader</p> 
             </div> 
              
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">General Loaders
+              <Heading level="3" className="as-h3 as-type-medium mb-3">General Loader
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                   </svg> 
                 </CopyToClipboard>            
-              </Heading> 
-              <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
+              </Heading>
               <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsGeneralLoader1} className="lazyload inline-block" width="423" height="320" alt="Loaders Specs General Loader 1" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={specsGeneralLoader2} className="lazyload inline-block" width="200" height="40" alt="Loaders Specs General Loader 2" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. General Loaders</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">2. General Loaders</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. General Loader with Text</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. General Loader</p> 
             </div> 
             
           </section>  
@@ -213,35 +212,35 @@ function ElementsLoadersPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading>  
-            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for typography to adhere to.</p>
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for loaders to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
 
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidanceDividers1} className="lazyload mb-3" width="290" alt="Loaders Guidance 1" />
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Loaders Guidance 1" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not place the pull down loader on the right or left. Always align to the center.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
-                <img data-src={guidanceDividers2} className="lazyload mb-3" width="290" alt="Loaders Guidance 2" />
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Loaders Guidance 2" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use the pull down loader with text.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidanceDividers3} className="lazyload mb-3" width="290" alt="Loaders Guidance 3" />
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Loaders Guidance 3" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not place the general loader without text to the right or left. Always align to the center and middle.</p>
               </div> 
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
-                <img data-src={guidanceDividers4} className="lazyload mb-3" width="290" alt="Loaders Guidance 4" />
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Loaders Guidance 4" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not use text above the general loader. Use only below with text always grouped (text and loader) and aligned to the middle and center.</p>
               </div> 
             </div> 

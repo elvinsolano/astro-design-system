@@ -107,7 +107,7 @@ function ComponentsCardsProfileListPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The circle graph card highlights one of two circular graphs.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The profile list card is a list that includes an image per row.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab>  

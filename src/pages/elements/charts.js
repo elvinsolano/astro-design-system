@@ -111,65 +111,69 @@ function ElementsChartsPage() {
 
           <section id="types" name="types" className="mb-24"> 
             <span id="types-anchor" className="page-anchor"></span> 
-            <Heading level="2" className="as-h2 as-type-medium mb-12">Types
+            <Heading level="2" className="as-h2 as-type-medium">Types
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-
+            <p className="mb-12 text-greyStatus-600 tracking-wider">A variety of charts are available to help illustrate concepts, data and comparisons for users.</p>
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">Circle Charts
+              <Heading level="3" className="as-h3 as-type-medium mb-1">Circle Charts
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <p className="mb-3 text-greyStatus-600 tracking-wider">A representation of percentages. <br/>*Uses primary red as highlighted color.</p>
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesCircleChart1} className="lazyload inline-block" width="150" height="150" alt="Charts Types Circle Charts" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Circle Chart.</p>
             </div> 
 
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">Doughnut Charts
+              <Heading level="3" className="as-h3 as-type-medium mb-1">Doughnut Charts
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <p className="mb-3 text-greyStatus-600 tracking-wider">A chart used for several sets of data to make up the whole. <br/>*Uses data among 1-10 colors.</p>
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDoughnutChart1} className="lazyload inline-block" width="150" height="150" alt="Charts Types Doughnut Charts" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Doughnut Chart.</p>
             </div> 
 
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">Horizontal Charts
+              <Heading level="3" className="as-h3 as-type-medium mb-1">Horizontal Charts
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <p className="mb-3 text-greyStatus-600 tracking-wider">A representation of percentages in a horizontal version.</p>
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesHorizontalChart1} className="lazyload inline-block" width="335" height="37" alt="Charts Types Horizontal Charts" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. A representation of percentages.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Horizontal Chart</p>
             </div> 
 
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">Strength Charts
+              <Heading level="3" className="as-h3 as-type-medium mb-1">Strength Charts
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <p className="mb-3 text-greyStatus-600 tracking-wider">A chart used to show levels of strength, from low to very high, through 6 levels.<br/>*Uses primary red as highlighted color.</p>
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={typesStrengthChart1} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Zero" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesStrengthChart2} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Low" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={typesStrengthChart3} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Med Low" /> </li>
@@ -195,12 +199,13 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <p className="mb-3 text-greyStatus-600 tracking-wider">A chart to show an active step or milestone within a timeline.<br/>*Uses primary red as highlighted color.</p>
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesTimelineChart1} className="lazyload inline-block" width="10" height="98" alt="Charts Types Timeline Charts 1" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesTimelineChart2} className="lazyload inline-block" width="10" height="97" alt="Charts Types Timeline Charts 2" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Timeline Chart.</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Timeline Chart.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Chart Steps Filled.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Chart Steps Empty.</p> 
             </div> 
              
           </section> 
@@ -271,7 +276,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsCircleChart1} className="lazyload inline-block" width="505" height="228" alt="Charts Specs Circle Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Circle Chart</p> 
@@ -285,7 +290,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsDoughnutChart1} className="lazyload inline-block" width="420" height="190" alt="Charts Specs Doughnut Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Doughnut Chart</p> 
@@ -299,7 +304,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsHorizontalChart1} className="lazyload inline-block" width="489" height="147" alt="Charts Specs Horizontal Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Horizontal Chart</p> 
@@ -313,7 +318,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={specsStrengthChart1} className="lazyload inline-block" width="136" height="46" alt="Charts Specs Strength Chart" /> </li>
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={specsStrengthChart2} className="lazyload inline-block" width="40" height="47" alt="Charts Specs Strength Chart" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={specsStrengthChart3} className="lazyload inline-block" width="32" height="47" alt="Charts Specs Strength Chart" /> </li>
@@ -322,13 +327,13 @@ function ElementsChartsPage() {
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">6</span><img data-src={specsStrengthChart6} className="lazyload inline-block" width="30" height="8" alt="Charts Specs Strength Chart" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">7</span><img data-src={specsStrengthChart7} className="lazyload inline-block" width="171" height="46" alt="Charts Specs Strength Chart" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Strength Chart</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Strength Chart</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">3. Strength Chart</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">4. Strength Chart</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">5. Strength Chart</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">6. Strength Chart</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">7. Strength Chart</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Low.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Medium Low.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Medium.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Medium High.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">5. High.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">6. Very High.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">7. Filled.</p> 
             </div> 
 
             <div className="mb-16">
@@ -339,12 +344,12 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={specsTimelineChart1} className="lazyload inline-block" width="165" height="106" alt="Charts Specs Timeline Chart" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={specsTimelineChart2} className="lazyload inline-block" width="164" height="98" alt="Charts Specs Timeline Chart" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Timeline Chart</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Timeline Chart</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Chart Steps Filled.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Chart Steps Empty.</p> 
             </div> 
             
           </section> 
@@ -359,7 +364,7 @@ function ElementsChartsPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading>  
-            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines to adhere to.</p>
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for charts to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
 
               <div className="w-grid px-4 mb-8">
@@ -367,42 +372,42 @@ function ElementsChartsPage() {
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Charts Guidance 1" />
-                <p className="text-sm mb-3 text-greyStatus-600">Don’t use dividers on forms.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use unapproved colors for doughnut charts. Use only data visualization colors.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Charts Guidance 2" />
-                <p className="text-sm mb-3 text-greyStatus-600">Don’t use a light divider on a black background.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use data visualization colors out of numerical order for doughnut charts.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Charts Guidance 3" />
-                <p className="text-sm mb-3 text-greyStatus-600">Don’t use a dark divider on a card.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use anything but status green color in strength chart.</p>
               </div> 
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Charts Guidance 4" />
-                <p className="text-sm mb-3 text-greyStatus-600">Don’t use dividers on forms.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use any hard endpoints. Use round end points.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img data-src={guidance5} className="lazyload mb-3" width="290"  alt="Charts Guidance 5"/>
-                <p className="text-sm mb-3 text-greyStatus-600">Don’t use a light divider on a black background.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use any colors besides #2D2D2D for the values on all charts.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img data-src={guidance6} className="lazyload mb-3" width="290"  alt="Charts Guidance 6"/>
-                <p className="text-sm mb-3 text-greyStatus-600">Don’t use a dark divider on a card.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not put any of these charts on a black background.</p>
               </div> 
             </div> 
           </section>
