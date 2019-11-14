@@ -336,13 +336,9 @@ aside nav ul li a:active {
   padding: 60px 40px 60px 60px;
 }
 
-.navbar {
-  width: 100%; 
-  position: fixed;
+.navheader > div {
   top: 0;
-  transition: top 0.4s;
-}
-
-.navbar--hidden {
-  top: -70px;
-}
+  left: 0;
+  right: 0; 
+  transition: transform 0.3s ease-in-out;
+} 

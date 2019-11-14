@@ -1,3 +1,26 @@
 .border-grey-105 {
   border-color: #d5d5d5;
 }
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0; 
+  transition: transform 0.4s ease-in-out;
+}
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+  background-color: black;
+}
+.headroom--scrolled {
+  transition: transform 0.4s ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
