@@ -32,11 +32,11 @@ export default class Navbar extends Component {
     const { prevScrollpos } = this.state;
     
     const currentScrollPos = typeof window !== `undefined` ? window.pageYOffset : null;
-    const visible = typeof window !== `undefined` ? prevScrollpos > currentScrollPos : null;
+    const test = typeof window !== `undefined` ? prevScrollpos > currentScrollPos : null;
     
     this.setState({
       prevScrollpos: currentScrollPos,
-      visible
+      test
     });
   };
 
@@ -44,7 +44,7 @@ export default class Navbar extends Component {
     return (
     <header 
       className={classnames("bg-black fixed w-full z-50 as-header navbar", {
-      // "navbar--hidden": !this.state.visible
+      "navbar--hidden": !this.state.test
     })}
     >
       <nav>
