@@ -355,7 +355,7 @@ function DesignTypographyPage() {
             </Heading> 
 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
-            <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Scale Categories"/> </li>
               <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={applyingTypeScale2} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Actual Values"/> </li>
             </ol> 

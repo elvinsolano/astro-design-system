@@ -51,13 +51,10 @@ function DesignColorPage() {
         </nav>
       </aside>
 
-
-
-
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className=" pl-16 pr-16 pt-16">
  
-          <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
+          <div className="flex justify-between as-page-title-wrapper border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Color</Heading>
             <div className="flex items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>

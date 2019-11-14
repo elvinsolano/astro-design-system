@@ -10,7 +10,7 @@ function Header({ siteTitle }) {
 
   return (
     <header className="fixed w-full z-50 as-header">
-      <Headroom className="navheader" downTolerance={10}>
+      <Headroom className="navheader">
         <nav>
           <div className="bg-black flex flex-wrap items-center justify-between as-header-link-wrapper">
             <Link to="/" className="flex self-start no-underline text-white">
@@ -49,7 +49,7 @@ function Header({ siteTitle }) {
                   to="/content"
                   className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline"
                   activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
-                  partiallyActive="true"
+                  partiallyActive
                 >
                   Content
                 </Link> */}
@@ -58,7 +58,7 @@ function Header({ siteTitle }) {
                   to="/design"
                   className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
                   activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
-                  partiallyActive="true"
+                  partiallyActive={true}
                 >
                   Design
                 </Link>
@@ -67,7 +67,7 @@ function Header({ siteTitle }) {
                   to="/elements"
                   className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
                   activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
-                  partiallyActive="true"
+                  partiallyActive={true}
                 >
                   Elements
                 </Link>
@@ -76,7 +76,7 @@ function Header({ siteTitle }) {
                   to="/components"
                   className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
                   activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
-                  partiallyActive="true"
+                  partiallyActive={true}
                 >
                   Components
                 </Link>
@@ -85,7 +85,7 @@ function Header({ siteTitle }) {
                   to="/applications"
                   className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline"
                   activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
-                  partiallyActive="true"
+                  partiallyActive
                 >
                   Applications
                 </Link> */}

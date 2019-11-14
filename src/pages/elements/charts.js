@@ -173,7 +173,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">A chart used to show levels of strength, from low to very high, through 6 levels.<br/>*Uses primary red as highlighted color.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={typesStrengthChart1} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Zero" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesStrengthChart2} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Low" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={typesStrengthChart3} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Med Low" /> </li>
@@ -200,7 +200,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">A chart to show an active step or milestone within a timeline.<br/>*Uses primary red as highlighted color.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesTimelineChart1} className="lazyload inline-block" width="10" height="98" alt="Charts Types Timeline Charts 1" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesTimelineChart2} className="lazyload inline-block" width="10" height="97" alt="Charts Types Timeline Charts 2" /> </li>
               </ol>  
@@ -318,7 +318,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={specsStrengthChart1} className="lazyload inline-block" width="136" height="46" alt="Charts Specs Strength Chart" /> </li>
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={specsStrengthChart2} className="lazyload inline-block" width="40" height="47" alt="Charts Specs Strength Chart" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={specsStrengthChart3} className="lazyload inline-block" width="32" height="47" alt="Charts Specs Strength Chart" /> </li>
@@ -327,13 +327,14 @@ function ElementsChartsPage() {
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">6</span><img data-src={specsStrengthChart6} className="lazyload inline-block" width="30" height="8" alt="Charts Specs Strength Chart" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">7</span><img data-src={specsStrengthChart7} className="lazyload inline-block" width="171" height="46" alt="Charts Specs Strength Chart" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Low.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Medium Low.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">3. Medium.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">4. Medium High.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">5. High.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">6. Very High.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">7. Filled.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Empty.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Low.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Medium Low.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Medium.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">5. Medium High.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">6. High.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">7. Very High.</p> 
+               
             </div> 
 
             <div className="mb-16">

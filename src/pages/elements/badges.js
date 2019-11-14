@@ -187,7 +187,7 @@ function ElementsBadgesPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-8 relative mb-12"><span className="list-circle">1</span><img data-src={specsSystemBadges1} className="lazyload inline-block" width="224" height="146" alt="Badges Specs System Badges Red" /> </li>
                 <li className="as-grid-6 relative mb-12"><span className="list-circle">2</span><img data-src={specsSystemBadges2} className="lazyload inline-block" width="147" height="146" alt="Badges Specs System Badges Yellow" /> </li>
                 <li className="as-grid-6 relative mb-12"><span className="list-circle">3</span><img data-src={specsSystemBadges3} className="lazyload inline-block" width="147" height="146" alt="Badges Specs System Badges Green" /> </li>

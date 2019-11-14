@@ -105,7 +105,7 @@ function ElementsLoadersPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading>  
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesPullDownLoader1} className="lazyload inline-block" width="18" height="17" alt="Loaders Types Pull Down" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">A pull down loader is used when a user wants to refresh a page or section.</p> 
@@ -120,9 +120,9 @@ function ElementsLoadersPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">A general loader is most commonly used for password reset and when items or information take a long time to load.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesGeneralLoader1} className="lazyload inline-block" width="251" height="220" alt="Loaders Types General With Text" /> </li>
-                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesGeneralLoader2} className="lazyload inline-block" width="40" height="40" alt="Loaders Types General Without Text" /> </li>
+              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={typesGeneralLoader1} className="lazyload inline-block" width="251" height="220" alt="Loaders Types General With Text" /> </li>
+                <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={typesGeneralLoader2} className="lazyload inline-block" width="40" height="40" alt="Loaders Types General Without Text" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. With Text</p> 
               <p className="as-type-regular text-sm text-greyStatus-600">2. Without Text</p> 
@@ -178,7 +178,7 @@ function ElementsLoadersPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading>  
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start"> 
+              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start"> 
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsPullDownLoader1} className="lazyload inline-block" width="264" height="93" alt="Loaders Specs Pull Down Loader" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Pull Down Loader</p> 
@@ -192,7 +192,7 @@ function ElementsLoadersPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-300 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsGeneralLoader1} className="lazyload inline-block" width="423" height="320" alt="Loaders Specs General Loader 1" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={specsGeneralLoader2} className="lazyload inline-block" width="200" height="40" alt="Loaders Specs General Loader 2" /> </li>
               </ol>  
