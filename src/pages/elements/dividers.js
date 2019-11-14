@@ -11,25 +11,25 @@ import SEO from "../../components/seo";
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../components/atoms/heading'; 
  
-import typesLightDividers1 from "../../assets/elements/dividers/types/light-dividers/01 Light Divider Small.png";   
-import typesLightDividers2 from "../../assets/elements/dividers/types/light-dividers/02 Light Divider Large.png";   
-import typesLightDividers3 from "../../assets/elements/dividers/types/light-dividers/03 Light Divider XL.png";   
-import typesLightDividers4 from "../../assets/elements/dividers/types/light-dividers/04 Light Divider XXL.png"; 
-import typesDarkDividers1 from "../../assets/elements/dividers/types/dark-dividers/01 Divider Dark Large.png";
+// import typesLightDividers1 from "../../assets/elements/dividers/types/light-dividers/01 Light Divider Small.png";   
+// import typesLightDividers2 from "../../assets/elements/dividers/types/light-dividers/02 Light Divider Large.png";   
+// import typesLightDividers3 from "../../assets/elements/dividers/types/light-dividers/03 Light Divider XL.png";   
+// import typesLightDividers4 from "../../assets/elements/dividers/types/light-dividers/04 Light Divider XXL.png"; 
+// import typesDarkDividers1 from "../../assets/elements/dividers/types/dark-dividers/01 Divider Dark Large.png";
 
-import usageLightDividers1 from "../../assets/elements/dividers/usage/light-dividers/01 Light Dividers Usage.png";   
-import usageLightDividers2 from "../../assets/elements/dividers/usage/light-dividers/02 Light Dividers Usage.png";   
-import usageDarkDividers1 from "../../assets/elements/dividers/usage/dark-dividers/01 Dark Dividers Usage.png";      
+// import usageLightDividers1 from "../../assets/elements/dividers/usage/light-dividers/01 Light Dividers Usage.png";   
+// import usageLightDividers2 from "../../assets/elements/dividers/usage/light-dividers/02 Light Dividers Usage.png";   
+// import usageDarkDividers1 from "../../assets/elements/dividers/usage/dark-dividers/01 Dark Dividers Usage.png";      
 
-import specsLightDividers1 from "../../assets/elements/dividers/specs/light-dividers/01 Light Divider Small Specs.png";   
-import specsLightDividers2 from "../../assets/elements/dividers/specs/light-dividers/02 Light Divider Large Specs.png";   
-import specsLightDividers3 from "../../assets/elements/dividers/specs/light-dividers/03 Light Divider XL Specs.png";   
-import specsLightDividers4 from "../../assets/elements/dividers/specs/light-dividers/04 Light Divider XXL Specs.png"; 
-import specsDarkDividers1 from "../../assets/elements/dividers/specs/dark-dividers/01 Dark Divider Small Specs.png";     
+// import specsLightDividers1 from "../../assets/elements/dividers/specs/light-dividers/01 Light Divider Small Specs.png";   
+// import specsLightDividers2 from "../../assets/elements/dividers/specs/light-dividers/02 Light Divider Large Specs.png";   
+// import specsLightDividers3 from "../../assets/elements/dividers/specs/light-dividers/03 Light Divider XL Specs.png";   
+// import specsLightDividers4 from "../../assets/elements/dividers/specs/light-dividers/04 Light Divider XXL Specs.png"; 
+// import specsDarkDividers1 from "../../assets/elements/dividers/specs/dark-dividers/01 Dark Divider Small Specs.png";     
 
-import guidanceDividers1 from "../../assets/elements/dividers/guidance/01 Dividers Guidance.png";   
-import guidanceDividers2 from "../../assets/elements/dividers/guidance/02 Dividers Guidance.png";   
-import guidanceDividers3 from "../../assets/elements/dividers/guidance/03 Dividers Guidance.png"; 
+// import guidanceDividers1 from "../../assets/elements/dividers/guidance/01 Dividers Guidance.png";   
+// import guidanceDividers2 from "../../assets/elements/dividers/guidance/02 Dividers Guidance.png";   
+// import guidanceDividers3 from "../../assets/elements/dividers/guidance/03 Dividers Guidance.png"; 
 
 function ElementsDividersPage() { 
 
@@ -40,7 +40,7 @@ function ElementsDividersPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
-      <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid">
+      {/* <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid">
         <div className="as-nav-logo">
           <svg
             className="fill-current"
@@ -254,7 +254,7 @@ function ElementsDividersPage() {
           </section>
 
         </main>
-      </div>
+      </div> */}
     </Layout>
   );
 }
