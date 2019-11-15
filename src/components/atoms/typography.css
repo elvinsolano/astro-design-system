@@ -287,6 +287,7 @@ aside nav ul li a:active {
   padding-bottom: 0;
   padding-left: 40px;
   padding-right: 40px;
+  min-height: 70px;
 }
 .as-header-link {
   padding-left: 30px;
@@ -332,7 +333,7 @@ aside nav ul li a:active {
 
 .as-body main {
   margin-left: 230px;
-  max-width: 1050px;
+  max-width: 1053px;
   padding: 60px 40px 60px 60px;
 }
 
@@ -345,4 +346,8 @@ aside nav ul li a:active {
 
 .as-page-title-wrapper {
   padding-bottom: 14.5px;
+}
+
+.as-section {
+  padding-bottom: 120px;
 }

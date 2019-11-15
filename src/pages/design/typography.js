@@ -93,7 +93,7 @@ function DesignTypographyPage() {
             </div>
           </div> 
           
-          <section id="typeface" name="typeface" className="mb-24">
+          <section id="typeface" name="typeface" className="as-section">
             <span id="typeface-anchor" className="page-anchor"></span>
             
             <Heading level="2" className="as-h2 as-type-medium mb-3">Typeface  
@@ -115,7 +115,7 @@ function DesignTypographyPage() {
             <p className="mb-4 text-greyStatus-600 tracking-wider">Astro’s primary typeface is Helvetica Neue. It is a modern and versatile font that is legible in various styles, sizes and weights. Helvetica Neue is the only font used in the Astro design system, and only the regular and medium weights are used.</p>
             <div className="flex w-full my-8">
               <div className="w-1/3 mr-16">
-                <p className="text-sm uppercase as-type-regular">Helvetica Neue Regular</p>
+                <p className="text-sm uppercase as-type-medium">Helvetica Neue Regular</p>
                 <p className="as-h0 as-type-regular">Aa</p>
                 <p className="text-xl break-words as-type-regular">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890#+-@=%/>(&#123;[?1]&#125;)</p>
               </div>
@@ -177,7 +177,7 @@ function DesignTypographyPage() {
             </div> 
           </section>
 
-          <section id="type-scale" name="type-scale" className="mb-24">
+          <section id="type-scale" name="type-scale" className="as-section">
             <span id="type-scale-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Type Scale
@@ -336,7 +336,7 @@ function DesignTypographyPage() {
             </div> 
           </section>
 
-          <section id="applying-type-scale" name="applying-type-scale" className="mb-24">
+          <section id="applying-type-scale" name="applying-type-scale" className="as-section">
             <span id="applying-type-scale-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Applying Type Scale
@@ -363,7 +363,7 @@ function DesignTypographyPage() {
             <p className="as-type-regular text-sm text-greyStatus-600">2. Actual Values</p>
           </section>
 
-          <section id="guidance" name="guidance" className="mb-24">
+          <section id="guidance" name="guidance" className="as-section">
             <span id="guidance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
