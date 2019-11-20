@@ -19,11 +19,11 @@ import typesSystem4 from "../../assets/design/pictograms/types/system/04 Menu.pn
 import typesSystem5 from "../../assets/design/pictograms/types/system/05 No result.png";
 import typesSystem6 from "../../assets/design/pictograms/types/system/06 Empty.png";
 
-import typesAnimated1 from "../../assets/design/pictograms/types/animated/01 Activities.png";
-import typesAnimated2 from "../../assets/design/pictograms/types/animated/02 Nudges.png";
-import typesAnimated3 from "../../assets/design/pictograms/types/animated/03 Discover.gif";
-import typesAnimated4 from "../../assets/design/pictograms/types/animated/04 Loading Profile.png";
-import typesAnimated5 from "../../assets/design/pictograms/types/animated/05 Checked Profile.png";
+import typesAnimated1 from "../../assets/design/pictograms/types/animated/01 Activities_@4X.gif";
+import typesAnimated2 from "../../assets/design/pictograms/types/animated/02 Nudges_@4X.gif";
+import typesAnimated3 from "../../assets/design/pictograms/types/animated/03 Discover_@4X.gif";
+import typesAnimated4 from "../../assets/design/pictograms/types/animated/04 Loading Profile_@1X.gif";
+import typesAnimated5 from "../../assets/design/pictograms/types/animated/05 Checked Profile_@1X.gif";
 
 import guidance1 from "../../assets/design/pictograms/guidance/01 Guidance.png";
 import guidance2 from "../../assets/design/pictograms/guidance/02 Guidance.png";
@@ -90,7 +90,7 @@ function DesignPictogramsPage() {
             </div>
           </div> 
           
-          <section id="types" name="types" className="mb-24">
+          <section id="types" name="types" className="as-section">
             <span id="types-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-12">Types
@@ -117,13 +117,13 @@ function DesignPictogramsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">System pictograms help tell our story by visualizing key concepts and information in an approachable and human way. Used in a supportive role, pictograms help emphasize and navigate important information to make concepts easy to understand.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesSystem1} className="lazyload inline-block" width="96" height="84" alt="Pictograms Types System Pictograms 1" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={typesSystem2} className="lazyload inline-block" width="53" height="99" alt="Pictograms Types System Pictograms 2" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img data-src={typesSystem3} className="lazyload inline-block" width="137" height="77" alt="Pictograms Types System Pictograms 3" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">4</span><img data-src={typesSystem4} className="lazyload inline-block" width="225" height="68" alt="Pictograms Types System Pictograms 4" /> </li> 
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">5</span><img data-src={typesSystem5} className="lazyload inline-block" width="133" height="149" alt="Pictograms Types System Pictograms 5" /> </li> 
-                <li className="as-grid-4 relative"><span className="list-circle">6</span><img data-src={typesSystem6} className="lazyload inline-block" width="149" height="201" alt="Pictograms Types System Pictograms 6" /> </li> 
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                <li className="as-grid-8 relative mb-16"><span className="list-circle">1</span><img data-src={typesSystem1} className="lazyload inline-block" width="96" height="84" alt="Pictograms Types System Pictograms 1" /> </li> 
+                <li className="as-grid-8 relative mb-16"><span className="list-circle">2</span><img data-src={typesSystem2} className="lazyload inline-block" width="53" height="99" alt="Pictograms Types System Pictograms 2" /> </li> 
+                <li className="as-grid-8 relative mb-16"><span className="list-circle">3</span><img data-src={typesSystem3} className="lazyload inline-block" width="137" height="77" alt="Pictograms Types System Pictograms 3" /> </li> 
+                <li className="as-grid-8 relative mb-16"><span className="list-circle">4</span><img data-src={typesSystem4} className="lazyload inline-block" width="225" height="68" alt="Pictograms Types System Pictograms 4" /> </li> 
+                <li className="as-grid-8 relative"><span className="list-circle">5</span><img data-src={typesSystem5} className="lazyload inline-block" width="133" height="149" alt="Pictograms Types System Pictograms 5" /> </li> 
+                <li className="as-grid-8 relative"><span className="list-circle">6</span><img data-src={typesSystem6} className="lazyload inline-block" width="149" height="201" alt="Pictograms Types System Pictograms 6" /> </li> 
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Voice.</p> 
               <p className="as-type-regular text-sm text-greyStatus-600">2. History.</p> 
@@ -142,22 +142,33 @@ function DesignPictogramsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">Animated pictograms can enable a pictogram to perform in a way that adds polish and delight. They can use simple or complex motion based on the level of emphasis preferred.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesAnimated1} className="lazyload inline-block" width="125" height="150" alt="Pictograms Types Animated Pictograms 1" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={typesAnimated2} className="lazyload inline-block" width="143" height="149" alt="Pictograms Types Animated Pictograms 2" /> </li> 
-                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img data-src={typesAnimated3} className="lazyload inline-block" alt="Pictograms Types Animated Pictograms 3" /> </li> 
-                <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img data-src={typesAnimated4} className="lazyload inline-block" width="150" height="9" alt="Pictograms Types Animated Pictograms 4" /> </li> 
-                <li className="as-grid-4 relative"><span className="list-circle">5</span><img data-src={typesAnimated5} className="lazyload inline-block" width="16" height="12" alt="Pictograms Types Animated Pictograms 5" /> </li>  
-              </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Activities.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Nudges.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">3. Discover.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">4. Loading Profile.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">5. Check Mark.</p>  
+              
+              <div className="flex flex-wrap -mx-4 mb-12">  
+                <div className="w-grid px-4 mb-8"> 
+                  <img data-src={typesAnimated1} className="lazyload mb-3" width="290" alt="Pictograms Guidance 1" />
+                  <p className="text-sm mb-3 text-greyStatus-600">Activities</p>
+                </div>
+                <div className="w-grid px-4 mb-8"> 
+                  <img data-src={typesAnimated2} className="lazyload mb-3" width="290" alt="Pictograms Guidance 2" />
+                  <p className="text-sm mb-3 text-greyStatus-600">Nudges</p>
+                </div>
+                <div className="w-grid px-4 mb-8"> 
+                  <img data-src={typesAnimated3} className="lazyload mb-3" width="290" alt="Pictograms Guidance 3" />
+                  <p className="text-sm mb-3 text-greyStatus-600">Discover</p>
+                </div>
+                <div className="w-grid px-4 mb-8"> 
+                  <img data-src={typesAnimated4} className="lazyload mb-3" width="290" alt="Pictograms Guidance 4" />
+                  <p className="text-sm mb-3 text-greyStatus-600">Loading Profile</p>
+                </div>
+                <div className="w-grid px-4 mb-8"> 
+                  <img data-src={typesAnimated5} className="lazyload mb-3" width="290" alt="Pictograms Guidance 5" />
+                  <p className="text-sm mb-3 text-greyStatus-600">Check Mark</p>
+                </div> 
+              </div>  
             </div>  
           </section>
 
-          <section id="guidance" name="guidance" className="mb-48">
+          <section id="guidance" name="guidance" className="as-section mb-48">
             <span id="guidance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance

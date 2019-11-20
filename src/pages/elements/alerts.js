@@ -1,14 +1,62 @@
 import React, { Component, useState } from "react"; 
 import Scrollspy from 'react-scrollspy'; 
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import ReactTooltip from 'react-tooltip';
+import ReactTooltip from 'react-tooltip'
 import {Link} from 'gatsby';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'lazysizes';
 
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"; 
-import Heading from '../../components/atoms/heading';
+import { Row, Col, Button } from 'tailwind-react-ui';
+import Heading from '../../components/atoms/heading'; 
+
+import typesFieldAlert1 from "../../assets/elements/alerts/types/Field Alert/01 Mandatory.png";   
+import typesFieldAlert2 from "../../assets/elements/alerts/types/Field Alert/02 Green Alert.png";   
+import typesFieldAlert3 from "../../assets/elements/alerts/types/Field Alert/03 Red Alert.png"; 
+import typesSystemAlert1 from "../../assets/elements/alerts/types/System Alert/01 Validation.png";   
+import typesSystemAlert2 from "../../assets/elements/alerts/types/System Alert/02 Continue.png";   
+import typesAuthorizationMessage1 from "../../assets/elements/alerts/types/Authorization Message/01 Authorization Message.png";   
+import typesOverlayMessage1 from "../../assets/elements/alerts/types/Overlay Message/Overlay Message.png";
+import typesCoachmarks1 from "../../assets/elements/alerts/types/Coachmarks/01 Voice.png";
+import typesCoachmarks2 from "../../assets/elements/alerts/types/Coachmarks/02 Keyboard.png";
+import typesCoachmarks3 from "../../assets/elements/alerts/types/Coachmarks/03 History.png";
+import typesCoachmarks4 from "../../assets/elements/alerts/types/Coachmarks/04 Menu.png";
+import typesToasts1 from "../../assets/elements/alerts/types/Toasts/01 Confirmation.png";
+import typesToasts2 from "../../assets/elements/alerts/types/Toasts/02 Error.png";
+import typesToasts3 from "../../assets/elements/alerts/types/Toasts/03 Informational.png";
+import typesToasts4 from "../../assets/elements/alerts/types/Toasts/04 Actionable.png";
+
+import usageFieldAlert1 from "../../assets/elements/alerts/usage/Field Alert/01 Mandatory Alert.png";   
+import usageFieldAlert2 from "../../assets/elements/alerts/usage/Field Alert/02 Field Alerts.png"; 
+import usageSystemAlert1 from "../../assets/elements/alerts/usage/System Alert/01 Validation.png";   
+import usageSystemAlert2 from "../../assets/elements/alerts/usage/System Alert/02 Continue Alert FPO.png";   
+import usageAuthorizationMessage1 from "../../assets/elements/alerts/usage/Authorization Message/01 Authorization Message.png";   
+import usageAllowNotificationsMessage1 from "../../assets/elements/alerts/usage/Allow Notifications Message/01 Allow Notifications Message.png";
+import usageCoachmarks1 from "../../assets/elements/alerts/usage/Coachmarks/01 Voice Coachmark.png";
+import usageCoachmarks2 from "../../assets/elements/alerts/usage/Coachmarks/02 History Coachmark.png"; 
+import usageToasts1 from "../../assets/elements/alerts/usage/Toasts/01 Toasts FPO.png"; 
+
+import specsFieldAlert1 from "../../assets/elements/alerts/specs/Field Alert/01 Mandatory Specs.png";   
+import specsFieldAlert2 from "../../assets/elements/alerts/specs/Field Alert/02 Green Specs.png"; 
+import specsFieldAlert3 from "../../assets/elements/alerts/specs/Field Alert/03 Red Alert.png"; 
+import specsSystemAlert1 from "../../assets/elements/alerts/specs/System Alert/01 Validation Specs.png";   
+import specsSystemAlert2 from "../../assets/elements/alerts/specs/System Alert/02 Continue Specs.png";   
+import specsSystemAlert3 from "../../assets/elements/alerts/specs/System Alert/01 Continue Specs.png";   
+import specsAuthorizationMessage1 from "../../assets/elements/alerts/specs/Authorization Message/01 Authorization Message Specs.png";   
+import specsOverlayMessage1 from "../../assets/elements/alerts/specs/Overlay Message/Overlay Message.png";
+import specsCoachmarks1 from "../../assets/elements/alerts/specs/Coachmarks/01 Coachmarks Specs.png"; 
+import specsToasts1 from "../../assets/elements/alerts/specs/Toasts/01 Toasts Specs FPO.png"; 
+import specsToasts2 from "../../assets/elements/alerts/specs/Toasts/02 Toasts Specs FPO.png"; 
+import specsToasts3 from "../../assets/elements/alerts/specs/Toasts/03 Toasts Specs FPO.png"; 
+import specsToasts4 from "../../assets/elements/alerts/specs/Toasts/04 Toasts Specs FPO.png"; 
+
+import guidance1 from "../../assets/elements/alerts/guidance/01 Alerts Notifications Guidance FPO.png"; 
+import guidance2 from "../../assets/elements/alerts/guidance/02 Alerts Notifications Guidance.png"; 
+import guidance3 from "../../assets/elements/alerts/guidance/03 Alerts Notifications Guidance.png"; 
+import guidance4 from "../../assets/elements/alerts/guidance/04 Alerts Notifications Guidance.png"; 
+import guidance5 from "../../assets/elements/alerts/guidance/05 Alerts Notifications Guidance.png"; 
+import guidance6 from "../../assets/elements/alerts/guidance/06 Alerts Notifications Guidance.png"; 
 
 function ElementsAlertsPage() { 
 
@@ -35,7 +83,14 @@ function ElementsAlertsPage() {
           <ul className="">  
             <li><Link to="elements/buttons" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Buttons and CTA's</Link></li>
             <li><Link to="elements/dividers" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Dividers</Link></li>
-            <li><Link to="elements/alerts" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Alerts and Notifications</Link></li>
+            <li><Link to="elements/alerts" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Alerts and Notifications</Link>
+              <Scrollspy items={ ['types', 'usage', 'specs', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
+                <li><Link to="elements/alerts#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Types</Link></li>
+                <li><Link to="elements/alerts#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Usage</Link></li>                
+                <li><Link to="elements/alerts#specs-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Specs</Link></li>
+                <li><Link to="elements/alerts#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
+              </Scrollspy>              
+            </li>
             <li><Link to="elements/badges" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Badges</Link></li>
             <li><Link to="elements/charts" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Charts</Link></li>
             <li><Link to="elements/form-fields" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Form Fields</Link></li>
@@ -61,16 +116,16 @@ function ElementsAlertsPage() {
             </div>
           </div> 
 
-          <section id="primary" name="primary" className="mb-24">
-            <span id="primary-anchor" className="page-anchor"></span>
+          <section id="types" name="types" className="as-section">
+            <span id="types-anchor" className="page-anchor"></span>
 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Primary
+            <Heading level="2" className="as-h2 as-type-medium mb-12">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                 </svg> 
               </CopyToClipboard>
-              <ReactTooltip id='primary' place="right" type="success" effect="solid" globalEventOff='click'> 
+              <ReactTooltip id='types' place="right" type="success" effect="solid" globalEventOff='click'> 
                 <svg className="fill-current cursor-pointer inline-block align-bottom mr-2" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#4ead58" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
                   <path fill="#fff" d="M9.324 15.841l3.102 2.998 10.266-9.95 2.197 2.144-12.463 12.078-5.315-5.151z"></path>
@@ -78,12 +133,344 @@ function ElementsAlertsPage() {
                 URL Copied
               </ReactTooltip>              
             </Heading> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Alerts communicate context as to the status or validity around information. Notifications are messages from the system that bring something to the user's attention.</p>
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Field Alert
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Helps users understand the state and/or the validity of information within fields.</p>
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={typesFieldAlert1} className="lazyload inline-block" width="66" height="1" alt="Alerts Field Mandatory" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">2</span><img data-src={typesFieldAlert2} className="lazyload inline-block" width="61" height="1" alt="Alerts Field Red Alert" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={typesFieldAlert3} className="lazyload inline-block" width="50" height="1" alt="Alerts Field Green Alert" /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Field Alerts: Mandatory</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Field Alerts: Green Alert</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Field Alerts: Red Alert</p> 
+            </div>
 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
-            <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              {/* <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" /> </li> */}
-            </ol> 
-            <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p> 
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">System Alert
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">A message from the system that informs users about the state of the system.</p>
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={typesSystemAlert1} className="lazyload inline-block" width="270" alt="Alerts System Validation" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesSystemAlert2} className="lazyload inline-block" width="270" alt="Alerts System Continue" /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Validation</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Continue</p>
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Authorization Message
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Notifies about the validity of user credentials for features, services or the system.</p>
+              <ol className="mb-5 py-16 px-20 bg-placeholder-300 border flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={usageAuthorizationMessage1} className="lazyload inline-block" width="254" alt="Alerts Authorization Message " /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Authorization Message</p> 
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Overlay Message
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">A intersticial message that provides additional  information and can also allow the user to take actions based on that information.</p>
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesOverlayMessage1} className="lazyload inline-block" width="335" alt="Overlay Message" /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Overlay</p> 
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Coachmarks
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">An interstitial message designed to “coach” users on how to engage with product features or take set up actions.</p>
+              <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesCoachmarks1} className="lazyload inline-block" width="295" alt="Overlay Message" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={typesCoachmarks2} className="lazyload inline-block" width="295" alt="Overlay Message" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={typesCoachmarks3} className="lazyload inline-block" width="295" alt="Overlay Message" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img data-src={typesCoachmarks4} className="lazyload inline-block" width="295" alt="Overlay Message" /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Voice</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Keyboard</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. History</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu</p> 
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Toasts
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Lorem Ipsum.</p>
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesToasts1} className="lazyload inline-block" width="355" alt="Overlay Message" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={typesToasts2} className="lazyload inline-block" width="355" alt="Overlay Message" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img data-src={typesToasts3} className="lazyload inline-block" width="355" alt="Overlay Message" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img data-src={typesToasts4} className="lazyload inline-block" width="355" alt="Overlay Message" /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Confirmation</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Keyboard</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. History</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu</p> 
+            </div> 
+            
+          </section>
+
+          <section id="usage" name="usage" className="as-section"> 
+            <span id="usage-anchor" className="page-anchor"></span> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
+              <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Alerts and notifications are used to share messages about states and/or requirements with the user. Here are examples of how they're used within Astro.</p>
+            <Tabs>
+              <TabList>
+                <Tab>Field Alert</Tab>
+                <Tab>System Alert</Tab>
+                <Tab>Authorization Message</Tab>
+                <Tab>Overlay Message</Tab>
+                <Tab>Coachmarks</Tab>
+                <Tab>Toasts</Tab>
+              </TabList> 
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageFieldAlert1} className="lazyload mr-12" width="375px" alt="Buttons Usage Primary" />
+                  <img data-src={usageFieldAlert2} className="lazyload " width="375px" alt="Buttons Usage Primary" />
+                </div> 
+              </TabPanel>
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageSystemAlert1} className="lazyload mr-12" width="375px" alt="Buttons Usage Secondary" />
+                  <img data-src={usageSystemAlert2} className="lazyload " width="375px" alt="Buttons Usage Secondary" />
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageAuthorizationMessage1} className="lazyload " width="375px" alt="Buttons Usage Text" />
+                </div>
+              </TabPanel> 
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageAllowNotificationsMessage1} className="lazyload " width="375px" alt="Buttons Usage Next Step" />
+                </div>
+              </TabPanel> 
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageCoachmarks1} className="lazyload mr-12" width="375px" alt="Buttons Usage Voice" />
+                  <img data-src={usageCoachmarks2} className="lazyload " width="375px" alt="Buttons Usage Voice" />
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageToasts1} className="lazyload " width="375px" alt="Buttons Usage Voice" />
+                </div>
+              </TabPanel>
+            </Tabs>
+          </section>       
+          
+          <section id="specs" name="specs" className="as-section">
+            <span id="specs-anchor" className="page-anchor"></span>
+
+            <Heading level="2" className="as-h2 as-type-medium mb-12">Specs
+              <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
+                <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+              <ReactTooltip id='specs' place="right" type="success" effect="solid" globalEventOff='click'> 
+                <svg className="fill-current cursor-pointer inline-block align-bottom mr-2" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#4ead58" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+                  <path fill="#fff" d="M9.324 15.841l3.102 2.998 10.266-9.95 2.197 2.144-12.463 12.078-5.315-5.151z"></path>
+                </svg>
+                URL Copied
+              </ReactTooltip>              
+            </Heading> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">A detailed representation of standards including type, color and maximum character count.</p>
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Field Alert
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={specsFieldAlert1} className="lazyload inline-block" width="210" height="1" alt="Alerts Field Mandatory" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">2</span><img data-src={specsFieldAlert2} className="lazyload inline-block" width="129" height="1" alt="Alerts Field Red Alert" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={specsFieldAlert3} className="lazyload inline-block" width="102" height="1" alt="Alerts Field Green Alert" /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Field Alerts: Mandatory</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Field Alerts: Green Alert</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Field Alerts: Red Alert</p> 
+            </div>
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">System Alert
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={specsSystemAlert1} className="lazyload inline-block" width="531" alt="Alerts System Validation" /> </li>
+                <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={specsSystemAlert2} className="lazyload inline-block" width="531" alt="Alerts System Continue" /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Validation</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Continue</p> 
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Authorization Message
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <ol className="mb-5 py-16 px-20 bg-placeholder-300 border flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={specsAuthorizationMessage1} className="lazyload inline-block" width="412" alt="Alerts Authorization Message " /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Authorization Message</p> 
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Allow Notifications Message
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={usageAllowNotificationsMessage1} className="lazyload inline-block" width="335" alt="Overlay Message" /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Allow Notifications Message</p> 
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Coachmarks
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={specsCoachmarks1} className="lazyload inline-block" width="489" alt="Overlay Message" /> </li> 
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Voice</p>  
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Toasts
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={specsToasts1} className="lazyload inline-block" width="665" alt="Overlay Message" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={specsToasts2} className="lazyload inline-block" width="665" alt="Overlay Message" /> </li>
+                <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img data-src={specsToasts3} className="lazyload inline-block" width="665" alt="Overlay Message" /> </li>
+                <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img data-src={specsToasts4} className="lazyload inline-block" width="665" alt="Overlay Message" /> </li>
+              </ol>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Confirmation</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Keyboard</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. History</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu</p> 
+            </div> 
+            
+          </section>
+
+          <section id="guidance" name="guidance" className="as-section mb-48">
+            <span id="guidance-anchor" className="page-anchor"></span>
+
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
+              <CopyToClipboard text={'http://localhost:8000/design/typography#guidance-anchor'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading>  
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for alerts and notifications to adhere to.</p>
+            <div className="flex flex-wrap -mx-4 mb-12">  
+
+              <div className="w-grid px-4 mb-8">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg> 
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Dividers Guidance 1" />
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use toast at the bottom of the screen.</p>
+              </div>
+              <div className="w-grid px-4 mb-8">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg> 
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Dividers Guidance 2" />
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use authorization message with a secondary button.</p>
+              </div>
+              <div className="w-grid px-4 mb-8">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg>
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Dividers Guidance 3" />
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use a system alert to notify about app functionality. Use only for system errors and messages.</p>
+              </div> 
+              <div className="w-grid px-4 mb-8">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg>
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Dividers Guidance 3" />
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use any other colors on field alerts.</p>
+              </div> 
+              <div className="w-grid px-4 mb-8">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg>
+                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Dividers Guidance 3" />
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use “*Mandatory” field alert on non-mandatory fields.</p>
+              </div> 
+              <div className="w-grid px-4 mb-8">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg>
+                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Dividers Guidance 3" />
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use an overlay message inside a card.</p>
+              </div> 
+            </div> 
           </section>
         </main>
       </div>

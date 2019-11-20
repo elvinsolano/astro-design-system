@@ -109,7 +109,7 @@ function ElementsChartsPage() {
             </div>
           </div> 
 
-          <section id="types" name="types" className="mb-24"> 
+          <section id="types" name="types" className="as-section"> 
             <span id="types-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium">Types
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -128,7 +128,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">A representation of percentages. <br/>*Uses primary red as highlighted color.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesCircleChart1} className="lazyload inline-block" width="150" height="150" alt="Charts Types Circle Charts" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Circle Chart.</p>
@@ -143,7 +143,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">A chart used for several sets of data to make up the whole. <br/>*Uses data among 1-10 colors.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDoughnutChart1} className="lazyload inline-block" width="150" height="150" alt="Charts Types Doughnut Charts" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Doughnut Chart.</p>
@@ -158,7 +158,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">A representation of percentages in a horizontal version.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesHorizontalChart1} className="lazyload inline-block" width="335" height="37" alt="Charts Types Horizontal Charts" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Horizontal Chart</p>
@@ -173,7 +173,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">A chart used to show levels of strength, from low to very high, through 6 levels.<br/>*Uses primary red as highlighted color.</p>
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={typesStrengthChart1} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Zero" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesStrengthChart2} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Low" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={typesStrengthChart3} className="lazyload inline-block" width="30" height="8" alt="Charts Types Strength Charts Med Low" /> </li>
@@ -200,7 +200,7 @@ function ElementsChartsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">A chart to show an active step or milestone within a timeline.<br/>*Uses primary red as highlighted color.</p>
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesTimelineChart1} className="lazyload inline-block" width="10" height="98" alt="Charts Types Timeline Charts 1" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesTimelineChart2} className="lazyload inline-block" width="10" height="97" alt="Charts Types Timeline Charts 2" /> </li>
               </ol>  
@@ -210,7 +210,7 @@ function ElementsChartsPage() {
              
           </section> 
 
-          <section id="usage" name="usage" className="mb-24"> 
+          <section id="usage" name="usage" className="as-section"> 
             <span id="usage-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -230,34 +230,34 @@ function ElementsChartsPage() {
               </TabList>
           
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage1} className="lazyload " width="375px" alt="Charts Usage Circle Chart" /> 
                 </div> 
               </TabPanel>
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage2} className="lazyload " width="375px" alt="Charts Usage Doughnut Chart" /> 
                 </div>
               </TabPanel> 
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage3} className="lazyload " width="375px" alt="Charts Usage Horizontal Chart" /> 
                 </div>
               </TabPanel> 
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage4} className="lazyload " width="375px" alt="Charts Usage Strength Chart" /> 
                 </div>
               </TabPanel> 
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage5} className="lazyload " width="375px" alt="Charts Usage Timeline Chart" /> 
                 </div>
               </TabPanel> 
             </Tabs>
           </section>
 
-          <section id="specs" name="specs" className="mb-24"> 
+          <section id="specs" name="specs" className="as-section"> 
             <span id="specs-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Specs
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -276,7 +276,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsCircleChart1} className="lazyload inline-block" width="505" height="228" alt="Charts Specs Circle Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Circle Chart</p> 
@@ -290,7 +290,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsDoughnutChart1} className="lazyload inline-block" width="420" height="190" alt="Charts Specs Doughnut Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Doughnut Chart</p> 
@@ -304,7 +304,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsHorizontalChart1} className="lazyload inline-block" width="489" height="147" alt="Charts Specs Horizontal Chart" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Horizontal Chart</p> 
@@ -318,7 +318,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={specsStrengthChart1} className="lazyload inline-block" width="136" height="46" alt="Charts Specs Strength Chart" /> </li>
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={specsStrengthChart2} className="lazyload inline-block" width="40" height="47" alt="Charts Specs Strength Chart" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={specsStrengthChart3} className="lazyload inline-block" width="32" height="47" alt="Charts Specs Strength Chart" /> </li>
@@ -345,7 +345,7 @@ function ElementsChartsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={specsTimelineChart1} className="lazyload inline-block" width="165" height="106" alt="Charts Specs Timeline Chart" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={specsTimelineChart2} className="lazyload inline-block" width="164" height="98" alt="Charts Specs Timeline Chart" /> </li>
               </ol>  
@@ -355,7 +355,7 @@ function ElementsChartsPage() {
             
           </section> 
 
-          <section id="guidance" name="guidance" className="mb-48">
+          <section id="guidance" name="guidance" className="as-section mb-48">
             <span id="guidance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance

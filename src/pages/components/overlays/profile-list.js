@@ -98,7 +98,7 @@ function ComponentsOverlaysProfilePage() {
             </div>
           </div> 
 
-          <section id="ui-examples" name="ui-examples" className="mb-24"> 
+          <section id="ui-examples" name="ui-examples" className="as-section"> 
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/overlays/single-item#ui-examples'}>
@@ -114,14 +114,14 @@ function ComponentsOverlaysProfilePage() {
               </TabList>
           
               <TabPanel>                  
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                   <img data-src={uiexamplesProfileOverlay1} className="lazyload " width="335" alt="Overlays Profile List UI Examples" />
                 </div> 
               </TabPanel> 
             </Tabs>
           </section>   
 
-          <section id="details" name="details" className="mb-24"> 
+          <section id="details" name="details" className="as-section"> 
             <span id="details-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Details
             <CopyToClipboard text={'http://localhost:8000/components/overlays/single-item#details'}>
@@ -131,12 +131,12 @@ function ComponentsOverlaysProfilePage() {
             </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
-            <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img data-src={detailsProfileOverlay1} className="lazyload " width="688" alt="Overlays Profile List Details" />
             </div> 
           </section>             
 
-          <section id="padding" name="padding" className="mb-24"> 
+          <section id="padding" name="padding" className="as-section"> 
             <span id="padding-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Padding
               <CopyToClipboard text={'http://localhost:8000/components/overlays/single-item#padding'}>
@@ -146,7 +146,7 @@ function ComponentsOverlaysProfilePage() {
               </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
-            <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img data-src={paddingProfileOverlay1} className="lazyload " width="398" alt="Overlays Profile List Padding" />
             </div> 
           </section>             

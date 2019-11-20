@@ -111,7 +111,7 @@ function DesignLogoPage() {
             </div>
           </div> 
 
-          <section id="overview" name="overview" className="mb-24"> 
+          <section id="overview" name="overview" className="as-section"> 
             <span id="overview-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Overview
@@ -129,12 +129,12 @@ function DesignLogoPage() {
               </ReactTooltip>               
             </Heading>  
             <p className="mb-4 text-greyStatus-600 tracking-wider">The Astro logo is made of three rectangles that connect to form the A icon. The concept reflects Astro's core purpose to connect us and simplify the way we work.</p>  
-            <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img data-src={overviewLogo1} className="lazyload" width="950" alt="Logo Overview" />
             </div> 
           </section>   
 
-          <section id="types" name="types" className="mb-24"> 
+          <section id="types" name="types" className="as-section"> 
             <span id="types-anchor" className="page-anchor"></span> 
 
             <Heading level="2" className="as-h2 as-type-medium mb-12">Types
@@ -278,7 +278,7 @@ function DesignLogoPage() {
             </div> 
           </section> 
 
-          <section id="construction" name="construction" className="mb-24"> 
+          <section id="construction" name="construction" className="as-section"> 
             <span id="construction-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Construction
@@ -296,12 +296,12 @@ function DesignLogoPage() {
               </ReactTooltip>               
             </Heading>  
             <p className="mb-4 text-greyStatus-600 tracking-wider">Our logo is based on simplifying the letter “A” for Astro. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space around the A is measured and kept in proportion by using a single, square block.</p>  
-            <div className="py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={constructionLogo1} className="lazyload" width="322" alt="Logo Construction" />
             </div> 
           </section>  
 
-          <section id="usage" name="usage" className="mb-24"> 
+          <section id="usage" name="usage" className="as-section"> 
             <span id="usage-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
@@ -328,29 +328,29 @@ function DesignLogoPage() {
               </TabList>
           
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex justify-center">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex justify-center">
                   <img data-src={usageLogo1} className="lazyload" width="375px" alt="Logo Usage Full Lock Up" />
                 </div> 
               </TabPanel>
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex justify-center">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex justify-center">
                   <img data-src={usageLogo2} className="lazyload" width="375px" alt="Logo Usage Icon" />
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex justify-center">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex justify-center">
                   <img data-src={usageLogo3} className="lazyload" width="768" alt="Logo Usage Wordmark" />
                 </div>
               </TabPanel> 
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex justify-center">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex justify-center">
                   <img data-src={usageLogo4} className="lazyload" width="375px" alt="Logo Usage App" />
                 </div>
               </TabPanel>
             </Tabs>
           </section> 
 
-          <section id="clearspace" name="clearspace" className="mb-24"> 
+          <section id="clearspace" name="clearspace" className="as-section"> 
             <span id="clearspace-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Clearspace
@@ -394,7 +394,7 @@ function DesignLogoPage() {
 
           </section>  
 
-          <section id="guidance" name="guidance" className="mb-48">
+          <section id="guidance" name="guidance" className="as-section mb-48">
             <span id="guidance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance

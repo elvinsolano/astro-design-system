@@ -69,7 +69,7 @@ function DesignColorPage() {
             </div>
           </div>         
 
-          <section id="primary" name="primary" className="mb-24"> 
+          <section id="primary" name="primary" className="as-section"> 
             <span id="primary-anchor" className="page-anchor"></span> 
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Primary
@@ -112,7 +112,7 @@ function DesignColorPage() {
             </div> 
           </section> 
 
-          <section id="secondary" name="secondary" className="mb-24"> 
+          <section id="secondary" name="secondary" className="as-section"> 
             <span id="secondary-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Secondary
               <CopyToClipboard text={'http://localhost:8000/design/color#secondary'}>
@@ -143,7 +143,7 @@ function DesignColorPage() {
             </div> 
           </section>
 
-          <section id="greys" name="greys" className="mb-24"> 
+          <section id="greys" name="greys" className="as-section"> 
             <span id="greys-anchor" className="page-anchor"></span>
  
             <Heading level="2" className="as-h2 as-type-medium mb-3">Grey Colors
@@ -232,10 +232,8 @@ function DesignColorPage() {
               </div>
             </div> 
           </section>  
-
-
-  
-          <section id="status" name="status" className="mb-24"> 
+ 
+          <section id="status" name="status" className="as-section"> 
             <span id="status-anchor" className="page-anchor"></span>
  
             <Heading level="2" className="as-h2 as-type-medium mb-3">Status Colors
@@ -283,7 +281,7 @@ function DesignColorPage() {
             </div> 
           </section>   
 
-          <section id="data-visualization" name="greys" className="mb-24"> 
+          <section id="data-visualization" name="greys" className="as-section"> 
             <span id="data-visualization-anchor" className="page-anchor"></span>
  
             <Heading level="2" className="as-h2 as-type-medium mb-3">Data Visualization Colors

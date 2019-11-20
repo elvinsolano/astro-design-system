@@ -107,7 +107,7 @@ function ElementsButtonsPage() {
             </div>
           </div> 
 
-          <section id="types" name="types" className="mb-24"> 
+          <section id="types" name="types" className="as-section"> 
             <span id="types-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-12">Types
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -125,7 +125,7 @@ function ElementsButtonsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-10 relative mb-12"><span className="list-circle">1</span><img data-src={typesPrimary1} className="lazyload inline-block" width="295" height="50" alt="Buttons Types Primary Buttons Primary Enabled" /> </li>
                 <li className="as-grid-10 relative mb-12"><span className="list-circle">2</span><img data-src={typesPrimary2} className="lazyload inline-block" width="295" height="50" alt="Buttons Types Primary Buttons Primary Pressed" /> </li>
                 <li className="as-grid-10 relative"><span className="list-circle">3</span><img data-src={typesPrimary3} className="lazyload inline-block" width="295" height="50" alt="Buttons Types Primary Buttons Primary Disabled" /> </li>
@@ -143,7 +143,7 @@ function ElementsButtonsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="relative"><span className="list-circle">1</span><img data-src={typesSecondary1} className="lazyload inline-block" width="174" height="30" alt="Buttons Types Secondary Button" /></li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">The secondary button is used for less important tasks or when space does not allow for the use of the primary button. </p>
@@ -156,7 +156,7 @@ function ElementsButtonsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesText1} className="lazyload inline-block" width="74" height="23" alt="Buttons Types Text Button Underlined" /></li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesText2} className="lazyload inline-block" width="168" height="22" alt="Buttons Types Text Button Suggestions" /></li>
               </ol>  
@@ -171,7 +171,7 @@ function ElementsButtonsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesNextStep1} className="lazyload inline-block" width="92" height="30" alt="Buttons Types Next Step Button Default" /></li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesNextStep2} className="lazyload inline-block" width="147" height="30" alt="Buttons Types Next Step Button Pressed" /></li>
               </ol>  
@@ -180,7 +180,7 @@ function ElementsButtonsPage() {
             </div>            
           </section>
 
-          <section id="voice" name="voice" className="mb-24"> 
+          <section id="voice" name="voice" className="as-section"> 
             <span id="voice-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Voice Button
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -189,7 +189,7 @@ function ElementsButtonsPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+            <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
               <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={voice1} className="lazyload inline-block" width="60" height="80" alt="Buttons Voice Button Active" /> </li>
               <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={voice2} className="lazyload inline-block" width="60" height="80" alt="Buttons Voice Button Listening" /> </li>
               <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={voice3} className="lazyload inline-block" width="60" height="80" alt="Buttons Voice Button Talking" /> </li>
@@ -203,7 +203,7 @@ function ElementsButtonsPage() {
             <p className="as-type-regular text-sm text-greyStatus-600">5. Delayed - Shows when Astro takes more than 3 seconds to execute a command.</p>
           </section>
 
-          <section id="usage" name="usage" className="mb-24"> 
+          <section id="usage" name="usage" className="as-section"> 
             <span id="usage-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -223,34 +223,34 @@ function ElementsButtonsPage() {
               </TabList>
           
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage1} className="lazyload " width="375px" alt="Buttons Usage Primary" />
                 </div> 
               </TabPanel>
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage2} className="lazyload " width="375px" alt="Buttons Usage Secondary" />
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage3} className="lazyload " width="375px" alt="Buttons Usage Text" />
                 </div>
               </TabPanel> 
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage4} className="lazyload " width="375px" alt="Buttons Usage Next Step" />
                 </div>
               </TabPanel> 
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage5} className="lazyload " width="375px" alt="Buttons Usage Voice" />
                 </div>
               </TabPanel>
             </Tabs>
           </section>
 
-          <section id="specs" name="specs" className="mb-24"> 
+          <section id="specs" name="specs" className="as-section"> 
             <span id="specs-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Specs
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -268,7 +268,7 @@ function ElementsButtonsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap justify-start">
                 <li className="w-full relative mb-12"><span className="list-circle">1</span><img data-src={specsPrimary1} className="lazyload inline-block" width="398" height="208" alt="Buttons Specs Primary 1" /></li>
                 <li className="w-full relative mb-12"><span className="list-circle">2</span><img data-src={specsPrimary2} className="lazyload inline-block" width="295" height="178" alt="Buttons Specs Primary 2" /> </li>
                 <li className="w-full relative"><span className="list-circle">3</span><img data-src={specsPrimary3} className="lazyload inline-block" width="295" height="174" alt="Buttons Specs Primary 3" /> </li>
@@ -282,7 +282,7 @@ function ElementsButtonsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={specsSecondary1} className="lazyload inline-block" width="278" height="221" alt="Buttons Specs Secondary 1" /></li> 
               </ol>
             </div> 
@@ -294,7 +294,7 @@ function ElementsButtonsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={specsText1} className="lazyload inline-block" width="237" height="72" alt="Buttons Specs Text 1" /></li> 
                 <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={specsText2} className="lazyload inline-block" width="331" height="88" alt="Buttons Specs Text 2"/></li> 
               </ol>
@@ -307,7 +307,7 @@ function ElementsButtonsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={specsNextStep1} className="lazyload inline-block" width="244" height="156" alt="Buttons Specs Next Step 1" /></li> 
                 <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={specsNextStep2} className="lazyload inline-block" width="147" height="85" alt="Buttons Specs Next Step 2" /></li> 
               </ol>
@@ -320,13 +320,13 @@ function ElementsButtonsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={specsVoice1} className="lazyload inline-block" width="291" height="124" alt="Buttons Specs Voice 1" /></li>  
               </ol>
             </div> 
           </section>          
 
-          <section id="guidance" name="guidance" className="mb-48">
+          <section id="guidance" name="guidance" className="as-section mb-48">
             <span id="guidance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance

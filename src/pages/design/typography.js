@@ -196,7 +196,7 @@ function DesignTypographyPage() {
             </Heading> 
 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The Astro type scale includes a range of contrasting styles that provide consistency, rhythm, hierarchy, and contrast. The goal is to present content in the simplest and most efficient way possible. The Astro type scale consists of 13 type styles, each with its own unique application and meaning.</p>
-            <div className="mb-12">
+            <div className="">
               <table className="w-full">
                 <thead className="">
                   <tr className="bg-grey-200">
@@ -317,7 +317,7 @@ function DesignTypographyPage() {
               </table>
             </div>
 
-            <div className="flex justify-between bg-black p-10 rounded-sm">
+            <div className="flex justify-between bg-black p-10 rounded-sm as-dyk">
               <div className="flex items-start mr-10 w-2/3">
                 <div className="mr-4 -mt-1">
                   <div className="DarkAndLightRectangleStyle">
@@ -334,6 +334,7 @@ function DesignTypographyPage() {
                 </svg> 
               </div>
             </div> 
+
           </section>
 
           <section id="applying-type-scale" name="applying-type-scale" className="as-section">
@@ -355,7 +356,7 @@ function DesignTypographyPage() {
             </Heading> 
 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
-            <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Scale Categories"/> </li>
               <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={applyingTypeScale2} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Actual Values"/> </li>
             </ol> 
@@ -381,38 +382,38 @@ function DesignTypographyPage() {
               </ReactTooltip>               
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for typography to adhere to.</p>
-            <div className="flex flex-wrap -mx-4 mb-12">  
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Below is a list of guidelines for typography to adhere to.</p>
+            <div className="flex flex-wrap -mx-5">  
 
-              <div className="w-grid px-4 mb-8">
+              <div className="as-guidance px-5 mb-5">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use any weight that is not regular or medium.</p>
+                <p className="text-sm text-greyStatus-600">Do not use any weight that is not regular or medium.</p>
               </div>
-              <div className="w-grid px-4 mb-8">
+              <div className="as-guidance px-5 mb-5">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg> 
                 <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Typography Guidance 2" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use adjust kerning or tracking.</p>
+                <p className="text-sm text-greyStatus-600">Do not use adjust kerning or tracking.</p>
               </div>
-              <div className="w-grid px-4 mb-8">
+              <div className="as-guidance px-5 mb-5">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Typography Guidance 3" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not make different levels of hierarchy the same weight.</p>
+                <p className="text-sm text-greyStatus-600">Do not make different levels of hierarchy the same weight.</p>
               </div>
-              <div className="w-grid px-4 mb-8">
+              <div className="as-guidance px-5 mb-5">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Typography Guidance 4" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not make any level of hierarchy the same size or scale as another.</p>
+                <p className="text-sm text-greyStatus-600">Do not make any level of hierarchy the same size or scale as another.</p>
               </div>
-              <div className="w-grid px-4 mb-8">
+              <div className="as-guidance px-5 mb-5">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
@@ -422,7 +423,7 @@ function DesignTypographyPage() {
             </div> 
           </section>
 
-          <section id="compliance" name="compliance" className="mb-64"> 
+          <section id="compliance" name="compliance" className="as-section mb-64"> 
             <span id="compliance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Compliance
@@ -443,8 +444,6 @@ function DesignTypographyPage() {
             <p className="mb-4 text-greyStatus-600 tracking-wider">Astro’s type scale system is AA Compliant. Each category has been tested and approved to meet the AA Compliance standards.</p>  
  
           </section>   
-
-            
 
         </main>
       </div>

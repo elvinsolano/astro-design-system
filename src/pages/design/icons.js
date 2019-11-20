@@ -62,7 +62,7 @@ function DesignIconsPage() {
             </div>
           </div>         
 
-          <section id="primary" name="primary" className="mb-24">
+          <section id="primary" name="primary" className="as-section">
             <span id="primary-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Primary
@@ -81,7 +81,7 @@ function DesignIconsPage() {
             </Heading> 
 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
-            <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               {/* <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" /> </li> */}
             </ol> 
             <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p> 

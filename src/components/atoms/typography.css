@@ -279,6 +279,9 @@ aside nav ul li a:active {
 .pb-21 {
   padding-bottom: 21px;
 }
+.mb-3 {
+  margin-bottom: 10px;
+}
 .as-header {
   height: 70px;
 }
@@ -349,5 +352,13 @@ aside nav ul li a:active {
 }
 
 .as-section {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+}
+
+.as-dyk {
+  margin: 120px 0 60px;
+}
+
+.as-guidance {
+  width: 330px;
 }

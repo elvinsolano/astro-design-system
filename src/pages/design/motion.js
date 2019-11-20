@@ -47,7 +47,7 @@ function DesignMotionPage() {
       </aside>
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className=" pl-16 pr-16 pt-16">
-          <section id="motion" name="motion" className="mb-24">
+          <section id="motion" name="motion" className="as-section">
             <span id="motion-anchor" className="page-anchor"></span>
 
             <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
@@ -81,7 +81,7 @@ function DesignMotionPage() {
             </Heading> 
 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
-            <ol className="mb-5 py-12 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               {/* <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" /> </li> */}
             </ol> 
             <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p> 

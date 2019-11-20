@@ -90,7 +90,7 @@ function ElementsBadgesPage() {
             </div>
           </div> 
 
-          <section id="types" name="types" className="mb-24"> 
+          <section id="types" name="types" className="as-section"> 
             <span id="types-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-12">Types
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -108,7 +108,7 @@ function ElementsBadgesPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={typesSystemBadges1} className="lazyload inline-block" width="67" height="20" alt="Badges Types System Badges Red" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesSystemBadges2} className="lazyload inline-block" width="87" height="20" alt="Badges Types System Badges Yellow" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={typesSystemBadges3} className="lazyload inline-block" width="81" height="20" alt="Badges Types System Badges Green" /> </li>
@@ -130,14 +130,14 @@ function ElementsBadgesPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="relative"><span className="list-circle">1</span><img data-src={typesNudgeCounter1} className="lazyload inline-block" width="30" height="24" alt="Badges Nudge Counter" /></li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">1. A nudge counter shows how many nudges are unread above the menu and within the quick access menu.</p>
             </div> 
           </section> 
 
-          <section id="usage" name="usage" className="mb-24"> 
+          <section id="usage" name="usage" className="as-section"> 
             <span id="usage-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -154,13 +154,13 @@ function ElementsBadgesPage() {
               </TabList>
           
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage1} className="lazyload mr-12" width="375px" alt="Badges Usage System Badges" />
                   <img data-src={usage2} className="lazyload " width="375px" alt="Badges Usage System Badges" /> 
                 </div> 
               </TabPanel>
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usage3} className="lazyload mr-12" width="375px" alt="Badges Usage Nudges Counter" />
                   <img data-src={usage4} className="lazyload " width="375px" alt="Badges Usage Nudges Counter" /> 
                 </div>
@@ -168,7 +168,7 @@ function ElementsBadgesPage() {
             </Tabs>
           </section>
 
-          <section id="specs" name="specs" className="mb-24"> 
+          <section id="specs" name="specs" className="as-section"> 
             <span id="specs-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-12">Specs
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -187,7 +187,7 @@ function ElementsBadgesPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-8 relative mb-12"><span className="list-circle">1</span><img data-src={specsSystemBadges1} className="lazyload inline-block" width="224" height="146" alt="Badges Specs System Badges Red" /> </li>
                 <li className="as-grid-6 relative mb-12"><span className="list-circle">2</span><img data-src={specsSystemBadges2} className="lazyload inline-block" width="147" height="146" alt="Badges Specs System Badges Yellow" /> </li>
                 <li className="as-grid-6 relative mb-12"><span className="list-circle">3</span><img data-src={specsSystemBadges3} className="lazyload inline-block" width="147" height="146" alt="Badges Specs System Badges Green" /> </li>
@@ -209,7 +209,7 @@ function ElementsBadgesPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="relative"><span className="list-circle">1</span><img data-src={specsNudgeCounter1} className="lazyload inline-block" width="256" height="100" alt="Badges Specs Nudge Counter" /></li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">1. Nudge Counter</p>

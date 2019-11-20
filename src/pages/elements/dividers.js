@@ -90,7 +90,7 @@ function ElementsDividersPage() {
             </div>
           </div> 
 
-          <section id="types" name="types" className="mb-24"> 
+          <section id="types" name="types" className="as-section"> 
             <span id="types-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-12">Types
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -109,7 +109,7 @@ function ElementsDividersPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Light dividers are used to divide different content lists and categories over white in cards and overlays.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesLightDividers1} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers Small" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={typesLightDividers2} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers Large" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={typesLightDividers3} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Light Dividers XL" /> </li>
@@ -130,14 +130,14 @@ function ElementsDividersPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Dark dividers are used to divide different content lists and categories over black in main canvas area.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesDarkDividers1} className="lazyload inline-block" width="295" height="1" alt="Dividers Types Dark Dividers Large" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Dark Divider: Large</p> 
             </div> 
           </section> 
 
-          <section id="usage" name="usage" className="mb-24"> 
+          <section id="usage" name="usage" className="as-section"> 
             <span id="usage-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -154,20 +154,20 @@ function ElementsDividersPage() {
               </TabList>
           
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usageLightDividers1} className="lazyload mr-12" width="375px" alt="Dividers Usage Light Dividers 1" />
                   <img data-src={usageLightDividers2} className="lazyload " width="375px" alt="Dividers Usage Light Dividers 2" /> 
                 </div> 
               </TabPanel>
               <TabPanel>
-                <div className="mb-12 py-12 px-20 bg-placeholder-300 flex">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
                   <img data-src={usageDarkDividers1} className="lazyload " width="375px" alt="Dividers Usage Dark Dividers 1" /> 
                 </div>
               </TabPanel> 
             </Tabs>
           </section>
 
-          <section id="specs" name="specs" className="mb-24"> 
+          <section id="specs" name="specs" className="as-section"> 
             <span id="specs-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Specs
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
@@ -187,7 +187,7 @@ function ElementsDividersPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={specsLightDividers1} className="lazyload inline-block" width="445" height="82" alt="Dividers Specs Light Dividers Small" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">2</span><img data-src={specsLightDividers2} className="lazyload inline-block" width="485" height="82" alt="Dividers Specs Light Dividers Large" /> </li>
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">3</span><img data-src={specsLightDividers3} className="lazyload inline-block" width="475" height="82" alt="Dividers Specs Light Dividers XL" /> </li>
@@ -208,7 +208,7 @@ function ElementsDividersPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Badges draw users’ attention to updated, new or removed content. They are typically placed throughout the UI. Here are examples of how they’re used within Astro.</p>
-              <ol className="mb-5 py-12 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={specsDarkDividers1} className="lazyload inline-block" width="485" height="81" alt="Dividers Specs Dark Dividers Large" /> </li>
               </ol>  
               <p className="as-type-regular text-sm text-greyStatus-600">1. Dark Divider: Large</p> 
@@ -216,7 +216,7 @@ function ElementsDividersPage() {
             
           </section>  
 
-          <section id="guidance" name="guidance" className="mb-48">
+          <section id="guidance" name="guidance" className="as-section mb-48">
             <span id="guidance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
