@@ -80,12 +80,12 @@ function ElementsButtonsPage() {
                 <li><Link to="elements/buttons#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
               </Scrollspy>             
             </li>
-            <li><a href="dividers" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Dividers</a></li>
-            <li><a href="alerts" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Alerts and Notifications</a></li>
-            <li><a href="badges" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Badges</a></li>
-            <li><a href="charts" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Charts</a></li>
-            <li><a href="form-fields" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Form Fields</a></li>
-            <li><a href="loaders" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Loaders</a></li>
+            <li><Link to="elements/dividers" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Dividers</Link></li>
+            <li><Link to="elements/alerts" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Alerts and Notifications</Link></li>
+            <li><Link to="elements/charts" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Badges</Link></li>
+            <li><Link to="elements/charts" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Charts</Link></li>
+            <li><Link to="elements/form-fields" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Form Fields</Link></li>
+            <li><Link to="elements/loaders" className="block text-sm text-grey-400 w-full hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Loaders</Link></li>
           </ul> 
         </nav>
       </aside>

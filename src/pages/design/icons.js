@@ -1,14 +1,99 @@
 import React, { Component, useState } from "react"; 
 import Scrollspy from 'react-scrollspy'; 
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import ReactTooltip from 'react-tooltip'
+import ReactTooltip from 'react-tooltip';
 import {Link} from 'gatsby';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'lazysizes';
 
 import Layout from "../../components/layout";
 import SEO from "../../components/seo"; 
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../components/atoms/heading'; 
+
+import typesPulse1 from "../../assets/design/icons/types/Pulse/01 Pulse Large.png";
+import typesPulse2 from "../../assets/design/icons/types/Pulse/02 Pulse Small.png";
+import typesMainControls1 from "../../assets/design/icons/types/Main Controls/01 Keyboard.png";
+import typesMainControls2 from "../../assets/design/icons/types/Main Controls/02 Menu.png";
+import typesNavigation1 from "../../assets/design/icons/types/Navigation/01 Account.png";
+import typesNavigation2 from "../../assets/design/icons/types/Navigation/02 Nudges.png";
+import typesNavigation3 from "../../assets/design/icons/types/Navigation/03 Discover.png";
+import typesNavigation4 from "../../assets/design/icons/types/Navigation/04 Home.png";
+import typesAvatars1 from "../../assets/design/icons/types/Avatars/01 Avatar 100.png";
+import typesAvatars2 from "../../assets/design/icons/types/Avatars/02 Avatar 50.png";
+import typesAvatars3 from "../../assets/design/icons/types/Avatars/03 Avatar 30.png";
+import typesAvatars4 from "../../assets/design/icons/types/Avatars/04 Intial 100.png";
+import typesAvatars5 from "../../assets/design/icons/types/Avatars/05 Intial 50.png";
+import typesAvatars6 from "../../assets/design/icons/types/Avatars/06 Initial 30.png";
+import typesTravel1 from "../../assets/design/icons/types/Travel/01 Flight.png";
+import typesTravel2 from "../../assets/design/icons/types/Travel/02 Hotel.png";
+import typesTravel3 from "../../assets/design/icons/types/Travel/03 Rental.png";
+import typesTravel4 from "../../assets/design/icons/types/Travel/04 Limo.png"; 
+
+import typesSystem1 from "../../assets/design/icons/types/System/01 Phone.png";
+import typesSystem2 from "../../assets/design/icons/types/System/02 Email.png";
+import typesSystem3 from "../../assets/design/icons/types/System/03 Back.png";
+import typesSystem4 from "../../assets/design/icons/types/System/04 Forward.png";
+import typesSystem5 from "../../assets/design/icons/types/System/05 Close Small.png";
+import typesSystem6 from "../../assets/design/icons/types/System/06 Check Grey.png";
+import typesSystem7 from "../../assets/design/icons/types/System/07 Check Green.png";
+import typesSystem8 from "../../assets/design/icons/types/System/08 Hangouts.png";
+import typesSystem9 from "../../assets/design/icons/types/System/09 Dropdowns.png";
+import typesSystem10 from "../../assets/design/icons/types/System/10 Calendar.png";
+import typesSystem11 from "../../assets/design/icons/types/System/11 Eye Hide.png";
+import typesSystem12 from "../../assets/design/icons/types/System/12 Eye Show.png";
+import typesSystem13 from "../../assets/design/icons/types/System/13 Arrow.png";
+import typesSystem14 from "../../assets/design/icons/types/System/14 Trash Can.png";
+import typesSystem15 from "../../assets/design/icons/types/System/15 Info.png";
+import typesSystem16 from "../../assets/design/icons/types/System/16 Nudge Loader.png";
+import typesSystem17 from "../../assets/design/icons/types/System/17 Close Large.png";
+import typesSystem18 from "../../assets/design/icons/types/System/18 Location.png";
+import typesSystem19 from "../../assets/design/icons/types/System/19 Send.png";
+
+import typesCategoriesPrimaryTwo1 from "../../assets/design/icons/types/Categories/Primary 2/01 Celebration.png";
+import typesCategoriesPrimaryTwo2 from "../../assets/design/icons/types/Categories/Primary 2/02 Compliance.png";
+import typesCategoriesPrimaryTwo3 from "../../assets/design/icons/types/Categories/Primary 2/03 Delivery.png";
+import typesCategoriesPrimaryTwo4 from "../../assets/design/icons/types/Categories/Primary 2/04 Digest.png";
+import typesCategoriesPrimaryTwo5 from "../../assets/design/icons/types/Categories/Primary 2/05 Finance.png";
+import typesCategoriesPrimaryTwo6 from "../../assets/design/icons/types/Categories/Primary 2/06 FPM.png";
+import typesCategoriesPrimaryTwo7 from "../../assets/design/icons/types/Categories/Primary 2/07 HR.png";
+import typesCategoriesPrimaryTwo8 from "../../assets/design/icons/types/Categories/Primary 2/08 L_D.png";
+import typesCategoriesPrimaryTwo9 from "../../assets/design/icons/types/Categories/Primary 2/09 Marketing.png";
+import typesCategoriesPrimaryTwo10 from "../../assets/design/icons/types/Categories/Primary 2/10 Meetings.png";
+import typesCategoriesPrimaryTwo11 from "../../assets/design/icons/types/Categories/Primary 2/11 PerMgmt.png";
+import typesCategoriesPrimaryTwo12 from "../../assets/design/icons/types/Categories/Primary 2/12 Travel.png";
+import typesCategoriesPrimaryTwo13 from "../../assets/design/icons/types/Categories/Primary 2/13 HR.png";
+import typesCategoriesPrimaryThree1 from "../../assets/design/icons/types/Categories/Primary 3/01 Celebration.png";
+import typesCategoriesPrimaryThree2 from "../../assets/design/icons/types/Categories/Primary 3/02 Compliance.png";
+import typesCategoriesPrimaryThree3 from "../../assets/design/icons/types/Categories/Primary 3/03 Delivery.png";
+import typesCategoriesPrimaryThree4 from "../../assets/design/icons/types/Categories/Primary 3/04 Digest.png";
+import typesCategoriesPrimaryThree5 from "../../assets/design/icons/types/Categories/Primary 3/05 Finance.png";
+import typesCategoriesPrimaryThree6 from "../../assets/design/icons/types/Categories/Primary 3/06 FPM.png";
+import typesCategoriesPrimaryThree7 from "../../assets/design/icons/types/Categories/Primary 3/07 HR.png";
+import typesCategoriesPrimaryThree8 from "../../assets/design/icons/types/Categories/Primary 3/08 L_D.png";
+import typesCategoriesPrimaryThree9 from "../../assets/design/icons/types/Categories/Primary 3/09 Marketing.png";
+import typesCategoriesPrimaryThree10 from "../../assets/design/icons/types/Categories/Primary 3/10 Meetings.png";
+import typesCategoriesPrimaryThree11 from "../../assets/design/icons/types/Categories/Primary 3/11 PerMgmt.png";
+import typesCategoriesPrimaryThree12 from "../../assets/design/icons/types/Categories/Primary 3/12 Travel.png";
+import typesCategoriesPrimaryThree13 from "../../assets/design/icons/types/Categories/Primary 3/13 HR.png";
+
+import typesOnboarding1 from "../../assets/design/icons/types/Onboarding/01 Mic 1.png";
+import typesOnboarding2 from "../../assets/design/icons/types/Onboarding/02 Salesforce 1.png";
+import typesOnboarding3 from "../../assets/design/icons/types/Onboarding/03 Notifications 1.png";
+import typesOnboarding4 from "../../assets/design/icons/types/Onboarding/04 Gsuite 1.png";
+import typesOnboarding5 from "../../assets/design/icons/types/Onboarding/05 Mic 2.png";
+import typesOnboarding6 from "../../assets/design/icons/types/Onboarding/06 Salesforce 2.png";
+import typesOnboarding7 from "../../assets/design/icons/types/Onboarding/07 Notifications 2.png";
+import typesOnboarding8 from "../../assets/design/icons/types/Onboarding/08 G Suite 2.png";
+import typesOnboarding9 from "../../assets/design/icons/types/Onboarding/09 G Mic 3.png";
+import typesOnboarding10 from "../../assets/design/icons/types/Onboarding/10 Salesforce 3.png";
+import typesOnboarding11 from "../../assets/design/icons/types/Onboarding/11 Notifications 3.png";
+import typesOnboarding12 from "../../assets/design/icons/types/Onboarding/12 G Suite 3.png";
+import typesOnboarding13 from "../../assets/design/icons/types/Onboarding/13 Privacy.png";
+import typesOnboarding14 from "../../assets/design/icons/types/Onboarding/14 Chevron.png";
+import typesOnboarding15 from "../../assets/design/icons/types/Onboarding/15 Activities.png";
+import typesOnboarding16 from "../../assets/design/icons/types/Onboarding/16 Discover.png";
+import typesOnboarding17 from "../../assets/design/icons/types/Onboarding/17 Nudges.png";
 
 function DesignIconsPage() { 
 
@@ -36,7 +121,13 @@ function DesignIconsPage() {
             <li><Link to="design/logo" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Logo</Link></li>
             <li><Link to="design/color" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Color</Link></li>
             <li><Link to="design/typography" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Typography</Link></li>
-            <li><Link to="design/icons" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Icons</Link></li>
+            <li><Link to="design/icons" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Icons</Link>
+              <Scrollspy items={ ['types', 'usage', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
+                <li><Link to="design/pictograms#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types</Link></li>
+                <li><Link to="design/pictograms#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Usage</Link></li>
+                <li><Link to="design/pictograms#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li> 
+              </Scrollspy>              
+            </li>
             <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Pictograms</Link></li>
             <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
             <li><Link to="design/motion" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Motion</Link></li>
@@ -62,10 +153,10 @@ function DesignIconsPage() {
             </div>
           </div>         
 
-          <section id="primary" name="primary" className="as-section">
-            <span id="primary-anchor" className="page-anchor"></span>
+          <section id="types" name="types" className="as-section">
+            <span id="types-anchor" className="page-anchor"></span>
 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Primary
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -80,11 +171,24 @@ function DesignIconsPage() {
               </ReactTooltip>              
             </Heading> 
 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
-            <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              {/* <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" /> </li> */}
-            </ol> 
-            <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p> 
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Pulse
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>
+              </Heading>
+              <div className="mb-12">
+                <p className="mb-5 text-greyStatus-600 tracking-wider">Used when there is a list of 2 or more options but user can only select one.</p>
+                <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                  <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesPulse1} className="lazyload inline-block" width="108" /> </li> 
+                  <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesPulse2} className="lazyload inline-block" width="108" /> </li> 
+                </ol>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Pulse Large.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Pulse Small.</p> 
+              </div> 
+            </div>  
           </section>
 
         </main>
