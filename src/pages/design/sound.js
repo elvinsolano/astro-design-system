@@ -4,12 +4,18 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ReactTooltip from 'react-tooltip'
 import {Link} from 'gatsby';
 import 'lazysizes';
+import ReactAudioPlayer from 'react-audio-player';
 
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import dogIllustration from "../../images/dog-illustration.svg";
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../components/atoms/heading';
+
+import soundInput1 from '../../assets/design/sound/Confirmation/PwC_BNS_Confirm.wav';
+import soundInput2 from '../../assets/design/sound/Notification/PwC_BNS_GeneralNotification_01.wav';
+import soundInput3 from '../../assets/design/sound/Input/PwC_BNS_VoiceInput.wav';
+import soundInput4 from '../../assets/design/sound/Output/PwC_BNS_VoiceOutput.wav';
 
 function DesignSoundPage() { 
 
@@ -92,37 +98,41 @@ function DesignSoundPage() {
             <div className="flex flex-wrap -mx-5 mb-16">
               <div className="w-half px-5 mb-8">
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
-                  <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
-                    <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
-                  </svg>
-                </div>  
+                  <ReactAudioPlayer
+                    src={soundInput1}
+                    autoPlay
+                    controls
+                  />
+                </div> 
                 <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Confirmation</span> - Sound used to confirm actions.</p>
               </div>
               <div className="w-half px-5 mb-8">
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
-                  <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
-                    <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
-                  </svg>
+                  <ReactAudioPlayer
+                    src={soundInput2}
+                    autoPlay
+                    controls
+                  />
                 </div>  
                 <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Notification</span> - Sound used when a notification is delivered to the user.</p>
               </div>
               <div className="w-half px-5 mb-8">
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
-                  <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
-                    <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
-                  </svg>
+                  <ReactAudioPlayer
+                    src={soundInput3}
+                    autoPlay
+                    controls
+                  />
                 </div>  
                 <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Voice Input</span> - Sound used when Astro takes in an utterance..</p>
               </div>
               <div className="w-half px-5 mb-8">
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
-                  <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
-                    <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
-                  </svg>
+                 <ReactAudioPlayer
+                    src={soundInput4}
+                    autoPlay
+                    controls
+                  />
                 </div>  
                 <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Voice Output</span> - Sound used when Astro responds.</p>
               </div>
