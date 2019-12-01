@@ -1,8 +1,9 @@
 import React, { Component, useState } from "react"; 
 import Scrollspy from 'react-scrollspy'; 
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import ReactTooltip from 'react-tooltip'
+import ReactTooltip from 'react-tooltip';
 import {Link} from 'gatsby';
+import {Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel} from 'react-accessible-accordion';
 import 'lazysizes';
 
 import Layout from "../../components/layout";
@@ -10,6 +11,28 @@ import SEO from "../../components/seo";
 import dogIllustration from "../../images/dog-illustration.svg";
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../components/atoms/heading';
+
+import 'react-accessible-accordion/dist/fancy-example.css';
+
+import typesCardIncoming1 from "../../assets/design/motion/types and details/Card Incoming/CARD_IN.gif";
+import typesCardOutgoing1 from "../../assets/design/motion/types and details/Card Outgoing/CARD_OUT_1.gif";
+import typesCardOutgoing2 from "../../assets/design/motion/types and details/Card Outgoing/CARD_OUT_2.gif";
+import typesConversation1 from "../../assets/design/motion/types and details/Conversations/HISTORY.gif";
+import typesMenu1 from "../../assets/design/motion/types and details/Menu/Menu_Open.gif"; 
+import typesMenu2 from "../../assets/design/motion/types and details/Menu/Menu_Close.gif"; 
+import typesKeyboard1 from "../../assets/design/motion/types and details/Keyboard/Keyboard_Open.gif";
+import typesKeyboard2 from "../../assets/design/motion/types and details/Keyboard/Keyboard_Close.gif";
+import typesOverlays1 from "../../assets/design/motion/types and details/Overlays/Overlay_Open.gif";
+import typesOverlays2 from "../../assets/design/motion/types and details/Overlays/Overlay_Close.gif";
+import typesOverlays3 from "../../assets/design/motion/types and details/Overlays/Overlay_Scrolling.gif";
+import typesPressStates1 from "../../assets/design/motion/types and details/Press States/PRESS---Card.gif";
+import typesPressStates2 from "../../assets/design/motion/types and details/Press States/PRESS---NextStep.gif";
+import typesMicrophone1 from "../../assets/design/motion/types and details/Microphone/MicStates_Active.gif";
+import typesMicrophone2 from "../../assets/design/motion/types and details/Microphone/MicStates_Listening.gif";
+import typesMicrophone3 from "../../assets/design/motion/types and details/Microphone/MicStates_Speaking.gif";
+import typesMicrophone4 from "../../assets/design/motion/types and details/Microphone/MicStates_Thinking.gif";
+import typesMicrophone5 from "../../assets/design/motion/types and details/Microphone/MicStates_Delayed.gif";
+
 
 function DesignMotionPage() { 
 
@@ -40,8 +63,15 @@ function DesignMotionPage() {
             <li><Link to="design/icons" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Icons</Link></li>
             <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Pictograms</Link></li>
             <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
-            <li><Link to="design/motion" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Motion</Link></li>
+            <li><Link to="design/motion" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Motion</Link>
+              <Scrollspy items={ ['types', 'usage', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
+                <li><Link to="design/motion#types-details-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types</Link></li>
+                <li><Link to="design/motion#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Usage</Link></li>
+                <li><Link to="design/motion#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li> 
+              </Scrollspy>             
+            </li>
             <li><Link to="design/sound" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Sound</Link></li>
+            <li><Link to="design/haptics" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Haptics</Link></li>
           </ul> 
         </nav>
       </aside>
@@ -65,7 +95,7 @@ function DesignMotionPage() {
               </div>
             </div>              
 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Primary
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Types &amp; Details
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -79,12 +109,1315 @@ function DesignMotionPage() {
                 URL Copied
               </ReactTooltip>              
             </Heading> 
+            <p className="mb-16 text-greyStatus-600 tracking-wider">These animations help users register that a transition is taking place or provide additional delight to an experience.</p>
 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
-            <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              {/* <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" /> </li> */}
-            </ol> 
-            <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p> 
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Card Incoming
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Animation for when a card is appearing on screen.</p>
+              
+              <div className="flex"> 
+                <img data-src={typesCardIncoming1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6">Animation timeframe (approx): 0.4 sec.</p>
+                  <Accordion>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          1. Voice Answer
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades into the screen from below (60px)</p>
+                        </div>              
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          2. Card
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.02 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades into the screen from below (60px)</p>
+                        </div>   
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          3. In Line Feedback
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.04 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades into the screen from below (60px)</p>
+                        </div>   
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          4. Next Steps
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades into the screen from below (60px)</p>
+                        </div>   
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              </div>  
+
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Card Outgoing
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Animation for when a card is departing screen and Astro is taking in a response.</p>
+              
+              <div className="flex mb-12"> 
+                <img data-src={typesCardOutgoing1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Part 1</span> - Animation timeframe (approx): 0.4 sec.</p>
+                  <Accordion>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          1. Voice Answer
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item moves vertically and fades to 40%</p>
+                        </div>              
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          2. Card
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.02 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item moves vertically and fades to 40%</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          3. In Line Feedback
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.04 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item moves vertically and fades to 40%</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          4. Next Steps
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.06 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item moves vertically and fades to 40% - 60px above the Voice Line</p>
+                        </div>    
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              </div>  
+
+              <div className="flex"> 
+                <img data-src={typesCardOutgoing2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Part 2</span> - Animation timeframe (approx): 0.4 sec.</p>
+                  <Accordion>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          1. Voice Answer
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item moves vertically out of the screen and fades to 0%</p>
+                        </div>              
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          2. Card
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.02 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item moves vertically out of the screen and fades to 0%</p>
+                        </div>   
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          3. In Line Feedback
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.04 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item moves vertically out of the screen and fades to 0%</p>
+                        </div>   
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          4. Next Steps
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.06 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item moves vertically out of the screen and fades to 0%</p>
+                        </div>   
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              </div>    
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Conversation
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Scrolling down from the top of the screen will allow the user to access previous conversations, they will be revealed by a fade-in transition from 0% to 100% opacity</p>
+              
+              <div className="flex"> 
+                <img data-src={typesConversation1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6">Animation timeframe (approx): 0.4 sec.</p> 
+                </div>
+              </div>   
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Menu
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Animation for when Astro menu is opening and closing.</p> 
+
+              <div className="flex mb-12"> 
+                <img data-src={typesMenu1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Opening</span> - Animation timeframe (approx): 0.4 sec.</p>
+                  <Accordion>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          1. Microphone Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out of the screen.</p>
+                        </div>              
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          2. Keyboard Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.02 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out of the screen.</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          3. Hamburger Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.04 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-400">Persistent</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Hamburger button transitions to a close button (X).</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          4. Background
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out of the screen.</p>
+                        </div>    
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          5. Menu Buttons
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.06 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Items enters the screen by fade in from below the screen.</p>
+                        </div>    
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              </div>   
+
+              <div className="flex"> 
+                <img data-src={typesMenu2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Closing</span> - Animation timeframe (approx): 0.4 sec.</p>
+                  <Accordion>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          1. Microphone Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out of the screen.</p>
+                        </div>              
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          2. Keyboard Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.02 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out of the screen.</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          3. Hamburger Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.04 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-400">Persistent</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Hamburger button transitions to a close button (X).</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          4. Background
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out of the screen.</p>
+                        </div>    
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          5. Menu Buttons
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.06 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Items enters the screen by fade in from below the screen.</p>
+                        </div>    
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              </div>   
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Keyboard
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Animation for when Astro keyboard is opening and closing.</p> 
+
+              <div className="flex mb-12"> 
+                <img data-src={typesKeyboard1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Opening</span> - Animation timeframe (approx): 0.4 sec.</p>
+                  <Accordion>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          1. Microphone Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out of the screen.</p>
+                        </div>              
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          2. Keyboard Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out of the screen.</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          3. Hamburger Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.04 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-400">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">From center of icon button placement, icon will scale into full size.</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          3. Hamburger Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out of the screen.</p>
+                        </div>  
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          4. Keyboard
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.1 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item enters the screen from the bottom of the screen.</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          5. Input Field
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.1 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Items enters the screen by fade in.</p>
+                        </div>   
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          6. Background
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades into of the screen.</p>
+                        </div>   
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              </div>   
+
+              <div className="flex"> 
+                <img data-src={typesKeyboard2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Closing</span> - Animation timeframe (approx): 0.6 sec.</p>
+                  <Accordion>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          1. Microphone Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.5 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.1 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">(Active State) Mic button scale into full size.</p>
+                        </div>              
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          2. Keyboard Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.1 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">From center of icon button placement, icon will scale into full size.</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          3. Hamburger Button
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0.1 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">From center of icon button placement, icon will scale into full size.</p>
+                        </div>     
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          4. Background
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-100">Outgoing</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item exits the screen to the bottom of the screen.</p>
+                        </div>    
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          5. Input Field
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out.</p>
+                        </div>    
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <AccordionItemHeading>
+                        <AccordionItemButton>
+                          6. Background
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="flex mb-6">
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Duration</p>
+                            <p className="text-sm">0.3 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Easing</p>
+                            <p className="text-sm">Ease Both</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Delay</p>
+                            <p className="text-sm">0 sec</p>
+                          </div>
+                          <div className="mr-10">
+                            <p className="uppercase text-xs">Action</p>
+                            <p className="text-sm text-status-300">Incoming</p>
+                          </div>
+                        </div>  
+                        <div className="">
+                          <p className="uppercase text-xs">Behavior</p>
+                          <p className="text-sm">Item fades out.</p>
+                        </div>    
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              </div>   
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Overlay
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Animation for when Astro overlays are opening, closing or scrolling.</p>
+              
+              <div className="flex mb-12"> 
+                <img data-src={typesOverlays1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Opening</span> - Animation timeframe (approx): 0.4 sec.</p> 
+                </div>
+              </div>   
+              <div className="flex mb-12"> 
+                <img data-src={typesOverlays2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Closing</span> - Animation timeframe (approx): 0.4 sec.</p> 
+                </div>
+              </div>   
+              <div className="flex"> 
+                <img data-src={typesOverlays3} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Scrolling</span> - Animation timeframe (approx): 0.4 sec.</p> 
+                </div>
+              </div>   
+            </div> 
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Press States
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Animations for the different pressed states of buttons.</p>
+              
+              <div className="flex mb-12"> 
+                <img data-src={typesPressStates1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Card</span> - On press, the background color changes to #F2F2F2.</p> 
+                </div>
+              </div>   
+              <div className="flex mb-12"> 
+                <img data-src={typesPressStates2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Closing</span> - On press, the background color changes to #575757.</p> 
+                </div>
+              </div>    
+            </div>  
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Press States
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>            
+              </Heading> 
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Animations for the different states of the microphone button.</p>
+              
+              <div className="flex mb-12"> 
+                <img data-src={typesMicrophone1} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Active</span></p> 
+                </div>
+              </div>   
+              <div className="flex mb-12"> 
+                <img data-src={typesMicrophone2} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Listening</span></p> 
+                </div>
+              </div>    
+              <div className="flex mb-12"> 
+                <img data-src={typesMicrophone3} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Speaking</span></p> 
+                </div>
+              </div>   
+              <div className="flex mb-12"> 
+                <img data-src={typesMicrophone4} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Thinking</span></p> 
+                </div>
+              </div>    
+              <div className="flex mb-12"> 
+                <img data-src={typesMicrophone5} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" /> 
+                <div className="as-accordion ml-10">
+                  <p className="mb-6"><span className="as-type-medium">Delay</span></p> 
+                </div>
+              </div>    
+            </div>                         
+            
           </section>
         </main>
       </div>

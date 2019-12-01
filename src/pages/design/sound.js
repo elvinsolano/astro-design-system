@@ -41,7 +41,14 @@ function DesignSoundPage() {
             <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Pictograms</Link></li>
             <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
             <li><Link to="design/motion" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Motion</Link></li>
-            <li><Link to="design/sound" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Sound</Link></li>
+            <li><Link to="design/sound" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Sound</Link>
+              <Scrollspy items={ ['types', 'usage', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
+                <li><Link to="design/sound#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Types</Link></li>
+                <li><Link to="design/sound#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Usage</Link></li>     
+                <li><Link to="design/sound#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
+              </Scrollspy>  
+            </li>
+            <li><Link to="design/haptics" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Haptics</Link></li>
           </ul> 
         </nav>
       </aside>
@@ -63,30 +70,176 @@ function DesignSoundPage() {
             </div>
           </div>  
 
-          <section id="primary" name="primary" className="as-section">
-            <span id="primary-anchor" className="page-anchor"></span>
+          <section id="types" name="types" className="as-section">
+            <span id="types-anchor" className="page-anchor"></span>
 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Primary
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                 </svg> 
               </CopyToClipboard>
-              <ReactTooltip id='primary' place="right" type="success" effect="solid" globalEventOff='click'> 
+              <ReactTooltip id='types' place="right" type="success" effect="solid" globalEventOff='click'> 
                 <svg className="fill-current cursor-pointer inline-block align-bottom mr-2" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#4ead58" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
                   <path fill="#fff" d="M9.324 15.841l3.102 2.998 10.266-9.95 2.197 2.144-12.463 12.078-5.315-5.151z"></path>
                 </svg>
                 URL Copied
               </ReactTooltip>              
-            </Heading> 
-
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
-            <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              {/* <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" /> </li> */}
-            </ol> 
-            <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p> 
+            </Heading>  
+            <p className="mb-12 text-greyStatus-600 tracking-wider">A variety of audio resources designed to provide sensory feedback around an interface-related action or event.</p>
+            
+            <div className="flex flex-wrap -mx-5 mb-16">
+              <div className="w-half px-5 mb-8">
+                <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
+                  <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
+                    <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
+                  </svg>
+                </div>  
+                <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Confirmation</span> - Sound used to confirm actions.</p>
+              </div>
+              <div className="w-half px-5 mb-8">
+                <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
+                  <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
+                    <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
+                  </svg>
+                </div>  
+                <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Notification</span> - Sound used when a notification is delivered to the user.</p>
+              </div>
+              <div className="w-half px-5 mb-8">
+                <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
+                  <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
+                    <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
+                  </svg>
+                </div>  
+                <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Voice Input</span> - Sound used when Astro takes in an utterance..</p>
+              </div>
+              <div className="w-half px-5 mb-8">
+                <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
+                  <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
+                    <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
+                  </svg>
+                </div>  
+                <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Voice Output</span> - Sound used when Astro responds.</p>
+              </div>
+            </div>  
           </section>
+
+          <section id="usage" name="usage" className="as-section mb-48">
+            <span id="usage-anchor" className="page-anchor"></span>
+
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
+              <CopyToClipboard text={'http://localhost:8000/design/typography#guidance-anchor'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading>  
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Use of these cues should be determined by the goal of providing audio feedback.</p>
+            <div className="">
+              <table className="w-full">
+                <thead className="border border-grey-200">
+                  <tr className="bg-grey-200">
+                    <td className="p-4">Screen</td>
+                    <td className="p-4">Interaction</td>
+                    <td className="p-4">Sound</td> 
+                  </tr>
+                </thead>
+                <tbody className="border border-grey-105">        
+                  <tr className="border border-b border-grey-105">
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Onboarding</p></td>
+                    <td className="p-4 border-r border-grey-105">When user finish Onboarding and sees Homepage for first time</td> 
+                    <td className="p-4">    
+                      <div className="flex flex-wrap items-center justify-start">              
+                        <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
+                          <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
+                        </svg>
+                        <p className="ml-4">Confirmation</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="border border-b border-grey-105">
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Notification</p></td>
+                    <td className="p-4 border-r border-grey-105">Whenever a Nudge comes in</td>
+                    <td className="p-4">                  
+                      <div className="flex flex-wrap items-center justify-start">              
+                        <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
+                          <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
+                        </svg>
+                        <p className="ml-4">Notification</p>
+                      </div>
+                    </td>
+                  </tr> 
+                  <tr className="border border-b border-grey-105">
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Input</p></td>
+                    <td className="p-4 border-r border-grey-105">Whenever utterance is entered</td> 
+                    <td className="p-4">                  
+                      <div className="flex flex-wrap items-center justify-start">              
+                        <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
+                          <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
+                        </svg>
+                        <p className="ml-4">Voice Input</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="border border-b border-grey-105">
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Output</p></td>
+                    <td className="p-4 border-r border-grey-105">When Astro responds</td> 
+                    <td className="p-4">                  
+                      <div className="flex flex-wrap items-center justify-start">              
+                        <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
+                          <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
+                        </svg>
+                        <p className="ml-4">Voice Output</p>
+                      </div>
+                    </td>
+                  </tr> 
+                </tbody>
+              </table>
+            </div>
+          </section>   
+
+          <section id="guidance" name="guidance" className="as-section mb-48">
+            <span id="guidance-anchor" className="page-anchor"></span>
+
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
+              <CopyToClipboard text={'http://localhost:8000/design/typography#guidance-anchor'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading>  
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for sounds to adhere to.</p>
+            <div className="flex flex-wrap -mx-4 mb-12">  
+
+              <div className="w-grid px-4 mb-8">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg>  
+                <p className="text-sm mb-3 text-greyStatus-600">Play sounds once. Do not loop.</p>
+              </div>
+              <div className="w-grid px-4 mb-8">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg>  
+                <p className="text-sm mb-3 text-greyStatus-600">Do not alter length of sounds.</p>
+              </div>
+              <div className="w-grid px-4 mb-8">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg> 
+                <p className="text-sm mb-3 text-greyStatus-600">Only use sounds for specified scenarios.</p>
+              </div>  
+            </div> 
+          </section>          
         </main>
       </div>
     </Layout>

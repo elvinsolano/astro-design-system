@@ -10,9 +10,14 @@ import SEO from "../../../components/seo";
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
 
-// import uiexamplesSlidingCardsCard1 from "../../../assets/components/cards/Profile List Card/UI Examples/Profile List Card 01.png";  
-// import detailsSlidingCardsCard1 from "../../../assets/components/cards/Profile List Card/Details/Profile List Card Details.png";
-// import paddingSlidingCardsCard1 from "../../../assets/components/cards/Profile List Card/Padding/Profile List Card Padding.png"; 
+import uiexamplesSwipingCardsCard1 from "../../../assets/components/cards/Swiping Card/UI Examples/01a.png";  
+import uiexamplesSwipingCardsCard2 from "../../../assets/components/cards/Swiping Card/UI Examples/01b.png";  
+import uiexamplesSwipingCardsCard3 from "../../../assets/components/cards/Swiping Card/UI Examples/02a.png";  
+import uiexamplesSwipingCardsCard4 from "../../../assets/components/cards/Swiping Card/UI Examples/02b.png";  
+import uiexamplesSwipingCardsCard5 from "../../../assets/components/cards/Swiping Card/UI Examples/03a.png";  
+import uiexamplesSwipingCardsCard6 from "../../../assets/components/cards/Swiping Card/UI Examples/03b.png";  
+import detailsSwipingCardsCard1 from "../../../assets/components/cards/Swiping Card/Details/01.png";
+import paddingSwipingCardsCard1 from "../../../assets/components/cards/Swiping Card/Padding/01.png"; 
 
 function ComponentsCardsSlidingCardsPage() { 
 
@@ -73,9 +78,9 @@ function ComponentsCardsSlidingCardsPage() {
           </ul> 
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full bg-grey-300">Popovers</div></li>
-            <li><Link to="components/popovers/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li>
-            <li><Link to="components/popovers/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li> 
-          </ul>                    
+            <li><Link to="components/popovers/external" className="block text-sm text-grey-400 w-full hover:bg-grey-100">External</Link></li>
+            <li><Link to="components/popovers/general" className="block text-sm text-grey-400 w-full hover:bg-grey-100">General</Link></li> 
+          </ul>                 
         </nav>
       </aside>
 
@@ -110,12 +115,27 @@ function ComponentsCardsSlidingCardsPage() {
             <p className="mb-5 text-greyStatus-600 tracking-wider">The Sliding Cards.</p> 
             <Tabs>
               <TabList>
-                <Tab>01</Tab>  
+                <Tab>01</Tab>   
+                <Tab>02</Tab>  
+                <Tab>03</Tab>  
               </TabList>
           
               <TabPanel>                  
                 <div className=" mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  {/* <img data-src={uiexamplesSlidingCardsCard1} className="lazyload " width="335" alt="Cards Sliding Cards UI Examples 1" /> */}
+                  <img data-src={uiexamplesSwipingCardsCard1} className="lazyload mr-10" width="335" alt="Cards Sliding Cards UI Examples 1" />
+                  <img data-src={uiexamplesSwipingCardsCard2} className="lazyload " width="335" alt="Cards Sliding Cards UI Examples 1" />
+                </div> 
+              </TabPanel>  
+              <TabPanel>                  
+                <div className=" mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                  <img data-src={uiexamplesSwipingCardsCard3} className="lazyload mr-10" width="335" alt="Cards Sliding Cards UI Examples 1" />
+                  <img data-src={uiexamplesSwipingCardsCard4} className="lazyload " width="335" alt="Cards Sliding Cards UI Examples 1" />
+                </div> 
+              </TabPanel>  
+              <TabPanel>                  
+                <div className=" mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                  <img data-src={uiexamplesSwipingCardsCard5} className="lazyload mr-10" width="335" alt="Cards Sliding Cards UI Examples 1" />
+                  <img data-src={uiexamplesSwipingCardsCard6} className="lazyload " width="335" alt="Cards Sliding Cards UI Examples 1" />
                 </div> 
               </TabPanel>  
             </Tabs>
@@ -132,7 +152,7 @@ function ComponentsCardsSlidingCardsPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              {/* <img data-src={detailsSlidingCardsCard1} className="lazyload " width="594" alt="Cards Sliding Cards Details" /> */}
+              <img data-src={detailsSwipingCardsCard1} className="lazyload " width="594" alt="Cards Sliding Cards Details" />
             </div> 
           </section>             
 
@@ -147,7 +167,7 @@ function ComponentsCardsSlidingCardsPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              {/* <img data-src={paddingSlidingCardsCard1} className="lazyload " width="365" alt="Cards Sliding Cards Padding" /> */}
+              <img data-src={paddingSwipingCardsCard1} className="lazyload " width="365" alt="Cards Sliding Cards Padding" />
             </div> 
           </section>             
         </main>

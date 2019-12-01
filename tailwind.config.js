@@ -66,10 +66,12 @@ module.exports = {
           100: '#FFFFFF',
           200: '#F8F8F8',
           300: '#2D2D2D',
+          400: '#000000',
         }
       },
       width: {
-        grid: "320px"
+        grid: "320px",
+        half: '50%'
       }, 
     }, 
     container: {

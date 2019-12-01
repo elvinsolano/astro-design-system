@@ -95,6 +95,26 @@ import typesOnboarding15 from "../../assets/design/icons/types/Onboarding/15 Act
 import typesOnboarding16 from "../../assets/design/icons/types/Onboarding/16 Discover.png";
 import typesOnboarding17 from "../../assets/design/icons/types/Onboarding/17 Nudges.png";
 
+import usagePulse1 from "../../assets/design/icons/usage/Pulse/01 Pulse Icon Large.png";
+import usagePulse2 from "../../assets/design/icons/usage/Pulse/01 Pulse Icon Small.png";
+import usageMainControls1 from "../../assets/design/icons/usage/Main Control/01 Main Control Icon.png"; 
+import usageNavigation1 from "../../assets/design/icons/usage/Navigation/01 Navigation Icons.png"; 
+import usageAvatar1 from "../../assets/design/icons/usage/Avatar/01 Avatar 100.png"; 
+import usageAvatar2 from "../../assets/design/icons/usage/Avatar/02 Avatar.png"; 
+import usageTravel1 from "../../assets/design/icons/usage/Travel Icons/01 Travel Story.png"; 
+import usageSystem1 from "../../assets/design/icons/usage/System Icons/01 PDP.png"; 
+import usageSystem2 from "../../assets/design/icons/usage/System Icons/02 Calendar Icon.png"; 
+import usageCategory1 from "../../assets/design/icons/usage/Category/01 Nudges.png"; 
+import usageCategory2 from "../../assets/design/icons/usage/Category/02 Discover.png"; 
+import usageOnboarding1 from "../../assets/design/icons/usage/Onboarding/01 Icon.png"; 
+import usageOnboarding2 from "../../assets/design/icons/usage/Onboarding/02 Icon.png"; 
+
+import guidance1 from "../../assets/design/icons/guidance/01.png";
+import guidance2 from "../../assets/design/icons/guidance/02.png";
+import guidance3 from "../../assets/design/icons/guidance/03.png";
+import guidance4 from "../../assets/design/icons/guidance/04.png";
+import guidance5 from "../../assets/design/icons/guidance/05.png";
+
 function DesignIconsPage() { 
 
   return (
@@ -123,15 +143,16 @@ function DesignIconsPage() {
             <li><Link to="design/typography" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Typography</Link></li>
             <li><Link to="design/icons" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Icons</Link>
               <Scrollspy items={ ['types', 'usage', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="design/pictograms#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types</Link></li>
-                <li><Link to="design/pictograms#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Usage</Link></li>
-                <li><Link to="design/pictograms#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li> 
+                <li><Link to="design/icons#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types</Link></li>
+                <li><Link to="design/icons#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Usage</Link></li>
+                <li><Link to="design/icons#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li> 
               </Scrollspy>              
             </li>
             <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Pictograms</Link></li>
             <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
             <li><Link to="design/motion" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Motion</Link></li>
             <li><Link to="design/sound" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Sound</Link></li>
+            <li><Link to="design/haptics" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Haptics</Link></li>
           </ul> 
         </nav>
       </aside>
@@ -156,7 +177,7 @@ function DesignIconsPage() {
           <section id="types" name="types" className="as-section">
             <span id="types-anchor" className="page-anchor"></span>
 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Types
+            <Heading level="2" className="as-h2 as-type-medium mb-12">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -182,13 +203,650 @@ function DesignIconsPage() {
               <div className="mb-12">
                 <p className="mb-5 text-greyStatus-600 tracking-wider">Used when there is a list of 2 or more options but user can only select one.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                  <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesPulse1} className="lazyload inline-block" width="108" /> </li> 
-                  <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesPulse2} className="lazyload inline-block" width="108" /> </li> 
+                  <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesPulse1} className="lazyload inline-block" width="40" alt="Icon Types Pulse Large" /> </li> 
+                  <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesPulse2} className="lazyload inline-block" width="12" alt="Icon Types Pulse Small" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Pulse Large.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Pulse Small.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Pulse Large</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Pulse Small</p> 
               </div> 
             </div>  
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Main Controls
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>
+              </Heading>
+              <div className="mb-12">
+                <p className="mb-5 text-greyStatus-600 tracking-wider">These icons create familiar models to help users understand how to engage with and use Astro.</p>
+                <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                  <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesMainControls1} className="lazyload inline-block" width="29" alt="Icon Types Main Controls Keyboard" /> </li> 
+                  <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesMainControls2} className="lazyload inline-block" width="30" alt="Icon Types Main Controls Menu" /> </li> 
+                </ol>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Keyboard</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Menu</p> 
+              </div> 
+            </div>   
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Navigation
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>
+              </Heading>
+              <div className="mb-12">
+                <p className="mb-5 text-greyStatus-600 tracking-wider">Icons that visually support guiding the user through various parts of the Astro experience.</p>
+                <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                  <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesNavigation1} className="lazyload inline-block" width="20" alt="Icon Types Navigation Account" /> </li> 
+                  <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesNavigation2} className="lazyload inline-block" width="20" alt="Icon Types Navigation Nudges" /> </li> 
+                  <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={typesNavigation3} className="lazyload inline-block" width="20" alt="Icon Types Navigation Discover" /> </li> 
+                  <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesNavigation4} className="lazyload inline-block" width="20" alt="Icon Types Navigation Home" /> </li> 
+                </ol>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Account</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Nudges</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Discover</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">4. Home</p> 
+              </div> 
+            </div>  
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Avatars
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>
+              </Heading>
+              <div className="mb-12">
+                <p className="mb-5 text-greyStatus-600 tracking-wider">An avatar is an icon or image used to represent a user on the screen.</p>
+                <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+                  <li className="as-grid-6 mb-12 relative"><span className="list-circle">1</span><img data-src={typesAvatars1} className="lazyload inline-block" width="100" alt="Icon Types Navigation Account" /> </li> 
+                  <li className="as-grid-6 mb-12 relative"><span className="list-circle">2</span><img data-src={typesAvatars2} className="lazyload inline-block" width="50" alt="Icon Types Navigation Nudges" /> </li> 
+                  <li className="as-grid-6 mb-12 relative"><span className="list-circle">3</span><img data-src={typesAvatars3} className="lazyload inline-block" width="30" alt="Icon Types Navigation Discover" /> </li> 
+                  <li className="as-grid-6 relative"><span className="list-circle">4</span><img data-src={typesAvatars4} className="lazyload inline-block" width="100" alt="Icon Types Navigation Home" /> </li> 
+                  <li className="as-grid-6 relative"><span className="list-circle">5</span><img data-src={typesAvatars5} className="lazyload inline-block" width="50" alt="Icon Types Navigation Home" /> </li> 
+                  <li className="as-grid-6 relative"><span className="list-circle">6</span><img data-src={typesAvatars6} className="lazyload inline-block" width="30" alt="Icon Types Navigation Home" /> </li> 
+                </ol>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Avatar 100</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Avatar 50</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Avatar 30</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">4. Initial 100</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">5. Initial 50</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">6. Initial 30</p> 
+              </div> 
+            </div>  
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Travel
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>
+              </Heading>
+              <div className="mb-12">
+                <p className="mb-5 text-greyStatus-600 tracking-wider">Icons to be used in relation to travel-related stories.</p>
+                <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                  <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesTravel1} className="lazyload inline-block" width="24" alt="Icon Types Navigation Account" /> </li> 
+                  <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesTravel2} className="lazyload inline-block" width="24" alt="Icon Types Navigation Nudges" /> </li> 
+                  <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={typesTravel3} className="lazyload inline-block" width="24" alt="Icon Types Navigation Discover" /> </li> 
+                  <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesTravel4} className="lazyload inline-block" width="24" alt="Icon Types Navigation Home" /> </li>  
+                </ol>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Flight</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Hotel</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Rental</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">4. Limo</p>  
+              </div> 
+            </div>  
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">System
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>
+              </Heading>
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Icons that represent components of the system.</p>
+              <div className="flex flex-wrap -mx-5">   
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem1} className="lazyload" width="16" alt="Icons System Phone" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Phone</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem2} className="lazyload" width="16" alt="Icons System Email" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Email</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem3} className="lazyload" width="16" alt="Icons System Back" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Back</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem4} className="lazyload" width="16" alt="Icons System Forward" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Forward</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem5} className="lazyload" width="16" alt="Icons System Close Small" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Close Small</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem6} className="lazyload" width="16" alt="Icons System Check Grey" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Check Grey</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem7} className="lazyload" width="16" alt="Icons System Check Green" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Check Green</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem8} className="lazyload" width="16" alt="Icons System Hangouts" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Hangouts</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem9} className="lazyload" width="16" alt="Icons System Dropdown" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Dropdown</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem10} className="lazyload" width="16" alt="Icons System Calendar" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Calendar</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem11} className="lazyload" width="16" alt="Icons System Eye Hide" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Eye Hide</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem12} className="lazyload" width="16" alt="Icons System Eye Show" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Eye Show</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem13} className="lazyload" width="16" alt="Icons System Arrow" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Arrow</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem14} className="lazyload" width="16" alt="Icons Trash Can" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Trash Can</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem15} className="lazyload" width="16" alt="Icons Info" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Info</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem16} className="lazyload" width="16" alt="Icons Nudge Loader" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Nudge Loader</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem17} className="lazyload" width="16" alt="Icons Nudge Loader" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Close Large</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem18} className="lazyload" width="16" alt="Icons Location" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Location</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesSystem19} className="lazyload" width="16" alt="Icons Send" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Send</p>
+                </div> 
+              </div> 
+            </div>  
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Categories
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>
+              </Heading>
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Category icons come with two different background options: primary 2 and primary 3.</p>
+              <Tabs>
+                <TabList>
+                  <Tab>Primary 2</Tab>
+                  <Tab>Primary 3</Tab> 
+                </TabList> 
+                <TabPanel>
+                  <div className="flex flex-wrap -mx-5">   
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo1} className="lazyload" width="30" alt="Icons Category Celebration" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Celebration</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo2} className="lazyload" width="30" alt="Icons Category Compliance" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Compliance</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo3} className="lazyload" width="30" alt="Icons Category Delivery" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Delivery</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo4} className="lazyload" width="30" alt="Icons Category Digest" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Digest</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo5} className="lazyload" width="30" alt="Icons Category Finance" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Finance</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo6} className="lazyload" width="30" alt="Icons Category FPM" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">FPM</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo7} className="lazyload" width="30" alt="Icons Category HR" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">HR</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo8} className="lazyload" width="30" alt="Icons Category LD" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">L&amp;D</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo9} className="lazyload" width="30" alt="Icons Category Markdown" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Markdown</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo10} className="lazyload" width="30" alt="Icons Category Meetings" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Meetings</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo11} className="lazyload" width="30" alt="Icons Category PerMgnt" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">PerMgnt</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo12} className="lazyload" width="30" alt="Icons Category Travel" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Travel</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryTwo13} className="lazyload" width="30" alt="Icons Category Partner" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Partner</p>
+                    </div>  
+                  </div> 
+                </TabPanel>
+                <TabPanel>
+                  <div className="flex flex-wrap -mx-5">   
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree1} className="lazyload" width="30" alt="Icons Category Celebration" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Celebration</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree2} className="lazyload" width="30" alt="Icons Category Compliance" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Compliance</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree3} className="lazyload" width="30" alt="Icons Category Delivery" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Delivery</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree4} className="lazyload" width="30" alt="Icons Category Digest" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Digest</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree5} className="lazyload" width="30" alt="Icons Category Finance" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Finance</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree6} className="lazyload" width="30" alt="Icons Category FPM" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">FPM</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree7} className="lazyload" width="30" alt="Icons Category HR" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">HR</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree8} className="lazyload" width="30" alt="Icons Category LD" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">L&amp;D</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree9} className="lazyload" width="30" alt="Icons Category Markdown" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Markdown</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree10} className="lazyload" width="30" alt="Icons Category Meetings" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Meetings</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree11} className="lazyload" width="30" alt="Icons Category PerMgnt" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">PerMgnt</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree12} className="lazyload" width="30" alt="Icons Category Travel" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Travel</p>
+                    </div> 
+                    <div className="px-5 mb-5"> 
+                      <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                        <img data-src={typesCategoriesPrimaryThree13} className="lazyload" width="30" alt="Icons Category Partner" />
+                      </div>
+                      <p className="text-sm text-greyStatus-600">Partner</p>
+                    </div>  
+                  </div> 
+                </TabPanel> 
+              </Tabs>
+              
+
+            </div>  
+
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Onboarding
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>
+              </Heading>
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Icons to be used within the context of Astro's user onboarding process.</p>
+              <div className="flex flex-wrap -mx-5">   
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding1} className="lazyload" width="30" alt="Icons Onboarding Mic 1" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Mic 1</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding2} className="lazyload" width="30" alt="Icons Onboarding Salesforce 1" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Salesforce 1</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding3} className="lazyload" width="30" alt="Icons Onboarding Notifications 1" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Notifications 1</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding4} className="lazyload" width="30" alt="Icons Onboarding G Suite 1" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">G Suite 1</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding5} className="lazyload" width="30" alt="Icons Onboarding Mic 2" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Mic 2</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding6} className="lazyload" width="30" alt="Icons Onboarding Salesforce 2" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Salesforce 2</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding7} className="lazyload" width="30" alt="Icons Onboarding Notifications 2" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Notifications 2</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding8} className="lazyload" width="30" alt="Icons Onboarding G Suite 2" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">G Suite 2</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding9} className="lazyload" width="30" alt="Icons Onboarding Mic 3" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Mic 3</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding10} className="lazyload" width="30" alt="Icons Onboarding Salesforce 3" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Salesforce 3</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding11} className="lazyload" width="30" alt="Icons Onboarding Notifications 3" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Notifications 3</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding12} className="lazyload" width="30" alt="Icons Onboarding G Suite 3" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">G Suite 3</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding13} className="lazyload" width="30" alt="Icons Onboarding Privacy" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Privacy</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding14} className="lazyload" width="30" alt="Icons Onboarding Chevron" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Chevron</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding15} className="lazyload" width="30" alt="Icons Onboarding Activities" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Activities</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding16} className="lazyload" width="30" alt="Icons Onboarding Discover" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Discover</p>
+                </div> 
+                <div className="px-5 mb-5"> 
+                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesOnboarding17} className="lazyload" width="30" alt="Icons Onboarding Nudges" />
+                  </div>
+                  <p className="text-sm text-greyStatus-600">Nudges</p>
+                </div>  
+              </div> 
+            </div>              
+          </section>
+
+          <section id="usage" name="usage" className="as-section"> 
+            <span id="usage-anchor" className="page-anchor"></span> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
+              <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Icons should help users visualize context or quickly identify types of information. Here are examples of how they're used within Astro.</p>
+            <Tabs>
+              <TabList>
+                <Tab>Pulse</Tab>
+                <Tab>Main Controls</Tab>
+                <Tab>Navigation</Tab>
+                <Tab>Avatars</Tab>                
+                <Tab>Travel</Tab>                
+                <Tab>System</Tab>                
+                <Tab>Categories</Tab>      
+                <Tab>Onboarding</Tab>
+              </TabList> 
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usagePulse1} className="lazyload mr-12" width="375px" alt="Usage Select Field" /> 
+                  <img data-src={usagePulse2} className="lazyload" width="375px" alt="Usage Select Field" />  
+                </div> 
+              </TabPanel>
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex"> 
+                  <img data-src={usageMainControls1} className="lazyload" width="375px" alt="Usage Input Field" />  
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageNavigation1} className="lazyload " width="375px" alt="Usage Picker Field" /> 
+                </div>
+              </TabPanel> 
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageAvatar1} className="lazyload mr-12" width="375px" alt="Usage Picker Field" /> 
+                  <img data-src={usageAvatar2} className="lazyload " width="375px" alt="Usage Picker Field" /> 
+                </div>
+              </TabPanel> 
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageTravel1} className="lazyload " width="375px" alt="Usage Feedback" /> 
+                </div>
+              </TabPanel>  
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageSystem1} className="lazyload mr-12" width="375px" alt="Usage Feedback" /> 
+                  <img data-src={usageSystem2} className="lazyload " width="375px" alt="Usage Feedback" /> 
+                </div>
+              </TabPanel>  
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageCategory1} className="lazyload mr-12" width="375px" alt="Usage Feedback" /> 
+                  <img data-src={usageCategory2} className="lazyload " width="375px" alt="Usage Feedback" /> 
+                </div>
+              </TabPanel>  
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
+                  <img data-src={usageOnboarding1} className="lazyload mr-12" width="375px" alt="Usage Feedback" /> 
+                  <img data-src={usageOnboarding2} className="lazyload " width="375px" alt="Usage Feedback" /> 
+                </div>
+              </TabPanel>  
+            </Tabs>
+          </section> 
+
+          <section id="guidance" name="guidance" className="as-section mb-48">
+            <span id="guidance-anchor" className="page-anchor"></span>
+
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
+              <CopyToClipboard text={'http://localhost:8000/design/typography#guidance-anchor'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading>  
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for icons to adhere to.</p>
+            <div className="flex flex-wrap -mx-5">  
+
+              <div className="as-guidance px-5 mb-5">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg> 
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Guidance 1" />
+                <p className="text-sm text-greyStatus-600">Do not distort icons.</p>
+              </div>
+              <div className="as-guidance px-5 mb-5">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg> 
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                <p className="text-sm text-greyStatus-600">Do not use system icons for nudges.</p>
+              </div>
+              <div className="as-guidance px-5 mb-5">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg>
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Guidance 3" />
+                <p className="text-sm text-greyStatus-600">Do not change the color of icons or use non-approved colors.</p>
+              </div>
+              <div className="as-guidance px-5 mb-5">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg>
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Guidance 4" />
+                <p className="text-sm text-greyStatus-600">Do not use icons for any use other than what is specified.</p>
+              </div>
+              <div className="as-guidance px-5 mb-5">
+                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                </svg>
+                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Guidance 5" />
+                <p className="text-sm mb-3 text-greyStatus-600">Do not create your own icons using combinations of this page. Instead, contact a designer.</p>
+              </div>
+            </div> 
           </section>
 
         </main>

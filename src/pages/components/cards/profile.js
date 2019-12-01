@@ -73,8 +73,8 @@ function ComponentsCardsProfilePage() {
           </ul> 
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full bg-grey-300">Popovers</div></li>
-            <li><Link to="components/popovers/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li>
-            <li><Link to="components/popovers/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li> 
+            <li><Link to="components/popovers/external" className="block text-sm text-grey-400 w-full hover:bg-grey-100">External</Link></li>
+            <li><Link to="components/popovers/general" className="block text-sm text-grey-400 w-full hover:bg-grey-100">General</Link></li> 
           </ul>                    
         </nav>
       </aside>

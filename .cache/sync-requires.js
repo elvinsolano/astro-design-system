@@ -43,6 +43,7 @@ exports.components = {
   "component---src-pages-content-voice-tone-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/content/voice-tone.js"))),
   "component---src-pages-design-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/design.js"))),
   "component---src-pages-design-color-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/design/color.js"))),
+  "component---src-pages-design-haptics-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/design/haptics.js"))),
   "component---src-pages-design-icons-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/design/icons.js"))),
   "component---src-pages-design-logo-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/design/logo.js"))),
   "component---src-pages-design-motion-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/design/motion.js"))),
@@ -59,6 +60,8 @@ exports.components = {
   "component---src-pages-elements-form-fields-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/elements/form-fields.js"))),
   "component---src-pages-elements-loaders-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/elements/loaders.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/index.js"))),
-  "component---src-pages-landing-login-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/landing-login.js")))
+  "component---src-pages-landing-login-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/landing-login.js"))),
+  "component---src-pages-components-popovers-external-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/popovers/external.js"))),
+  "component---src-pages-components-popovers-general-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/popovers/general.js")))
 }
 

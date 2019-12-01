@@ -362,3 +362,17 @@ aside nav ul li a:active {
 .as-guidance {
   width: 330px;
 }
+
+.as-icon {
+  width: 125px;
+}
+
+.as-accordion {
+  width: 540px;
+}
+.accordion {
+
+}
+.accordion__button {
+  background-color: #E5E5E5;
+}
