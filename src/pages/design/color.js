@@ -215,22 +215,16 @@ function DesignColorPage() {
               </div>              
             </div> 
 
-            <div className="flex justify-between bg-black p-10 rounded-sm">
-              <div className="flex items-start mr-10 w-2/3">
+            <div className="as-dyk flex justify-between bg-black rounded-sm">
+              <div className="flex items-start">
                 <div className="mr-4 -mt-1">
                   <div className="DarkAndLightRectangleStyle">
                     <div className="darkrectangle"></div>
                     <div className="lightrectangle"></div>
                   </div>
                 </div> 
-                <p className="as-type-regular text-white tracking-wider">Did you know all body copy in the Astro design system uses Grey 7 and not Black.</p>
-              </div>
-              <div className="pl-10 border-l border-grey-500"> 
-                <svg className="fill-current inline-block ml-2 cursor-pointer" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#333" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
-                  <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
-                </svg> 
-              </div>
+                <p className="as-type-regular leading-relaxed text-white tracking-wider">Did you know all body copy in the Astro design system uses Grey 7 and not Black.</p>
+              </div> 
             </div> 
           </section>  
  

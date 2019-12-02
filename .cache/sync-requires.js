@@ -36,6 +36,8 @@ exports.components = {
   "component---src-pages-components-overlays-single-item-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/single-item.js"))),
   "component---src-pages-components-overlays-tasks-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/tasks.js"))),
   "component---src-pages-components-overlays-two-columns-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/two-columns.js"))),
+  "component---src-pages-components-popovers-external-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/popovers/external.js"))),
+  "component---src-pages-components-popovers-general-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/popovers/general.js"))),
   "component---src-pages-content-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/content.js"))),
   "component---src-pages-content-guidelines-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/content/guidelines.js"))),
   "component---src-pages-content-intro-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/content/intro.js"))),
@@ -60,8 +62,6 @@ exports.components = {
   "component---src-pages-elements-form-fields-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/elements/form-fields.js"))),
   "component---src-pages-elements-loaders-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/elements/loaders.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/index.js"))),
-  "component---src-pages-landing-login-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/landing-login.js"))),
-  "component---src-pages-components-popovers-external-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/popovers/external.js"))),
-  "component---src-pages-components-popovers-general-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/popovers/general.js")))
+  "component---src-pages-landing-login-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/landing-login.js")))
 }
 

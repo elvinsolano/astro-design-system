@@ -126,12 +126,12 @@ function DesignPictogramsPage() {
                 <li className="as-grid-8 relative"><span className="list-circle">5</span><img data-src={typesSystem5} className="lazyload inline-block" width="133" height="149" alt="Pictograms Types System Pictograms 5" /> </li> 
                 <li className="as-grid-8 relative"><span className="list-circle">6</span><img data-src={typesSystem6} className="lazyload inline-block" width="149" height="201" alt="Pictograms Types System Pictograms 6" /> </li> 
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Voice.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">2. History.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">3. Keyboard.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">5. No Results.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">6. Empty Nudges.</p>   
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Voice</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. History</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Keyboard</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">5. No Results</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">6. Empty Nudges</p>   
             </div> 
 
             <div className="mb-16">
@@ -208,14 +208,14 @@ function DesignPictogramsPage() {
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Pictograms Guidance 4" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use too many layers or shadows.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not use loading profile as a real loader. Only animation.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                 </svg>
                 <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Pictograms Guidance 5" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not distort logo.</p>
+                <p className="text-sm mb-3 text-greyStatus-600">Do not loop any animations.</p>
               </div>
               <div className="w-grid px-4 mb-8">
                 <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -223,21 +223,7 @@ function DesignPictogramsPage() {
                 </svg>
                 <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Pictograms Guidance 6" />
                 <p className="text-sm mb-3 text-greyStatus-600">Do not make too small.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance7} className="lazyload mb-3" width="290" alt="Pictograms Guidance 7" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use loading profile as a real loader. Only animation.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance8} className="lazyload mb-3" width="290" alt="Pictograms Guidance 8" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not loop any animations.</p>
-              </div>
+              </div> 
             </div> 
           </section>
 
