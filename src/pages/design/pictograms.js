@@ -19,11 +19,16 @@ import typesSystem4 from "../../assets/design/pictograms/types/system/04 Menu.pn
 import typesSystem5 from "../../assets/design/pictograms/types/system/05 No result.png";
 import typesSystem6 from "../../assets/design/pictograms/types/system/06 Empty.png";
 
-import typesAnimated1 from "../../assets/design/pictograms/types/animated/01 Activities_@4X.gif";
-import typesAnimated2 from "../../assets/design/pictograms/types/animated/02 Nudges_@4X.gif";
-import typesAnimated3 from "../../assets/design/pictograms/types/animated/03 Discover_@4X.gif";
-import typesAnimated4 from "../../assets/design/pictograms/types/animated/04 Loading Profile_@1X.gif";
-import typesAnimated5 from "../../assets/design/pictograms/types/animated/05 Checked Profile_@1X.gif";
+import typesAnimated1 from "../../assets/design/pictograms/types/animated/01 Activities_@2X.gif";
+import typesAnimated2 from "../../assets/design/pictograms/types/animated/02 Nudges_@2X.gif";
+import typesAnimated3 from "../../assets/design/pictograms/types/animated/03 Discover_@2X.gif";
+import typesAnimated4 from "../../assets/design/pictograms/types/animated/04 Loading Profile_@2X.gif";
+import typesAnimated5 from "../../assets/design/pictograms/types/animated/05 Checked Profile_@2X.gif";
+
+import usageSystem1 from "../../assets/design/pictograms/usage/system/01 System.png";
+import usageSystem2 from "../../assets/design/pictograms/usage/system/02 System.png";
+import usageAnimated1 from "../../assets/design/pictograms/usage/animated/01 Animated.png";
+import usageAnimated2 from "../../assets/design/pictograms/usage/animated/02 Animated.png";
 
 import guidance1 from "../../assets/design/pictograms/guidance/01 Guidance.png";
 import guidance2 from "../../assets/design/pictograms/guidance/02 Guidance.png";
@@ -64,6 +69,7 @@ function DesignPictogramsPage() {
             <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Pictograms</Link>
               <Scrollspy items={ ['types', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="design/pictograms#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types</Link></li>
+                <li><Link to="design/pictograms#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Usage</Link></li>
                 <li><Link to="design/pictograms#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li> 
               </Scrollspy>                 
             </li>
@@ -146,28 +152,77 @@ function DesignPictogramsPage() {
               
               <div className="flex flex-wrap -mx-4 mb-12">  
                 <div className="w-grid px-4 mb-8"> 
-                  <img data-src={typesAnimated1} className="lazyload mb-3" width="290" alt="Pictograms Guidance 1" />
-                  <p className="text-sm mb-3 text-greyStatus-600">Activities</p>
+                  <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesAnimated1} className="lazyload mb-3" width="290" alt="Pictograms Guidance 1" />
+                  </div> 
+                  <p className="text-sm mb-3 text-greyStatus-600">Voice</p>
                 </div>
                 <div className="w-grid px-4 mb-8"> 
-                  <img data-src={typesAnimated2} className="lazyload mb-3" width="290" alt="Pictograms Guidance 2" />
+                  <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesAnimated2} className="lazyload mb-3" width="290" alt="Pictograms Guidance 2" />
+                  </div>
                   <p className="text-sm mb-3 text-greyStatus-600">Nudges</p>
                 </div>
                 <div className="w-grid px-4 mb-8"> 
-                  <img data-src={typesAnimated3} className="lazyload mb-3" width="290" alt="Pictograms Guidance 3" />
+                  <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesAnimated3} className="lazyload mb-3" width="290" alt="Pictograms Guidance 3" />
+                  </div>
                   <p className="text-sm mb-3 text-greyStatus-600">Discover</p>
                 </div>
                 <div className="w-grid px-4 mb-8"> 
-                  <img data-src={typesAnimated4} className="lazyload mb-3" width="290" alt="Pictograms Guidance 4" />
+                  <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesAnimated4} className="lazyload mb-3" width="290" alt="Pictograms Guidance 4" />
+                  </div>                  
                   <p className="text-sm mb-3 text-greyStatus-600">Check Mark</p>
                 </div>
                 <div className="w-grid px-4 mb-8"> 
-                  <img data-src={typesAnimated5} className="lazyload mb-3" width="290" alt="Pictograms Guidance 5" />
+                  <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
+                    <img data-src={typesAnimated5} className="lazyload mb-3" width="290" alt="Pictograms Guidance 5" />
+                  </div>
                   <p className="text-sm mb-3 text-greyStatus-600">Loading Profile</p>
                 </div> 
               </div>  
             </div>  
           </section>
+
+          <section id="usage" name="usage" className="as-section"> 
+            <span id="usage-anchor" className="page-anchor"></span>
+
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
+              <CopyToClipboard text={'http://localhost:8000/design/logo#overview-anchor'}>
+                <svg data-tip='custom show' data-event='click' data-for='compliance' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+              <ReactTooltip id='overview' place="right" type="success" effect="solid" globalEventOff='click'> 
+                <svg className="fill-current cursor-pointer inline-block align-bottom mr-2" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#4ead58" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+                  <path fill="#fff" d="M9.324 15.841l3.102 2.998 10.266-9.95 2.197 2.144-12.463 12.078-5.315-5.151z"></path>
+                </svg>
+                URL Copied
+              </ReactTooltip>               
+            </Heading>  
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Logo usage is based on applying the specific logos variations based on device type, presentation surface and communications objective.</p>  
+            <Tabs>
+              <TabList>
+                <Tab>System</Tab> 
+                <Tab>Animated</Tab> 
+              </TabList>
+          
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex justify-center">
+                  <img data-src={usageSystem1} className="lazyload mr-10" width="375px" alt="Logo Usage Full Lock Up" />
+                  <img data-src={usageSystem2} className="lazyload" width="375px" alt="Logo Usage Full Lock Up" />
+                </div> 
+              </TabPanel> 
+              <TabPanel>
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex justify-center">
+                  <img data-src={usageAnimated1} className="lazyload mr-10" width="375px" alt="Logo Usage Full Lock Up" />
+                  <img data-src={usageAnimated2} className="lazyload" width="375px" alt="Logo Usage Full Lock Up" />
+                </div> 
+              </TabPanel> 
+            </Tabs>
+          </section> 
 
           <section id="guidance" name="guidance" className="as-section mb-48">
             <span id="guidance-anchor" className="page-anchor"></span>
