@@ -221,26 +221,39 @@ function DesignScreenAnatomyPage() {
             </Heading>  
             <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of screen anatomy for sounds to adhere to.</p>
             <div className="flex flex-wrap -mx-5">   
-              <div className="as-guidance px-5 mb-5">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />
-                <p className="text-sm text-greyStatus-600">Do not allow card to overlap the controls area.</p>
-              </div>
-              <div className="as-guidance px-5 mb-5">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Typography Guidance 2" />
-                <p className="text-sm text-greyStatus-600">Controls should never appear over an overlay.</p>
-              </div>
-              <div className="as-guidance px-5 mb-5">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Typography Guidance 3" />
-                <p className="text-sm text-greyStatus-600">Do not show an Overlay without a Header.</p>
+
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not allow card to overlap the controls area.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Controls should never appear over an overlay.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not show an Overlay without a Header.</p>
+                </div>    
               </div> 
             </div> 
           </section>  

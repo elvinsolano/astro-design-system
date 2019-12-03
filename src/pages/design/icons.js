@@ -809,43 +809,58 @@ function DesignIconsPage() {
               </CopyToClipboard>
             </Heading>  
             <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for icons to adhere to.</p>
-            <div className="flex flex-wrap -mx-5">  
+            <div className="flex flex-wrap -mx-4 mb-12">  
 
-              <div className="as-guidance px-5 mb-5">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Guidance 1" />
-                <p className="text-sm text-greyStatus-600">Do not distort icons.</p>
-              </div>
-              <div className="as-guidance px-5 mb-5">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Guidance 2" />
-                <p className="text-sm text-greyStatus-600">Do not use system icons for nudges.</p>
-              </div>
-              <div className="as-guidance px-5 mb-5">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Guidance 3" />
-                <p className="text-sm text-greyStatus-600">Do not change the color of icons or use non-approved colors.</p>
-              </div>
-              <div className="as-guidance px-5 mb-5">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Guidance 4" />
-                <p className="text-sm text-greyStatus-600">Do not use icons for any use other than what is specified.</p>
-              </div>
-              <div className="as-guidance px-5 mb-5">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Guidance 5" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not create your own icons using combinations of this page. Instead, contact a designer.</p>
-              </div>
+              <div className="w-grid px-5 mb-5">
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not distort icons.</p>
+                </div>
+              </div>  
+              <div className="w-grid px-5 mb-5">
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use system icons for nudges.</p>
+                </div>
+              </div>  
+              <div className="w-grid px-5 mb-5">
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not change the color of icons or use non-approved colors.</p>
+                </div>
+              </div>  
+              <div className="w-grid px-5 mb-5">
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use icons for any use other than what is specified.</p>
+                </div>
+              </div>  
+              <div className="w-grid px-5 mb-5">
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not create your own icons using combinations of this page. Instead, contact a designer.</p>
+                </div>
+              </div>    
             </div> 
           </section>
 

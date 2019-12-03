@@ -119,7 +119,7 @@ function DesignHapticsPage() {
                 <li className="as-grid-4 relative"><img data-src={typesWarning1} className="lazyload inline-block" width="140" alt="Alerts System Validation" /> </li>
               </ol>   
             </div>  
-            <div className="mb-16">
+            <div className="">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Light
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@ function DesignHapticsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Presents a physical metaphor that complements the visual experience.</p>
-              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><img data-src={typesLight1} className="lazyload inline-block" width="140" alt="Alerts System Validation" /> </li>
               </ol>   
             </div>  
@@ -224,25 +224,37 @@ function DesignHapticsPage() {
               </CopyToClipboard>
             </Heading>  
             <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for sounds to adhere to.</p>
-            <div className="flex flex-wrap -mx-4 mb-12">  
+            <div className="flex flex-wrap -mx-5 mb-12">  
 
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>  
-                <p className="text-sm mb-3 text-greyStatus-600">Do not distract users. Haptics should only enhance a user’s experience in completing the intended task.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>  
-                <p className="text-sm mb-3 text-greyStatus-600">Do not overuse a haptic.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <p className="text-sm mb-3 text-greyStatus-600">Do not create custom haptic patterns.</p>
+              <div className="w-grid px-5 mb-5">
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not distract users. Haptics should only enhance a user’s experience in completing the intended task.</p>
+                </div>
+              </div> 
+              <div className="w-grid px-5 mb-5">
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not overuse a haptic.</p>
+                </div>
+              </div> 
+              <div className="w-grid px-5 mb-5">
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not create custom haptic patterns.</p>
+                </div>
               </div>  
             </div> 
           </section>          

@@ -393,8 +393,8 @@ function DesignLogoPage() {
             </Heading> 
 
             <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
-            <div className="flex flex-wrap -mx-4 mb-12">  
-              <div className="w-grid px-4 mb-8">
+            <div className="flex flex-wrap -mx-5 mb-12">  
+              <div className="w-grid px-5 mb-5">
                 <img data-src={guidanceLogo1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
@@ -406,7 +406,7 @@ function DesignLogoPage() {
                 </div>
               </div>
 
-              <div className="w-grid px-4 mb-8">
+              <div className="w-grid px-5 mb-5">
                 <img data-src={guidanceLogo2} className="lazyload mb-3" width="290" alt="Logo Guidance 2" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
@@ -418,7 +418,7 @@ function DesignLogoPage() {
                 </div>
               </div>
 
-              <div className="w-grid px-4 mb-8">
+              <div className="w-grid px-5 mb-5">
                 <img data-src={guidanceLogo3} className="lazyload mb-3" width="290" alt="Logo Guidance 3" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
@@ -430,7 +430,7 @@ function DesignLogoPage() {
                 </div>                 
               </div>
 
-              <div className="w-grid px-4 mb-8">
+              <div className="w-grid px-5 mb-5">
                 <img data-src={guidanceLogo4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
                 <div className="flex mb-3">
                   <div className="as-guidance">
@@ -442,7 +442,7 @@ function DesignLogoPage() {
                 </div>    
               </div>
 
-              <div className="w-grid px-4 mb-8">
+              <div className="w-grid px-5 mb-5">
                 <img data-src={guidanceLogo5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
@@ -454,7 +454,7 @@ function DesignLogoPage() {
                 </div>                     
               </div>
 
-              <div className="w-grid px-4 mb-8">
+              <div className="w-grid px-5 mb-5">
                 <img data-src={guidanceLogo6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
                 <div className="flex mb-3">
                   <div className="as-guidance">

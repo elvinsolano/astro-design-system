@@ -197,26 +197,38 @@ function DesignSoundPage() {
               </CopyToClipboard>
             </Heading>  
             <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for sounds to adhere to.</p>
-            <div className="flex flex-wrap -mx-4 mb-12">  
+            <div className="flex flex-wrap -mx-5">    
 
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>  
-                <p className="text-sm mb-3 text-greyStatus-600">Play sounds once. Do not loop.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>  
-                <p className="text-sm mb-3 text-greyStatus-600">Do not alter length of sounds.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <p className="text-sm mb-3 text-greyStatus-600">Only use sounds for specified scenarios.</p>
-              </div>  
+              <div className="w-grid px-5 mb-5">         
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Play sounds once. Do not loop.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">         
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not alter length of sounds.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">         
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Only use sounds for specified scenarios.</p>
+                </div>    
+              </div> 
             </div> 
           </section>          
         </main>

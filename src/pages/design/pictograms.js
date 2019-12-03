@@ -236,49 +236,75 @@ function DesignPictogramsPage() {
             </Heading> 
 
             <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for pictograms to adhere to.</p>
-            <div className="flex flex-wrap -mx-4 mb-12">  
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Pictograms Guidance 1" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use unapproved colors.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Pictograms Guidance 2" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use soft drop shadows.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Pictograms Guidance 3" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use gradients.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Pictograms Guidance 4" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use loading profile as a real loader. Only animation.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Pictograms Guidance 5" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not loop any animations.</p>
-              </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Pictograms Guidance 6" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not make too small.</p>
+            <div className="flex flex-wrap -mx-5">   
+
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use unapproved colors.</p>
+                </div>    
               </div> 
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use soft drop shadows.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use gradients.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use loading profile as a real loader. Only animation.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not loop any animations.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not make too small.</p>
+                </div>    
+              </div> 
+   
             </div> 
           </section>
 
