@@ -19,6 +19,13 @@ import uiexamplesSwipingCardsCard6 from "../../../assets/components/cards/Swipin
 import detailsSwipingCardsCard1 from "../../../assets/components/cards/Swiping Card/Details/01.png";
 import paddingSwipingCardsCard1 from "../../../assets/components/cards/Swiping Card/Padding/01.png"; 
 
+import guidance1 from "../../../assets/design/logo/guidance/01 Logo Guidance.png";
+import guidance2 from "../../../assets/design/logo/guidance/02 Logo Guidance.png";
+import guidance3 from "../../../assets/design/logo/guidance/03 Logo Guidance.png";
+import guidance4 from "../../../assets/design/logo/guidance/04 Logo Guidance.png";
+import guidance5 from "../../../assets/design/logo/guidance/05 Logo Guidance.png";
+import guidance6 from "../../../assets/design/logo/guidance/06 Logo Guidance.png";
+
 function ComponentsCardsSlidingCardsPage() { 
 
   return (
@@ -57,10 +64,11 @@ function ComponentsCardsSlidingCardsPage() {
             <li><Link to="components/cards/circle-graph" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Circle Graph</Link></li>
             <li><Link to="components/cards/profile-list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile List</Link></li>
             <li><Link to="components/cards/sliding-cards" className="block text-sm text-grey-400 w-full hover:bg-grey-100 bg-grey-700 font-semibold active">Sliding Cards***</Link>
-              <Scrollspy items={ ['ui-examples', 'details', 'padding'] } offset={-80} className="block" currentClassName="is-current">
+              <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
-                <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
+                <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
+                <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
               </Scrollspy>
             </li>
           </ul>
@@ -121,40 +129,25 @@ function ComponentsCardsSlidingCardsPage() {
               </TabList>
           
               <TabPanel>                  
-                <div className=" mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                   <img data-src={uiexamplesSwipingCardsCard1} className="lazyload mr-10" width="335" alt="Cards Sliding Cards UI Examples 1" />
                   <img data-src={uiexamplesSwipingCardsCard2} className="lazyload " width="335" alt="Cards Sliding Cards UI Examples 1" />
                 </div> 
               </TabPanel>  
               <TabPanel>                  
-                <div className=" mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                   <img data-src={uiexamplesSwipingCardsCard3} className="lazyload mr-10" width="335" alt="Cards Sliding Cards UI Examples 1" />
                   <img data-src={uiexamplesSwipingCardsCard4} className="lazyload " width="335" alt="Cards Sliding Cards UI Examples 1" />
                 </div> 
               </TabPanel>  
               <TabPanel>                  
-                <div className=" mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                   <img data-src={uiexamplesSwipingCardsCard5} className="lazyload mr-10" width="335" alt="Cards Sliding Cards UI Examples 1" />
                   <img data-src={uiexamplesSwipingCardsCard6} className="lazyload " width="335" alt="Cards Sliding Cards UI Examples 1" />
                 </div> 
               </TabPanel>  
             </Tabs>
           </section>   
-
-          <section id="details" name="details" className="as-section"> 
-            <span id="details-anchor" className="page-anchor"></span> 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Details
-            <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#details'}>
-              <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
-              </svg> 
-            </CopyToClipboard>
-            </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsSwipingCardsCard1} className="lazyload " width="594" alt="Cards Sliding Cards Details" />
-            </div> 
-          </section>             
 
           <section id="padding" name="padding" className="as-section"> 
             <span id="padding-anchor" className="page-anchor"></span> 
@@ -169,7 +162,111 @@ function ComponentsCardsSlidingCardsPage() {
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img data-src={paddingSwipingCardsCard1} className="lazyload " width="365" alt="Cards Sliding Cards Padding" />
             </div> 
-          </section>             
+          </section>  
+
+          <section id="details" name="details" className="as-section"> 
+            <span id="details-anchor" className="page-anchor"></span> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Details
+            <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#details'}>
+              <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+              </svg> 
+            </CopyToClipboard>
+            </Heading> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+              <img data-src={detailsSwipingCardsCard1} className="lazyload " width="594" alt="Cards Sliding Cards Details" />
+            </div> 
+          </section>  
+
+          <section id="guidance" name="guidance" className="as-section mb-16">
+            <span id="guidance-anchor" className="page-anchor"></span>
+
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
+              <CopyToClipboard text={'http://localhost:8000/design/typography#guidance-anchor'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading> 
+
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
+            <div className="flex flex-wrap -mx-4 mb-12">  
+              <div className="w-grid px-4 mb-8">
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not apply any effects to the logo.</p>
+                </div>
+              </div>
+
+              <div className="w-grid px-4 mb-8">
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Logo Guidance 2" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                </div>
+              </div>
+
+              <div className="w-grid px-4 mb-8">
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Logo Guidance 3" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any unapproved fill colors.</p>
+                </div>                 
+              </div>
+
+              <div className="w-grid px-4 mb-8">
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not skew or stretch the logo.</p>
+                </div>    
+              </div>
+
+              <div className="w-grid px-4 mb-8">
+                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not crop the logo.</p>
+                </div>                     
+              </div>
+
+              <div className="w-grid px-4 mb-8">
+                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use the logo over complex imagery.</p>
+                </div>  
+              </div>
+
+            </div> 
+          </section>                     
+           
         </main>
       </div>
     </Layout>
