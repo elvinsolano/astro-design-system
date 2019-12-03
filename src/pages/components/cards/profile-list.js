@@ -65,7 +65,7 @@ function ComponentsCardsProfileListPage() {
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
               </Scrollspy>             
             </li>
-            <li><Link to="components/cards/sliding-cards" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Sliding Cards***</Link></li>
+            <li><Link to="components/cards/sliding-cards" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Swipe Cards</Link></li>
           </ul>
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full font-semibold bg-grey-300">Overlay</div></li>
