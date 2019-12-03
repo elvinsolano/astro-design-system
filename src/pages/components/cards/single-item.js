@@ -16,12 +16,10 @@ import uiexamplesSingleItemCard3 from "../../../assets/components/cards/Single I
 import detailsSingleItemCard1 from "../../../assets/components/cards/Single Item Card/Details/Single Item Card Details.png";
 import paddingSingleItemCard1 from "../../../assets/components/cards/Single Item Card/Padding/Single Item Card Padding.png"; 
 
-import guidance1 from "../../../assets/design/logo/guidance/01 Logo Guidance.png";
-import guidance2 from "../../../assets/design/logo/guidance/02 Logo Guidance.png";
-import guidance3 from "../../../assets/design/logo/guidance/03 Logo Guidance.png";
-import guidance4 from "../../../assets/design/logo/guidance/04 Logo Guidance.png";
-import guidance5 from "../../../assets/design/logo/guidance/05 Logo Guidance.png";
-import guidance6 from "../../../assets/design/logo/guidance/06 Logo Guidance.png";
+import guidance1 from "../../../assets/components/cards/Single Item Card/Guidance/01 Guidance.png";
+import guidance2 from "../../../assets/components/cards/Single Item Card/Guidance/02 Guidance.png";
+import guidance3 from "../../../assets/components/cards/Single Item Card/Guidance/03 Guidance.png";
+import guidance4 from "../../../assets/components/cards/Single Item Card/Guidance/04 Guidance.png"; 
 
 function ComponentsCardsSingleItemPage() { 
 
@@ -49,7 +47,7 @@ function ComponentsCardsSingleItemPage() {
             <li><div className="block text-white uppercase text-sm w-full font-semibold bg-grey-300">Cards</div></li> 
             <li><Link to="components/cards/single-item" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Single Item</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/single-item#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/single-item#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/single-item#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/single-item#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/single-item#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -167,7 +165,7 @@ function ComponentsCardsSingleItemPage() {
               <img data-src={detailsSingleItemCard1} className="lazyload " width="374" />
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> - </p>
+              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -196,7 +194,7 @@ function ComponentsCardsSingleItemPage() {
               </ol> 
             </div>
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span> - </p>
+              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span> </p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -242,7 +240,7 @@ function ComponentsCardsSingleItemPage() {
             </div>
 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Badges</span> - </p>
+              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Badges</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -264,14 +262,14 @@ function ComponentsCardsSingleItemPage() {
             </div>
 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Pagination</span> - </p>
+              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Pagination</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900">swipe cards</Link> for additional details.</p>
+                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details.</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -286,7 +284,7 @@ function ComponentsCardsSingleItemPage() {
             </div>
 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Arrow</span> - </p>
+              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Arrow</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -301,35 +299,14 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Used when there are further details to the content</p>
+                    <p className="text-sm text-greyStatus-600">Used when there are further details to the content.</p>
                   </div>              
                 </li> 
               </ol> 
             </div>
-
+ 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">6. <span className="as-type-medium">Text Button</span> - </p>
-              <ol className="ml-3">
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className=" ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">Optional component.</p>
-                  </div>              
-                </li>
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className="ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">Used when there are further details to the content</p>
-                  </div>              
-                </li> 
-              </ol> 
-            </div>
-            <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Arrow</span> - </p>
+              <p class="as-type-regular text-sm text-greyStatus-600">6. <span className="as-type-medium">Text Button</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -360,7 +337,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
                   </div>              
                 </li> 
               </ol> 
@@ -381,7 +358,7 @@ function ComponentsCardsSingleItemPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for single cards to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
@@ -391,7 +368,7 @@ function ComponentsCardsSingleItemPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not apply any effects to the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not include more than 2 badges.</p>
                 </div>
               </div>
 
@@ -403,7 +380,7 @@ function ComponentsCardsSingleItemPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not make the Body Subtitle Label a link.</p>
                 </div>
               </div>
 
@@ -415,7 +392,7 @@ function ComponentsCardsSingleItemPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any unapproved fill colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use only the Card Header.</p>
                 </div>                 
               </div>
 
@@ -423,37 +400,13 @@ function ComponentsCardsSingleItemPage() {
                 <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not skew or stretch the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do open an Overlay when tapping View More.</p>
                 </div>    
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not crop the logo.</p>
-                </div>                     
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use the logo over complex imagery.</p>
-                </div>  
-              </div>
+              </div> 
 
             </div> 
           </section>
