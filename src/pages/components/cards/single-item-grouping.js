@@ -13,7 +13,7 @@ import Heading from '../../../components/atoms/heading';
 import uiexamplesSingleItemGroupingCard1 from "../../../assets/components/cards/Single Item w- Grouping Card/UI Examples/Single Item with Grouping Card 01.png";
 import uiexamplesSingleItemGroupingCard2 from "../../../assets/components/cards/Single Item w- Grouping Card/UI Examples/Single Item with Grouping Card 02.png";
 import uiexamplesSingleItemGroupingCard3 from "../../../assets/components/cards/Single Item w- Grouping Card/UI Examples/Single Item with Grouping Card 03.png";
-import detailsSingleItemGroupingCard1 from "../../../assets/components/cards/Single Item w- Grouping Card/Details/Single Item with Grouping Details.png";
+import detailsSingleItemGroupingCard1 from "../../../assets/components/cards/Single Item w- Grouping Card/Details/Single Item with Grouping Card Detail.png";
 import paddingSingleItemGroupingCard1 from "../../../assets/components/cards/Single Item w- Grouping Card/Padding/Single Item with Grouping Card Padding.png"; 
 
 function ComponentsCardsSingleItemGroupingPage() { 

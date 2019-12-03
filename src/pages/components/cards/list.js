@@ -13,7 +13,7 @@ import Heading from '../../../components/atoms/heading';
 import uiexamplesListCard1 from "../../../assets/components/cards/List Card/UI Examples/List Card 01.png";
 import uiexamplesListCard2 from "../../../assets/components/cards/List Card/UI Examples/List Card 02.png";
 import uiexamplesListCard3 from "../../../assets/components/cards/List Card/UI Examples/List Card 03.png";
-import detailsListCard1 from "../../../assets/components/cards/List Card/Details/List Card Details.png";
+import detailsListCard1 from "../../../assets/components/cards/List Card/Details/List Card Detail.png";
 import paddingListCard1 from "../../../assets/components/cards/List Card/Padding/List Card Padding.png"; 
 
 function ComponentsCardsListPage() { 

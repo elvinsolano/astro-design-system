@@ -11,7 +11,7 @@ import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
 
 import uiexamplesProfileCard1 from "../../../assets/components/cards/Profile Card/UI Examples/Profile Card 01.png"; 
-import detailsProfileCard1 from "../../../assets/components/cards/Profile Card/Details/Profile Card Details.png";
+import detailsProfileCard1 from "../../../assets/components/cards/Profile Card/Details/Profile Card Detail.png";
 import paddingProfileCard1 from "../../../assets/components/cards/Profile Card/Padding/Profile Card Padding.png"; 
 
 function ComponentsCardsProfilePage() { 

@@ -11,7 +11,7 @@ import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
 
 import uiexamplesTasksCard1 from "../../../assets/components/cards/Tasks Card/UI Examples/Tasks Card 01.png";  
-import detailsTasksCard1 from "../../../assets/components/cards/Tasks Card/Details/Tasks Card Details.png";
+import detailsTasksCard1 from "../../../assets/components/cards/Tasks Card/Details/Tasks Card Detail.png";
 import paddingTasksCard1 from "../../../assets/components/cards/Tasks Card/Padding/Tasks Card Padding.png"; 
 
 function ComponentsCardsTasksPage() { 

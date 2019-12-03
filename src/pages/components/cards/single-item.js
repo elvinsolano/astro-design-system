@@ -13,7 +13,7 @@ import Heading from '../../../components/atoms/heading';
 import uiexamplesSingleItemCard1 from "../../../assets/components/cards/Single Item Card/UI Examples/Single Item Card 01.png";
 import uiexamplesSingleItemCard2 from "../../../assets/components/cards/Single Item Card/UI Examples/Single Item Card 02.png";
 import uiexamplesSingleItemCard3 from "../../../assets/components/cards/Single Item Card/UI Examples/Single Item Card 03.png";
-import detailsSingleItemCard1 from "../../../assets/components/cards/Single Item Card/Details/Single Item Card Details.png";
+import detailsSingleItemCard1 from "../../../assets/components/cards/Single Item Card/Details/Single Item Card Detail.png";
 import paddingSingleItemCard1 from "../../../assets/components/cards/Single Item Card/Padding/Single Item Card Padding.png"; 
 
 function ComponentsCardsSingleItemPage() { 

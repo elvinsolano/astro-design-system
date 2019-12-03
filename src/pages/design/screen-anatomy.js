@@ -62,7 +62,7 @@ function DesignScreenAnatomyPage() {
             <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Pictograms</Link></li>
             <li><Link to="design/haptics" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Screen Anatomy</Link>
               <Scrollspy items={ ['types', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="design/sound#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Types</Link></li>
+                <li><Link to="design/sound#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Types &amp; Details</Link></li>
                 <li><Link to="design/sound#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
               </Scrollspy>  
             </li>

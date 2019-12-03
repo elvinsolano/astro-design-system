@@ -74,7 +74,7 @@ function DesignHapticsPage() {
             </div>
           </div>  
 
-          <section id="types" name="types" className="as-section">
+          <section id="types" name="types" className="as-section mb-16">
             <span id="types-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types
@@ -102,7 +102,7 @@ function DesignHapticsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Indicates a task or action, such as depositing a check or unlocking a vehicle, has successfully completed.</p>
-              <ol className="mb-5 py-16 px-20 bg-placeholder-200 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><img data-src={typesSuccess1} className="lazyload inline-block" width="140" alt="Alerts System Validation" /> </li>
               </ol>   
             </div>  
@@ -115,7 +115,7 @@ function DesignHapticsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Sensory notification that alerts the user about an event or state that could adversely affect the task or experience.</p>
-              <ol className="mb-5 py-16 px-20 bg-placeholder-200 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><img data-src={typesWarning1} className="lazyload inline-block" width="140" alt="Alerts System Validation" /> </li>
               </ol>   
             </div>  
@@ -128,13 +128,13 @@ function DesignHapticsPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Presents a physical metaphor that complements the visual experience.</p>
-              <ol className="mb-5 py-16 px-20 bg-placeholder-200 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
+              <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><img data-src={typesLight1} className="lazyload inline-block" width="140" alt="Alerts System Validation" /> </li>
               </ol>   
             </div>  
           </section>
 
-          <section id="usage" name="usage" className="as-section mb-48">
+          <section id="usage" name="usage" className="as-section mb-16">
             <span id="usage-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
@@ -149,47 +149,56 @@ function DesignHapticsPage() {
               <table className="w-full">
                 <thead className="border border-grey-200">
                   <tr className="bg-grey-200">
-                    <td className="p-4">State</td>
+                    <td className="p-4">Haptic</td>
                     <td className="p-4">Action</td>
-                    <td className="p-4">Haptic</td> 
+                    <td className="p-4">State</td> 
                   </tr>
                 </thead>
                 <tbody className="border border-grey-105">        
                   <tr className="border border-b border-grey-105">
-                    <td className="p-4 border-r border-grey-105">
-                      <p className="mb-4">Homepage</p>
-                      <p className="">Confetti</p>
-                    </td>
-                    <td className="p-4 border-r border-grey-105">
-                      <p className="mb-4">When user finish Onboarding and sees Homepage for first time</p>
-                      <p className="">When Confetti is been animated</p>
-                    </td> 
-                    <td className="p-4">    
+                    <td className="p-4 border-r border-grey-105">    
                       <div className="flex flex-wrap items-center justify-start">     
                         <p className="mr-4">Success</p>
                         <img data-src={typesSuccess1} className="lazyload inline-block" width="140" alt="Alerts System Validation" />
                       </div>
+                    </td>                  
+                    <td className="p-4 border-r border-grey-105">
+                      <p className="mb-4">Homepage</p>
+                      <p className="">Confetti</p>
                     </td>
+                    <td className="p-4">
+                      <p className="mb-4">When user finish Onboarding and sees Homepage for first time</p>
+                      <p className="">When Confetti is been animated</p>
+                    </td> 
+
                   </tr>
+
                   <tr className="border border-b border-grey-105">
+                    <td className="p-4 border-r border-grey-105">    
+                      <div className="flex flex-wrap items-center justify-start">     
+                        <p className="mr-4">Warning</p>
+                        <img data-src={typesWarning1} className="lazyload inline-block" width="140" alt="Alerts System Validation" />
+                      </div>
+                    </td>                  
                     <td className="p-4 border-r border-grey-105">
                       <p className="mb-4">Delayed State</p>
                       <p className="mb-4">Form Fields</p>
                       <p className="">Pop Over</p>
                     </td>
-                    <td className="p-4 border-r border-grey-105">
+                    <td className="p-4">
                       <p className="mb-4">When delayed status is triggered in the Mic Button</p>
                       <p className="mb-4">When a form field doesn’t meet the requirements</p>
                       <p className="">When a form field doesn’t meet the requirements</p>
                     </td> 
-                    <td className="p-4">    
-                      <div className="flex flex-wrap items-center justify-start">     
-                        <p className="mr-4">Warning</p>
-                        <img data-src={typesWarning1} className="lazyload inline-block" width="140" alt="Alerts System Validation" />
-                      </div>
-                    </td>
                   </tr>
+
                   <tr className="border border-b border-grey-105">
+                    <td className="p-4 border-r border-grey-105">    
+                      <div className="flex flex-wrap items-center justify-start">     
+                        <p className="mr-4">Light</p>
+                        <img data-src={typesLight1} className="lazyload inline-block" width="140" alt="Alerts System Validation" />
+                      </div>
+                    </td>                  
                     <td className="p-4 border-r border-grey-105">
                       <p className="mb-4">Nudges Refresh</p>
                       <p className="">Deleting a Nudge</p>
@@ -198,19 +207,13 @@ function DesignHapticsPage() {
                       <p className="mb-4">When user pulls down to refresh Nudges</p>
                       <p className="">When user delete a Nudge from the Nudge board</p>
                     </td> 
-                    <td className="p-4">    
-                      <div className="flex flex-wrap items-center justify-start">     
-                        <p className="mr-4">Light</p>
-                        <img data-src={typesLight1} className="lazyload inline-block" width="140" alt="Alerts System Validation" />
-                      </div>
-                    </td>
                   </tr> 
                 </tbody>
               </table>
             </div>
           </section>   
 
-          <section id="guidance" name="guidance" className="as-section mb-48">
+          <section id="guidance" name="guidance" className="as-section mb-16">
             <span id="guidance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance

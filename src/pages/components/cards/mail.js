@@ -11,7 +11,7 @@ import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
 
 import uiexamplesMailCard1 from "../../../assets/components/cards/Mail Card/UI Examples/Mail Card 01.png"; 
-import detailsMailCard1 from "../../../assets/components/cards/Mail Card/Details/Mail Card Details.png";
+import detailsMailCard1 from "../../../assets/components/cards/Mail Card/Details/Mail Card Detail.png";
 import paddingMailCard1 from "../../../assets/components/cards/Mail Card/Padding/Mail Card Padding.png"; 
 
 function ComponentsCardsMailPage() { 

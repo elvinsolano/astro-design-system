@@ -10,9 +10,9 @@ import SEO from "../../../components/seo";
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
 
-import uiexamplesGroupedListCard1 from "../../../assets/components/cards/Grouped List Card/UI Examples/Grouped List Card 01.png"; 
-import detailsGroupedListCard1 from "../../../assets/components/cards/Grouped List Card/Details/Grouped List Card Details.png";
-import paddingGroupedListCard1 from "../../../assets/components/cards/Grouped List Card/Padding/Grouped List Card Padding.png"; 
+import uiexamplesGroupedListCard1 from "../../../assets/components/cards/Grouped List Card/UI Examples/Grouped List 01.png"; 
+import detailsGroupedListCard1 from "../../../assets/components/cards/Grouped List Card/Details/Grouped List Detail.png";
+import paddingGroupedListCard1 from "../../../assets/components/cards/Grouped List Card/Padding/Grouped List Padding.png"; 
 
 function ComponentsCardsGroupedListPage() { 
 

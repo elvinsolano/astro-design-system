@@ -12,8 +12,8 @@ import Heading from '../../../components/atoms/heading';
 
 import uiexamplesProgressBarCard1 from "../../../assets/components/cards/Progress Bar Card/UI Examples/Progress Bar Card 01.png"; 
 import uiexamplesProgressBarCard2 from "../../../assets/components/cards/Progress Bar Card/UI Examples/Progress Bar Card 02.png";  
-import detailsProgressBarCard1 from "../../../assets/components/cards/Progress Bar Card/Details/Progress Bar Details.png";
-import paddingProgressBarCard1 from "../../../assets/components/cards/Progress Bar Card/Padding/Progress Bar Card Padding.png"; 
+import detailsProgressBarCard1 from "../../../assets/components/cards/Progress Bar Card/Details/Progress Bar Detail.png";
+import paddingProgressBarCard1 from "../../../assets/components/cards/Progress Bar Card/Padding/Progress Bar Padding.png"; 
 
 function ComponentsCardsProgressBarPage() { 
 
@@ -85,7 +85,7 @@ function ComponentsCardsProgressBarPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Progress Bar</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Tasks</Heading>
             <div className="flex items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
               <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">

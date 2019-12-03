@@ -155,7 +155,7 @@ function DesignPictogramsPage() {
                   <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesAnimated1} className="lazyload mb-3" width="290" alt="Pictograms Guidance 1" />
                   </div> 
-                  <p className="text-sm mb-3 text-greyStatus-600">Voice</p>
+                  <p className="text-sm mb-3 text-greyStatus-600">Activities</p>
                 </div>
                 <div className="w-grid px-4 mb-8"> 
                   <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
@@ -173,13 +173,13 @@ function DesignPictogramsPage() {
                   <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesAnimated4} className="lazyload mb-3" width="290" alt="Pictograms Guidance 4" />
                   </div>                  
-                  <p className="text-sm mb-3 text-greyStatus-600">Check Mark</p>
+                  <p className="text-sm mb-3 text-greyStatus-600">Loading Profile</p>
                 </div>
                 <div className="w-grid px-4 mb-8"> 
                   <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesAnimated5} className="lazyload mb-3" width="290" alt="Pictograms Guidance 5" />
                   </div>
-                  <p className="text-sm mb-3 text-greyStatus-600">Loading Profile</p>
+                  <p className="text-sm mb-3 text-greyStatus-600">Check Mark</p>
                 </div> 
               </div>  
             </div>  

@@ -11,8 +11,8 @@ import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
 
 import uiexamplesHighlightedItemDetailCard1 from "../../../assets/components/cards/Highlighted Item _ Detail Card/UI Examples/Highlighted Item _ Detail Card 01.png";   
-import detailsHighlightedItemDetailCard1 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Details/Hightlighted Item _ Detail Details.png";
-import paddingHighlightedItemDetailCard1 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Padding/Highlighted Item _ Details Padding.png"; 
+import detailsHighlightedItemDetailCard1 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Details/Highlighted Item _ Detail Card Detail.png";
+import paddingHighlightedItemDetailCard1 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Padding/Highlighted Item _ Detail Card Padding.png"; 
 
 function ComponentsCardsHighlightedItemDetailPage() { 
 

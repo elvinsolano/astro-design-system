@@ -13,8 +13,8 @@ import Heading from '../../../components/atoms/heading';
 import uiexamplesInformationCard1 from "../../../assets/components/cards/Information Card/UI Examples/Information Card 01.png"; 
 import uiexamplesInformationCard2 from "../../../assets/components/cards/Information Card/UI Examples/Information Card 02.png"; 
 import uiexamplesInformationCard3 from "../../../assets/components/cards/Information Card/UI Examples/Information Card 03.png"; 
-import detailsInformationCard1 from "../../../assets/components/cards/Information Card/Details/Information Details.png";
-import paddingInformationCard1 from "../../../assets/components/cards/Information Card/Padding/Information Padding.png"; 
+import detailsInformationCard1 from "../../../assets/components/cards/Information Card/Details/Information Card Detail.png";
+import paddingInformationCard1 from "../../../assets/components/cards/Information Card/Padding/Information Card Padding.png"; 
 
 function ComponentsCardsInformationPage() { 
 

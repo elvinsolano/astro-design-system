@@ -76,7 +76,7 @@ function DesignSoundPage() {
             </div>
           </div>  
 
-          <section id="types" name="types" className="as-section">
+          <section id="types" name="types" className="as-section mb-16">
             <span id="types-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types
@@ -95,7 +95,7 @@ function DesignSoundPage() {
             </Heading>  
             <p className="mb-12 text-greyStatus-600 tracking-wider">A variety of audio resources designed to provide sensory feedback around an interface-related action or event.</p>
             
-            <div className="flex flex-wrap -mx-5 mb-16">
+            <div className="flex flex-wrap -mx-5">
               <div className="w-half px-5 mb-8">
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
                   <ReactAudioPlayer
@@ -116,7 +116,7 @@ function DesignSoundPage() {
                 </div>  
                 <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Notification</span> - Sound used when a notification is delivered to the user.</p>
               </div>
-              <div className="w-half px-5 mb-8">
+              <div className="w-half px-5">
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
                   <ReactAudioPlayer
                     src={soundInput3}
@@ -126,7 +126,7 @@ function DesignSoundPage() {
                 </div>  
                 <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Voice Input</span> - Sound used when Astro takes in an utterance..</p>
               </div>
-              <div className="w-half px-5 mb-8">
+              <div className="w-half px-5">
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
                  <ReactAudioPlayer
                     src={soundInput4}
@@ -139,7 +139,7 @@ function DesignSoundPage() {
             </div>  
           </section>
 
-          <section id="usage" name="usage" className="as-section mb-48">
+          <section id="usage" name="usage" className="as-section mb-16">
             <span id="usage-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Usage
@@ -154,70 +154,39 @@ function DesignSoundPage() {
               <table className="w-full">
                 <thead className="border border-grey-200">
                   <tr className="bg-grey-200">
-                    <td className="p-4">Screen</td>
-                    <td className="p-4">Interaction</td>
                     <td className="p-4">Sound</td> 
+                    <td className="p-4">Screen</td>
+                    <td className="p-4">Interaction</td>                    
                   </tr>
                 </thead>
                 <tbody className="border border-grey-105">        
                   <tr className="border border-b border-grey-105">
-                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Onboarding</p></td>
-                    <td className="p-4 border-r border-grey-105">When user finish Onboarding and sees Homepage for first time</td> 
-                    <td className="p-4">    
-                      <div className="flex flex-wrap items-center justify-start">              
-                        <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
-                          <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
-                          <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
-                        </svg>
-                        <p className="ml-4">Confirmation</p>
-                      </div>
-                    </td>
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Confirmation</p></td>
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Onboarding</p></td> 
+                    <td className="p-4">When user finish Onboarding and sees Homepage for first time</td>
                   </tr>
                   <tr className="border border-b border-grey-105">
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Notification</p></td>
-                    <td className="p-4 border-r border-grey-105">Whenever a Nudge comes in</td>
-                    <td className="p-4">                  
-                      <div className="flex flex-wrap items-center justify-start">              
-                        <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
-                          <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
-                          <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
-                        </svg>
-                        <p className="ml-4">Notification</p>
-                      </div>
-                    </td>
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Notification</p></td>
+                    <td className="p-4">Whenever a Nudge comes in</td>
+                    
                   </tr> 
                   <tr className="border border-b border-grey-105">
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Input</p></td>                  
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Input</p></td>
-                    <td className="p-4 border-r border-grey-105">Whenever utterance is entered</td> 
-                    <td className="p-4">                  
-                      <div className="flex flex-wrap items-center justify-start">              
-                        <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
-                          <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
-                          <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
-                        </svg>
-                        <p className="ml-4">Voice Input</p>
-                      </div>
-                    </td>
+                    <td className="p-4">Whenever utterance is entered</td> 
                   </tr>
                   <tr className="border border-b border-grey-105">
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Output</p></td>
-                    <td className="p-4 border-r border-grey-105">When Astro responds</td> 
-                    <td className="p-4">                  
-                      <div className="flex flex-wrap items-center justify-start">              
-                        <svg className="fill-current cursor-pointer inline-block align-bottom border border-red-600 rounded-full" width="35" height="35" viewBox="0 0 31 32" xmlns="http://www.w3.org/2000/svg">
-                          <path fill="#fff" d="M31.111 15.762c0 8.591-6.964 15.556-15.556 15.556s-15.556-6.964-15.556-15.556c0-8.591 6.964-15.556 15.556-15.556s15.556 6.964 15.556 15.556z"></path>
-                          <path fill="#e0301e" d="M21.333 16.444l-8 4.889v-9.778z"></path>
-                        </svg>
-                        <p className="ml-4">Voice Output</p>
-                      </div>
-                    </td>
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Output</p></td>
+                    <td className="p-4">When Astro responds</td> 
                   </tr> 
                 </tbody>
               </table>
             </div>
-          </section>   
+          </section>
 
-          <section id="guidance" name="guidance" className="as-section mb-48">
+          <section id="guidance" name="guidance" className="as-section mb-16">
             <span id="guidance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance

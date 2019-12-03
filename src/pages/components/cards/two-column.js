@@ -11,7 +11,7 @@ import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
 
 import uiexamplesTwoColumnCard1 from "../../../assets/components/cards/Two Column Card/UI Examples/Two Column Card 01.png"; 
-import detailsTwoColumnCard1 from "../../../assets/components/cards/Two Column Card/Details/Two Column Card Details.png";
+import detailsTwoColumnCard1 from "../../../assets/components/cards/Two Column Card/Details/Two Column Card Detail.png";
 import paddingTwoColumnCard1 from "../../../assets/components/cards/Two Column Card/Padding/Two Column Card Padding.png"; 
 
 function ComponentsCardsTwoColumnPage() { 

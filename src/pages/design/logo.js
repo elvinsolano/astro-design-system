@@ -352,27 +352,30 @@ function DesignLogoPage() {
               </ReactTooltip>               
             </Heading>  
             <p className="mb-4 text-greyStatus-600 tracking-wider">Clearspace is the minimum amount of space to be placed around the logo. A space in which no other objects, text or graphics should infringe. Each logo type has unique clearspace rules.</p>  
-            <p className="mb-4 text-greyStatus-600 tracking-wider">The Full Lock Up clearspace is equal to the height of the Astro wordmark.</p>  
-            <p className="mb-4 text-greyStatus-600 tracking-wider">The Icon clearspace is equal to the height and width of the square that forms the bottom of the A.</p>  
-            <p className="mb-4 text-greyStatus-600 tracking-wider">The Wordmark clearspace is equal to the height of the Astro wordmark. That height is also the length used to determine the border distance on all sides of the wordmark.</p>  
             <div className="flex flex-wrap -mx-4 mb-12">
               <div className="px-4 mb-8"> 
-                <div className="as-grid-11 bg-black p-10 min-h-330 flex align-center">
-                  <img data-src={clearspaceLogo1} className="lazyload m-auto" width="205" alt="Logo Clearspace Full Lock-Up" />
+                <div className="as-clearspace">
+                  <div className="bg-black p-10 min-h-330 flex align-center">
+                    <img data-src={clearspaceLogo1} className="lazyload m-auto" width="205" alt="Logo Clearspace Full Lock-Up" />
+                  </div>
+                  <p className="text-sm text-grey-400 py-2"><span className="as-type-medium">Full Lock Up</span> - The clearspace is equal to the height of the Astro wordmark.</p>
                 </div>
-                <p className="text-sm text-grey-400 py-2">Full Lock-Up</p>
               </div>
               <div className="px-4 mb-8">
-                <div className="as-grid-11 bg-black p-10 min-h-330 flex align-center">
-                  <img data-src={clearspaceLogo2} className="lazyload m-auto" width="205" alt="Logo Clearspace Icon" />
-                </div>
-                <p className="text-sm text-grey-400 py-2">Icon</p>  
+                <div className="as-clearspace">
+                  <div className="bg-black p-10 min-h-330 flex align-center">
+                    <img data-src={clearspaceLogo2} className="lazyload m-auto" width="205" alt="Logo Clearspace Icon" />
+                  </div>
+                  <p className="text-sm text-grey-400 py-2"><span className="as-type-medium">Icon</span> - The clearspace is equal to the height and width of the square that forms the bottom of the A.</p>  
+                </div> 
               </div>
               <div className="px-4 mb-8">
-                <div className="as-grid-11 bg-black p-10 min-h-330 flex align-center">
-                  <img data-src={clearspaceLogo3} className="lazyload m-auto" width="365" alt="Logo Clearspace Wordmark" />
+                <div className="as-clearspace">
+                  <div className="bg-black p-10 min-h-330 flex align-center">
+                    <img data-src={clearspaceLogo3} className="lazyload m-auto" width="365" alt="Logo Clearspace Wordmark" />
+                  </div>
+                  <p className="text-sm text-grey-400 py-2"><span className="as-type-medium">Wordmark</span> - The clearspace is equal to the height of the Astro wordmark. That height is also the length used to determine the border distance on all sides of the wordmark.</p> 
                 </div>
-                <p className="text-sm text-grey-400 py-2">Wordmark</p> 
               </div>           
             </div>  
 
