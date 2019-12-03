@@ -100,7 +100,6 @@ function DesignSoundPage() {
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
                   <ReactAudioPlayer
                     src={soundInput1}
-                    autoPlay
                     controls
                   />
                 </div> 
@@ -110,7 +109,6 @@ function DesignSoundPage() {
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
                   <ReactAudioPlayer
                     src={soundInput2}
-                    autoPlay
                     controls
                   />
                 </div>  
@@ -120,7 +118,6 @@ function DesignSoundPage() {
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
                   <ReactAudioPlayer
                     src={soundInput3}
-                    autoPlay
                     controls
                   />
                 </div>  
@@ -130,7 +127,6 @@ function DesignSoundPage() {
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
                  <ReactAudioPlayer
                     src={soundInput4}
-                    autoPlay
                     controls
                   />
                 </div>  

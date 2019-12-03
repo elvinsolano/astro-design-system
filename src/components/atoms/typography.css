@@ -372,15 +372,88 @@ aside nav ul li a:active {
   height: 291px;
 }
 
-.as-accordion {
+.as-accordion-container {
   width: 540px;
-}
-.accordion {
+} 
+.as-accordion {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}  
 
-}
-.accordion__button {
+.as-accordion__button {
   background-color: #E5E5E5;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center; 
+  position: relative;
+} 
+
+.as-accordion .as-accordion__button:before {
+  display: inline-block;
+  content: '';
+  height: 1px;
+  width: 12px;
+  margin-right: 12px;
+  border-top: 2px solid currentColor; 
+  /* transform: rotate(-90deg);  */ 
 }
+
+.as-accordion .as-accordion__button[aria-expanded='true']:after,
+.as-accordion .as-accordion__button[aria-selected='true']:after {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 22px;
+  display: inline-block;
+  content: '';
+  height: 12px;
+  width: 1px;  
+  margin-right: 12px;
+  border-right: 2px solid currentColor;
+}
+ 
+
+.accordion__panel {
+  padding: 20px;
+  -webkit-animation: fadein 0.35s ease-in;
+          animation: fadein 0.35s ease-in;
+}
+
+/* -------------------------------------------------- */
+
+/* ---------------- Animation part ------------------ */
+
+/* -------------------------------------------------- */
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
 
 .as-dyk {
   padding: 30px 83px 30px 82px;

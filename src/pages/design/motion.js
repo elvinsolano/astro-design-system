@@ -65,7 +65,7 @@ function DesignMotionPage() {
             <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
             <li><Link to="design/motion" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Motion</Link>
               <Scrollspy items={ ['types', 'usage', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="design/motion#types-details-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types</Link></li>
+                <li><Link to="design/motion#types-details-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types &amp; Details</Link></li>
                 <li><Link to="design/motion#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Usage</Link></li>
                 <li><Link to="design/motion#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li> 
               </Scrollspy>             
@@ -93,7 +93,7 @@ function DesignMotionPage() {
                   Sketch File
                 </button>
               </div>
-            </div>              
+            </div>         
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types &amp; Details
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
@@ -123,12 +123,12 @@ function DesignMotionPage() {
               
               <div className="flex"> 
                 <img data-src={typesCardIncoming1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6">Animation timeframe (approx): 0.4 sec.</p>
-                  <Accordion>
-                    <AccordionItem>
+                  <Accordion className="as-accordion">
+                    <AccordionItem >
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           1. Voice Answer
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -159,7 +159,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           2. Card
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -190,7 +190,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           3. In Line Feedback
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -221,7 +221,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           4. Next Steps
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -268,12 +268,12 @@ function DesignMotionPage() {
               
               <div className="flex mb-12"> 
                 <img data-src={typesCardOutgoing1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6"><span className="as-type-medium">Part 1</span> - Animation timeframe (approx): 0.4 sec.</p>
-                  <Accordion>
-                    <AccordionItem>
+                  <Accordion className="as-accordion">
+                    <AccordionItem >
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           1. Voice Answer
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -304,7 +304,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           2. Card
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -335,7 +335,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           3. In Line Feedback
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -366,7 +366,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           4. Next Steps
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -401,12 +401,12 @@ function DesignMotionPage() {
 
               <div className="flex"> 
                 <img data-src={typesCardOutgoing2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6"><span className="as-type-medium">Part 2</span> - Animation timeframe (approx): 0.4 sec.</p>
-                  <Accordion>
-                    <AccordionItem>
+                  <Accordion className="as-accordion">
+                    <AccordionItem >
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           1. Voice Answer
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -437,7 +437,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           2. Card
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -468,7 +468,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           3. In Line Feedback
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -499,7 +499,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           4. Next Steps
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -545,7 +545,7 @@ function DesignMotionPage() {
               
               <div className="flex"> 
                 <img data-src={typesConversation1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6">Animation timeframe (approx): 0.4 sec.</p> 
                 </div>
               </div>   
@@ -563,12 +563,12 @@ function DesignMotionPage() {
 
               <div className="flex mb-12"> 
                 <img data-src={typesMenu1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6"><span className="as-type-medium">Opening</span> - Animation timeframe (approx): 0.4 sec.</p>
-                  <Accordion>
-                    <AccordionItem>
+                  <Accordion className="as-accordion">
+                    <AccordionItem >
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           1. Microphone Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -599,7 +599,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           2. Keyboard Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -630,7 +630,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           3. Hamburger Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -661,7 +661,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           4. Background
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -692,7 +692,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           5. Menu Buttons
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -727,12 +727,12 @@ function DesignMotionPage() {
 
               <div className="flex"> 
                 <img data-src={typesMenu2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6"><span className="as-type-medium">Closing</span> - Animation timeframe (approx): 0.4 sec.</p>
-                  <Accordion>
-                    <AccordionItem>
+                  <Accordion className="as-accordion">
+                    <AccordionItem >
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           1. Microphone Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -763,7 +763,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           2. Keyboard Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -794,7 +794,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           3. Hamburger Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -825,7 +825,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           4. Background
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -856,7 +856,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           5. Menu Buttons
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -902,12 +902,12 @@ function DesignMotionPage() {
 
               <div className="flex mb-12"> 
                 <img data-src={typesKeyboard1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6"><span className="as-type-medium">Opening</span> - Animation timeframe (approx): 0.4 sec.</p>
-                  <Accordion>
-                    <AccordionItem>
+                  <Accordion className="as-accordion">
+                    <AccordionItem >
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           1. Microphone Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -938,7 +938,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           2. Keyboard Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -969,7 +969,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           3. Hamburger Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1000,7 +1000,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           3. Hamburger Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1031,7 +1031,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                       <AccordionItemButton className="as-accordion__button">
                           4. Keyboard
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1062,7 +1062,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           5. Input Field
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1093,7 +1093,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           6. Background
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1128,12 +1128,12 @@ function DesignMotionPage() {
 
               <div className="flex"> 
                 <img data-src={typesKeyboard2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6"><span className="as-type-medium">Closing</span> - Animation timeframe (approx): 0.6 sec.</p>
-                  <Accordion>
+                  <Accordion className="as-accordion">
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           1. Microphone Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1164,7 +1164,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           2. Keyboard Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1195,7 +1195,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           3. Hamburger Button
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1226,7 +1226,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           4. Background
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1257,7 +1257,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           5. Input Field
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1288,7 +1288,7 @@ function DesignMotionPage() {
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemHeading>
-                        <AccordionItemButton>
+                        <AccordionItemButton className="as-accordion__button">
                           6. Background
                         </AccordionItemButton>
                       </AccordionItemHeading>
@@ -1334,19 +1334,19 @@ function DesignMotionPage() {
               
               <div className="flex mb-12"> 
                 <img data-src={typesOverlays1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6"><span className="as-type-medium">Opening</span> - Animation timeframe (approx): 0.4 sec.</p> 
                 </div>
               </div>   
               <div className="flex mb-12"> 
                 <img data-src={typesOverlays2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6"><span className="as-type-medium">Closing</span> - Animation timeframe (approx): 0.4 sec.</p> 
                 </div>
               </div>   
               <div className="flex"> 
                 <img data-src={typesOverlays3} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
+                <div className="as-accordion-container ml-10">
                   <p className="mb-6"><span className="as-type-medium">Scrolling</span> - Animation timeframe (approx): 0.4 sec.</p> 
                 </div>
               </div>   
@@ -1362,18 +1362,20 @@ function DesignMotionPage() {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Animations for the different pressed states of buttons.</p>
               
-              <div className="flex mb-12"> 
-                <img data-src={typesPressStates1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
-                  <p className="mb-6"><span className="as-type-medium">Card</span> - On press, the background color changes to #F2F2F2.</p> 
+              <div class="flex flex-wrap -mx-5">
+                <div class="w-half px-5 mb-8">
+                  <div class="h-355 mb-5 py-8 px-10 bg-placeholder-400 flex flex-wrap items-center justify-center">
+                    <img data-src={typesPressStates1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" />
+                  </div>
+                  <p className=""><span className="as-type-medium">Card</span> - On press, the background color changes to #F2F2F2.</p> 
                 </div>
-              </div>   
-              <div className="flex mb-12"> 
-                <img data-src={typesPressStates2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
-                <div className="as-accordion ml-10">
-                  <p className="mb-6"><span className="as-type-medium">Closing</span> - On press, the background color changes to #575757.</p> 
+                <div class="w-half px-5 mb-8">
+                  <div class="h-355 mb-5 py-8 px-10 bg-placeholder-400 flex flex-wrap items-center justify-center">
+                    <img data-src={typesPressStates2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
+                  </div>
+                  <p className=""><span className="as-type-medium">Closing</span> - On press, the background color changes to #575757.</p> 
                 </div>
-              </div>    
+              </div>
             </div>  
 
             <div className="mb-16">
