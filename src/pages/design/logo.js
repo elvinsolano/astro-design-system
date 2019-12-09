@@ -104,9 +104,9 @@ function DesignLogoPage() {
 
           <section className="as-section"> 
             <p className="mb-16 text-greyStatus-600 tracking-wider">As the key image that visually anchors the user experience, the Astro logo is made of three rectangles that connect to form the "A" icon. The concept reflects Astro's core purpose to connect us and simplify the way we work. </p>
-            <div className="py-10 px-20 bg-placeholder-400 flex flex-wrap items-center justify-center">
+            <div className="mb-16 py-10 px-20 bg-placeholder-400 flex flex-wrap items-center justify-center">
               <img data-src={overviewLogo1} className="lazyload" width="414" alt="Logo Overview" />
-            </div> 
+            </div>
           </section>   
 
           <section id="types" name="types" className="as-section"> 
@@ -129,7 +129,7 @@ function DesignLogoPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Variations for presenting Astro “A” and wordmark together.</p>
-              <div className="flex flex-wrap -mx-4 mb-12">
+              <div className="flex flex-wrap -mx-4">
                 <div className="px-4 mb-8"> 
                   <div className="bg-black p-16">
                     <img data-src={typesFullLockUpLogo1} className="lazyload" width="150" alt="Logo Types Full Lock Up Primary" />
@@ -148,13 +148,13 @@ function DesignLogoPage() {
                   </div>
                   <p className="text-sm text-grey-400 py-2">Tertiary</p> 
                 </div>              
-                <div className="px-4 mb-8">
+                <div className="px-4 ">
                   <div className="bg-white p-16 border border-grey-200 border-solid">
                     <img data-src={typesFullLockUpLogo4} className="lazyload" width="150" alt="Logo Types Full Lock Up Monotone Black" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Monotone Black</p> 
                 </div>              
-                <div className="px-4 mb-8">
+                <div className="px-4 ">
                   <div className="bg-black p-16">
                     <img data-src={typesFullLockUpLogo5} className="lazyload" width="150" alt="Logo Types Full Lock Up Monotone White" />
                   </div>
@@ -172,7 +172,7 @@ function DesignLogoPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Variations for presenting Astro "A" without wordmark.</p>
-              <div className="flex flex-wrap -mx-4 mb-12">
+              <div className="flex flex-wrap -mx-4">
                 <div className="px-4 mb-8"> 
                   <div className="bg-black p-16">
                     <img data-src={typesIconLogo1} className="lazyload" width="150" alt="Logo Types Icon Primary" />
@@ -191,13 +191,13 @@ function DesignLogoPage() {
                   </div>
                   <p className="text-sm text-grey-400 py-2">Tertiary</p> 
                 </div>              
-                <div className="px-4 mb-8">
+                <div className="px-4 ">
                   <div className="bg-white p-16 border border-grey-200 border-solid">
                     <img data-src={typesIconLogo4} className="lazyload" width="150" alt="Logo Types Icon Monotone Black" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Monotone Black</p> 
                 </div>              
-                <div className="px-4 mb-8">
+                <div className="px-4 ">
                   <div className="bg-black p-16 border border-grey-200 border-solid">
                     <img data-src={typesIconLogo5} className="lazyload" width="150" alt="Logo Types Icon Monotone White" />
                   </div>
@@ -215,14 +215,14 @@ function DesignLogoPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Variations for presenting "Astro" as a typographic treatment.</p>
-              <div className="flex flex-wrap -mx-4 mb-12">
-                <div className="px-4 mb-8"> 
+              <div className="flex flex-wrap -mx-4">
+                <div className="px-4"> 
                   <div className="bg-black p-16 as-grid-11 flex justify-center">
                     <img data-src={typesWordmarkLogo1} className="lazyload" width="268" alt="Logo Types Wordmark Primary" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">Primary</p>
                 </div>
-                <div className="px-4 mb-8"> 
+                <div className="px-4"> 
                   <div className="bg-white p-16 as-grid-11 flex justify-center border border-grey-200 border-solid">
                     <img data-src={typesWordmarkLogo2} className="lazyload" width="268" alt="Logo Types Wordmark Secondary" />
                   </div>
@@ -240,14 +240,14 @@ function DesignLogoPage() {
                 </CopyToClipboard>            
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Approved designs for major smartphone platforms.</p>
-              <div className="flex flex-wrap -mx-4 mb-12">
-                <div className="px-4 mb-8"> 
+              <div className="flex flex-wrap -mx-4">
+                <div className="px-4"> 
                   <div className="bg-white">
                     <img data-src={typesAppLogo1} className="lazyload" width="205" alt="Logo Types App iOS" />
                   </div>
                   <p className="text-sm text-grey-400 py-2">iOS</p>
                 </div>
-                <div className="px-4 mb-8"> 
+                <div className="px-4"> 
                   <div className="bg-white">
                     <img data-src={typesAppLogo2} className="lazyload" width="205" alt="Logo Types App Android" />
                   </div>
@@ -275,7 +275,7 @@ function DesignLogoPage() {
               </ReactTooltip>               
             </Heading>  
             <p className="mb-6 text-greyStatus-600 tracking-wider">Our logo is based on simplifying the letter “A” for Astro. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space around the A is measured and kept in proportion by using a single, square block.</p>  
-            <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
+            <div className="mb-16 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={constructionLogo1} className="lazyload" width="322" alt="Logo Construction" />
             </div> 
           </section>  

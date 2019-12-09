@@ -2,8 +2,6 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 
-//import downloadFile from "../assets/downloads/01 Guidance.png";
-
 function Download() {
   return ( 
   <div className="flex items-center">

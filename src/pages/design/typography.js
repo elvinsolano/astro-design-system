@@ -117,7 +117,7 @@ function DesignTypographyPage() {
                 <p className="text-xl break-words as-type-medium">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890#+-@=%/>(&#123;[?1]&#125;)</p>
               </div> 
             </div>
-            <div className="border border-grey-500 border-solid">
+            <div className="border border-grey-500 border-solid mb-16">
               <div className="bg-grey-200 py-2 px-6">
                 <p>Helvetica Neue</p>
               </div>
@@ -188,7 +188,7 @@ function DesignTypographyPage() {
             </Heading> 
 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The Astro type scale includes a range of contrasting styles that provide consistency, rhythm, hierarchy, and contrast. The goal is to present content in the simplest and most efficient way possible. The Astro type scale consists of 13 type styles, each with its own unique application and meaning.</p>
-            <div className="">
+            <div className="mb-8">
               <table className="w-full">
                 <thead className="">
                   <tr className="bg-grey-200">

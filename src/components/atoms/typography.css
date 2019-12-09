@@ -356,7 +356,8 @@ aside nav ul li a:active {
 }
 
 .as-dyk {
-  margin: 120px 0 60px;
+  margin: 90px 0 60px; 
+  padding: 30px 83px 30px 82px; 
 }
 
 .as-guidance {
@@ -452,12 +453,6 @@ aside nav ul li a:active {
   }
 }
 
-
-
-
-.as-dyk {
-  padding: 30px 83px 30px 82px;
-}
 .as-clearspace {
   width: 451.25px;
 }
