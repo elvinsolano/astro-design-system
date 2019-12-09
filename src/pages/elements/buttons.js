@@ -71,7 +71,7 @@ function ElementsButtonsPage() {
         </div>            
         <nav>
           <ul className="">  
-            <li><Link to="buttons" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Buttons and CTA's</Link>
+            <li><Link to="elements/buttons" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100 focus:bg-grey-800 focus:font-semibold">Buttons and CTA's</Link>
               <Scrollspy items={ ['types', 'voice', 'usage', 'specs', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="elements/buttons#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Types</Link></li> 
                 <li><Link to="elements/buttons#voice-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100 " activeClassName="active-link">Voice Button</Link></li>

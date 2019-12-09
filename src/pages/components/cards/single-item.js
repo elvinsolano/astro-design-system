@@ -92,7 +92,7 @@ function ComponentsCardsSingleItemPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Single Item</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Single Item Cards</Heading>
             <div className="flex items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
               <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
@@ -107,7 +107,43 @@ function ComponentsCardsSingleItemPage() {
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Single item cards display information in a clear and simple hierarchical order. They can contain text, data, badges and links. There's a maximum of 8 subtitles in the body. Please use a <Link to="components/cards/single-item-grouping" className="inline text-status-100 hover:text-red-900 underline">Single Item with Grouping</Link> template if there are more.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Single item cards display information in a clear and simple hierarchical order. They can contain elements including text, data, badges and links.</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
+            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You have data on 1 topic.</p>
+              </li>
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You have less than 8 data points.</p>
+              </li>
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You are only displaying text.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">Can be displayed as a <Link to="components/cards/single-item-grouping" className="inline text-status-100 hover:text-red-900 underline">Single Item with Grouping</Link>.</p>
+              </li>  
+            </ul>
+            
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
@@ -116,7 +152,7 @@ function ComponentsCardsSingleItemPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How single item cards are expressed as part of the UI.</p>
             <Tabs>
               <TabList> 
                 <Tab>01</Tab>
@@ -172,7 +208,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -180,7 +216,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be  as long as content requires, however the recommended length is two lines. If a Header Title is longer, consider redacting the Header Title.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -194,14 +230,14 @@ function ComponentsCardsSingleItemPage() {
               </ol> 
             </div>
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span> </p>
+              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Must always have either a Body Title Content or Body Subtitle Content element for the card to exist.</p>
+                    <p className="text-sm text-greyStatus-600">To exist, it must include either a Body Title Content or Body Subtitle Content.</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -209,7 +245,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Titles have a maximum length of two lines. If Body Titles exceed 2 lines, use an ellipsis. </p>
+                    <p className="text-sm text-greyStatus-600">Body Titles’ maximum length is two lines. If they exceed that, use an ellipsis.</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -217,7 +253,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If the card only contains Body Title Content, then there must be an arrow leading to further details. </p>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -225,7 +261,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link. </p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -233,7 +269,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Label never includes a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
                   </div>              
                 </li>  
               </ol> 
@@ -247,7 +283,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -255,7 +291,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, there is a maximum of 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
                   </div>              
                 </li> 
               </ol> 
@@ -277,7 +313,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum of 10 cards (ex: 10/10)</p>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
                   </div>              
                 </li> 
               </ol> 
@@ -291,7 +327,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -299,7 +335,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Used when there are further details to the content.</p>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
                   </div>              
                 </li> 
               </ol> 
@@ -313,7 +349,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Use when card size reaches beyond 55% of screen height.</p>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -321,17 +357,9 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as “View More”. Do not change the text to anything else.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
                   </div>              
-                </li> 
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className="ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as “View More”. Do not change the text to anything else.</p>
-                  </div>              
-                </li> 
+                </li>  
                 <li className="text-sm">
                   <div className="flex">
                     <div className="ml-3">
@@ -380,7 +408,7 @@ function ComponentsCardsSingleItemPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not make the Body Subtitle Label a link.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not make the body subtitle label a link.</p>
                 </div>
               </div>
 
@@ -392,7 +420,7 @@ function ComponentsCardsSingleItemPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use only the Card Header.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use only the card header.</p>
                 </div>                 
               </div>
 
@@ -404,7 +432,7 @@ function ComponentsCardsSingleItemPage() {
                       <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                     </svg>  
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do open an Overlay when tapping View More.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do open an overlay when tapping View More.</p>
                 </div>    
               </div> 
 

@@ -16,12 +16,11 @@ import uiexamplesListCard3 from "../../../assets/components/cards/List Card/UI E
 import detailsListCard1 from "../../../assets/components/cards/List Card/Details/List Card Detail.png";
 import paddingListCard1 from "../../../assets/components/cards/List Card/Padding/List Card Padding.png"; 
 
-import guidance1 from "../../../assets/design/logo/guidance/01 Logo Guidance.png";
-import guidance2 from "../../../assets/design/logo/guidance/02 Logo Guidance.png";
-import guidance3 from "../../../assets/design/logo/guidance/03 Logo Guidance.png";
-import guidance4 from "../../../assets/design/logo/guidance/04 Logo Guidance.png";
-import guidance5 from "../../../assets/design/logo/guidance/05 Logo Guidance.png";
-import guidance6 from "../../../assets/design/logo/guidance/06 Logo Guidance.png";
+import guidance1 from "../../../assets/components/cards/List Card/Guidance/01 Guidance.png";
+import guidance2 from "../../../assets/components/cards/List Card/Guidance/02 Guidance.png";
+import guidance3 from "../../../assets/components/cards/List Card/Guidance/03 Guidance.png";
+import guidance4 from "../../../assets/components/cards/List Card/Guidance/04 Guidance.png";
+import guidance5 from "../../../assets/components/cards/List Card/Guidance/05 Guidance.png"; 
 
 function ComponentsCardsListPage() { 
 
@@ -109,6 +108,42 @@ function ComponentsCardsListPage() {
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Lists contain repetitive data points grouped together.</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
+            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You have multiple items.</p>
+              </li>
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You have data that is distinct but similarly organized.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">Your user needs to compare different information.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-item" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+              </li>  
+            </ul>          
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
@@ -117,7 +152,7 @@ function ComponentsCardsListPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Lists contain repetitive data points grouped into list items. </p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How lists are expressed as part of the UI.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab>
@@ -167,9 +202,220 @@ function ComponentsCardsListPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a list.</p>
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img data-src={detailsListCard1} className="lazyload " width="597" alt="Cards List Details" />
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div>
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Minimum requirement is body content.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">A new row is indicated by a <span className="as-type-medium">divider line</span>.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">There is no limit to the number of rows.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Groups can be made of Body Title Content and/or Body Subtitle Content.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Row</span></p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Defines relationships with content in a list horizontally.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Badges</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Pagination</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">6. <span className="as-type-medium">Arrow</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">7. <span className="as-type-medium">Text Button</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a list row contains 2 or fewer elements, display 6 rows and then show "View More".</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a list row contains 3 or more elements, display 3 rows and then show "View More".</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                  </div>              
+                </li> 
+              </ol> 
             </div> 
           </section>         
 
@@ -184,7 +430,7 @@ function ComponentsCardsListPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below are guidelines for lists to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
@@ -194,7 +440,7 @@ function ComponentsCardsListPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not apply any effects to the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not display only 3 rows in a list when rows contain 2 or fewer elements.</p>
                 </div>
               </div>
 
@@ -206,7 +452,7 @@ function ComponentsCardsListPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not make the body subtitle label a link.</p>
                 </div>
               </div>
 
@@ -218,7 +464,7 @@ function ComponentsCardsListPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any unapproved fill colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not add multiple rows without a divider.</p>
                 </div>                 
               </div>
 
@@ -230,7 +476,7 @@ function ComponentsCardsListPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not skew or stretch the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not have different number of elements in each row.</p>
                 </div>    
               </div>
 
@@ -242,19 +488,19 @@ function ComponentsCardsListPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not crop the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not have more than 5 elements per row. Use 1 body title and 4 body subtitles.</p>
                 </div>                     
               </div>
 
               <div className="w-grid px-4 mb-8">
-                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
+                {/* <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" /> */}
                 <div className="flex mb-3">
                   <div className="as-guidance">
                     <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use the logo over complex imagery.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not hide value on list if a value is not found. Use "n/a".</p>
                 </div>  
               </div>
 

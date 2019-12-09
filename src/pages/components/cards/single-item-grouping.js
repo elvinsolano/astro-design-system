@@ -16,12 +16,9 @@ import uiexamplesSingleItemGroupingCard3 from "../../../assets/components/cards/
 import detailsSingleItemGroupingCard1 from "../../../assets/components/cards/Single Item w- Grouping Card/Details/Single Item with Grouping Card Detail.png";
 import paddingSingleItemGroupingCard1 from "../../../assets/components/cards/Single Item w- Grouping Card/Padding/Single Item with Grouping Card Padding.png"; 
 
-import guidance1 from "../../../assets/design/logo/guidance/01 Logo Guidance.png";
-import guidance2 from "../../../assets/design/logo/guidance/02 Logo Guidance.png";
-import guidance3 from "../../../assets/design/logo/guidance/03 Logo Guidance.png";
-import guidance4 from "../../../assets/design/logo/guidance/04 Logo Guidance.png";
-import guidance5 from "../../../assets/design/logo/guidance/05 Logo Guidance.png";
-import guidance6 from "../../../assets/design/logo/guidance/06 Logo Guidance.png";
+import guidance1 from "../../../assets/components/cards/Single Item Card/Guidance/01 Guidance.png";
+import guidance2 from "../../../assets/components/cards/Single Item Card/Guidance/02 Guidance.png";
+import guidance3 from "../../../assets/components/cards/Single Item Card/Guidance/03 Guidance.png"; 
 
 function ComponentsCardsSingleItemGroupingPage() { 
 
@@ -94,7 +91,7 @@ function ComponentsCardsSingleItemGroupingPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Single Item with Grouping</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Single Item Cards with Grouping</Heading>
             <div className="flex items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
               <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
@@ -109,6 +106,34 @@ function ComponentsCardsSingleItemGroupingPage() {
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Single item cards with grouping are used to present information about one topic with multiple data points. There's an unlimited number of groups for the body. Each group can contain a maximum of 8 subtitles.</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
+            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You have more than 8 data points.</p>
+              </li>
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You have separate kinds of data related to 1 topic.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-item" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+              </li>  
+            </ul>          
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
@@ -117,7 +142,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Single item with grouping cards are used to present information about 1 topic with multiple data points. There’s an unlimited number of groups for the body, which can each contain a maximum of 8 subtitles.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How single item cards with grouping are expressed as part of the UI.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab>
@@ -167,10 +192,184 @@ function ComponentsCardsSingleItemGroupingPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a single-item card with grouping.</p>
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img data-src={detailsSingleItemGroupingCard1} className="lazyload " width="597" alt="Cards Single Item Grouping Details" />
             </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div>
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Must contain at least 2 groups of information.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <span className="as-type-medium">divider line</span>.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Groups can consist of Body Title Content or Body Subtitle Content. Body Titles' maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Badges</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Pagination</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Arrow</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">6. <span className="as-type-medium">Text Button</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div>            
           </section>             
           
           <section id="guidance" name="guidance" className="as-section mb-16">
@@ -184,7 +383,7 @@ function ComponentsCardsSingleItemGroupingPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for single item cards with grouping to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
@@ -194,7 +393,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not apply any effects to the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not include more than 2 badges.</p>
                 </div>
               </div>
 
@@ -206,7 +405,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not make the body subtitle label a link.</p>
                 </div>
               </div>
 
@@ -218,45 +417,10 @@ function ComponentsCardsSingleItemGroupingPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any unapproved fill colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not add multiple groups without a divider.</p>
                 </div>                 
               </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not skew or stretch the logo.</p>
-                </div>    
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not crop the logo.</p>
-                </div>                     
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use the logo over complex imagery.</p>
-                </div>  
-              </div>
+ 
 
             </div> 
           </section>

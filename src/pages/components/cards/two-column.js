@@ -14,12 +14,11 @@ import uiexamplesTwoColumnCard1 from "../../../assets/components/cards/Two Colum
 import detailsTwoColumnCard1 from "../../../assets/components/cards/Two Column Card/Details/Two Column Card Detail.png";
 import paddingTwoColumnCard1 from "../../../assets/components/cards/Two Column Card/Padding/Two Column Card Padding.png"; 
 
-import guidance1 from "../../../assets/design/logo/guidance/01 Logo Guidance.png";
-import guidance2 from "../../../assets/design/logo/guidance/02 Logo Guidance.png";
-import guidance3 from "../../../assets/design/logo/guidance/03 Logo Guidance.png";
-import guidance4 from "../../../assets/design/logo/guidance/04 Logo Guidance.png";
-import guidance5 from "../../../assets/design/logo/guidance/05 Logo Guidance.png";
-import guidance6 from "../../../assets/design/logo/guidance/06 Logo Guidance.png";
+import guidance1 from "../../../assets/components/cards/Two Column Card/Guidance/01 Guidance.png";
+import guidance2 from "../../../assets/components/cards/Two Column Card/Guidance/02 Guidance.png";
+import guidance3 from "../../../assets/components/cards/Two Column Card/Guidance/03 Guidance.png"; 
+import guidance4 from "../../../assets/components/cards/Two Column Card/Guidance/04 Guidance.png"; 
+import guidance5 from "../../../assets/components/cards/Two Column Card/Guidance/05 Guidance.png"; 
 
 function ComponentsCardsTwoColumnPage() { 
 
@@ -92,7 +91,7 @@ function ComponentsCardsTwoColumnPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Two Column</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Two Column Card</Heading>
             <div className="flex items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
               <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
@@ -107,6 +106,42 @@ function ComponentsCardsTwoColumnPage() {
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Consists of body subtitles that are displayed in a two-column format.</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
+            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You have multiple items to be displayed that are composed of two columns of information.</p>
+              </li>
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You have values that need to be easily read, emphasized and/or compared.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">Your items must have subsections that show the same groupings of information.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-item" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+              </li>  
+            </ul>    
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
@@ -115,7 +150,7 @@ function ComponentsCardsTwoColumnPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The two-column card consists of body subtitles that are displayed in a two-column format.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How a two-column card is expressed as part of the UI.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab> 
@@ -153,10 +188,189 @@ function ComponentsCardsTwoColumnPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a two-column card.</p>
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img data-src={detailsTwoColumnCard1} className="lazyload " width="597" alt="Cards Two Column Details" />
             </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div>
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span></p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <span className="as-type-medium">divider line</span>.</p>
+                  </div>              
+                </li> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Title Content and Body Subtitle Content have a maximum length of two lines. If either exceed that, use an ellipsis.</p>
+                  </div>              
+                </li>   
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div>  
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Two-Column Text</span></p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Content in the second column is limited to 8 characters.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Badges</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Pagination</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div>  
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">6. <span className="as-type-medium">Arrow</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
+                  </div>              
+                </li>   
+              </ol> 
+            </div>        
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">7. <span className="as-type-medium">Text Button</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                  </div>              
+                </li> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div>            
           </section>          
 
           <section id="guidance" name="guidance" className="as-section mb-16">
@@ -170,7 +384,7 @@ function ComponentsCardsTwoColumnPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for two-column cards to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
@@ -180,7 +394,7 @@ function ComponentsCardsTwoColumnPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not apply any effects to the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not make the two-column text more than 8 characters.</p>
                 </div>
               </div>
 
@@ -192,7 +406,7 @@ function ComponentsCardsTwoColumnPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not show percentage values in a two-column card. Use percentage values in a progress bar card.</p>
                 </div>
               </div>
 
@@ -204,7 +418,7 @@ function ComponentsCardsTwoColumnPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any unapproved fill colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not add multiple groups without a divider.</p>
                 </div>                 
               </div>
 
@@ -216,7 +430,7 @@ function ComponentsCardsTwoColumnPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not skew or stretch the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not add a divider after the last group component.</p>
                 </div>    
               </div>
 
@@ -228,22 +442,10 @@ function ComponentsCardsTwoColumnPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not crop the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use more than 2 badges.</p>
                 </div>                     
               </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use the logo over complex imagery.</p>
-                </div>  
-              </div>
-
+ 
             </div> 
           </section>  
                 
