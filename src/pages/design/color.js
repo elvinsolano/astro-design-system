@@ -54,8 +54,8 @@ function DesignColorPage() {
 
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className=" pl-16 pr-16 pt-16">
- 
-          <div className="flex justify-between as-page-title-wrapper border-b border-greyStatus-200 mb-16">
+
+          <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Color</Heading>
             <div className="flex items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
@@ -72,7 +72,7 @@ function DesignColorPage() {
 
           <section id="primary" name="primary" className="as-section"> 
             <span id="primary-anchor" className="page-anchor"></span> 
-
+            <p className="mb-16 text-greyStatus-600 tracking-wider">The design system uses a carefully considered and approved color palette. Use it to ensure Astro delivers a consistent and robustly branded experience.</p>
             <Heading level="2" className="as-h2 as-type-medium mb-3">Primary
               <CopyToClipboard text={'http://localhost:8000/design/color#primary'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +223,7 @@ function DesignColorPage() {
                     <div className="lightrectangle"></div>
                   </div>
                 </div> 
-                <p className="as-type-regular leading-relaxed text-white tracking-wider">Did you know all body copy in the Astro design system uses Grey 7 and not Black.</p>
+                <p className="as-type-regular leading-relaxed text-white tracking-wider">Did you know all body copy in the Astro design system uses Grey 7 and not Black?</p>
               </div> 
             </div> 
           </section>  
@@ -239,7 +239,7 @@ function DesignColorPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The status colors are used for badges, statuses, alerts and within forms and toasts. They are used to let the user know the status of content or of a particular process.</p>  
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The status colors are used for badges, statuses, alerts and within forms and toasts. They are used to let the user know the status of content or a particular process.</p>  
             <div className="flex flex-wrap -mx-4 mb-12"> 
               <div className="px-4 mb-8">
                 <div className="bg-status-100 color-sample"></div>
@@ -301,7 +301,7 @@ function DesignColorPage() {
                 <div className="bg-data-200 color-sample border-grey-500 border-solid border"></div>
                 <div className="color-description p-2">
                   <p className="text-grey-400 mb-2">Data 2</p>
-                  <p className="text-sm text-grey-400 ">HEX - #D5D5D5</p>
+                  <p className="text-sm text-grey-400 ">HEX - #DB536A</p>
                   <p className="text-sm text-grey-400 ">RGB - 219 83 106</p> 
                 </div>
               </div>  

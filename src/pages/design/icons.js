@@ -50,19 +50,19 @@ import typesSystem17 from "../../assets/design/icons/types/System/17 Close Large
 import typesSystem18 from "../../assets/design/icons/types/System/18 Location.png";
 import typesSystem19 from "../../assets/design/icons/types/System/19 Send.png";
 
-import typesCategoriesPrimaryTwo1 from "../../assets/design/icons/types/Categories/Primary 2/01 Celebration.png";
-import typesCategoriesPrimaryTwo2 from "../../assets/design/icons/types/Categories/Primary 2/02 Compliance.png";
-import typesCategoriesPrimaryTwo3 from "../../assets/design/icons/types/Categories/Primary 2/03 Delivery.png";
-import typesCategoriesPrimaryTwo4 from "../../assets/design/icons/types/Categories/Primary 2/04 Digest.png";
-import typesCategoriesPrimaryTwo5 from "../../assets/design/icons/types/Categories/Primary 2/05 Finance.png";
-import typesCategoriesPrimaryTwo6 from "../../assets/design/icons/types/Categories/Primary 2/06 FPM.png";
-import typesCategoriesPrimaryTwo7 from "../../assets/design/icons/types/Categories/Primary 2/07 HR.png";
-import typesCategoriesPrimaryTwo8 from "../../assets/design/icons/types/Categories/Primary 2/08 L_D.png";
-import typesCategoriesPrimaryTwo9 from "../../assets/design/icons/types/Categories/Primary 2/09 Marketing.png";
-import typesCategoriesPrimaryTwo10 from "../../assets/design/icons/types/Categories/Primary 2/10 Meetings.png";
-import typesCategoriesPrimaryTwo11 from "../../assets/design/icons/types/Categories/Primary 2/11 PerMgmt.png";
-import typesCategoriesPrimaryTwo12 from "../../assets/design/icons/types/Categories/Primary 2/12 Travel.png";
-import typesCategoriesPrimaryTwo13 from "../../assets/design/icons/types/Categories/Primary 2/13 HR.png";
+import typesCategoriesPrimaryTwo1 from "../../assets/design/icons/types/Categories/Grey 6/celebration-grey6.png";
+import typesCategoriesPrimaryTwo2 from "../../assets/design/icons/types/Categories/Grey 6/compliance-grey6.png";
+import typesCategoriesPrimaryTwo3 from "../../assets/design/icons/types/Categories/Grey 6/delivery-grey6.png";
+import typesCategoriesPrimaryTwo4 from "../../assets/design/icons/types/Categories/Grey 6/digest-grey6.png";
+import typesCategoriesPrimaryTwo5 from "../../assets/design/icons/types/Categories/Grey 6/finance-grey6.png";
+import typesCategoriesPrimaryTwo6 from "../../assets/design/icons/types/Categories/Grey 6/fpm-grey6.png";
+import typesCategoriesPrimaryTwo7 from "../../assets/design/icons/types/Categories/Grey 6/hr-grey6.png";
+import typesCategoriesPrimaryTwo8 from "../../assets/design/icons/types/Categories/Grey 6/l_d-grey6.png";
+import typesCategoriesPrimaryTwo9 from "../../assets/design/icons/types/Categories/Grey 6/marketing-grey6.png";
+import typesCategoriesPrimaryTwo10 from "../../assets/design/icons/types/Categories/Grey 6/meetings-grey6.png";
+import typesCategoriesPrimaryTwo11 from "../../assets/design/icons/types/Categories/Grey 6/permgmt-grey6.png";
+import typesCategoriesPrimaryTwo12 from "../../assets/design/icons/types/Categories/Grey 6/travel-grey6.png"; 
+
 import typesCategoriesPrimaryThree1 from "../../assets/design/icons/types/Categories/Primary 3/01 Celebration.png";
 import typesCategoriesPrimaryThree2 from "../../assets/design/icons/types/Categories/Primary 3/02 Compliance.png";
 import typesCategoriesPrimaryThree3 from "../../assets/design/icons/types/Categories/Primary 3/03 Delivery.png";
@@ -176,7 +176,7 @@ function DesignIconsPage() {
 
           <section id="types" name="types" className="as-section">
             <span id="types-anchor" className="page-anchor"></span>
-
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Icons are powerful as they communicate independent of language. Please review how we integrate iconography into the design system.</p>
             <Heading level="2" className="as-h2 as-type-medium mb-12">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -201,13 +201,13 @@ function DesignIconsPage() {
                 </CopyToClipboard>
               </Heading>
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider">Used when there is a list of 2 or more options but user can only select one.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider">Pulse icon serves as a representation of the "essence" of Astro. When icon is animated, it also provides feedback to the user that the system is active.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                   <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesPulse1} className="lazyload inline-block" width="40" alt="Icon Types Pulse Large" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesPulse2} className="lazyload inline-block" width="12" alt="Icon Types Pulse Small" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Pulse Large</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Pulse Small</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Pulse: Large.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Pulse: Small.</p> 
               </div> 
             </div>  
 
@@ -220,13 +220,13 @@ function DesignIconsPage() {
                 </CopyToClipboard>
               </Heading>
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider">These icons create familiar models to help users understand how to engage with and use Astro.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider">These icons create familiar models to help users understand how to engage with Astro.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                   <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesMainControls1} className="lazyload inline-block" width="29" alt="Icon Types Main Controls Keyboard" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesMainControls2} className="lazyload inline-block" width="30" alt="Icon Types Main Controls Menu" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Keyboard</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Menu</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Keyboard.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Menu.</p> 
               </div> 
             </div>   
 
@@ -239,17 +239,17 @@ function DesignIconsPage() {
                 </CopyToClipboard>
               </Heading>
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider">Icons that visually support guiding the user through various parts of the Astro experience.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider">Icons that visually support guiding the user through the Astro experience.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                   <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesNavigation1} className="lazyload inline-block" width="20" alt="Icon Types Navigation Account" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesNavigation2} className="lazyload inline-block" width="20" alt="Icon Types Navigation Nudges" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={typesNavigation3} className="lazyload inline-block" width="20" alt="Icon Types Navigation Discover" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesNavigation4} className="lazyload inline-block" width="20" alt="Icon Types Navigation Home" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Account</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Nudges</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">3. Discover</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">4. Home</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Account.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Nudges.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Discover.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">4. Home.</p> 
               </div> 
             </div>  
 
@@ -271,12 +271,12 @@ function DesignIconsPage() {
                   <li className="as-grid-6 relative"><span className="list-circle">5</span><img data-src={typesAvatars5} className="lazyload inline-block" width="50" alt="Icon Types Navigation Home" /> </li> 
                   <li className="as-grid-6 relative"><span className="list-circle">6</span><img data-src={typesAvatars6} className="lazyload inline-block" width="30" alt="Icon Types Navigation Home" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Avatar 100</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Avatar 50</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">3. Avatar 30</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">4. Initial 100</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">5. Initial 50</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">6. Initial 30</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Avatar 100.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Avatar 50.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Avatar 30.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">4. Initial 100.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">5. Initial 50.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">6. Initial 30.</p> 
               </div> 
             </div>  
 
@@ -296,10 +296,10 @@ function DesignIconsPage() {
                   <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={typesTravel3} className="lazyload inline-block" width="24" alt="Icon Types Navigation Discover" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesTravel4} className="lazyload inline-block" width="24" alt="Icon Types Navigation Home" /> </li>  
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Flight</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Hotel</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">3. Rental</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">4. Limo</p>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Flight.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Hotel.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Rental.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">4. Limo.</p>  
               </div> 
             </div>  
 
@@ -438,10 +438,10 @@ function DesignIconsPage() {
                   </svg> 
                 </CopyToClipboard>
               </Heading>
-              <p className="mb-5 text-greyStatus-600 tracking-wider">Category icons come with two different background options: primary 2 and primary 3.</p>
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Category icons come with two different background options: grey 6 and primary 3.</p>
               <Tabs>
                 <TabList>
-                  <Tab>Primary 2</Tab>
+                  <Tab>Grey 6</Tab>
                   <Tab>Primary 3</Tab> 
                 </TabList> 
                 <TabPanel>
@@ -510,19 +510,13 @@ function DesignIconsPage() {
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo11} className="lazyload" width="30" alt="Icons Category PerMgnt" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">PerMgnt</p>
+                      <p className="text-sm text-greyStatus-600">PerMgmt</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo12} className="lazyload" width="30" alt="Icons Category Travel" />
                       </div>
                       <p className="text-sm text-greyStatus-600">Travel</p>
-                    </div> 
-                    <div className="px-5 mb-5"> 
-                      <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
-                        <img data-src={typesCategoriesPrimaryTwo13} className="lazyload" width="30" alt="Icons Category Partner" />
-                      </div>
-                      <p className="text-sm text-greyStatus-600">Partner</p>
                     </div>  
                   </div> 
                 </TabPanel>

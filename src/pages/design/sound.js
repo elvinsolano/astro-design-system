@@ -78,7 +78,7 @@ function DesignSoundPage() {
 
           <section id="types" name="types" className="as-section mb-16">
             <span id="types-anchor" className="page-anchor"></span>
-
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Sound allows Astro to communicate information in ways that improve the user experience. Use of sound can also help define Astro's personality and aesthetic.</p>
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +103,7 @@ function DesignSoundPage() {
                     controls
                   />
                 </div> 
-                <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Confirmation</span> - Sound used to confirm actions.</p>
+                <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Confirmations</span> - Sound used to confirm actions.</p>
               </div>
               <div className="w-half px-5 mb-8">
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
@@ -112,7 +112,7 @@ function DesignSoundPage() {
                     controls
                   />
                 </div>  
-                <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Notification</span> - Sound used when a notification is delivered to the user.</p>
+                <p className="as-type-regular text-sm text-greyStatus-600"><span className="as-type-medium">Notifications</span> - Sound used when a notification is delivered to the user.</p>
               </div>
               <div className="w-half px-5">
                 <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center"> 
@@ -157,25 +157,25 @@ function DesignSoundPage() {
                 </thead>
                 <tbody className="border border-grey-105">        
                   <tr className="border border-b border-grey-105">
-                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Confirmation</p></td>
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Confirmations</p></td>
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Onboarding</p></td> 
-                    <td className="p-4">When user finish Onboarding and sees Homepage for first time</td>
+                    <td className="p-4">When user finish Onboarding and sees Homepage for first time.</td>
                   </tr>
                   <tr className="border border-b border-grey-105">
+                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Notifications</p></td>
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Notification</p></td>
-                    <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Notification</p></td>
-                    <td className="p-4">Whenever a Nudge comes in</td>
+                    <td className="p-4">Whenever a Nudge comes in.</td>
                     
                   </tr> 
                   <tr className="border border-b border-grey-105">
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Input</p></td>                  
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Input</p></td>
-                    <td className="p-4">Whenever utterance is entered</td> 
+                    <td className="p-4">Whenever utterance is entered.</td> 
                   </tr>
                   <tr className="border border-b border-grey-105">
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Output</p></td>
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Voice Output</p></td>
-                    <td className="p-4">When Astro responds</td> 
+                    <td className="p-4">When Astro responds.</td> 
                   </tr> 
                 </tbody>
               </table>

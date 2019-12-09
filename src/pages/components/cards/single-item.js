@@ -107,7 +107,7 @@ function ComponentsCardsSingleItemPage() {
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Single item cards display information in a clear and simple hierarchical order. They can contain text, data, badges and links. There's a maximum of 8 subtitles in the body. Please use a <Link to="components/cards/single-item-grouping" className="inline text-sm text-status-100 hover:text-red-900 underline">Single Item with Grouping</Link> template if there are more.</p>
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Single item cards display information in a clear and simple hierarchical order. They can contain text, data, badges and links. There's a maximum of 8 subtitles in the body. Please use a <Link to="components/cards/single-item-grouping" className="inline text-status-100 hover:text-red-900 underline">Single Item with Grouping</Link> template if there are more.</p>
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>

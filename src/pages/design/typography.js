@@ -96,7 +96,7 @@ function DesignTypographyPage() {
           
           <section id="typeface" name="typeface" className="as-section">
             <span id="typeface-anchor" className="page-anchor"></span>
-            
+            <p className="mb-16 text-greyStatus-600 tracking-wider">The design system contains typographical protocols that encourage information to be structured and visualized in a way that best communicates to users.</p>
             <Heading level="2" className="as-h2 as-type-medium mb-3">Typeface  
               <CopyToClipboard text={'http://localhost:8000/design/typography#typeface-anchor'}>
                 <svg data-tip='custom show' data-for='typeface' data-event='click' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@ function DesignTypographyPage() {
                     <td className="p-4 border-r border-grey-105">Helvetica Neue</td>
                     <td className="p-4 border-r border-grey-105">Medium</td>
                     <td className="p-4 border-r border-grey-105">50 px</td>
-                    <td className="p-4 border-r border-grey-105">53 px</td>
+                    <td className="p-4 border-r border-grey-105">55 px</td>
                     <td className="p-4">Upper Case</td>
                   </tr>
                   <tr className="bg-grey-100">
@@ -326,7 +326,7 @@ function DesignTypographyPage() {
                     <div className="lightrectangle"></div>
                   </div>
                 </div> 
-                <p className="as-type-regular leading-relaxed text-white tracking-wider">Did you know my typography system uses a single font: Helvetica Neue and only 2 weights: Regular and Medium.</p>
+                <p className="as-type-regular leading-relaxed text-white tracking-wider">Did you know my typography system uses a single font (Helvetica Neue) and only 2 weights: Regular and Medium?</p>
               </div> 
             </div> 
 
