@@ -73,9 +73,9 @@ function DesignLogoPage() {
         <nav>
           <ul className=""> 
             <li><Link to="design/logo" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Logo</Link>
-              <Scrollspy items={ ['types', 'contruction', 'usage', 'clearspace', 'guidance'] } offset={-80} className="block" currentClassName="is-current">                
+              <Scrollspy items={ ['types', 'construction', 'usage', 'clearspace', 'guidance'] } offset={-80} className="block" currentClassName="is-current">                
                 <li><Link to="design/logo#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Types</Link></li>                
-                <li><Link to="design/logo#contruction-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Construction</Link></li>
+                <li><Link to="design/logo#construction-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Construction</Link></li>
                 <li><Link to="design/logo#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Usage</Link></li>
                 <li><Link to="design/logo#clearspace-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Clearspace</Link></li>
                 <li><Link to="design/logo#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -283,8 +283,8 @@ function DesignLogoPage() {
                 URL Copied
               </ReactTooltip>               
             </Heading>  
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Our logo is based on simplifying the letter “A” for Astro. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space around the A is measured and kept in proportion by using a single, square block.</p>  
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
+            <p className="mb-6 text-greyStatus-600 tracking-wider">Our logo is based on simplifying the letter “A” for Astro. It is carefully constructed to maintain ownable characteristics while allowing for perfect legibility at any size on any application. The dynamic space around the A is measured and kept in proportion by using a single, square block.</p>  
+            <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={constructionLogo1} className="lazyload" width="322" alt="Logo Construction" />
             </div> 
           </section>  
