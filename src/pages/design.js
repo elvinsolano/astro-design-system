@@ -1,7 +1,7 @@
 import React from "react";  
 
 const DesignPage = () => {
-    if (typeof window !== `undefined`) window.location.replace(`/design/typography`)
+    if (typeof window !== `undefined`) window.location.replace(`/design/logo`)
     return <></>
 }
 
