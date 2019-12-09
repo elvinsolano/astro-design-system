@@ -250,7 +250,7 @@ pre {
 .tooltip > div {
   padding: 6px 10px;
   border: 2px solid #4EAD58;
-  background-color: #E7FFE9 !important;
+  background-color: #fff !important;
   color: black !important;
   font-family: HelveticaNeueMedium;
 }
