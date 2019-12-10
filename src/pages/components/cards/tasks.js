@@ -9,17 +9,15 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo"; 
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
+import Download from "../../../components/download";
 
 import uiexamplesTasksCard1 from "../../../assets/components/cards/Tasks Card/UI Examples/Tasks Card 01.png";  
 import detailsTasksCard1 from "../../../assets/components/cards/Tasks Card/Details/Tasks Card Detail.png";
 import paddingTasksCard1 from "../../../assets/components/cards/Tasks Card/Padding/Tasks Card Padding.png"; 
 
-import guidance1 from "../../../assets/design/logo/guidance/01 Logo Guidance.png";
-import guidance2 from "../../../assets/design/logo/guidance/02 Logo Guidance.png";
-import guidance3 from "../../../assets/design/logo/guidance/03 Logo Guidance.png";
-import guidance4 from "../../../assets/design/logo/guidance/04 Logo Guidance.png";
-import guidance5 from "../../../assets/design/logo/guidance/05 Logo Guidance.png";
-import guidance6 from "../../../assets/design/logo/guidance/06 Logo Guidance.png";
+import guidance1 from "../../../assets/components/cards/Tasks Card/Guidance/01 Guidance.png";
+import guidance2 from "../../../assets/components/cards/Tasks Card/Guidance/02 Guidance.png";
+import guidance3 from "../../../assets/components/cards/Tasks Card/Guidance/03 Guidance.png";  
 
 function ComponentsCardsTasksPage() { 
 
@@ -92,21 +90,39 @@ function ComponentsCardsTasksPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Progress Bar</Heading>
-            <div className="flex items-center">
-              <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
-              <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
-                <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#e0301e" d="M11.636 26.182l-11.636-14.545h23.273z"></path>
-                  <path fill="#e0301e" d="M5.818 0h11.636v14.545h-11.636v-14.545z"></path>
-                  <path fill="#e0301e" d="M0 29.091h23.273v2.909h-23.273v-2.909z"></path>  
-                </svg> 
-                Sketch File
-              </button>
-            </div>
+            <Heading level="1" className="as-h1 as-type-medium">Tasks</Heading>
+            <Download />
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
+            <p className="mb-4 text-greyStatus-600 tracking-wider">The tasks card consists of a list of items that can be checked off.</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
+            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">If you have a number of items that need to be tracked.</p>
+              </li>              
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">To show completion with a checkmark.</p>
+              </li>
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You have information that can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+              </li>   
+            </ul>          
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
@@ -115,14 +131,14 @@ function ComponentsCardsTasksPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The tasks card consists of a list of items that can be checked off.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How the tasks card is expressed as part of the UI.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab>  
               </TabList>
           
               <TabPanel>                  
-                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesTasksCard1} className="lazyload " width="335" alt="Cards Tasks UI Examples" />
                 </div> 
               </TabPanel>  
@@ -139,7 +155,7 @@ function ComponentsCardsTasksPage() {
               </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingTasksCard1} className="lazyload " width="365" alt="Cards Tasks Padding" />
             </div> 
           </section>  
@@ -153,10 +169,147 @@ function ComponentsCardsTasksPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up the tasks card.</p>
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsTasksCard1} className="lazyload " width="594" alt="Cards Tasks Details" />
             </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                  </div>              
+                </li>  
+              </ol>  
+            </div>  
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span> </p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">For a Single Item with Grouping, the card's body must contain at least 2 groups of information.</p>
+                  </div>              
+                </li> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <span className="as-type-medium">divider line</span>. Groups can be made of Body Title Content or Body Subtitle Content.</p>
+                  </div>              
+                </li> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Title Content and Body Subtitle Content have a maximum length of two lines. If either exceed that, use an ellipsis.</p>
+                  </div>              
+                </li>   
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content in Tasks are not clickable. The only valid action is checking off an item.</p>
+                  </div>              
+                </li>   
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component of Tasks: a checkmarked list.</p>
+                  </div>              
+                </li>   
+              </ol>  
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Badges</span> </p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                  </div>              
+                </li>  
+              </ol>  
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Pagination</span></p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Text Button</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/tasks" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div>  
           </section>             
 
           <section id="guidance" name="guidance" className="as-section mb-16">
@@ -170,7 +323,7 @@ function ComponentsCardsTasksPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for tasks card to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
@@ -180,7 +333,7 @@ function ComponentsCardsTasksPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not apply any effects to the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not hyperlink tasks.</p>
                 </div>
               </div>
 
@@ -192,7 +345,7 @@ function ComponentsCardsTasksPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use more than 2 badges.</p>
                 </div>
               </div>
 
@@ -204,45 +357,9 @@ function ComponentsCardsTasksPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any unapproved fill colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not let content force a card to exceed 55% of screen height. If exceeded, use "View More" button.</p>
                 </div>                 
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not skew or stretch the logo.</p>
-                </div>    
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not crop the logo.</p>
-                </div>                     
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use the logo over complex imagery.</p>
-                </div>  
-              </div>
+              </div> 
 
             </div> 
           </section>  

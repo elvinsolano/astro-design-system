@@ -340,14 +340,15 @@ function DesignTypographyPage() {
                 URL Copied
               </ReactTooltip>              
             </Heading> 
-
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
-            <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Scale Categories"/> </li>
-              <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={applyingTypeScale2} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Actual Values"/> </li>
-            </ol> 
-            <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p>
-            <p className="as-type-regular text-sm text-greyStatus-600">2. Actual Values</p>
+            <div className="mb-16">
+              <p className="mb-5 text-greyStatus-600 tracking-wider">The type scale appears as text in components and the overall layout.</p>
+              <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-300 flex flex-wrap items-center justify-start">
+                <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={applyingTypeScale1} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Scale Categories"/> </li>
+                <li className="as-grid-10 relative"><span className="list-circle">2</span><img data-src={applyingTypeScale2} className="lazyload inline-block" width="335" height="332" alt="Typography Applying Type Scale Actual Values"/> </li>
+              </ol> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Scale Categories</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Actual Values</p>
+            </div>
           </section>
 
           <section id="guidance" name="guidance" className="as-section">
@@ -369,7 +370,7 @@ function DesignTypographyPage() {
             </Heading> 
 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Below is a list of guidelines for typography to adhere to.</p>
-            <div className="flex flex-wrap -mx-5">    
+            <div className="flex flex-wrap -mx-5 mb-16">    
 
               <div className="w-grid px-5 mb-5">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Typography Guidance 1" />           

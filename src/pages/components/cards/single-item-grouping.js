@@ -9,6 +9,7 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo"; 
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
+import Download from "../../../components/download";
 
 import uiexamplesSingleItemGroupingCard1 from "../../../assets/components/cards/Single Item w- Grouping Card/UI Examples/Single Item with Grouping Card 01.png";
 import uiexamplesSingleItemGroupingCard2 from "../../../assets/components/cards/Single Item w- Grouping Card/UI Examples/Single Item with Grouping Card 02.png";
@@ -92,17 +93,7 @@ function ComponentsCardsSingleItemGroupingPage() {
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Single Item Cards with Grouping</Heading>
-            <div className="flex items-center">
-              <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
-              <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
-                <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#e0301e" d="M11.636 26.182l-11.636-14.545h23.273z"></path>
-                  <path fill="#e0301e" d="M5.818 0h11.636v14.545h-11.636v-14.545z"></path>
-                  <path fill="#e0301e" d="M0 29.091h23.273v2.909h-23.273v-2.909z"></path>  
-                </svg> 
-                Sketch File
-              </button>
-            </div>
+            <Download />
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
@@ -131,7 +122,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-item" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
               </li>  
             </ul>          
             <span id="ui-examples-anchor" className="page-anchor"></span> 
@@ -151,17 +142,17 @@ function ComponentsCardsSingleItemGroupingPage() {
               </TabList>
           
               <TabPanel>                  
-                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesSingleItemGroupingCard1} className="lazyload " width="335" alt="Cards Single Item Grouping UI Examples 1" />
                 </div> 
               </TabPanel>
               <TabPanel>
-                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesSingleItemGroupingCard2} className="lazyload " width="335" alt="Cards Single Item Grouping UI Examples 2" />
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className=" py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesSingleItemGroupingCard3} className="lazyload " width="335" alt="Cards Single Item Grouping UI Examples 3" />
                 </div>
               </TabPanel>
@@ -178,7 +169,7 @@ function ComponentsCardsSingleItemGroupingPage() {
               </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingSingleItemGroupingCard1} className="lazyload " width="365" alt="Cards Single Item Grouping Padding" />
             </div> 
           </section>               
@@ -365,7 +356,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
                   </div>              
                 </li> 
               </ol> 

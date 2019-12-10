@@ -9,17 +9,17 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo"; 
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
+import Download from "../../../components/download";
 
 import uiexamplesProfileCard1 from "../../../assets/components/cards/Profile Card/UI Examples/Profile Card 01.png"; 
 import detailsProfileCard1 from "../../../assets/components/cards/Profile Card/Details/Profile Card Detail.png";
 import paddingProfileCard1 from "../../../assets/components/cards/Profile Card/Padding/Profile Card Padding.png"; 
 
-import guidance1 from "../../../assets/design/logo/guidance/01 Logo Guidance.png";
-import guidance2 from "../../../assets/design/logo/guidance/02 Logo Guidance.png";
-import guidance3 from "../../../assets/design/logo/guidance/03 Logo Guidance.png";
-import guidance4 from "../../../assets/design/logo/guidance/04 Logo Guidance.png";
-import guidance5 from "../../../assets/design/logo/guidance/05 Logo Guidance.png";
-import guidance6 from "../../../assets/design/logo/guidance/06 Logo Guidance.png";
+import guidance1 from "../../../assets/components/cards/Profile Card/Guidance/01 Guidance.png";
+import guidance2 from "../../../assets/components/cards/Profile Card/Guidance/02 Guidance.png";
+import guidance3 from "../../../assets/components/cards/Profile Card/Guidance/03 Guidance.png"; 
+import guidance4 from "../../../assets/components/cards/Profile Card/Guidance/04 Guidance.png"; 
+import guidance5 from "../../../assets/components/cards/Profile Card/Guidance/05 Guidance.png";   
 
 function ComponentsCardsProfilePage() { 
 
@@ -93,20 +93,46 @@ function ComponentsCardsProfilePage() {
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Profile</Heading>
-            <div className="flex items-center">
-              <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
-              <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
-                <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#e0301e" d="M11.636 26.182l-11.636-14.545h23.273z"></path>
-                  <path fill="#e0301e" d="M5.818 0h11.636v14.545h-11.636v-14.545z"></path>
-                  <path fill="#e0301e" d="M0 29.091h23.273v2.909h-23.273v-2.909z"></path>  
-                </svg> 
-                Sketch File
-              </button>
-            </div>
+            <Download />
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
+            <p className="mb-4 text-greyStatus-600 tracking-wider">The profile card is used to display a subject’s information. It consists of an image with additional data points.</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
+            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You are looking for a visual way to display a small amount of information (e.g., 2 to 3 data points).</p>
+              </li>
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">The data on the card could be enhanced through an image.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">All of the information being displayed is about a single item.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+              </li>  
+            </ul>  
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
@@ -115,14 +141,14 @@ function ComponentsCardsProfilePage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The profile card is used to display an individual's information. It consists of an image with additional data points.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How a profile card is expressed as part of the UI.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab> 
               </TabList>
           
               <TabPanel>                  
-                <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesProfileCard1} className="lazyload " width="335" alt="Cards Profile UI Examples" />
                 </div> 
               </TabPanel> 
@@ -139,7 +165,7 @@ function ComponentsCardsProfilePage() {
               </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingProfileCard1} className="lazyload " width="345" alt="Cards Profile Padding" />
             </div> 
           </section>   
@@ -154,9 +180,61 @@ function ComponentsCardsProfilePage() {
             </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsProfileCard1} className="lazyload " width="514" alt="Cards Profile Details" />
             </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Profile Image</span> </p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Should use <span className="as-type-medium">Avatar 100</span> or <span className="as-type-medium">Initial 100</span> if no avatar photo is available.</p>
+                  </div>              
+                </li> 
+              </ol>  
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Profile Title</span></p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">May wrap to however long the content is.</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div>            
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Profile Label</span></p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Try to keep to one line.</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div>            
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Profile Subtitle</span></p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Content may wrap. Dates should be written out in longform.</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div>            
           </section>                       
 
           <section id="guidance" name="guidance" className="as-section mb-16">
@@ -170,7 +248,7 @@ function ComponentsCardsProfilePage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for profile cards to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
@@ -180,7 +258,7 @@ function ComponentsCardsProfilePage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not apply any effects to the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any other image than Avatar 100 or Initial 100. Image must be present.</p>
                 </div>
               </div>
 
@@ -192,7 +270,7 @@ function ComponentsCardsProfilePage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not add any other element to profile card.</p>
                 </div>
               </div>
 
@@ -204,7 +282,7 @@ function ComponentsCardsProfilePage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any unapproved fill colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not change the structure of the profile card.</p>
                 </div>                 
               </div>
 
@@ -216,7 +294,7 @@ function ComponentsCardsProfilePage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not skew or stretch the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do replace an avatar with an initial image if the user has no available profile image.</p>
                 </div>    
               </div>
 
@@ -228,22 +306,10 @@ function ComponentsCardsProfilePage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not crop the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do wrap the profile subtitle content.</p>
                 </div>                     
               </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use the logo over complex imagery.</p>
-                </div>  
-              </div>
-
+ 
             </div> 
           </section>  
         </main>

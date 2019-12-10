@@ -9,17 +9,18 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo"; 
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
+import Download from "../../../components/download";
 
 import uiexamplesHighlightedItemDetailCard1 from "../../../assets/components/cards/Highlighted Item _ Detail Card/UI Examples/Highlighted Item _ Detail Card 01.png";   
 import detailsHighlightedItemDetailCard1 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Details/Highlighted Item _ Detail Card Detail.png";
 import paddingHighlightedItemDetailCard1 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Padding/Highlighted Item _ Detail Card Padding.png"; 
 
-import guidance1 from "../../../assets/design/logo/guidance/01 Logo Guidance.png";
-import guidance2 from "../../../assets/design/logo/guidance/02 Logo Guidance.png";
-import guidance3 from "../../../assets/design/logo/guidance/03 Logo Guidance.png";
-import guidance4 from "../../../assets/design/logo/guidance/04 Logo Guidance.png";
-import guidance5 from "../../../assets/design/logo/guidance/05 Logo Guidance.png";
-import guidance6 from "../../../assets/design/logo/guidance/06 Logo Guidance.png";
+import guidance1 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Guidance/01 Guidance.png";
+import guidance2 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Guidance/02 Guidance.png";
+import guidance3 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Guidance/03 Guidance.png"; 
+import guidance4 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Guidance/04 Guidance.png";  
+import guidance5 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Guidance/05 Guidance.png";  
+import guidance6 from "../../../assets/components/cards/Highlighted Item _ Detail Card/Guidance/06 Guidance.png";  
 
 function ComponentsCardsHighlightedItemDetailPage() { 
 
@@ -93,20 +94,38 @@ function ComponentsCardsHighlightedItemDetailPage() {
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Highlighted Item &amp; Detail</Heading>
-            <div className="flex items-center">
-              <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
-              <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
-                <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#e0301e" d="M11.636 26.182l-11.636-14.545h23.273z"></path>
-                  <path fill="#e0301e" d="M5.818 0h11.636v14.545h-11.636v-14.545z"></path>
-                  <path fill="#e0301e" d="M0 29.091h23.273v2.909h-23.273v-2.909z"></path>  
-                </svg> 
-                Sketch File
-              </button>
-            </div>
+            <Download />
           </div> 
 
-          <section id="ui-examples" name="ui-examples" className="as-section"> 
+          <section id="ui-examples" name="ui-examples" className="as-section">
+            <p className="mb-4 text-greyStatus-600 tracking-wider">The highlighted item and detail card places emphasis on information.</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
+            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+              </li>              
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You want to highlight something with more than 3 pieces of information.</p>
+              </li>
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">The highlighted group contains, at minimum, a Body Title and Body Subtitle and ideally an image.</p>
+              </li>   
+            </ul>
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
@@ -115,14 +134,14 @@ function ComponentsCardsHighlightedItemDetailPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The highlighted item and detail card places emphasis on 1 list item with the option of displaying an image and the ability to include additional elements.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How the highlighted item and detail card is expressed as part of the UI.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab>  
               </TabList>
           
               <TabPanel>                  
-                <div className=" mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className=" mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesHighlightedItemDetailCard1} className="lazyload " width="335" alt="Cards Highlighted Item Detail UI Examples" />
                 </div> 
               </TabPanel>  
@@ -139,10 +158,10 @@ function ComponentsCardsHighlightedItemDetailPage() {
               </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingHighlightedItemDetailCard1} className="lazyload " width="364" alt="Cards Highlighted Item Detail Padding" />
             </div> 
-          </section>   
+          </section>
 
           <section id="details" name="details" className="as-section"> 
             <span id="details-anchor" className="page-anchor"></span> 
@@ -153,10 +172,123 @@ function ComponentsCardsHighlightedItemDetailPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up the highlighted item and detail card.</p>
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsHighlightedItemDetailCard1} className="lazyload " width="597" alt="Cards Highlighted Item Detail Padding" />
             </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                  </div>              
+                </li> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">If there is a header, the maximum number of subtitles is 4.</p>
+                  </div>              
+                </li>  
+              </ol>  
+            </div>  
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span> </p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <span className="as-type-medium">divider line</span>.</p>
+                  </div>              
+                </li> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Maximum Body Title Content and Body Subtitle Content length is 2 lines. If either exceed that, use an ellipsis.</p>
+                  </div>              
+                </li>   
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                  </div>              
+                </li>   
+              </ol>  
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Badges</span> </p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Header may contain badges. If a card contains badges, the maximum is 2.</p>
+                  </div>              
+                </li>  
+              </ol>  
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Pagination</span></p>
+              <ol className="ml-3"> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Text Button</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/highlighted-item-detail" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div>             
           </section>       
 
           <section id="guidance" name="guidance" className="as-section mb-16">
@@ -170,7 +302,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for the highlighted item and detail card to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
@@ -180,7 +312,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not apply any effects to the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not make the body subtitle label clickable.</p>
                 </div>
               </div>
 
@@ -192,7 +324,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not let content force a card to exceed 55% of screen height. If exceeded, use "View More" button.</p>
                 </div>
               </div>
 
@@ -204,7 +336,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any unapproved fill colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not include more than 2 badges.</p>
                 </div>                 
               </div>
 
@@ -216,7 +348,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not skew or stretch the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not limit content to user's View More link.</p>
                 </div>    
               </div>
 
@@ -228,7 +360,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not crop the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Highlighted Items can be featured without an arrow or picture.</p>
                 </div>                     
               </div>
 
@@ -240,7 +372,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use the logo over complex imagery.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do replace an avatar with an initial image if the user has no available profile image.</p>
                 </div>  
               </div>
 

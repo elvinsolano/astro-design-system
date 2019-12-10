@@ -68,7 +68,7 @@ function DesignPictogramsPage() {
             <li><Link to="design/typography" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Typography</Link></li>
             <li><Link to="design/icons" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Icons</Link></li>
             <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Pictograms</Link>
-              <Scrollspy items={ ['types', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
+              <Scrollspy items={ ['types', 'usage', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="design/pictograms#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types</Link></li>
                 <li><Link to="design/pictograms#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Usage</Link></li>
                 <li><Link to="design/pictograms#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li> 
@@ -141,7 +141,7 @@ function DesignPictogramsPage() {
               </Heading> 
               <p className="mb-3 text-greyStatus-600 tracking-wider">Animated pictograms can enable a pictogram to perform in a way that adds polish and delight. They can use simple or complex motion based on the level of emphasis preferred.</p>
               
-              <div className="flex flex-wrap -mx-4 mb-12">  
+              <div className="flex flex-wrap -mx-4">  
                 <div className="w-grid px-4 mb-8"> 
                   <div className="bg-placeholder-400 as-picto flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesAnimated1} className="lazyload mb-3" width="290" alt="Pictograms Guidance 1" />
@@ -201,13 +201,13 @@ function DesignPictogramsPage() {
               </TabList>
           
               <TabPanel>
-                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex justify-center">
+                <div className="mb-16 py-16 px-20 bg-placeholder-300 flex justify-center">
                   <img data-src={usageSystem1} className="lazyload mr-10" width="375px" alt="Logo Usage Full Lock Up" />
                   <img data-src={usageSystem2} className="lazyload" width="375px" alt="Logo Usage Full Lock Up" />
                 </div> 
               </TabPanel> 
               <TabPanel>
-                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex justify-center">
+                <div className="mb-16 py-16 px-20 bg-placeholder-300 flex justify-center">
                   <img data-src={usageAnimated1} className="lazyload mr-10" width="375px" alt="Logo Usage Full Lock Up" />
                   <img data-src={usageAnimated2} className="lazyload" width="375px" alt="Logo Usage Full Lock Up" />
                 </div> 
