@@ -10,6 +10,7 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo"; 
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../components/atoms/heading'; 
+import Download from "../../components/download";
 
 import typesFieldAlert1 from "../../assets/elements/alerts/types/Field Alert/01 Mandatory.png";   
 import typesFieldAlert2 from "../../assets/elements/alerts/types/Field Alert/02 Green Alert.png";   
@@ -103,23 +104,13 @@ function ElementsAlertsPage() {
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Alerts and Notifications</Heading>
-            <div className="flex items-center">
-              <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
-              <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
-                <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#e0301e" d="M11.636 26.182l-11.636-14.545h23.273z"></path>
-                  <path fill="#e0301e" d="M5.818 0h11.636v14.545h-11.636v-14.545z"></path>
-                  <path fill="#e0301e" d="M0 29.091h23.273v2.909h-23.273v-2.909z"></path>  
-                </svg> 
-                Sketch File
-              </button>
-            </div>
+            <Download />
           </div> 
 
           <section id="types" name="types" className="as-section">
             <span id="types-anchor" className="page-anchor"></span>
-
-            <Heading level="2" className="as-h2 as-type-medium mb-12">Types
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Alerts and notifications helps to provide users with context, urgency or informational updates.</p> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -132,8 +123,8 @@ function ElementsAlertsPage() {
                 </svg>
                 URL Copied
               </ReactTooltip>              
-            </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Alerts communicate context as to the status or validity around information. Notifications are messages from the system that bring something to the user's attention.</p>
+            </Heading>  
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Alerts communicate context as to the status or validity around information. Notifications are messages from the system that bring something to the user’s attention</p>
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Field Alert
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
@@ -148,9 +139,9 @@ function ElementsAlertsPage() {
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">2</span><img data-src={typesFieldAlert2} className="lazyload inline-block" width="61" height="1" alt="Alerts Field Red Alert" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={typesFieldAlert3} className="lazyload inline-block" width="50" height="1" alt="Alerts Field Green Alert" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Field Alerts: Mandatory</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Field Alerts: Green Alert</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">3. Field Alerts: Red Alert</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Field Alerts - Mandatory.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Field Alerts - Green Alert.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Field Alerts - Red Alert.</p> 
             </div>
 
             <div className="mb-16">
@@ -166,8 +157,8 @@ function ElementsAlertsPage() {
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={typesSystemAlert1} className="lazyload inline-block" width="270" alt="Alerts System Validation" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesSystemAlert2} className="lazyload inline-block" width="270" alt="Alerts System Continue" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Validation</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Continue</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Validation.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Continue.</p>
             </div> 
 
             <div className="mb-16">
@@ -178,11 +169,11 @@ function ElementsAlertsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <p className="mb-5 text-greyStatus-600 tracking-wider">Notifies about the validity of user credentials for features, services or the system.</p>
+              <p className="mb-5 text-greyStatus-600 tracking-wider">A notice about the validity or state of user credentials.</p>
               <ol className="mb-5 py-16 px-20 bg-placeholder-300 border flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={usageAuthorizationMessage1} className="lazyload inline-block" width="254" alt="Alerts Authorization Message " /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Authorization Message</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Authorization Message.</p> 
             </div> 
 
             <div className="mb-16">
@@ -193,11 +184,11 @@ function ElementsAlertsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <p className="mb-5 text-greyStatus-600 tracking-wider">A intersticial message that provides additional  information and can also allow the user to take actions based on that information.</p>
+              <p className="mb-5 text-greyStatus-600 tracking-wider">A intersticial message that provides additional information and can also prompt the user to take action.</p>
               <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesOverlayMessage1} className="lazyload inline-block" width="335" alt="Overlay Message" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Overlay</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Overlay.</p> 
             </div> 
 
             <div className="mb-16">
@@ -208,17 +199,17 @@ function ElementsAlertsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <p className="mb-5 text-greyStatus-600 tracking-wider">An interstitial message designed to “coach” users on how to engage with product features or take set up actions.</p>
+              <p className="mb-5 text-greyStatus-600 tracking-wider">An interstitial message designed to "coach" users on how to engage with product features.</p>
               <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesCoachmarks1} className="lazyload inline-block" width="295" alt="Overlay Message" /> </li>
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={typesCoachmarks2} className="lazyload inline-block" width="295" alt="Overlay Message" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={typesCoachmarks3} className="lazyload inline-block" width="295" alt="Overlay Message" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img data-src={typesCoachmarks4} className="lazyload inline-block" width="295" alt="Overlay Message" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Voice</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Keyboard</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">3. History</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Voice.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Keyboard.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. History.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu.</p> 
             </div> 
 
             <div className="mb-16">
@@ -229,17 +220,17 @@ function ElementsAlertsPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <p className="mb-5 text-greyStatus-600 tracking-wider">Lorem Ipsum.</p>
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Toasts are temporary status messages whose appearance on screen may temporarily overlay the permanent UI. Toasts can be dismissed manually.</p>
               <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">1</span><img data-src={typesToasts1} className="lazyload inline-block" width="355" alt="Overlay Message" /> </li>
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">2</span><img data-src={typesToasts2} className="lazyload inline-block" width="355" alt="Overlay Message" /> </li>
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img data-src={typesToasts3} className="lazyload inline-block" width="355" alt="Overlay Message" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img data-src={typesToasts4} className="lazyload inline-block" width="355" alt="Overlay Message" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Confirmation</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Keyboard</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">3. History</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Confirmation.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Keyboard.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. History.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu.</p> 
             </div> 
             
           </section>
@@ -256,8 +247,8 @@ function ElementsAlertsPage() {
             <p className="mb-5 text-greyStatus-600 tracking-wider">Alerts and notifications are used to share messages about states and/or requirements with the user. Here are examples of how they're used within Astro.</p>
             <Tabs>
               <TabList>
-                <Tab>Field Alert</Tab>
-                <Tab>System Alert</Tab>
+                <Tab>Field Alerts</Tab>
+                <Tab>System Alerts</Tab>
                 <Tab>Authorization Message</Tab>
                 <Tab>Overlay Message</Tab>
                 <Tab>Coachmarks</Tab>
@@ -316,9 +307,9 @@ function ElementsAlertsPage() {
                 URL Copied
               </ReactTooltip>              
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">A detailed representation of standards including type, color and maximum character count.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Details for alerts and notifications including typography, color and alignment.</p>
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">Field Alert
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Field Alerts
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -330,13 +321,13 @@ function ElementsAlertsPage() {
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">2</span><img data-src={specsFieldAlert2} className="lazyload inline-block" width="129" height="1" alt="Alerts Field Red Alert" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">3</span><img data-src={specsFieldAlert3} className="lazyload inline-block" width="102" height="1" alt="Alerts Field Green Alert" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Field Alerts: Mandatory</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Field Alerts: Green Alert</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">3. Field Alerts: Red Alert</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Field Alert - Mandatory.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Field Alert - Green Alert.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Field Alert - Red Alert.</p> 
             </div>
 
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">System Alert
+              <Heading level="3" className="as-h3 as-type-medium mb-3">System Alerts
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -347,12 +338,12 @@ function ElementsAlertsPage() {
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">1</span><img data-src={specsSystemAlert1} className="lazyload inline-block" width="531" alt="Alerts System Validation" /> </li>
                 <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={specsSystemAlert2} className="lazyload inline-block" width="531" alt="Alerts System Continue" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Validation</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Continue</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Validation.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Continue.</p> 
             </div> 
 
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">Authorization Message
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Authorization Messages
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -362,11 +353,11 @@ function ElementsAlertsPage() {
               <ol className="mb-5 py-16 px-20 bg-placeholder-300 border flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={specsAuthorizationMessage1} className="lazyload inline-block" width="412" alt="Alerts Authorization Message " /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Authorization Message</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Authorization Message.</p> 
             </div> 
 
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">Allow Notifications Message
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Allow Notifications Messages
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -376,7 +367,7 @@ function ElementsAlertsPage() {
               <ol className="mb-5 py-16 px-20 bg-placeholder-100 border border-grey-200 border-solid flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={usageAllowNotificationsMessage1} className="lazyload inline-block" width="335" alt="Overlay Message" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Allow Notifications Message</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Allow Notifications Message.</p> 
             </div> 
 
             <div className="mb-16">
@@ -390,7 +381,7 @@ function ElementsAlertsPage() {
               <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">1</span><img data-src={specsCoachmarks1} className="lazyload inline-block" width="489" alt="Overlay Message" /> </li> 
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Voice</p>  
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Voice.</p>  
             </div> 
 
             <div className="mb-16">
@@ -407,10 +398,10 @@ function ElementsAlertsPage() {
                 <li className="as-grid-4 relative mr-12 mb-12"><span className="list-circle">3</span><img data-src={specsToasts3} className="lazyload inline-block" width="665" alt="Overlay Message" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">4</span><img data-src={specsToasts4} className="lazyload inline-block" width="665" alt="Overlay Message" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Confirmation</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Keyboard</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">3. History</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Confirmation.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Keyboard.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. History.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Menu.</p> 
             </div> 
             
           </section>
@@ -426,51 +417,80 @@ function ElementsAlertsPage() {
               </CopyToClipboard>
             </Heading>  
             <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for alerts and notifications to adhere to.</p>
-            <div className="flex flex-wrap -mx-4 mb-12">  
+            <div className="flex flex-wrap -mx-5 mb-12">  
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Guidance 1" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use toast at the bottom of the screen.</p>
+                </div>
+              </div>
 
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Dividers Guidance 1" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use toast at the bottom of the screen.</p>
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use authorization message with a secondary button.</p>
+                </div>
               </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Dividers Guidance 2" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use authorization message with a secondary button.</p>
+
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Guidance 1" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use a system alert to notify about app functionality. Use only for system errors and messages.</p>
+                </div>
               </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Dividers Guidance 3" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use a system alert to notify about app functionality. Use only for system errors and messages.</p>
+
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any other colors on field alerts.</p>
+                </div>
+              </div>
+
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Guidance 1" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use “*Mandatory” field alert on non-mandatory fields.</p>
+                </div>
+              </div>
+
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use an overlay message inside a card.</p>
+                </div>
               </div> 
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Dividers Guidance 3" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use any other colors on field alerts.</p>
-              </div> 
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Dividers Guidance 3" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use “*Mandatory” field alert on non-mandatory fields.</p>
-              </div> 
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Dividers Guidance 3" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use an overlay message inside a card.</p>
-              </div> 
-            </div> 
+
+            </div>
           </section>
         </main>
       </div>

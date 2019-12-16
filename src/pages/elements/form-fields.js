@@ -9,6 +9,7 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo"; 
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../components/atoms/heading';
+import Download from "../../components/download";
 
 import typesInputFieldNumber1 from "../../assets/elements/form/types/Input Fields/Number/01 Numbers.png";
 import typesInputFieldNumber2 from "../../assets/elements/form/types/Input Fields/Number/02 Numbers.png";
@@ -118,29 +119,20 @@ function ElementsFormFieldsPage() {
 
           <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Form Fields</Heading>
-            <div className="flex items-center">
-              <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
-              <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
-                <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#e0301e" d="M11.636 26.182l-11.636-14.545h23.273z"></path>
-                  <path fill="#e0301e" d="M5.818 0h11.636v14.545h-11.636v-14.545z"></path>
-                  <path fill="#e0301e" d="M0 29.091h23.273v2.909h-23.273v-2.909z"></path>  
-                </svg> 
-                Sketch File
-              </button>
-            </div>
+            <Download />
           </div> 
 
           <section id="types" name="types" className="as-section"> 
             <span id="types-anchor" className="page-anchor"></span> 
-            <Heading level="2" className="as-h2 as-type-medium mb-12">Types
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Form fields are form components that enable users to enter information into the system.</p> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Types
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-
+            <p className="mb-12 text-greyStatus-600 tracking-wider">The design system uses a variety of components to help users enter or select information to be input into Astro.</p>
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Select Fields
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
@@ -149,41 +141,42 @@ function ElementsFormFieldsPage() {
                   </svg> 
                 </CopyToClipboard>
               </Heading>
+              <p className="mb-8 text-greyStatus-600 tracking-wider">Form components that identify user input data by having them select options.</p>
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Radio:</span> Used when there is a list of 2 or more options but user can only select one.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Radio Buttons:</span> Used when there is a list of 2 or more options but user can only select one.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                   <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsRadio1} className="lazyload inline-block" width="108" /> </li>
                   <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsRadio2} className="lazyload inline-block" width="108" /> </li>
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Active.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive.</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Active</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive</p>
               </div>
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Check:</span> Used when there is a list of 2 or more options and user can make multiple selections.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Checkboxes:</span> Used when there is a list of 2 or more options and user can make multiple selections.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                   <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsCheck3} className="lazyload inline-block" width="135" /> </li>
                   <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsCheck4} className="lazyload inline-block" width="135" /> </li>
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Active.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive.</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Active</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive</p>
               </div>
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Check Strikethrough:</span> Used to imply a state of completion in tasks.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Checkbox Strikethroughs:</span> Used to imply a state of completion in tasks.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                   <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsStrike5} className="lazyload inline-block" width="156" /> </li>
                   <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsStrike6} className="lazyload inline-block" width="156" /> </li>
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Active.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive.</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Active</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive</p>
               </div>
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Toggles:</span> The toggle switch represents a physical switch that allows users to turn things on or off.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Toggles:</span> Digital representation of a physical switch that allows users to turn things on or off.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                   <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsToggle7} className="lazyload inline-block" width="144" /> </li>
                   <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsToggle8} className="lazyload inline-block" width="144" /> </li>
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Active.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive.</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Active</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive</p>
               </div>
             </div>  
             <div className="mb-16">
@@ -194,8 +187,9 @@ function ElementsFormFieldsPage() {
                   </svg> 
                 </CopyToClipboard>
               </Heading>
+              <p className="mb-8 text-greyStatus-600 tracking-wider">Form field components that allow users to directly enter text characters as input.</p>
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Single Text:</span> A text field is a basic text control that enables the user to type a small amount of text. Maximum character count: 50.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Single Text Area:</span> A basic text control field that allows the user to type a small amount of text. Maximum character count: 50.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                   <li className="mr-8 mb-12 relative"><span className="list-circle">1</span><img data-src={typesInputFieldSingle1} className="lazyload inline-block" width="335" /> </li>
                   <li className="mb-12 relative"><span className="list-circle">2</span><img data-src={typesInputFieldSingle2} className="lazyload inline-block" width="335" /> </li>
@@ -204,27 +198,27 @@ function ElementsFormFieldsPage() {
                   <li className="mr-8 relative"><span className="list-circle">5</span><img data-src={typesInputFieldSingle5} className="lazyload inline-block" width="335" /> </li>
                   <li className="relative"><span className="list-circle">6</span><img data-src={typesInputFieldSingle6} className="lazyload inline-block" width="335" /> </li>
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Focused.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">3. Filled.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">4. Mandatory - Text w/ Asterisk.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">5. Succesful - Green Alert.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">6. Error - Red Alert.</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Focused</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Filled</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">4. Mandatory - Text w/ Asterisk</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">5. Successful - Green Alert</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">6. Error - Red Alert</p>
               </div> 
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Number Field:</span> Is a field that is commonly used for numeric input types such as date, time or telephone number.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Number Fields:</span> Is commonly used for numeric inputs such as date, time or telephone number.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
                   <li className="mr-12 relative"><span className="list-circle">1</span><img data-src={typesInputFieldNumber1} className="lazyload inline-block" width="110" /> </li>
                   <li className="mr-12 relative"><span className="list-circle">2</span><img data-src={typesInputFieldNumber2} className="lazyload inline-block" width="110" /> </li>
                   <li className="relative"><span className="list-circle">3</span><img data-src={typesInputFieldNumber3} className="lazyload inline-block" width="110" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Focused.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">3. Filled.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Focused</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Filled</p> 
               </div> 
             </div>   
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">Feedback Field
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Feedback Fields
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
                   <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -232,16 +226,15 @@ function ElementsFormFieldsPage() {
                 </CopyToClipboard>
               </Heading>
               <div className="mb-12">
-                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Feedback Field:</span> A text field is a basic text area that enables the user to type a small amount of text. Maximum character count: 50.</p>
+                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Feedback Fields:</span> Allows user to provide feedback to a story or action by selecting a response.</p>
                 <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
                   <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={typesFeedbackFields1} className="lazyload inline-block" width="218" /> </li>
                   <li className="relative"><span className="list-circle">2</span><img data-src={typesFeedbackFields2} className="lazyload inline-block" width="284" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">3. Filled.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Filled</p> 
               </div>  
             </div> 
-
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Pickers Fields
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
@@ -256,8 +249,8 @@ function ElementsFormFieldsPage() {
                   <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
                   <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Filled.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
               </div>  
               <div className="mb-12">
                 <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Time:</span> A field used to pick from a list of times.</p>
@@ -265,8 +258,8 @@ function ElementsFormFieldsPage() {
                   <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
                   <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Filled.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
               </div>  
               <div className="mb-12">
                 <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">List:</span> A field used to pick from a list of selections.</p>
@@ -274,8 +267,54 @@ function ElementsFormFieldsPage() {
                   <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
                   <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled.</p>
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Filled.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
+              </div>   
+            </div>             
+            <div className="mb-16">
+              <Heading level="3" className="as-h3 as-type-medium mb-3">Password Field
+                <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
+                  <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                  </svg> 
+                </CopyToClipboard>
+              </Heading>
+              <div className="mb-12">
+                <p className="mb-5 text-greyStatus-600 tracking-wider">A field where the user can input their password.</p>
+                <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+                  <li className="mb-8 mr-8 relative"><span className="list-circle">1</span><img data-src={typesInputFieldPassword1} className="lazyload inline-block" width="335" /> </li>
+                  <li className="mb-8 relative"><span className="list-circle">2</span><img data-src={typesInputFieldPassword2} className="lazyload inline-block" width="335" /> </li>
+                  <li className="mb-8 mr-8 relative"><span className="list-circle">3</span><img data-src={typesInputFieldPassword3} className="lazyload inline-block" width="335" /> </li>
+                  <li className="mb-8 relative"><span className="list-circle">4</span><img data-src={typesInputFieldPassword4} className="lazyload inline-block" width="335" /> </li>
+                  <li className="mb-8 mr-8 relative"><span className="list-circle">5</span><img data-src={typesInputFieldPassword5} className="lazyload inline-block" width="335" /> </li>
+                  <li className="mb-8 relative"><span className="list-circle">6</span><img data-src={typesInputFieldPassword6} className="lazyload inline-block" width="335" /> </li>
+                  <li className="mr-8 relative"><span className="list-circle">7</span><img data-src={typesInputFieldPassword7} className="lazyload inline-block" width="335" /> </li> 
+                </ol>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Focused</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">3. Filled</p>  
+                <p className="as-type-regular text-sm text-greyStatus-600">4. Mandatory: Text w/ Asterisk</p>  
+                <p className="as-type-regular text-sm text-greyStatus-600">5. Successful: Green Alert</p>  
+                <p className="as-type-regular text-sm text-greyStatus-600">6. Error: Red Alert</p>  
+                <p className="as-type-regular text-sm text-greyStatus-600">7. Show Password: Dots Turn to Text</p>   
+              </div>  
+              <div className="mb-12">
+                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Time:</span> A field used to pick from a list of times.</p>
+                <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+                  <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
+                  <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
+                </ol>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
+              </div>  
+              <div className="mb-12">
+                <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">List:</span> A field used to pick from a list of selections.</p>
+                <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
+                  <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
+                  <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
+                </ol>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
+                <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
               </div>   
             </div>             
           </section> 
@@ -289,13 +328,13 @@ function ElementsFormFieldsPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Use Form Fields as designated input areas for users. The forms can be used to capture a user’s text data or the user’s selection of a choice.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Form fields should be selected based on the type of data input needed or user action required. Here are examples of how they’re used within Astro.</p>
             <Tabs>
               <TabList>
-                <Tab>Select Field</Tab>
-                <Tab>Input Field</Tab>
-                <Tab>Pickers Field</Tab>
-                <Tab>Feedback Field</Tab> 
+                <Tab>Select Fields</Tab>
+                <Tab>Input fields</Tab>
+                <Tab>Feedback Fields</Tab>
+                <Tab>Picker Fields</Tab> 
               </TabList> 
               <TabPanel>
                 <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-col">
@@ -311,18 +350,18 @@ function ElementsFormFieldsPage() {
               <TabPanel>
                 <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-col">
                   <div className="flex"> 
-                    <img data-src={usageInputField1} className="lazyload" width="375px" alt="Usage Input Field" /> 
-                    <img data-src={usageInputField2} className="lazyload" width="375px" alt="Usage Input Field" /> 
+                    <img data-src={usageInputField1} className="lazyload mb-12 mr-12" width="375px" alt="Usage Input Field" /> 
+                    <img data-src={usageInputField2} className="lazyload mb-12" width="375px" alt="Usage Input Field" /> 
                   </div>
                   <div class="flex">
-                    <img data-src={usageInputField3} className="lazyload" width="375px" alt="Usage Input Field" /> 
-                    <img data-src={usageInputField4} className="lazyload" width="375px" alt="Usage Input Field" /> 
+                    <img data-src={usageInputField3} className="lazyload mr-12" width="375px" alt="Usage Input Field" /> 
+                    <img data-src={usageInputField4} className="lazyload  " width="375px" alt="Usage Input Field" /> 
                   </div>
                 </div>
               </TabPanel>
               <TabPanel>
                 <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
-                  <img data-src={usagePickerFields1} className="lazyload " width="375px" alt="Usage Picker Field" />
+                  <img data-src={usagePickerFields1} className="lazyload mr-12" width="375px" alt="Usage Picker Field" />
                   <img data-src={usagePickerFields2} className="lazyload " width="375px" alt="Usage Picker Field" />
                 </div>
               </TabPanel> 
@@ -344,38 +383,58 @@ function ElementsFormFieldsPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading>  
-            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for Form Fields to adhere to.</p>
-            <div className="flex flex-wrap -mx-4 mb-12">  
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for form fields to adhere to.</p>
+            <div className="flex flex-wrap -mx-5 mb-12">  
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Guidance 1" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use input fields in a card.</p>
+                </div>
+              </div>
 
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Form Fields Guidance 1" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use input fields in a card.</p>
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use radio over black canvas.</p>
+                </div>
               </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg> 
-                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Form Fields Guidance 2" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use radio over black canvas.</p>
+
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Guidance 1" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use the number field left positioned.</p>
+                </div>
               </div>
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Form Fields Guidance 3" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not use the number field left positioned.</p>
-              </div>  
-              <div className="w-grid px-4 mb-8">
-                <svg className="fill-current mb-3" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                </svg>
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Form Fields Guidance 4" />
-                <p className="text-sm mb-3 text-greyStatus-600">Do not position check, radio or toggle to right of text.</p>
-              </div>  
-            </div> 
+
+              <div className="w-grid px-5 mb-5">
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not position check, radio or toggle to right of text.</p>
+                </div>
+              </div>
+ 
+
+            </div>
           </section>
         </main>
       </div>

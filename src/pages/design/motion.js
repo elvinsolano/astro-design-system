@@ -65,9 +65,8 @@ function DesignMotionPage() {
             <li><Link to="design/pictograms" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Pictograms</Link></li>
             <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
             <li><Link to="design/motion" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Motion</Link>
-              <Scrollspy items={ ['types', 'usage', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
+              <Scrollspy items={ ['types', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="design/motion#types-details-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types &amp; Details</Link></li>
-                <li><Link to="design/motion#usage-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Usage</Link></li>
                 <li><Link to="design/motion#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li> 
               </Scrollspy>             
             </li>
@@ -78,13 +77,13 @@ function DesignMotionPage() {
       </aside>
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className=" pl-16 pr-16 pt-16">
-          <section id="motion" name="motion" className="as-section">
-            <span id="motion-anchor" className="page-anchor"></span>
+          <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
+            <Heading level="1" className="as-h1 as-type-medium">Motion</Heading>
+            <Download />
+          </div>
 
-            <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-              <Heading level="1" className="as-h1 as-type-medium">Motion</Heading>
-              <Download />
-            </div>         
+          <section id="types" name="types" className="as-section">
+            <span id="types-anchor" className="page-anchor"></span>      
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types &amp; Details
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
@@ -116,8 +115,8 @@ function DesignMotionPage() {
                 <img data-src={typesCardIncoming1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
                 <div className="as-accordion-container ml-10">
                   <p className="mb-6">Animation timeframe (approx): 0.4 sec.</p>
-                  <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'voice-answer'}>
-                    <AccordionItem uuid={'voice-answer'}>
+                  <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'0'}>
+                    <AccordionItem>
                       <AccordionItemHeading>
                         <AccordionItemButton className="as-accordion__button">
                           1. Voice Answer
@@ -1353,15 +1352,15 @@ function DesignMotionPage() {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Animations for the different pressed states of buttons.</p>
               
-              <div class="flex flex-wrap -mx-5">
-                <div class="w-half px-5 mb-8">
-                  <div class="h-355 mb-5 py-8 px-10 bg-placeholder-400 flex flex-wrap items-center justify-center">
+              <div className="flex flex-wrap -mx-5">
+                <div className="w-half px-5 mb-8">
+                  <div className="h-355 mb-5 py-8 px-10 bg-placeholder-400 flex flex-wrap items-center justify-center">
                     <img data-src={typesPressStates1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" />
                   </div>
                   <p className=""><span className="as-type-medium">Card</span> - On press, the background color changes to #F2F2F2.</p> 
                 </div>
-                <div class="w-half px-5 mb-8">
-                  <div class="h-355 mb-5 py-8 px-10 bg-placeholder-400 flex flex-wrap items-center justify-center">
+                <div className="w-half px-5 mb-8">
+                  <div className="h-355 mb-5 py-8 px-10 bg-placeholder-400 flex flex-wrap items-center justify-center">
                     <img data-src={typesPressStates2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
                   </div>
                   <p className=""><span className="as-type-medium">Closing</span> - On press, the background color changes to #575757.</p> 
@@ -1381,7 +1380,7 @@ function DesignMotionPage() {
                 
               <div className="flex flex-wrap -mx-4 mb-12">
                 <div className="w-grid px-5 mb-5">
-                  <div class="bg-placeholder-400 flex justify-center">
+                  <div className="bg-placeholder-400 flex justify-center">
                     <img data-src={typesMicrophone1} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" /> 
                   </div>
                   <div className="flex mb-3"> 
@@ -1389,7 +1388,7 @@ function DesignMotionPage() {
                   </div>
                 </div>
                 <div className="w-grid px-5 mb-5">
-                  <div class="bg-placeholder-400 flex justify-center">               
+                  <div className="bg-placeholder-400 flex justify-center">               
                     <img data-src={typesMicrophone2} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" /> 
                   </div>
                   <div className="flex mb-3"> 
@@ -1397,7 +1396,7 @@ function DesignMotionPage() {
                   </div>
                 </div>
                 <div className="w-grid px-5 mb-5">
-                  <div class="bg-placeholder-400 flex justify-center">
+                  <div className="bg-placeholder-400 flex justify-center">
                     <img data-src={typesMicrophone3} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" /> 
                   </div>
                   <div className="flex mb-3"> 
@@ -1405,7 +1404,7 @@ function DesignMotionPage() {
                   </div>
                 </div>
                 <div className="w-grid px-5 mb-5">
-                  <div class="bg-placeholder-400 flex justify-center">
+                  <div className="bg-placeholder-400 flex justify-center">
                     <img data-src={typesMicrophone4} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" /> 
                   </div>
                   <div className="flex mb-3"> 
@@ -1413,7 +1412,7 @@ function DesignMotionPage() {
                   </div>
                 </div>
                 <div className="w-grid px-5 mb-5">
-                  <div class="bg-placeholder-400 flex justify-center">
+                  <div className="bg-placeholder-400 flex justify-center">
                     <img data-src={typesMicrophone5} className="lazyload " width="200px" alt="Loaders Usage Pull Down Loader 1" />
                   </div>
                   <div className="flex mb-3"> 
@@ -1424,6 +1423,73 @@ function DesignMotionPage() {
             </div>                       
             
           </section>
+
+          <section id="guidance" name="guidance" className="as-section mb-48">
+            <span id="guidance-anchor" className="page-anchor"></span>
+
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
+              <CopyToClipboard text={'http://localhost:8000/design/typography#guidance-anchor'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading> 
+
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for icons to adhere to.</p>
+            <div className="flex flex-wrap -mx-5">   
+
+              <div className="w-grid px-5 mb-5">  
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not distort icons.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">          
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use system icons for nudges.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">      
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not change the color of icons or use non-approved colors.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">          
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use icons for any use other than what is specified.</p>
+                </div>    
+              </div> 
+              <div className="w-grid px-5 mb-5">     
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not create your own icons using combinations of this page. Instead, contact a designer.</p>
+                </div>    
+              </div>  
+            </div> 
+          </section>          
         </main>
       </div>
     </Layout>

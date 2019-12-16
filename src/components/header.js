@@ -56,7 +56,7 @@ function Header({ siteTitle }) {
 
                 <Link
                   to="/design"
-                  className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
+                  className="as-header-link block md:inline-block border-b-5 border-transparent mt-6 md:mt-0 no-underline hover:text-white"
                   activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                   partiallyActive={true}
                 >
@@ -65,7 +65,7 @@ function Header({ siteTitle }) {
 
                 <Link
                   to="/elements"
-                  className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
+                  className="as-header-link block md:inline-block border-b-5 border-transparent mt-6 md:mt-0 no-underline hover:text-white"
                   activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                   partiallyActive={true}
                 >
@@ -74,7 +74,7 @@ function Header({ siteTitle }) {
 
                 <Link
                   to="/components"
-                  className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline hover:text-white"
+                  className="as-header-link block md:inline-block border-b-5 border-transparent mt-6 md:mt-0 no-underline hover:text-white"
                   activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
                   partiallyActive={true}
                 >

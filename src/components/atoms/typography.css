@@ -406,8 +406,8 @@ aside nav ul li a:active {
   /* transform: rotate(-90deg);  */ 
 }
 
-.as-accordion .as-accordion__button[aria-expanded='true']:after,
-.as-accordion .as-accordion__button[aria-selected='true']:after {
+.as-accordion .as-accordion__button:after,
+.as-accordion .as-accordion__button:after {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -418,6 +418,11 @@ aside nav ul li a:active {
   width: 1px;  
   margin-right: 12px;
   border-right: 2px solid currentColor;
+}
+
+.as-accordion .as-accordion__button[aria-expanded='true']:after,
+.as-accordion .as-accordion__button[aria-selected='true']:after {
+  display: none;
 }
  
 
@@ -460,3 +465,113 @@ aside nav ul li a:active {
   width: 14px;
   height: 14px;
 }
+
+.as-body .as-home {
+  padding: 0;
+  max-width: 100%;
+  margin-left: 0;
+}
+.as-home-section {
+  position: relative;
+  min-height: 760px;
+}
+.as-hero-foreground { 
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+}
+.as-hero-background {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.as-hero-scroll {
+  position: absolute; 
+  bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.as-hero-cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+.layer-shapes {
+  overflow: hidden;
+}
+.large-circle {
+  width: 400px; 
+  height: 400px;
+  border-radius: 50%;
+  background-color: #171717;
+  position: absolute;
+  bottom: -100px;
+  left: -120px;
+}
+.large-triangle {
+  width: 0; 
+  height: 0; 
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 346.4px solid #171717;
+  position: absolute;
+  top: -150px;
+  right: -125px;
+}
+
+.pattern-light-left {
+  position: absolute;
+  top: -150px;
+  left: -150px;  
+}
+.pattern-light-right {
+  position: absolute;
+  top: -200px;
+  right: 250px;  
+}
+.pattern-light-bottom {
+  position: absolute;
+  bottom: -175px;
+  right: -125px;  
+}
+.left-offset {
+  position: absolute;
+  bottom: 250px;
+  left: -100px;  
+}
+.right-offset {
+  position: absolute;
+  top: 250px;
+  right: -100px;  
+}
+.small-circle {
+  z-index: 3;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;  
+}
+.small-triangle {
+  z-index: 3;
+  position: absolute;
+  top: 100px;  
+  right: 100px;  
+}
+.small-square {
+  z-index: 3;
+  position: absolute;
+  bottom: 100px;  
+  right: 200px;  
+}
+.small-cross {
+  z-index: 3;
+  position: absolute;
+  top: 100px;
+  left: 300px;  
+} 
+
+/* borderColor="#5A130C" */

@@ -100,7 +100,7 @@ import usagePulse2 from "../../assets/design/icons/usage/Pulse/01 Pulse Icon Sma
 import usageMainControls1 from "../../assets/design/icons/usage/Main Control/01 Main Control Icon.png"; 
 import usageNavigation1 from "../../assets/design/icons/usage/Navigation/01 Navigation Icons.png"; 
 import usageAvatar1 from "../../assets/design/icons/usage/Avatar/01 Avatar 100.png"; 
-import usageAvatar2 from "../../assets/design/icons/usage/Avatar/02 Avatar.png"; 
+import usageAvatar2 from "../../assets/design/icons/usage/Avatar/02 Avatar Initial.png"; 
 import usageTravel1 from "../../assets/design/icons/usage/Travel Icons/01 Travel Story.png"; 
 import usageSystem1 from "../../assets/design/icons/usage/System Icons/01 PDP.png"; 
 import usageSystem2 from "../../assets/design/icons/usage/System Icons/02 Calendar Icon.png"; 
@@ -163,7 +163,7 @@ function DesignIconsPage() {
             <Heading level="1" className="as-h1 as-type-medium">Icons</Heading>
             <div className="flex items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 12/05/19</p>
-              <a href="https://drive.google.com/open?id=13QVAUUjXvZTH_UH8FFuAdSkIW1XENav5" target="_blank" className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2"> 
+              <a href="https://drive.google.com/uc?export=download&id=13QVAUUjXvZTH_UH8FFuAdSkIW1XENav5" target="_blank" className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2"> 
                 <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#e0301e" d="M11.636 26.182l-11.636-14.545h23.273z"></path>
                   <path fill="#e0301e" d="M5.818 0h11.636v14.545h-11.636v-14.545z"></path>
@@ -206,8 +206,8 @@ function DesignIconsPage() {
                   <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesPulse1} className="lazyload inline-block" width="40" alt="Icon Types Pulse Large" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesPulse2} className="lazyload inline-block" width="12" alt="Icon Types Pulse Small" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Pulse: Large.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Pulse: Small.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. pulse-large</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. pulse-small</p> 
               </div> 
             </div>  
 
@@ -225,8 +225,8 @@ function DesignIconsPage() {
                   <li className="as-grid-4 relative"><span className="list-circle">1</span><img data-src={typesMainControls1} className="lazyload inline-block" width="29" alt="Icon Types Main Controls Keyboard" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">2</span><img data-src={typesMainControls2} className="lazyload inline-block" width="30" alt="Icon Types Main Controls Menu" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Keyboard.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Menu.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. keyboard</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. menu</p> 
               </div> 
             </div>   
 
@@ -246,10 +246,10 @@ function DesignIconsPage() {
                   <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={typesNavigation3} className="lazyload inline-block" width="20" alt="Icon Types Navigation Discover" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesNavigation4} className="lazyload inline-block" width="20" alt="Icon Types Navigation Home" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Account.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Nudges.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">3. Discover.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">4. Home.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. account</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. nudges</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. discover</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">4. home</p> 
               </div> 
             </div>  
 
@@ -271,12 +271,12 @@ function DesignIconsPage() {
                   <li className="as-grid-6 relative"><span className="list-circle">5</span><img data-src={typesAvatars5} className="lazyload inline-block" width="50" alt="Icon Types Navigation Home" /> </li> 
                   <li className="as-grid-6 relative"><span className="list-circle">6</span><img data-src={typesAvatars6} className="lazyload inline-block" width="30" alt="Icon Types Navigation Home" /> </li> 
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Avatar 100.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Avatar 50.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">3. Avatar 30.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">4. Initial 100.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">5. Initial 50.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">6. Initial 30.</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">1. avatar-100</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. avatar-50</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. avatar-30</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">4. initial-100</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">5. initial-50</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">6. initial-30</p> 
               </div> 
             </div>  
 
@@ -296,10 +296,10 @@ function DesignIconsPage() {
                   <li className="as-grid-4 relative"><span className="list-circle">3</span><img data-src={typesTravel3} className="lazyload inline-block" width="24" alt="Icon Types Navigation Discover" /> </li> 
                   <li className="as-grid-4 relative"><span className="list-circle">4</span><img data-src={typesTravel4} className="lazyload inline-block" width="24" alt="Icon Types Navigation Home" /> </li>  
                 </ol>  
-                <p className="as-type-regular text-sm text-greyStatus-600">1. Flight.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">2. Hotel.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">3. Rental.</p> 
-                <p className="as-type-regular text-sm text-greyStatus-600">4. Limo.</p>  
+                <p className="as-type-regular text-sm text-greyStatus-600">1. flight</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">2. hotel</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">3. rental</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">4. limo</p>  
               </div> 
             </div>  
 
@@ -317,115 +317,115 @@ function DesignIconsPage() {
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem1} className="lazyload" width="16" alt="Icons System Phone" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Phone</p>
+                  <p className="text-sm text-greyStatus-600">phone</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem2} className="lazyload" width="16" alt="Icons System Email" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Email</p>
+                  <p className="text-sm text-greyStatus-600">email</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem3} className="lazyload" width="16" alt="Icons System Back" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Back</p>
+                  <p className="text-sm text-greyStatus-600">back</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem4} className="lazyload" width="16" alt="Icons System Forward" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Forward</p>
+                  <p className="text-sm text-greyStatus-600">forward</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem5} className="lazyload" width="16" alt="Icons System Close Small" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Close Small</p>
+                  <p className="text-sm text-greyStatus-600">close-small</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem6} className="lazyload" width="16" alt="Icons System Check Grey" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Check Grey</p>
+                  <p className="text-sm text-greyStatus-600">check-grey</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem7} className="lazyload" width="16" alt="Icons System Check Green" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Check Green</p>
+                  <p className="text-sm text-greyStatus-600">check-green</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem8} className="lazyload" width="16" alt="Icons System Hangouts" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Hangouts</p>
+                  <p className="text-sm text-greyStatus-600">hangouts</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem9} className="lazyload" width="16" alt="Icons System Dropdown" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Dropdown</p>
+                  <p className="text-sm text-greyStatus-600">dropdown</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem10} className="lazyload" width="16" alt="Icons System Calendar" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Calendar</p>
+                  <p className="text-sm text-greyStatus-600">calendar</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem11} className="lazyload" width="16" alt="Icons System Eye Hide" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Eye Hide</p>
+                  <p className="text-sm text-greyStatus-600">eye-hide</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem12} className="lazyload" width="16" alt="Icons System Eye Show" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Eye Show</p>
+                  <p className="text-sm text-greyStatus-600">eye-show</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem13} className="lazyload" width="16" alt="Icons System Arrow" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Arrow</p>
+                  <p className="text-sm text-greyStatus-600">arrow</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem14} className="lazyload" width="16" alt="Icons Trash Can" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Trash Can</p>
+                  <p className="text-sm text-greyStatus-600">trash-can</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem15} className="lazyload" width="16" alt="Icons Info" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Info</p>
+                  <p className="text-sm text-greyStatus-600">info</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem16} className="lazyload" width="16" alt="Icons Nudge Loader" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Nudge Loader</p>
+                  <p className="text-sm text-greyStatus-600">nudge-loader</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem17} className="lazyload" width="16" alt="Icons Nudge Loader" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Close Large</p>
+                  <p className="text-sm text-greyStatus-600">close-large</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem18} className="lazyload" width="16" alt="Icons Location" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Location</p>
+                  <p className="text-sm text-greyStatus-600">location</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesSystem19} className="lazyload" width="16" alt="Icons Send" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Send</p>
+                  <p className="text-sm text-greyStatus-600">send</p>
                 </div> 
               </div> 
             </div>  
@@ -450,73 +450,73 @@ function DesignIconsPage() {
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo1} className="lazyload" width="30" alt="Icons Category Celebration" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Celebration</p>
+                      <p className="text-sm text-greyStatus-600">celebration-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo2} className="lazyload" width="30" alt="Icons Category Compliance" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Compliance</p>
+                      <p className="text-sm text-greyStatus-600">compliance-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo3} className="lazyload" width="30" alt="Icons Category Delivery" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Delivery</p>
+                      <p className="text-sm text-greyStatus-600">delivery-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo4} className="lazyload" width="30" alt="Icons Category Digest" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Digest</p>
+                      <p className="text-sm text-greyStatus-600">digest-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo5} className="lazyload" width="30" alt="Icons Category Finance" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Finance</p>
+                      <p className="text-sm text-greyStatus-600">finance-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo6} className="lazyload" width="30" alt="Icons Category FPM" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">FPM</p>
+                      <p className="text-sm text-greyStatus-600">fpm-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo7} className="lazyload" width="30" alt="Icons Category HR" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">HR</p>
+                      <p className="text-sm text-greyStatus-600">hr-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo8} className="lazyload" width="30" alt="Icons Category LD" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">L&amp;D</p>
+                      <p className="text-sm text-greyStatus-600">l&amp;d-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo9} className="lazyload" width="30" alt="Icons Category Markdown" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Markdown</p>
+                      <p className="text-sm text-greyStatus-600">markdown-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo10} className="lazyload" width="30" alt="Icons Category Meetings" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Meetings</p>
+                      <p className="text-sm text-greyStatus-600">meetings-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo11} className="lazyload" width="30" alt="Icons Category PerMgnt" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">PerMgmt</p>
+                      <p className="text-sm text-greyStatus-600">permgmt-grey6</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryTwo12} className="lazyload" width="30" alt="Icons Category Travel" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Travel</p>
+                      <p className="text-sm text-greyStatus-600">travel-grey6</p>
                     </div>  
                   </div> 
                 </TabPanel>
@@ -526,79 +526,79 @@ function DesignIconsPage() {
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree1} className="lazyload" width="30" alt="Icons Category Celebration" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Celebration</p>
+                      <p className="text-sm text-greyStatus-600">celebration-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree2} className="lazyload" width="30" alt="Icons Category Compliance" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Compliance</p>
+                      <p className="text-sm text-greyStatus-600">compliance-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree3} className="lazyload" width="30" alt="Icons Category Delivery" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Delivery</p>
+                      <p className="text-sm text-greyStatus-600">delivery-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree4} className="lazyload" width="30" alt="Icons Category Digest" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Digest</p>
+                      <p className="text-sm text-greyStatus-600">digest-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree5} className="lazyload" width="30" alt="Icons Category Finance" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Finance</p>
+                      <p className="text-sm text-greyStatus-600">finance-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree6} className="lazyload" width="30" alt="Icons Category FPM" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">FPM</p>
+                      <p className="text-sm text-greyStatus-600">fpm-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree7} className="lazyload" width="30" alt="Icons Category HR" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">HR</p>
+                      <p className="text-sm text-greyStatus-600">hr-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree8} className="lazyload" width="30" alt="Icons Category LD" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">L&amp;D</p>
+                      <p className="text-sm text-greyStatus-600">l&amp;d-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree9} className="lazyload" width="30" alt="Icons Category Markdown" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Markdown</p>
+                      <p className="text-sm text-greyStatus-600">markdown-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree10} className="lazyload" width="30" alt="Icons Category Meetings" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Meetings</p>
+                      <p className="text-sm text-greyStatus-600">meetings-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree11} className="lazyload" width="30" alt="Icons Category PerMgnt" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">PerMgnt</p>
+                      <p className="text-sm text-greyStatus-600">permgnt-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree12} className="lazyload" width="30" alt="Icons Category Travel" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Travel</p>
+                      <p className="text-sm text-greyStatus-600">travel-primary3</p>
                     </div> 
                     <div className="px-5 mb-5"> 
                       <div className="bg-placeholder-200 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                         <img data-src={typesCategoriesPrimaryThree13} className="lazyload" width="30" alt="Icons Category Partner" />
                       </div>
-                      <p className="text-sm text-greyStatus-600">Partner</p>
+                      <p className="text-sm text-greyStatus-600">partner-primary3</p>
                     </div>  
                   </div> 
                 </TabPanel> 
@@ -621,103 +621,103 @@ function DesignIconsPage() {
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding1} className="lazyload" width="30" alt="Icons Onboarding Mic 1" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Mic 1</p>
+                  <p className="text-sm text-greyStatus-600">mic-1</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding2} className="lazyload" width="30" alt="Icons Onboarding Salesforce 1" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Salesforce 1</p>
+                  <p className="text-sm text-greyStatus-600">salesforce-1</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding3} className="lazyload" width="30" alt="Icons Onboarding Notifications 1" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Notifications 1</p>
+                  <p className="text-sm text-greyStatus-600">notifications-1</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding4} className="lazyload" width="30" alt="Icons Onboarding G Suite 1" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">G Suite 1</p>
+                  <p className="text-sm text-greyStatus-600">gsuite-1</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding5} className="lazyload" width="30" alt="Icons Onboarding Mic 2" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Mic 2</p>
+                  <p className="text-sm text-greyStatus-600">mic-2</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding6} className="lazyload" width="30" alt="Icons Onboarding Salesforce 2" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Salesforce 2</p>
+                  <p className="text-sm text-greyStatus-600">salesforce-2</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding7} className="lazyload" width="30" alt="Icons Onboarding Notifications 2" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Notifications 2</p>
+                  <p className="text-sm text-greyStatus-600">notifications-2</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding8} className="lazyload" width="30" alt="Icons Onboarding G Suite 2" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">G Suite 2</p>
+                  <p className="text-sm text-greyStatus-600">gsuite-2</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding9} className="lazyload" width="30" alt="Icons Onboarding Mic 3" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Mic 3</p>
+                  <p className="text-sm text-greyStatus-600">mic-3</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding10} className="lazyload" width="30" alt="Icons Onboarding Salesforce 3" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Salesforce 3</p>
+                  <p className="text-sm text-greyStatus-600">salesforce-3</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding11} className="lazyload" width="30" alt="Icons Onboarding Notifications 3" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Notifications 3</p>
+                  <p className="text-sm text-greyStatus-600">notifications-3</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding12} className="lazyload" width="30" alt="Icons Onboarding G Suite 3" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">G Suite 3</p>
+                  <p className="text-sm text-greyStatus-600">gsuite-3</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding13} className="lazyload" width="30" alt="Icons Onboarding Privacy" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Privacy</p>
+                  <p className="text-sm text-greyStatus-600">privacy</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding14} className="lazyload" width="30" alt="Icons Onboarding Chevron" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Chevron</p>
+                  <p className="text-sm text-greyStatus-600">chevron</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding15} className="lazyload" width="30" alt="Icons Onboarding Activities" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Activities</p>
+                  <p className="text-sm text-greyStatus-600">activities</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding16} className="lazyload" width="30" alt="Icons Onboarding Discover" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Discover</p>
+                  <p className="text-sm text-greyStatus-600">discover</p>
                 </div> 
                 <div className="px-5 mb-5"> 
                   <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding17} className="lazyload" width="30" alt="Icons Onboarding Nudges" />
                   </div>
-                  <p className="text-sm text-greyStatus-600">Nudges</p>
+                  <p className="text-sm text-greyStatus-600">nudges</p>
                 </div>  
               </div> 
             </div>              

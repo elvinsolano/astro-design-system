@@ -354,7 +354,7 @@ function ComponentsCardsProfileListPage() {
                     </div>
                     <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
                   </div>              
-                </li>  
+                </li>
                 <li className="text-sm">
                   <div className="flex">
                     <div className="ml-3">
