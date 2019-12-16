@@ -35,23 +35,23 @@ function IndexPage() {
                 <svg className="fill-current cursor-pointer left-offset" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#e0301e" strokeLinejoin="miter" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="2" d="M31 16c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-8.284 6.716-15 15-15s15 6.716 15 15z"></path>
                 </svg> 
-                <LineTo from="left-offset" to="small-circle" borderColor="#5A130C" />
+                {/* <LineTo from="left-offset" to="small-circle" borderColor="#5A130C" /> */}
                 <svg className="fill-current cursor-pointer small-circle" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#e0301e" strokeLinejoin="miter" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="2" d="M31 16c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-8.284 6.716-15 15-15s15 6.716 15 15z"></path>
                 </svg> 
-                <LineTo from="small-circle" to="small-cross" borderColor="#5A130C" />
+                {/* <LineTo from="small-circle" to="small-cross" borderColor="#5A130C" /> */}
                 <svg className="fill-current cursor-pointer small-cross" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#e0301e" d="M31.216 9.761l-6.43 6.43 6.43 6.432-8.575 8.575-6.43-6.432-6.432 6.432-8.575-8.575 6.432-6.432-6.432-6.43 8.575-8.575 6.432 6.43 6.43-6.43 8.575 8.575z"></path>
                 </svg>
-                <LineTo from="small-cross" to="small-square" borderColor="#5A130C" />
+                {/* <LineTo from="small-cross" to="small-square" borderColor="#5A130C" /> */}
                 <svg className="fill-current cursor-pointer small-square" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#e0301e" strokeLinejoin="miter" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="3.5556" d="M1.778 1.778h28.444v28.444h-28.444v-28.444z"></path>
                 </svg> 
-                <LineTo from="small-square" to="small-triangle" borderColor="#5A130C" />
+                {/* <LineTo from="small-square" to="small-triangle" borderColor="#5A130C" /> */}
                 <svg className="fill-current cursor-pointer small-triangle" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#e0301e" d="M16.031 2.309l14.999 26.249h-29.695z"></path>
                 </svg>  
-                <LineTo from="small-triangle" to="right-offset" borderColor="#5A130C" />
+                {/* <LineTo from="small-triangle" to="right-offset" borderColor="#5A130C" /> */}
                 <svg className="fill-current cursor-pointer right-offset" width="18" height="18" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#e0301e" d="M16.031 2.309l14.999 26.249h-29.695z"></path>
                 </svg>  
