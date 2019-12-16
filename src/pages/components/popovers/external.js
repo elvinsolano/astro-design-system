@@ -9,6 +9,7 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo"; 
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../../../components/atoms/heading';
+import Download from "../../../components/download";
 
 import uiexamplesExternal1 from "../../../assets/components/popovers/External/UI Examples/popover-external-example-01.png"; 
 import detailsExternal1 from "../../../assets/components/popovers/External/Details/popover-external-details.png";
