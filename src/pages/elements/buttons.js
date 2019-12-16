@@ -92,7 +92,7 @@ function ElementsButtonsPage() {
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className=" pl-16 pr-16 pt-16">
 
-          <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
+          <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Buttons and Call to Actions (CTA’s)</Heading>
             <Download />
           </div>  
@@ -137,7 +137,7 @@ function ElementsButtonsPage() {
               <ol className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap items-start justify-start">
                 <li className="relative"><span className="list-circle">1</span><img data-src={typesSecondary1} className="lazyload inline-block" width="174" height="30" alt="Buttons Types Secondary Button" /></li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">used for less important tasks or when space does not allow for the use of the primary button.</p>
+              <p className="as-type-regular text-sm text-greyStatus-600 tracking-wider">1. Secondary Button - used for less important tasks or when space does not allow for the use of the primary button.</p>
             </div>
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Text Button
@@ -203,7 +203,7 @@ function ElementsButtonsPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Buttons communicate actions that users can take. They are typically placed throughout the UI. Here are a variety of applications to help showcase how buttons are used within Astro.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">The design and placement applied to each button type helps the user express intent or action. Here are examples of how they're used within Astro.</p>
             <Tabs>
               <TabList>
                 <Tab>Primary</Tab>

@@ -95,7 +95,7 @@ function ElementsChartsPage() {
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className=" pl-16 pr-16 pt-16">
 
-          <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
+          <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Charts</Heading>
             <Download />
           </div> 
@@ -319,13 +319,13 @@ function ElementsChartsPage() {
                 <li className="as-grid-4 relative mb-12"><span className="list-circle">6</span><img data-src={specsStrengthChart6} className="lazyload inline-block" width="30" height="8" alt="Charts Specs Strength Chart" /> </li>
                 <li className="as-grid-4 relative mr-12"><span className="list-circle">7</span><img data-src={specsStrengthChart7} className="lazyload inline-block" width="171" height="46" alt="Charts Specs Strength Chart" /> </li>
               </ol>  
-              <p className="as-type-regular text-sm text-greyStatus-600">1. Empty.</p>
-              <p className="as-type-regular text-sm text-greyStatus-600">2. Low.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">3. Medium Low.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">4. Medium.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">5. Medium High.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">6. High.</p> 
-              <p className="as-type-regular text-sm text-greyStatus-600">7. Very High.</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">1. Empty</p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. Low</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">3. Medium Low</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">4. Medium</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">5. Medium High</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">6. High</p> 
+              <p className="as-type-regular text-sm text-greyStatus-600">7. Very High</p> 
                
             </div> 
 

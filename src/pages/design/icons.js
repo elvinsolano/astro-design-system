@@ -159,9 +159,9 @@ function DesignIconsPage() {
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className="pl-16 pr-16 pt-16">
 
-          <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
+          <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Icons</Heading>
-            <div className="flex items-center">
+            <div className="flex flex-wrap items-center">
               <p className="uppercase text-grey-400 text-xs mr-4">Updated 12/05/19</p>
               <a href="https://drive.google.com/uc?export=download&id=13QVAUUjXvZTH_UH8FFuAdSkIW1XENav5" target="_blank" className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2"> 
                 <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">

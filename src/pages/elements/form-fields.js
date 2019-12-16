@@ -117,7 +117,7 @@ function ElementsFormFieldsPage() {
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className=" pl-16 pr-16 pt-16">
 
-          <div className="flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
+          <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">Form Fields</Heading>
             <Download />
           </div> 
@@ -360,14 +360,14 @@ function ElementsFormFieldsPage() {
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
-                  <img data-src={usagePickerFields1} className="lazyload mr-12" width="375px" alt="Usage Picker Field" />
-                  <img data-src={usagePickerFields2} className="lazyload " width="375px" alt="Usage Picker Field" />
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex justify-center">
+                  <img data-src={usageFeedback1} className="lazyload " width="375px" alt="Usage Feedback" />
                 </div>
               </TabPanel> 
               <TabPanel>
                 <div className="mb-12 py-16 px-20 bg-placeholder-300 flex">
-                  <img data-src={usageFeedback1} className="lazyload " width="375px" alt="Usage Feedback" />
+                  <img data-src={usagePickerFields1} className="lazyload mr-12" width="375px" alt="Usage Picker Field" />
+                  <img data-src={usagePickerFields2} className="lazyload " width="375px" alt="Usage Picker Field" />
                 </div>
               </TabPanel>  
             </Tabs>
