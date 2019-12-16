@@ -17,7 +17,7 @@ import uiexamplesSwipingCardsCard3 from "../../../assets/components/cards/Swipin
 import uiexamplesSwipingCardsCard4 from "../../../assets/components/cards/Swiping Card/UI Examples/02b.png";  
 import uiexamplesSwipingCardsCard5 from "../../../assets/components/cards/Swiping Card/UI Examples/03a.png";  
 import uiexamplesSwipingCardsCard6 from "../../../assets/components/cards/Swiping Card/UI Examples/03b.png";  
-import detailsSwipingCardsCard1 from "../../../assets/components/cards/Swiping Card/Details/01.png";
+import detailsSwipingCardsCard1 from "../../../assets/components/cards/Swiping Card/Details/Swipe Card Details.png";
 import paddingSwipingCardsCard1 from "../../../assets/components/cards/Swiping Card/Padding/01.png"; 
 
 import guidance1 from "../../../assets/components/cards/Swiping Card/Guidance/01 Guidance.png";

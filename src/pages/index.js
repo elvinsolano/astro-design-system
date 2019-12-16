@@ -4,8 +4,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo"; 
 import LineTo from 'react-lineto';
 
-import test from "../assets/home/test.png";
-import hero from "../assets/home/bg-hero.jpg";
+import test from "../assets/home/test.png"; 
+import whatis from "../assets/home/whatis.png"; 
 
 function IndexPage() {
   return (
@@ -65,6 +65,38 @@ function IndexPage() {
                   <path fill="none" stroke="#e0301e" strokeLinejoin="miter" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="1" d="M11 1c5.523 0 10 4.477 10 10v10c0 5.523-4.477 10-10 10s-10-4.477-10-10v-10c0-5.523 4.477-10 10-10z"></path>
                   <path fill="none" stroke="#e0301e" strokeLinejoin="miter" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="1" d="M11 6c1.105 0 2 0.895 2 2v2c0 1.105-0.895 2-2 2s-2-0.895-2-2v-2c0-1.105 0.895-2 2-2z"></path>
                 </svg>  
+              </div>
+            </div>
+          </section>
+          <section className="as-home-section my-32">
+            <div className="mx-32 flex">
+              <div className="">
+                <p level="2" className="as-h2 as-type-medium mb-3">What is Astro?</p>
+                <p className="pb-4">As your voice-enabled cognitive agent, I help to simplify your work day by bringing together 300+ of the firm’s systems, saving you time and energy on administrative tasks and information searches. </p>
+                <p className="pb-4">What is Astro?</p>
+                <p className="pb-4 text-uppercase">How to communicate with Astro</p>
+                <div className="flex">
+                  <div className="text-center pr-3 border-r mr-3"> 
+                    <div className="flex mb-3">
+                      <svg className="fill-current mx-auto cursor-pointer" width="60" height="80" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">  
+                        <path fill="#e0301e" d="M12 0c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12s-12-5.373-12-12v-8c0-6.627 5.373-12 12-12z"></path>
+                        <path fill="#fff" d="M12.2 10c0.994 0 1.8 0.806 1.8 1.8v8.4c0 0.994-0.806 1.8-1.8 1.8s-1.8-0.806-1.8-1.8v-8.4c0-0.994 0.806-1.8 1.8-1.8zM7.4 12.4c0.773 0 1.4 0.627 1.4 1.4v4.8c0 0.773-0.627 1.4-1.4 1.4s-1.4-0.627-1.4-1.4v-4.8c0-0.773 0.627-1.4 1.4-1.4zM17 12.4c0.773 0 1.4 0.627 1.4 1.4v4c0 0.773-0.627 1.4-1.4 1.4s-1.4-0.627-1.4-1.4v-4c0-0.773 0.627-1.4 1.4-1.4z"></path>
+                      </svg>
+                    </div>
+                    <p className="">Voice</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-placeholder-400 px-3 h-20 mb-3 flex items-center">  
+                      <svg className="fill-current mx-auto cursor-pointer" width="30" height="30" viewBox="0 0 77 32" xmlns="http://www.w3.org/2000/svg">    
+                        <path fill="#ababab" d="M77.333 26.667v5.333h-77.333v-5.333h77.333zM56 13.333v5.333h-13.333v-5.333h13.333zM34.667 13.333v5.333h-13.333v-5.333h13.333zM13.333 13.333v5.333h-13.333v-5.333h13.333zM77.333 13.333v5.333h-13.333v-5.333h13.333zM56 0v5.333h-13.333v-5.333h13.333zM77.333 0v5.333h-13.333v-5.333h13.333zM34.667 0v5.333h-13.333v-5.333h13.333zM13.333 0v5.333h-13.333v-5.333h13.333z"></path>
+                      </svg>
+                    </div>
+                    <p className="">Text</p>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <img data-src={whatis} className="lazyload inline-block" width="375" alt="" /> 
               </div>
             </div>
           </section>
