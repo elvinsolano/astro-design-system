@@ -170,7 +170,7 @@ function ComponentsCardsCircleGraphPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up the circle graph card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-              <img data-src={detailsCircleGraphCard1} className="lazyload " width="594" alt="Cards Circle Graph Details" />
+              <img data-src={detailsCircleGraphCard1} className="lazyload " width="375" alt="Cards Circle Graph Details" />
             </div> 
             <div className="mb-6">
               <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>

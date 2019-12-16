@@ -201,7 +201,7 @@ function ComponentsCardsSlidingCardsPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-              <img data-src={detailsSwipingCardsCard1} className="lazyload " width="594" alt="Cards Sliding Cards Details" />
+              <img data-src={detailsSwipingCardsCard1} className="lazyload " width="375" alt="Cards Sliding Cards Details" />
             </div> 
 
           </section>  

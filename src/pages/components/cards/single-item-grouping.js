@@ -185,7 +185,7 @@ function ComponentsCardsSingleItemGroupingPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a single-item card with grouping.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsSingleItemGroupingCard1} className="lazyload " width="597" alt="Cards Single Item Grouping Details" />
+              <img data-src={detailsSingleItemGroupingCard1} className="lazyload " width="375" alt="Cards Single Item Grouping Details" />
             </div> 
             <div className="mb-6">
               <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>

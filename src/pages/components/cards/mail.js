@@ -180,7 +180,7 @@ function ComponentsCardsMailPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a mail card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-              <img data-src={detailsMailCard1} className="lazyload " width="597" alt="Cards Mail Details" />
+              <img data-src={detailsMailCard1} className="lazyload " width="375" alt="Cards Mail Details" />
             </div> 
             <div className="mb-6">
               <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Body</span> </p>

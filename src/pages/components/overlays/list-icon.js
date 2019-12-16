@@ -159,8 +159,8 @@ function ComponentsOverlaysListIconPage() {
             </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a list with icons overlay.</p>
-            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsListIconOverlay1} className="lazyload " width="688" alt="Overlays List With Icon Details" />
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
+              <img data-src={detailsListIconOverlay1} className="lazyload " width="375" alt="Overlays List With Icon Details" />
             </div> 
             <div className="mb-6">
               <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Overlay Header</span> </p>

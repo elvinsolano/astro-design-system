@@ -181,7 +181,7 @@ function ComponentsCardsTwoColumnPage() {
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a two-column card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-              <img data-src={detailsTwoColumnCard1} className="lazyload " width="597" alt="Cards Two Column Details" />
+              <img data-src={detailsTwoColumnCard1} className="lazyload " width="375" alt="Cards Two Column Details" />
             </div> 
             <div className="mb-6">
               <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>

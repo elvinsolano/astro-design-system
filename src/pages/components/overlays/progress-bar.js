@@ -165,8 +165,8 @@ function ComponentsOverlaysProgressBarPage() {
             </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up an overlay for a progress bar card.</p>
-            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsProgressBarOverlay1} className="lazyload " width="683" alt="Overlays Progress Bar Details" />
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
+              <img data-src={detailsProgressBarOverlay1} className="lazyload " width="375" alt="Overlays Progress Bar Details" />
             </div> 
             <div className="mb-6">
               <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Overlay Header</span> </p>
