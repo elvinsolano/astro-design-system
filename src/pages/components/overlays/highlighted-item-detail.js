@@ -102,7 +102,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
           <section id="ui-examples" name="ui-examples" className="as-section"> 
             <p className="mb-4 text-greyStatus-600 tracking-wider">The highlighted item and detail overlay displays information in a clear and simple hierarchical order. They have information which is composed of a focused item that contains a subset of detail. They can contain elements including text, data, images, badges and links.</p>
             <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
-            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
+            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-center">
               <li className="flex mb-3">
                 <div className="as-guidance">
                   <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -152,7 +152,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
               </TabList>
           
               <TabPanel>                  
-                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesHighlightedItemDetailOverlay1} className="lazyload " width="335" alt="Overlays Highlighted Item Details UI Examples" />
                 </div> 
               </TabPanel> 
@@ -305,7 +305,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
               </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingHighlightedItemDetailOverlay1} className="lazyload " width="393" alt="Overlays Highlighted Item Details Padding" />
             </div> 
           </section>       
