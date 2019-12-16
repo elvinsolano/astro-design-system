@@ -618,25 +618,25 @@ function DesignIconsPage() {
               <p className="mb-5 text-greyStatus-600 tracking-wider">Icons to be used within the context of Astro's user onboarding process.</p>
               <div className="flex flex-wrap -mx-5">   
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding1} className="lazyload" width="30" alt="Icons Onboarding Mic 1" />
                   </div>
                   <p className="text-sm text-greyStatus-600">mic-1</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding2} className="lazyload" width="30" alt="Icons Onboarding Salesforce 1" />
                   </div>
                   <p className="text-sm text-greyStatus-600">salesforce-1</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding3} className="lazyload" width="30" alt="Icons Onboarding Notifications 1" />
                   </div>
                   <p className="text-sm text-greyStatus-600">notifications-1</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding4} className="lazyload" width="30" alt="Icons Onboarding G Suite 1" />
                   </div>
                   <p className="text-sm text-greyStatus-600">gsuite-1</p>
