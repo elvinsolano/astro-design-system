@@ -1,12 +1,11 @@
 import React, { Component, useState } from "react"; 
 import Scrollspy from 'react-scrollspy';  
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import {Link} from 'gatsby';  
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import {Link} from 'gatsby';
 import 'lazysizes';
 
 import Layout from "../components/layout";
-import SEO from "../components/seo"; 
+import SEO from "../components/seo";
 import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../components/atoms/heading';
 import Download from "../components/download";
