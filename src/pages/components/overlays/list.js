@@ -94,7 +94,7 @@ function ComponentsOverlaysListPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">List</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">List Card</Heading>
             <Download />
           </div> 
 

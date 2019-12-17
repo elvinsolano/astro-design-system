@@ -212,7 +212,7 @@ function ComponentsPopoversGeneralPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always in an enabled state.</p>
+                    <p className="text-sm text-greyStatus-600">Always in an enabled state</p>
                   </div>              
                 </li>  
               </ol> 

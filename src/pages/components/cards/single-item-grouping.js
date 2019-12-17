@@ -17,9 +17,9 @@ import uiexamplesSingleItemGroupingCard3 from "../../../assets/components/cards/
 import detailsSingleItemGroupingCard1 from "../../../assets/components/cards/Single Item w- Grouping Card/Details/Single Item with Grouping Card Detail.png";
 import paddingSingleItemGroupingCard1 from "../../../assets/components/cards/Single Item w- Grouping Card/Padding/Single Item with Grouping Card Padding.png"; 
 
-import guidance1 from "../../../assets/components/cards/Single Item Card/Guidance/01 Guidance.png";
-import guidance2 from "../../../assets/components/cards/Single Item Card/Guidance/02 Guidance.png";
-import guidance3 from "../../../assets/components/cards/Single Item Card/Guidance/03 Guidance.png"; 
+import guidance1 from "../../../assets/components/cards/Single Item w- Grouping Card/Guidance/01 Guidance.png";
+import guidance2 from "../../../assets/components/cards/Single Item w- Grouping Card/Guidance/02 Guidance.png";
+import guidance3 from "../../../assets/components/cards/Single Item w- Grouping Card/Guidance/03 Guidance.png"; 
 
 function ComponentsCardsSingleItemGroupingPage() { 
 
@@ -46,7 +46,7 @@ function ComponentsCardsSingleItemGroupingPage() {
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full font-semibold bg-grey-300">Cards</div></li> 
             <li><Link to="components/cards/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li>  
-            <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Single item with Grouping</Link>
+            <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Single Item with Grouping</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="components/cards/single-item-grouping#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/single-item-grouping#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
@@ -92,12 +92,12 @@ function ComponentsCardsSingleItemGroupingPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Single Item Cards with Grouping</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Single Item with Grouping Card</Heading>
             <Download />
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Single item cards with grouping are used to present information about one topic with multiple data points. There's an unlimited number of groups for the body. Each group can contain a maximum of 8 subtitles.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Single item with grouping cards are used to present a topic that may consist of multiple categories of related information.</p>
             <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
             <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
               <li className="flex mb-3">
@@ -115,6 +115,14 @@ function ComponentsCardsSingleItemGroupingPage() {
                   </svg>  
                 </div>
                 <p className="text-greyStatus-600 ml-3">You have separate kinds of data related to 1 topic.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You are only displaying text.</p>
               </li> 
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -168,7 +176,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingSingleItemGroupingCard1} className="lazyload " width="365" alt="Cards Single Item Grouping Padding" />
             </div> 
@@ -183,8 +191,8 @@ function ComponentsCardsSingleItemGroupingPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a single-item card with grouping.</p>
-            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refer to elements that makes up a single item with grouping card</p>
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsSingleItemGroupingCard1} className="lazyload " width="375" alt="Cards Single Item Grouping Details" />
             </div> 
             <div className="mb-6">
@@ -224,7 +232,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Must contain at least 2 groups of information.</p>
+                    <p className="text-sm text-greyStatus-600">Must contain at least 2 groups of information</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -232,7 +240,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <span className="as-type-medium">divider line</span>.</p>
+                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <Link to="../elements/dividers" className="inline text-sm text-status-100 hover:text-red-900 underline">divider line</Link></p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -240,7 +248,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Groups can consist of Body Title Content or Body Subtitle Content. Body Titles' maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Groups can consist of Body Title Content or Body Subtitle Content. Body Titles' maximum length is two lines. If they exceed that, use an ellipsis</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -248,7 +256,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -256,7 +264,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -264,7 +272,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link</p>
                   </div>              
                 </li>  
               </ol> 
@@ -277,7 +285,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -285,7 +293,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li> 
               </ol> 
@@ -298,7 +306,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details.</p>
+                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -306,7 +314,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10)</p>
                   </div>              
                 </li> 
               </ol> 
@@ -319,7 +327,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -327,7 +335,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist</p>
                   </div>              
                 </li> 
               </ol> 
@@ -340,7 +348,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -348,7 +356,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -356,7 +364,7 @@ function ComponentsCardsSingleItemGroupingPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link></p>
                   </div>              
                 </li> 
               </ol> 
@@ -374,7 +382,7 @@ function ComponentsCardsSingleItemGroupingPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for single item cards with grouping to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for single item with grouping cards to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />

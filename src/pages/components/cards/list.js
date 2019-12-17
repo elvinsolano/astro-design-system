@@ -51,7 +51,7 @@ function ComponentsCardsListPage() {
             <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
             <li><Link to="components/cards/list" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">List</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -94,12 +94,12 @@ function ComponentsCardsListPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">List</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">List Card</Heading>
             <Download />
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Lists contain repetitive data points grouped together.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">List cards contain repetitive data points grouped together.</p>
             <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
             <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
               <li className="flex mb-3">
@@ -108,15 +108,7 @@ function ComponentsCardsListPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have multiple items.</p>
-              </li>
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">You have data that is distinct but similarly organized.</p>
+                <p className="text-greyStatus-600 ml-3">You have repeating data points for different items. (E.g., invoice amount, status, and due date for different invoices).</p>
               </li> 
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -125,6 +117,14 @@ function ComponentsCardsListPage() {
                   </svg>  
                 </div>
                 <p className="text-greyStatus-600 ml-3">Your user needs to compare different information.</p>
+              </li> 
+              <li className="flex mb-3">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You are only displaying text.</p>
               </li> 
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -143,7 +143,7 @@ function ComponentsCardsListPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">How lists are expressed as part of the UI.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How list cards are expressed as part of the UI.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab>
@@ -178,7 +178,7 @@ function ComponentsCardsListPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingListCard1} className="lazyload " width="365" alt="Cards List Padding" />
             </div> 
@@ -193,7 +193,7 @@ function ComponentsCardsListPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a list.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refers to elements that make up a list card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsListCard1} className="lazyload " width="375" alt="Cards List Details" />
             </div> 
@@ -205,7 +205,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -213,7 +213,7 @@ function ComponentsCardsListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -221,7 +221,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol> 
@@ -234,7 +234,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Minimum requirement is body content.</p>
+                    <p className="text-sm text-greyStatus-600">Minimum requirement is body content</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -242,7 +242,7 @@ function ComponentsCardsListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">A new row is indicated by a <span className="as-type-medium">divider line</span>.</p>
+                    <p className="text-sm text-greyStatus-600">A new row is indicated by a <Link to="../elements/dividers" className="inline text-sm text-status-100 hover:text-red-900 underline">divider line</Link></p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -250,7 +250,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">There is no limit to the number of rows.</p>
+                    <p className="text-sm text-greyStatus-600">There is no limit to the number of rows</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -258,7 +258,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Groups can be made of Body Title Content and/or Body Subtitle Content.</p>
+                    <p className="text-sm text-greyStatus-600">Groups can be made of Body Title Content and/or Body Subtitle Content</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -266,7 +266,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -274,7 +274,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -282,7 +282,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -290,7 +290,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link</p>
                   </div>              
                 </li>  
               </ol> 
@@ -303,7 +303,7 @@ function ComponentsCardsListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Defines relationships with content in a list horizontally.</p>
+                    <p className="text-sm text-greyStatus-600">Defines relationships with content in a list horizontally</p>
                   </div>              
                 </li> 
               </ol> 
@@ -316,7 +316,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -324,7 +324,7 @@ function ComponentsCardsListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li> 
               </ol> 
@@ -337,7 +337,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details.</p>
+                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -345,7 +345,7 @@ function ComponentsCardsListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10)</p>
                   </div>              
                 </li> 
               </ol> 
@@ -358,7 +358,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -366,7 +366,7 @@ function ComponentsCardsListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist</p>
                   </div>              
                 </li> 
               </ol> 
@@ -379,7 +379,7 @@ function ComponentsCardsListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a list row contains 2 or fewer elements, display 6 rows and then show "View More".</p>
+                    <p className="text-sm text-greyStatus-600">If a list row contains 2 or fewer elements, display 6 rows and then show "View More"</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -387,7 +387,7 @@ function ComponentsCardsListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a list row contains 3 or more elements, display 3 rows and then show "View More".</p>
+                    <p className="text-sm text-greyStatus-600">If a list row contains 3 or more elements, display 3 rows and then show "View More"</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -395,7 +395,7 @@ function ComponentsCardsListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -403,7 +403,7 @@ function ComponentsCardsListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/list" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/list" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link></p>
                   </div>              
                 </li> 
               </ol> 

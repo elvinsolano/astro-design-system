@@ -54,7 +54,7 @@ function ComponentsCardsSingleItemPage() {
                 <li><Link to="components/cards/single-item#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
               </Scrollspy>    
             </li>  
-            <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single item with Grouping</Link></li>
+            <li><Link to="components/cards/single-item-grouping" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item with Grouping</Link></li>
             <li><Link to="components/cards/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
             <li><Link to="components/cards/grouped-lists" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Grouped Lists</Link></li>
             <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Column</Link></li>
@@ -93,7 +93,7 @@ function ComponentsCardsSingleItemPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Single Item Cards</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Single Item Card</Heading>
             <Download />
           </div> 
 
@@ -107,7 +107,7 @@ function ComponentsCardsSingleItemPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have data on 1 topic.</p>
+                <p className="text-greyStatus-600 ml-3">You have less than 8 data points.</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -115,7 +115,7 @@ function ComponentsCardsSingleItemPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have less than 8 data points.</p>
+                <p className="text-greyStatus-600 ml-3">You have data on 1 topic.</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -131,7 +131,7 @@ function ComponentsCardsSingleItemPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">Can be displayed as a <Link to="components/cards/single-item-grouping" className="inline text-status-100 hover:text-red-900 underline">Single Item with Grouping</Link>.</p>
+                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
               </li>  
             </ul>
             
@@ -151,12 +151,12 @@ function ComponentsCardsSingleItemPage() {
               </TabList>
            
               <TabPanel>
-                <div className="h-355 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
+                <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesSingleItemCard2} className="lazyload " width="335" />
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="h-355 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
+                <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesSingleItemCard3} className="lazyload " width="335" />
                 </div>
               </TabPanel>
@@ -172,7 +172,7 @@ function ComponentsCardsSingleItemPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingSingleItemCard1} className="lazyload " width="363" />
             </div> 
@@ -187,7 +187,7 @@ function ComponentsCardsSingleItemPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refer to elements that make up the card surface areas.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsSingleItemCard1} className="lazyload " width="375" />
             </div> 
@@ -364,7 +364,7 @@ function ComponentsCardsSingleItemPage() {
 
           </section>             
            
-          <section id="guidance" name="guidance" className="as-section mb-16">
+          <section id="guidance" name="guidance" className="as-section mb-32">
             <span id="guidance-anchor" className="page-anchor"></span>
 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
@@ -375,7 +375,7 @@ function ComponentsCardsSingleItemPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for single cards to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for single item cards to adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
