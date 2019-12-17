@@ -11,11 +11,11 @@ import Heading from '../components/atoms/heading';
 import Download from "../components/download";
 
 import ctaBoard1 from "../assets/content/Call to Action/01 Board of Directors/01 Board of Directors.png"; 
-import ctaBoard2 from "../assets/content/Call To Action/01 Board of Directors/02 Board of Directors.png"; 
-import ctaSalesforce1 from "../assets/content/Call To Action/02 Salesforce/01 Salesforce.png"; 
-import ctaSalesforce2 from "../assets/content/Call To Action/02 Salesforce/02 Salesforce.png"; 
-import ctaTaskList1 from "../assets/content/Call To Action/03 Task List/01 Remind.png"; 
-import ctaTaskList2 from "../assets/content/Call To Action/03 Task List/02 Remind.png"; 
+import ctaBoard2 from "../assets/content/Call to Action/01 Board of Directors/02 Board of Directors.png"; 
+import ctaSalesforce1 from "../assets/content/Call to Action/02 Salesforce/01 Salesforce.png"; 
+import ctaSalesforce2 from "../assets/content/Call to Action/02 Salesforce/02 Salesforce.png"; 
+import ctaTaskList1 from "../assets/content/Call to Action/03 Task List/01 Remind.png"; 
+import ctaTaskList2 from "../assets/content/Call to Action/03 Task List/02 Remind.png"; 
 
 import nudgesConversational1 from "../assets/content/Nudges/Conversational/Conversational.png";
 import nudgesNudge1 from "../assets/content/Nudges/Nudge/Nudge.png";
