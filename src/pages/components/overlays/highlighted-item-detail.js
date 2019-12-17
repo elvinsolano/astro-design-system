@@ -100,7 +100,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
             <p className="mb-4 text-greyStatus-600 tracking-wider">The highlighted item and detail overlay displays information in a clear and simple hierarchical order. They have information which is composed of a focused item that contains a subset of detail. They can contain elements including text, data, images, badges and links.</p>
-            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this overlay if:</p>
             <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-center">
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -208,7 +208,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">X:  Use to leave overlay.</p>
+                    <p className="text-sm text-greyStatus-600">X - Use to leave overlay.</p>
                   </div>              
                 </li>
                 <li className="text-sm">

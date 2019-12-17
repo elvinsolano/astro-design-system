@@ -97,7 +97,7 @@ function ComponentsOverlaysProgressBarPage() {
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
             <p className="mb-4 text-greyStatus-600 tracking-wider">The progress bar overlay helps display milestones and progress updates. It also includes a graph that visually displays a horizontal increase or decrease.</p>
-            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this overlay if:</p>
             <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-center">
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -205,7 +205,7 @@ function ComponentsOverlaysProgressBarPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">X:  Use to leave overlay.</p>
+                    <p className="text-sm text-greyStatus-600">X - Use to leave overlay.</p>
                   </div>              
                 </li>
                 <li className="text-sm">

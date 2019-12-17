@@ -69,10 +69,11 @@ function ComponentsPopoversExternalPage() {
           <ul className="">
             <li><div className="block text-white uppercase text-sm w-full bg-grey-300">Popovers</div></li>
             <li><Link to="components/popovers/external" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">External</Link>
-              <Scrollspy items={ ['ui-examples', 'details', 'padding'] } offset={-80} className="block" currentClassName="is-current">
+              <Scrollspy items={ ['ui-examples', 'details', 'padding', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
                 <li><Link to="components/popovers/external#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
                 <li><Link to="components/popovers/external#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/popovers/external#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
+                <li><Link to="components/popovers/external#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
               </Scrollspy>    
             </li>   
             <li><Link to="components/popovers/general" className="block text-sm text-grey-400 w-full hover:bg-grey-100">General</Link></li> 
@@ -86,20 +87,22 @@ function ComponentsPopoversExternalPage() {
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
             <Heading level="1" className="as-h1 as-type-medium">External</Heading>
-            <div className="flex items-center">
-              <p className="uppercase text-grey-400 text-xs mr-4">Updated 11/25/19</p>
-              <button className="bg-white text-red-600 text-sm as-type-medium border rounded-full border-red-600 border-solid px-4 py-2">
-                <svg className="fill-current inline-block mr-1 cursor-pointer" width="13" height="10" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#e0301e" d="M11.636 26.182l-11.636-14.545h23.273z"></path>
-                  <path fill="#e0301e" d="M5.818 0h11.636v14.545h-11.636v-14.545z"></path>
-                  <path fill="#e0301e" d="M0 29.091h23.273v2.909h-23.273v-2.909z"></path>  
-                </svg> 
-                Sketch File
-              </button>
-            </div>
+            <Download />
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
+            <p className="mb-4 text-greyStatus-600 tracking-wider">External popovers are interactive screens designed to “pop up” in order to manage the handoff of a user within Astro to an experience outside of the app.</p>
+            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this popover if:</p>
+            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-center">
+              <li className="flex">
+                <div className="as-guidance">
+                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                  </svg>  
+                </div>
+                <p className="text-greyStatus-600 ml-3">You are taking the user out of the app.</p>
+              </li> 
+            </ul>
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
@@ -108,7 +111,7 @@ function ComponentsPopoversExternalPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Popovers are interactive screens designed to “pop up” in order to manage the handoff between the user’s experience within Astro to an experience outside of the app.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How external popovers are expressed as part of the UI.</p>
             <Tabs>
               <TabList> 
                 <Tab>01</Tab> 
@@ -132,9 +135,122 @@ function ComponentsPopoversExternalPage() {
             </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The popover details refer to elements that make up the popover surface areas.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img data-src={detailsExternal1} className="lazyload " width="498" />
             </div> 
+            <div className="mb-6">
+              <p className="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Popover Body</span> </p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Must always have Body Subtitle content</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle content can include a link</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Must always have a button</p>
+                  </div>              
+                </li>  
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Must always have the exit icon</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div>
+            <div className="mb-6">
+              <p className="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">External Icon</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Required component</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">The popover can only have one External Icon</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div> 
+            <div className="mb-6">
+              <p className="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Checkbox Label</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Required component</p>
+                  </div>              
+                </li>  
+              </ol> 
+            </div>   
+            <div className="mb-6">
+              <p className="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Primary Enabled</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Required component</p>
+                  </div>              
+                </li> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Always in an enabled state</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div>  
+            <div className="mb-6">
+              <p className="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Text Button</span></p>
+              <ol className="ml-3">
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Optional component</p>
+                  </div>              
+                </li> 
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Use as a secondary call to action. For example - "Not now"</p>
+                  </div>              
+                </li> 
+              </ol> 
+            </div>  
           </section>             
 
           <section id="padding" name="padding" className="mb-24"> 
@@ -150,7 +266,44 @@ function ComponentsPopoversExternalPage() {
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
               <img data-src={paddingExternal1} className="lazyload " width="375" />
             </div> 
-          </section>             
+          </section>     
+
+          <section id="guidance" name="guidance" className="as-section mb-16">
+            <span id="guidance-anchor" className="page-anchor"></span>
+
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
+              <CopyToClipboard text={'http://localhost:8000/design/typography#guidance-anchor'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading> 
+
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Below is a list of guidelines for an external popver to adhere to.</p>
+            <div className="flex flex-col -mx-4">  
+              <div className="w-full px-4 mb-4"> 
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not navigate between cards using an exit popover. Only use this popover to leave the app. Use <Link to="components/popovers/general" className="inline text-sm text-status-100 hover:text-red-900 underline">General Popovers</Link> to navigate within the app.</p>
+                </div>
+              </div> 
+              <div className="w-full px-4">  
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do use this popover when notifying the user that they will leave the app.</p>
+                </div>
+              </div> 
+
+            </div> 
+          </section>                     
         </main>
       </div>
     </Layout>

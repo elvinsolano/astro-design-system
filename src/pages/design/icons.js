@@ -642,79 +642,79 @@ function DesignIconsPage() {
                   <p className="text-sm text-greyStatus-600">gsuite-1</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding5} className="lazyload" width="30" alt="Icons Onboarding Mic 2" />
                   </div>
                   <p className="text-sm text-greyStatus-600">mic-2</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding6} className="lazyload" width="30" alt="Icons Onboarding Salesforce 2" />
                   </div>
                   <p className="text-sm text-greyStatus-600">salesforce-2</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding7} className="lazyload" width="30" alt="Icons Onboarding Notifications 2" />
                   </div>
                   <p className="text-sm text-greyStatus-600">notifications-2</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding8} className="lazyload" width="30" alt="Icons Onboarding G Suite 2" />
                   </div>
                   <p className="text-sm text-greyStatus-600">gsuite-2</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding9} className="lazyload" width="30" alt="Icons Onboarding Mic 3" />
                   </div>
                   <p className="text-sm text-greyStatus-600">mic-3</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding10} className="lazyload" width="30" alt="Icons Onboarding Salesforce 3" />
                   </div>
                   <p className="text-sm text-greyStatus-600">salesforce-3</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding11} className="lazyload" width="30" alt="Icons Onboarding Notifications 3" />
                   </div>
                   <p className="text-sm text-greyStatus-600">notifications-3</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding12} className="lazyload" width="30" alt="Icons Onboarding G Suite 3" />
                   </div>
                   <p className="text-sm text-greyStatus-600">gsuite-3</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding13} className="lazyload" width="30" alt="Icons Onboarding Privacy" />
                   </div>
                   <p className="text-sm text-greyStatus-600">privacy</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding14} className="lazyload" width="30" alt="Icons Onboarding Chevron" />
                   </div>
                   <p className="text-sm text-greyStatus-600">chevron</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding15} className="lazyload" width="30" alt="Icons Onboarding Activities" />
                   </div>
                   <p className="text-sm text-greyStatus-600">activities</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding16} className="lazyload" width="30" alt="Icons Onboarding Discover" />
                   </div>
                   <p className="text-sm text-greyStatus-600">discover</p>
                 </div> 
                 <div className="px-5 mb-5"> 
-                  <div className="bg-placeholder-300 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
+                  <div className="bg-placeholder-400 as-icon h-24 flex flex-wrap items-center justify-center mb-3">
                     <img data-src={typesOnboarding17} className="lazyload" width="30" alt="Icons Onboarding Nudges" />
                   </div>
                   <p className="text-sm text-greyStatus-600">nudges</p>

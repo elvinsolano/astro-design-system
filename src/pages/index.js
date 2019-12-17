@@ -4,10 +4,15 @@ import Layout from "../components/layout";
 import SEO from "../components/seo"; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import LineTo from 'react-lineto';
-
+ 
 import test from "../assets/home/test.png"; 
 import whatis from "../assets/home/whatis.png"; 
-import designsystem from "../assets/home/designsystem.png"; 
+import designsystem from "../assets/home/ds illustration.png"; 
+
+import worksStep1 from "../assets/home/define task.png";
+import worksStep2 from "../assets/home/billing goal.png";
+import worksStep3 from "../assets/home/create-compon.png";
+import worksStep4 from "../assets/home/apply-component.png";
 
 function IndexPage() {
   return (
@@ -75,7 +80,7 @@ function IndexPage() {
               <div className="w-1/2">
                 <p level="2" className="as-h2 as-type-medium mb-3">What is Astro?</p>
                 <p className="pb-12">As your voice-enabled cognitive agent, I help to simplify your work day by bringing together 300+ of the firm’s systems, saving you time and energy on administrative tasks and information searches. </p> 
-                <p className="pb-4 text-sm uppercase">How to communicate with Astro</p>
+                <p className="pb-4 text-sm uppercase text-greyStatus-600">How to communicate with Astro</p>
                 <div className="flex">
                   <div className="">
                     <div className="flex mb-4 pr-8 border-r border-gray-300 mr-8">
@@ -273,6 +278,7 @@ function IndexPage() {
                   <path fill="#e0301e" d="M0.19 29.311l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
                   <path fill="#e0301e" d="M0.19 31.9l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
                 </svg>
+                <div className=""></div>
               </div> 
             </div>
           </section>
@@ -358,44 +364,44 @@ function IndexPage() {
                 <p className="pb-12">Anyone can and should use this resource when designing future components of Astro to ensure consistency and uniformity of the product in look, feel, and overall scope.</p>
               </div>
             </div>
-            <div className="mx-32 flex justify-center items-start">            
+            <div className="mx-32 mb-32 flex justify-center items-start">            
               <div className="w-1/2">
-                <p level="2" className="text-sm uppercase mb-3">Step 1</p>
+                <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 1</p>
                 <p level="2" className="as-h2 as-type-medium mb-3">Define Task or Objective</p>
                 <p className="pb-12">We start with clearly identifying the desired business or user objective. Once defined, we strategically research relevant data points and formulate content to best satisfy that goal.</p>
               </div>
-              <div className="w-1/2 pl-10">
-                <img data-src={designsystem} className="lazyload inline-block" width="490" alt="" /> 
+              <div className="w-1/2 pl-10 text-center">
+                <img data-src={worksStep1} className="lazyload inline-block" width="458" alt="" /> 
               </div>  
             </div>
-            <div className="mx-32 flex justify-center items-start">            
+            <div className="mx-32 mb-32 flex justify-center items-start">            
               <div className="w-1/2">
-                <p level="2" className="text-sm uppercase mb-3">Step 2</p>
+                <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 2</p>
                 <p level="2" className="as-h2 as-type-medium mb-3">Solve through Design</p>
                 <p className="pb-12">Once the strategy and content are agreed upon, design focuses on how to best present this information clearly and precisely via wireframe format. Design also ensures this effort is consistent with the Astro Design System.</p>
               </div>
-              <div className="w-1/2 pl-10">
-                <img data-src={designsystem} className="lazyload inline-block" width="490" alt="" /> 
+              <div className="w-1/2 pl-10 text-center">
+                <img data-src={worksStep2} className="lazyload inline-block" width="411" alt="" /> 
               </div>  
             </div>
-            <div className="mx-32 flex justify-center items-start">            
+            <div className="mx-32 mb-32 flex justify-center items-start">            
               <div className="w-1/2">
-                <p level="2" className="text-sm uppercase mb-3">Step 3</p>
+                <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 3</p>
                 <p level="2" className="as-h2 as-type-medium mb-3">Create Component</p>
                 <p className="pb-12">Wireframe complete, we now leverage the visual design system to refine this structured information component. This phase integrates brand elements into the component such as color, typography and icons to give the entire experience a consistent look and feel.</p>
               </div>
-              <div className="w-1/2 pl-10">
-                <img data-src={designsystem} className="lazyload inline-block" width="490" alt="" /> 
+              <div className="w-1/2 pl-10 text-center">
+                <img data-src={worksStep3} className="lazyload inline-block" width="337" alt="" /> 
               </div>  
             </div>
             <div className="mx-32 flex justify-center items-start">            
               <div className="w-1/2">
-                <p level="2" className="text-sm uppercase mb-3">Step 4</p>
+                <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 4</p>
                 <p level="2" className="as-h2 as-type-medium mb-3">Apply Component</p>
                 <p className="pb-12">Once a component is complete, we then use it within Astro's application framework. This process brings the component to life with full functionality.</p>
               </div>
               <div className="w-1/2 pl-10">
-                <img data-src={designsystem} className="lazyload inline-block" width="490" alt="" /> 
+                <img data-src={worksStep4} className="lazyload inline-block" width="621" alt="" /> 
               </div>  
             </div>
           </section>
