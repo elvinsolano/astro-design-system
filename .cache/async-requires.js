@@ -35,6 +35,7 @@ exports.components = {
   "component---src-pages-components-overlays-two-columns-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/two-columns.js" /* webpackChunkName: "component---src-pages-components-overlays-two-columns-js" */),
   "component---src-pages-components-popovers-external-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/popovers/external.js" /* webpackChunkName: "component---src-pages-components-popovers-external-js" */),
   "component---src-pages-components-popovers-general-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/popovers/general.js" /* webpackChunkName: "component---src-pages-components-popovers-general-js" */),
+  "component---src-pages-content-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/content.js" /* webpackChunkName: "component---src-pages-content-js" */),
   "component---src-pages-content-guidelines-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/content/guidelines.js" /* webpackChunkName: "component---src-pages-content-guidelines-js" */),
   "component---src-pages-content-intro-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/content/intro.js" /* webpackChunkName: "component---src-pages-content-intro-js" */),
   "component---src-pages-content-vocabulary-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/content/vocabulary.js" /* webpackChunkName: "component---src-pages-content-vocabulary-js" */),
@@ -58,7 +59,6 @@ exports.components = {
   "component---src-pages-elements-form-fields-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/elements/form-fields.js" /* webpackChunkName: "component---src-pages-elements-form-fields-js" */),
   "component---src-pages-elements-loaders-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/elements/loaders.js" /* webpackChunkName: "component---src-pages-elements-loaders-js" */),
   "component---src-pages-index-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
-  "component---src-pages-landing-login-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/landing-login.js" /* webpackChunkName: "component---src-pages-landing-login-js" */),
-  "component---src-pages-content-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/content.js" /* webpackChunkName: "component---src-pages-content-js" */)
+  "component---src-pages-landing-login-js": () => import("/Users/esolano002/dev/netlify/astro-design-system/src/pages/landing-login.js" /* webpackChunkName: "component---src-pages-landing-login-js" */)
 }
 
