@@ -11,7 +11,7 @@ import { Row, Col, Button } from 'tailwind-react-ui';
 import Heading from '../components/atoms/heading';
 import Download from "../components/download";
 
-import ctaBoard1 from "../assets/content/Call To Action/01 Board of Directors/01 Board of Directors.png"; 
+import ctaBoard1 from "../assets/content/Call to Action/01 Board of Directors/01 Board of Directors.png"; 
 import ctaBoard2 from "../assets/content/Call To Action/01 Board of Directors/02 Board of Directors.png"; 
 import ctaSalesforce1 from "../assets/content/Call To Action/02 Salesforce/01 Salesforce.png"; 
 import ctaSalesforce2 from "../assets/content/Call To Action/02 Salesforce/02 Salesforce.png"; 

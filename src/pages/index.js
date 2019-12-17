@@ -14,7 +14,7 @@ function IndexPage() {
     <Layout>
       <SEO
         title="Home"
-        keywords={[`ServCo`, `GenWorth`]}
+        keywords={[``, ``]}
       /> 
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className="as-home">
