@@ -4,7 +4,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo"; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import LineTo from 'react-lineto';
- 
+import 'lazysizes';
+
 import test from "../assets/home/test.png"; 
 import whatis from "../assets/home/whatis.png"; 
 import designsystem from "../assets/home/ds illustration.png"; 
