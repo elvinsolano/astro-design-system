@@ -44,15 +44,16 @@ function Header({ siteTitle }) {
                 isExpanded ? `block` : `hidden`
               } md:block md:flex md:items-center w-full md:w-auto`}
             >
-              <div className="text-sm text-grey-600">
-                {/* <Link
+              <div className="text-sm text-grey-600"> 
+
+                <Link
                   to="/content"
-                  className="as-header-link block md:inline-block mt-6 md:mt-0 no-underline"
+                  className="as-header-link block md:inline-block border-b-5 border-transparent mt-6 md:mt-0 no-underline hover:text-white"
                   activeClassName="as-header-link-active text-white border-b-5 border-red-600 border-solid as-type-medium"
-                  partiallyActive
+                  partiallyActive={true}
                 >
                   Content
-                </Link> */}
+                </Link>
 
                 <Link
                   to="/design"

@@ -574,4 +574,13 @@ aside nav ul li a:active {
   left: 300px;  
 } 
 
+.as-home-background {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 /* borderColor="#5A130C" */
