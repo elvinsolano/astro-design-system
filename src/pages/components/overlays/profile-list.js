@@ -211,7 +211,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">&greaterthan; - Only use back arrow on a second overlay screen.</p>
+                    <p className="text-sm text-greyStatus-600">{"<"} - Only use back arrow on a second overlay screen.</p>
                   </div>              
                 </li> 
               </ol> 
