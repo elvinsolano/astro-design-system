@@ -118,7 +118,7 @@ function ComponentsPopoversExternalPage() {
               </TabList>
            
               <TabPanel>
-                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesExternal1} className="lazyload " width="335" />
                 </div>
               </TabPanel> 
@@ -135,7 +135,7 @@ function ComponentsPopoversExternalPage() {
               </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingExternal1} className="lazyload " width="375" />
             </div> 
           </section>     
@@ -150,8 +150,8 @@ function ComponentsPopoversExternalPage() {
             </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">The popover details refer to elements that make up the popover surface areas.</p>
-            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-start">
-              <img data-src={detailsExternal1} className="lazyload " width="498" />
+            <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
+              <img data-src={detailsExternal1} className="lazyload " width="375" />
             </div> 
             <div className="mb-6">
               <p className="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Popover Body</span> </p>
