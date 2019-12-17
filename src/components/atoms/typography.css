@@ -574,6 +574,10 @@ aside nav ul li a:active {
   left: 300px;  
 } 
 
+.as-home-foreground {
+  z-index: 3;
+  position: relative;
+} 
 .as-home-background {
   position: absolute;
   overflow: hidden;
@@ -581,6 +585,18 @@ aside nav ul li a:active {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
+} 
+.home-diamond {  
+  position: absolute;
+  right: -100px;
+  top: 200px; 
+}
+.home-pattern { 
+  z-index: 1;
+  position: absolute;
+  right: 175px;
+  bottom: 55px; 
 }
 
 /* borderColor="#5A130C" */
