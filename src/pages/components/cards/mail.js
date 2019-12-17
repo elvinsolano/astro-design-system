@@ -183,7 +183,7 @@ function ComponentsCardsMailPage() {
               <img data-src={detailsMailCard1} className="lazyload " width="375" alt="Cards Mail Details" />
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Body</span> </p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Body</span> </p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">

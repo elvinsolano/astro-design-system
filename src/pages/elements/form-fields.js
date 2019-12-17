@@ -353,7 +353,7 @@ function ElementsFormFieldsPage() {
                     <img data-src={usageInputField1} className="lazyload mb-12 mr-12" width="375px" alt="Usage Input Field" /> 
                     <img data-src={usageInputField2} className="lazyload mb-12" width="375px" alt="Usage Input Field" /> 
                   </div>
-                  <div class="flex">
+                  <div className="flex">
                     <img data-src={usageInputField3} className="lazyload mr-12" width="375px" alt="Usage Input Field" /> 
                     <img data-src={usageInputField4} className="lazyload  " width="375px" alt="Usage Input Field" /> 
                   </div>

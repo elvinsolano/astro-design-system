@@ -176,7 +176,7 @@ function ComponentsCardsProfilePage() {
               <img data-src={detailsProfileCard1} className="lazyload " width="375" alt="Cards Profile Details" />
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Profile Image</span> </p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Profile Image</span> </p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -189,7 +189,7 @@ function ComponentsCardsProfilePage() {
               </ol>  
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Profile Title</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Profile Title</span></p>
               <ol className="ml-3"> 
                 <li className="text-sm">
                   <div className="flex">
@@ -202,7 +202,7 @@ function ComponentsCardsProfilePage() {
               </ol> 
             </div>            
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Profile Label</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Profile Label</span></p>
               <ol className="ml-3"> 
                 <li className="text-sm">
                   <div className="flex">
@@ -215,7 +215,7 @@ function ComponentsCardsProfilePage() {
               </ol> 
             </div>            
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Profile Subtitle</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Profile Subtitle</span></p>
               <ol className="ml-3"> 
                 <li className="text-sm">
                   <div className="flex">

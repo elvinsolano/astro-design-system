@@ -177,7 +177,7 @@ function ComponentsOverlaysGroupedListPage() {
               <img data-src={detailsGroupedListOverlay1} className="lazyload " width="375" alt="Overlays Grouped Lists Details" />
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Overlay Header</span> </p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Overlay Header</span> </p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -206,7 +206,7 @@ function ComponentsOverlaysGroupedListPage() {
               </ol> 
             </div>
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Overlay Navigation</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Overlay Navigation</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -227,7 +227,7 @@ function ComponentsOverlaysGroupedListPage() {
               </ol> 
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Overlay Body</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Overlay Body</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -296,7 +296,7 @@ function ComponentsOverlaysGroupedListPage() {
               </ol> 
             </div>  
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Badges</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Badges</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -317,7 +317,7 @@ function ComponentsOverlaysGroupedListPage() {
               </ol> 
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Arrow</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Arrow</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">

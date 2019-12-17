@@ -196,7 +196,7 @@ function ComponentsCardsSingleItemGroupingPage() {
               <img data-src={detailsSingleItemGroupingCard1} className="lazyload " width="375" alt="Cards Single Item Grouping Details" />
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>
+              <p className="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -225,7 +225,7 @@ function ComponentsCardsSingleItemGroupingPage() {
               </ol> 
             </div>
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">2. <span className="as-type-medium">Card Body</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -278,7 +278,7 @@ function ComponentsCardsSingleItemGroupingPage() {
               </ol> 
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Badges</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">3. <span className="as-type-medium">Badges</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -299,7 +299,7 @@ function ComponentsCardsSingleItemGroupingPage() {
               </ol> 
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Pagination</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">4. <span className="as-type-medium">Pagination</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -320,7 +320,7 @@ function ComponentsCardsSingleItemGroupingPage() {
               </ol> 
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Arrow</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Arrow</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
@@ -341,7 +341,7 @@ function ComponentsCardsSingleItemGroupingPage() {
               </ol> 
             </div> 
             <div className="mb-6">
-              <p class="as-type-regular text-sm text-greyStatus-600">6. <span className="as-type-medium">Text Button</span></p>
+              <p className="as-type-regular text-sm text-greyStatus-600">6. <span className="as-type-medium">Text Button</span></p>
               <ol className="ml-3">
                 <li className="text-sm">
                   <div className="flex">
