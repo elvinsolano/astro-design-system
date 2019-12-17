@@ -51,7 +51,7 @@ function ComponentsCardsTwoColumnPage() {
             <li><Link to="components/cards/grouped-lists" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Grouped Lists</Link></li>
             <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Two Column</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -92,7 +92,7 @@ function ComponentsCardsTwoColumnPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Two Column Card</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Two Column</Heading>
             <Download />
           </div> 
 
@@ -164,7 +164,7 @@ function ComponentsCardsTwoColumnPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingTwoColumnCard1} className="lazyload " width="355" alt="Cards Two Column Padding" />
             </div> 
@@ -179,7 +179,7 @@ function ComponentsCardsTwoColumnPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a two-column card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refers to elements that make up a two-column card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsTwoColumnCard1} className="lazyload " width="375" alt="Cards Two Column Details" />
             </div> 
@@ -191,7 +191,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -199,7 +199,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -207,7 +207,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol> 
@@ -220,7 +220,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <span className="as-type-medium">divider line</span>.</p>
+                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <Link to="../elements/dividers" className="inline text-sm text-status-100 hover:text-red-900 underline">divider line</Link></p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -228,7 +228,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Title Content and Body Subtitle Content have a maximum length of two lines. If either exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Body Title Content and Body Subtitle Content have a maximum length of two lines. If either exceed that, use an ellipsis</p>
                   </div>              
                 </li>   
                 <li className="text-sm">
@@ -236,7 +236,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -244,7 +244,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -252,7 +252,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link</p>
                   </div>              
                 </li>  
               </ol> 
@@ -265,7 +265,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Content in the second column is limited to 8 characters.</p>
+                    <p className="text-sm text-greyStatus-600">Content in the second column is limited to 8 characters</p>
                   </div>              
                 </li> 
               </ol> 
@@ -278,7 +278,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -286,7 +286,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li> 
               </ol> 
@@ -299,7 +299,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details.</p>
+                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -307,7 +307,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10)</p>
                   </div>              
                 </li> 
               </ol> 
@@ -320,7 +320,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -328,7 +328,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist</p>
                   </div>              
                 </li>   
               </ol> 
@@ -341,7 +341,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -349,7 +349,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -357,7 +357,7 @@ function ComponentsCardsTwoColumnPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/two-columns" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/two-columns" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link></p>
                   </div>              
                 </li> 
               </ol> 

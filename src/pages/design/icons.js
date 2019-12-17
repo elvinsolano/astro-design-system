@@ -806,6 +806,7 @@ function DesignIconsPage() {
             <div className="flex flex-wrap -mx-4 mb-12">  
 
               <div className="w-grid px-5 mb-5">
+                <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
                     <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -816,6 +817,7 @@ function DesignIconsPage() {
                 </div>
               </div>  
               <div className="w-grid px-5 mb-5">
+                <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
                     <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -826,6 +828,7 @@ function DesignIconsPage() {
                 </div>
               </div>  
               <div className="w-grid px-5 mb-5">
+                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
                     <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -836,6 +839,7 @@ function DesignIconsPage() {
                 </div>
               </div>  
               <div className="w-grid px-5 mb-5">
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
                     <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -846,6 +850,7 @@ function DesignIconsPage() {
                 </div>
               </div>  
               <div className="w-grid px-5 mb-5">
+                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
                     <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

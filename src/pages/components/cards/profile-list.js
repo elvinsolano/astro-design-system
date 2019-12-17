@@ -59,7 +59,7 @@ function ComponentsCardsProfileListPage() {
             <li><Link to="components/cards/circle-graph" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Circle Graph</Link></li>
             <li><Link to="components/cards/profile-list" className="block text-sm text-grey-400 w-full hover:bg-grey-100 bg-grey-700 font-semibold active">Profile List</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -92,7 +92,7 @@ function ComponentsCardsProfileListPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Profile List</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Profile List Card</Heading>
             <Download />
           </div> 
 
@@ -106,7 +106,7 @@ function ComponentsCardsProfileListPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have multiple profile items.</p>
+                <p className="text-greyStatus-600 ml-3">You have repeating data points for different items. (E.g., name, picture, and role for different people).</p>
               </li>              
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -114,7 +114,7 @@ function ComponentsCardsProfileListPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have data that is distinct but similarly organized.</p>
+                <p className="text-greyStatus-600 ml-3">Your user needs to compare different information.</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -122,7 +122,7 @@ function ComponentsCardsProfileListPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">Your user needs to compare different profile information.</p>
+                <p className="text-greyStatus-600 ml-3">You are only displaying text and an image.</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -130,7 +130,7 @@ function ComponentsCardsProfileListPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have information that can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
               </li>   
             </ul>   
             <span id="ui-examples-anchor" className="page-anchor"></span> 
@@ -164,7 +164,7 @@ function ComponentsCardsProfileListPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingProfileListCard1} className="lazyload " width="365" alt="Cards Profile List Padding" />
             </div> 
@@ -179,7 +179,7 @@ function ComponentsCardsProfileListPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up the profile list card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refers to elements that make up the profile list card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsProfileListCard1} className="lazyload " width="375" alt="Cards Profile List UI Details" />
             </div> 
@@ -191,7 +191,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -199,7 +199,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -207,7 +207,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol>  
@@ -220,7 +220,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">In a Profile List card, all rows of the list must have the same elements.</p>
+                    <p className="text-sm text-greyStatus-600">In a Profile List card, all rows of the list must have the same elements</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -228,7 +228,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum of 4 subtitles per list item.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum of 4 subtitles per list item</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -236,7 +236,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -244,7 +244,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -252,7 +252,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -260,7 +260,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link</p>
                   </div>              
                 </li>                 
               </ol>  
@@ -273,7 +273,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -281,7 +281,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li>  
               </ol>  
@@ -294,7 +294,7 @@ function ComponentsCardsProfileListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details.</p>
+                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -302,7 +302,7 @@ function ComponentsCardsProfileListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10)</p>
                   </div>              
                 </li>  
               </ol> 
@@ -315,7 +315,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -323,7 +323,7 @@ function ComponentsCardsProfileListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist</p>
                   </div>              
                 </li>   
               </ol> 
@@ -336,7 +336,7 @@ function ComponentsCardsProfileListPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a list row contains 2 or fewer elements, display 6 rows and then show "View More".</p>
+                    <p className="text-sm text-greyStatus-600">If a list row contains 2 or fewer elements, display 6 rows and then show "View More"</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -344,7 +344,7 @@ function ComponentsCardsProfileListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a list row contains 3 or more elements display, 3 rows and then show "View More".</p>
+                    <p className="text-sm text-greyStatus-600">If a list row contains 3 or more elements display, 3 rows and then show "View More"</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -352,7 +352,7 @@ function ComponentsCardsProfileListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -360,7 +360,7 @@ function ComponentsCardsProfileListPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link> </p>
                   </div>              
                 </li> 
               </ol> 
@@ -432,9 +432,9 @@ function ComponentsCardsProfileListPage() {
                 <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 3" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do replace an avatar with an initial image if the user has no available profile image.</p>
                 </div>                 

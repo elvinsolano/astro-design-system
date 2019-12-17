@@ -52,7 +52,7 @@ function ComponentsCardsMailPage() {
             <li><Link to="components/cards/two-column" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Two Column</Link></li>
             <li><Link to="components/cards/mail" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Mail</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>                
@@ -91,7 +91,7 @@ function ComponentsCardsMailPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Mail</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Mail Card</Heading>
             <Download />
           </div> 
 
@@ -105,7 +105,7 @@ function ComponentsCardsMailPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have one item that needs two titles (E.g., "To" and "From").</p>
+                <p className="text-greyStatus-600 ml-3">You have data about one topic with two equally important data points (E.g., “To” and “From”).</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -113,7 +113,7 @@ function ComponentsCardsMailPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">The body text is lengthy. Mail Card body length is unlimited.</p>
+                <p className="text-greyStatus-600 ml-3">You have long data to be displayed. Mail Card body length is unlimited.</p>
               </li> 
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -121,7 +121,7 @@ function ComponentsCardsMailPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You are only displaying a confirmation message. Mail cards have no action to be taken.</p>
+                <p className="text-greyStatus-600 ml-3">You have no action to be taken from the card (No arrow in body).</p>
               </li> 
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -129,7 +129,7 @@ function ComponentsCardsMailPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+                <p className="text-greyStatus-600 ml-3">Your information cannot be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
               </li>  
             </ul>          
             <span id="ui-examples-anchor" className="page-anchor"></span> 
@@ -163,7 +163,7 @@ function ComponentsCardsMailPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingMailCard1} className="lazyload " width="355" alt="Cards Mail Padding" />
             </div> 
@@ -178,7 +178,7 @@ function ComponentsCardsMailPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a mail card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refer to elements that make up a mail card</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsMailCard1} className="lazyload " width="375" alt="Cards Mail Details" />
             </div> 
@@ -190,7 +190,7 @@ function ComponentsCardsMailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Each mail card uses 2 Body Title Content components.</p>
+                    <p className="text-sm text-greyStatus-600">Each mail card uses 2 Body Title Content components</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -198,7 +198,7 @@ function ComponentsCardsMailPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -206,7 +206,7 @@ function ComponentsCardsMailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Mail cards may only include 1 Body Subtitle Content component. It can be as long as it needs to be.</p>
+                    <p className="text-sm text-greyStatus-600">Mail cards may only include 1 Body Subtitle Content component. It can be as long as it needs to be</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -214,7 +214,7 @@ function ComponentsCardsMailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If there is another Body Subtitle Content component please use the <Link to="components/cards/single-item-grouping" className="inline text-sm text-status-100 hover:text-red-900 underline">Single Item with Grouping template</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">If there is another Body Subtitle Content component please use the <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link></p>
                   </div>              
                 </li>  
               </ol> 
@@ -268,27 +268,15 @@ function ComponentsCardsMailPage() {
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do not add a hyperlink on any mail card.</p>
                 </div>                 
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do wrap the body title content. If more than 2 lines, stop with an ellipsis.</p>
-                </div>    
-              </div>
+              </div> 
 
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do wrap body subtitle content regardless of message length.</p>
                 </div>                     

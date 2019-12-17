@@ -57,7 +57,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
             <li><Link to="components/cards/progress-bar" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Progress Bar</Link></li>
             <li><Link to="components/cards/highlighted-item-detail" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Highlighted Item &amp; Detail</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance' ] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -93,7 +93,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Highlighted Item &amp; Detail</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Highlighted Item &amp; Detail Card</Heading>
             <Download />
           </div> 
 
@@ -107,7 +107,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+                <p className="text-greyStatus-600 ml-3">You have an item you want to highlight.</p>
               </li>              
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -115,7 +115,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You want to highlight something with more than 3 pieces of information.</p>
+                <p className="text-greyStatus-600 ml-3">You have secondary data points with only text.</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -123,7 +123,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">The highlighted group contains, at minimum, a Body Title and Body Subtitle and ideally an image.</p>
+                <p className="text-greyStatus-600 ml-3">Your information can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
               </li>   
             </ul>
             <span id="ui-examples-anchor" className="page-anchor"></span> 
@@ -157,7 +157,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingHighlightedItemDetailCard1} className="lazyload " width="364" alt="Cards Highlighted Item Detail Padding" />
             </div> 
@@ -172,7 +172,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up the highlighted item and detail card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refers to elements that make up the highlighted item and detail card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsHighlightedItemDetailCard1} className="lazyload " width="375" alt="Cards Highlighted Item Detail Padding" />
             </div> 
@@ -184,7 +184,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -192,7 +192,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If there is a header, the maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">If there is a header, the maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol>  
@@ -205,7 +205,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <span className="as-type-medium">divider line</span>.</p>
+                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <Link to="../elements/dividers" className="inline text-sm text-status-100 hover:text-red-900 underline">divider line</Link></p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -213,7 +213,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum Body Title Content and Body Subtitle Content length is 2 lines. If either exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum Body Title Content and Body Subtitle Content length is 2 lines. If either exceed that, use an ellipsis</p>
                   </div>              
                 </li>   
                 <li className="text-sm">
@@ -221,7 +221,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -229,7 +229,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link</p>
                   </div>              
                 </li>   
               </ol>  
@@ -242,7 +242,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header may contain badges. If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">Header may contain badges. If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li>  
               </ol>  
@@ -255,7 +255,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10)</p>
                   </div>              
                 </li>  
               </ol> 
@@ -268,7 +268,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -276,7 +276,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -284,7 +284,7 @@ function ComponentsCardsHighlightedItemDetailPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/highlighted-item-detail" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/highlighted-item-detail" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link></p>
                   </div>              
                 </li> 
               </ol> 
@@ -338,27 +338,15 @@ function ComponentsCardsHighlightedItemDetailPage() {
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do not include more than 2 badges.</p>
                 </div>                 
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not limit content to user's View More link.</p>
-                </div>    
-              </div>
+              </div> 
 
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Highlighted Items can be featured without an arrow or picture.</p>
                 </div>                     
@@ -368,9 +356,9 @@ function ComponentsCardsHighlightedItemDetailPage() {
                 <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Logo Guidance 6" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do replace an avatar with an initial image if the user has no available profile image.</p>
                 </div>  

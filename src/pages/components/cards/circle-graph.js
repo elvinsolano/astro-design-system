@@ -56,7 +56,7 @@ function ComponentsCardsCircleGraphPage() {
             <li><Link to="components/cards/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Tasks</Link></li>
             <li><Link to="components/cards/circle-graph" className="block text-sm text-grey-400 w-full hover:bg-grey-100 bg-grey-700 font-semibold active">Circle Graph</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -89,7 +89,7 @@ function ComponentsCardsCircleGraphPage() {
         <main className="pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Circle Graph</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Circle Graph Card</Heading>
             <Download />
           </div> 
 
@@ -111,7 +111,7 @@ function ComponentsCardsCircleGraphPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">The information displayed in your key is representative of the information displayed in the graph.</p>
+                <p className="text-greyStatus-600 ml-3">You have information that is representative of the information displayed in the graph (in the key).</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -119,7 +119,7 @@ function ComponentsCardsCircleGraphPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have information that can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
+                <p className="text-greyStatus-600 ml-3">You information can be displayed as a <Link to="components/cards/sliding-cards" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
               </li>   
             </ul>             
             <span id="ui-examples-anchor" className="page-anchor"></span> 
@@ -153,7 +153,7 @@ function ComponentsCardsCircleGraphPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingCircleGraphCard1} className="lazyload " width="365" alt="Cards Circle Graph Padding" />
             </div> 
@@ -168,7 +168,7 @@ function ComponentsCardsCircleGraphPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up the circle graph card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refer to elements that make up the circle graph card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsCircleGraphCard1} className="lazyload " width="375" alt="Cards Circle Graph Details" />
             </div> 
@@ -180,7 +180,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -188,7 +188,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -196,7 +196,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol>  
@@ -209,7 +209,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -217,7 +217,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Please refer to the  <span className="as-type-medium">Graphs</span> section for all graph guidelines.</p>
+                    <p className="text-sm text-greyStatus-600">Please refer to the <Link to="components/cards/circle-graphs" className="inline text-sm text-status-100 hover:text-red-900 underline">Graphs</Link> section for all graph guidelines</p>
                   </div>              
                 </li>  
               </ol>  
@@ -230,7 +230,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -238,7 +238,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li>  
               </ol>  
@@ -259,7 +259,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10)</p>
                   </div>              
                 </li>  
               </ol> 
@@ -272,7 +272,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -280,7 +280,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist</p>
                   </div>              
                 </li>   
               </ol> 
@@ -293,7 +293,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -301,7 +301,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -309,7 +309,7 @@ function ComponentsCardsCircleGraphPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link></p>
                   </div>              
                 </li> 
               </ol> 

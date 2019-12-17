@@ -94,7 +94,7 @@ function ComponentsCardsInformationPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Information</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Information Card</Heading>
             <Download />
           </div> 
 
@@ -116,16 +116,8 @@ function ComponentsCardsInformationPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">The main information lives in the header.</p>
-              </li> 
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">There is actionable information to be displayed in the card body.</p>
-              </li> 
+                <p className="text-greyStatus-600 ml-3">You have actionable information.</p>
+              </li>  
               <li className="flex mb-3">
                 <div className="as-guidance">
                   <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -178,7 +170,7 @@ function ComponentsCardsInformationPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingInformationCard1} className="lazyload " width="355" alt="Cards Information Padding" />
             </div> 
@@ -193,7 +185,7 @@ function ComponentsCardsInformationPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up an information card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refer to elements that make up an information card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsInformationCard1} className="lazyload " width="375" alt="Cards Information Details" />
             </div> 
@@ -205,7 +197,7 @@ function ComponentsCardsInformationPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header is a mandatory component in Information cards. The minimum requirement is a Card Header Title.</p>
+                    <p className="text-sm text-greyStatus-600">Header is a mandatory component in Information cards. The minimum requirement is a Card Header Title</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -213,7 +205,7 @@ function ComponentsCardsInformationPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -221,7 +213,7 @@ function ComponentsCardsInformationPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -229,7 +221,7 @@ function ComponentsCardsInformationPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">A Card Header can include an image.</p>
+                    <p className="text-sm text-greyStatus-600">A Card Header can include an image</p>
                   </div>              
                 </li> 
               </ol>  
@@ -242,7 +234,7 @@ function ComponentsCardsInformationPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Body Titles' maximum length is two lines. If they exceed that, use an ellipsis</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -250,7 +242,7 @@ function ComponentsCardsInformationPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -258,7 +250,7 @@ function ComponentsCardsInformationPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -266,7 +258,7 @@ function ComponentsCardsInformationPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link</p>
                   </div>              
                 </li>  
               </ol> 
@@ -279,7 +271,7 @@ function ComponentsCardsInformationPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li>  
               </ol> 
@@ -305,7 +297,7 @@ function ComponentsCardsInformationPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -313,7 +305,7 @@ function ComponentsCardsInformationPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -321,7 +313,7 @@ function ComponentsCardsInformationPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link></p>
                   </div>              
                 </li> 
               </ol> 
@@ -373,7 +365,7 @@ function ComponentsCardsInformationPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use a profile Image or Initial Image other than small in an information card header.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use a profile image or initial image other than small in an information card header.</p>
                 </div>                 
               </div>
 
@@ -381,9 +373,9 @@ function ComponentsCardsInformationPage() {
                 <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do hyperlink all actionable content in Information cards. This includes phone number, email and location.</p>
                 </div>    
@@ -393,11 +385,11 @@ function ComponentsCardsInformationPage() {
                 <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do replace an avatar with an initial image if the user has no available profile image.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do replace an avatar with an <Link to="../design/icons" className="inline text-status-100 hover:text-red-900 underline">initial image</Link> if the user has no available profile image.</p>
                 </div>                     
               </div> 
 

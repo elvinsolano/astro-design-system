@@ -55,7 +55,7 @@ function ComponentsCardsTasksPage() {
             <li><Link to="components/cards/highlighted-item-detail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
             <li><Link to="components/cards/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100 bg-grey-700 font-semibold active">Tasks</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li> 
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -90,7 +90,7 @@ function ComponentsCardsTasksPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Tasks</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Tasks Card</Heading>
             <Download />
           </div> 
 
@@ -104,7 +104,7 @@ function ComponentsCardsTasksPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">If you have a number of items that need to be tracked.</p>
+                <p className="text-greyStatus-600 ml-3">You have a number of items that need to be tracked.</p>
               </li>              
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -112,7 +112,7 @@ function ComponentsCardsTasksPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">To show completion with a checkmark.</p>
+                <p className="text-greyStatus-600 ml-3">You want to show completion with a checkmark.</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -154,7 +154,7 @@ function ComponentsCardsTasksPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingTasksCard1} className="lazyload " width="365" alt="Cards Tasks Padding" />
             </div> 
@@ -169,7 +169,7 @@ function ComponentsCardsTasksPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up the tasks card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refers to elements that make up the tasks card.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsTasksCard1} className="lazyload " width="375" alt="Cards Tasks Details" />
             </div> 
@@ -181,7 +181,7 @@ function ComponentsCardsTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -189,7 +189,7 @@ function ComponentsCardsTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -197,7 +197,7 @@ function ComponentsCardsTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol>  
@@ -210,49 +210,9 @@ function ComponentsCardsTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">For a Single Item with Grouping, the card's body must contain at least 2 groups of information.</p>
-                  </div>              
-                </li> 
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className=" ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">A new grouping is indicated by a <span className="as-type-medium">divider line</span>. Groups can be made of Body Title Content or Body Subtitle Content.</p>
-                  </div>              
-                </li> 
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className=" ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">Body Title Content and Body Subtitle Content have a maximum length of two lines. If either exceed that, use an ellipsis.</p>
-                  </div>              
-                </li>   
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className=" ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content in Tasks are not clickable. The only valid action is checking off an item</p>
                   </div>              
                 </li>  
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className=" ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content in Tasks are not clickable. The only valid action is checking off an item.</p>
-                  </div>              
-                </li>   
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className=" ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">An optional component of Tasks: a checkmarked list.</p>
-                  </div>              
-                </li>   
               </ol>  
             </div> 
             <div className="mb-6">
@@ -263,7 +223,7 @@ function ComponentsCardsTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li>  
               </ol>  
@@ -289,7 +249,7 @@ function ComponentsCardsTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -297,7 +257,7 @@ function ComponentsCardsTasksPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -305,7 +265,7 @@ function ComponentsCardsTasksPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/tasks" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/tasks" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link></p>
                   </div>              
                 </li> 
               </ol> 

@@ -21,10 +21,7 @@ import detailsSwipingCardsCard1 from "../../../assets/components/cards/Swiping C
 import paddingSwipingCardsCard1 from "../../../assets/components/cards/Swiping Card/Padding/01.png"; 
 
 import guidance1 from "../../../assets/components/cards/Swiping Card/Guidance/01 Guidance.png";
-import guidance2 from "../../../assets/components/cards/Swiping Card/Guidance/02 Guidance.png";
-import guidance3 from "../../../assets/components/cards/Swiping Card/Guidance/03 Guidance.png";
-import guidance4 from "../../../assets/components/cards/Swiping Card/Guidance/04 Guidance.png"; 
-import guidance5 from "../../../assets/components/cards/Swiping Card/Guidance/05 Guidance.png"; 
+import guidance2 from "../../../assets/components/cards/Swiping Card/Guidance/02 Guidance.png"; 
 
 function ComponentsCardsSlidingCardsPage() { 
 
@@ -65,7 +62,7 @@ function ComponentsCardsSlidingCardsPage() {
             <li><Link to="components/cards/profile-list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile List</Link></li>
             <li><Link to="components/cards/sliding-cards" className="block text-sm text-grey-400 w-full hover:bg-grey-100 bg-grey-700 font-semibold active">Swipe Cards</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -97,47 +94,12 @@ function ComponentsCardsSlidingCardsPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Swipe Cards</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Swipe Card</Heading>
             <Download />
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">The profile list card is a list that includes an image per row.</p>
-            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use this card if:</p>
-            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">You have multiple profile items.</p>
-              </li>              
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">You have data that is distinct but similarly organized.</p>
-              </li>
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">Your user needs to compare different profile information.</p>
-              </li>
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">You have information that can be displayed as a <Link to="components/cards/sliding-item" className="inline text-status-100 hover:text-red-900 underline">Swipe Card</Link>.</p>
-              </li>   
-            </ul>            
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Sliding cards allow a user to move between different content containing cards in order to allow the user to access content that would exceed a single card.</p>
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>
@@ -146,7 +108,7 @@ function ComponentsCardsSlidingCardsPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The Sliding Cards.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">How the swipe card is expressed as part of the UI.</p> 
             <Tabs>
               <TabList>
                 <Tab>01</Tab>   
@@ -184,7 +146,7 @@ function ComponentsCardsSlidingCardsPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingSwipingCardsCard1} className="lazyload " width="365" alt="Cards Sliding Cards Padding" />
             </div> 
@@ -199,7 +161,7 @@ function ComponentsCardsSlidingCardsPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refer to elements that make up the card surface areas.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsSwipingCardsCard1} className="lazyload " width="375" alt="Cards Sliding Cards Details" />
             </div> 
@@ -217,7 +179,7 @@ function ComponentsCardsSlidingCardsPage() {
               </CopyToClipboard>
             </Heading> 
 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines for logos to adhere to.</p>
+            <p className="mb-4 text-greyStatus-600 tracking-wider">Below is a list of guidelines swipe cards adhere to.</p>
             <div className="flex flex-wrap -mx-4 mb-12">  
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance1} className="lazyload mb-3" width="290" alt="Logo Guidance 1" />
@@ -227,7 +189,7 @@ function ComponentsCardsSlidingCardsPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not apply any effects to the logo.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not include pagination if there is only one card.</p>
                 </div>
               </div>
 
@@ -235,49 +197,13 @@ function ComponentsCardsSlidingCardsPage() {
                 <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Logo Guidance 2" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do show affordances of previous and following cards where applicable so that user can see when further content is available.</p>
                 </div>
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Logo Guidance 3" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any unapproved fill colors.</p>
-                </div>                 
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not skew or stretch the logo.</p>
-                </div>    
-              </div>
-
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not crop the logo.</p>
-                </div>                     
-              </div>
+              </div> 
  
             </div> 
           </section>                     

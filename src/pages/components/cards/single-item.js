@@ -199,7 +199,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -207,7 +207,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -215,7 +215,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol> 
@@ -228,7 +228,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">To exist, it must include either a Body Title Content or Body Subtitle Content.</p>
+                    <p className="text-sm text-greyStatus-600">To exist, it must include either a Body Title Content or Body Subtitle Content</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -236,7 +236,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Titles’ maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Body Titles’ maximum length is two lines. If they exceed that, use an ellipsis</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -244,7 +244,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -252,7 +252,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -260,7 +260,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link</p>
                   </div>              
                 </li>  
               </ol> 
@@ -274,7 +274,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -282,7 +282,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li> 
               </ol> 
@@ -296,7 +296,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details.</p>
+                    <p className="text-sm text-greyStatus-600">Required when there is more than 1 card. See <Link to="components/cards/sliding-cards" className="inline text-sm text-status-100 hover:text-red-900 underline">Swipe Cards</Link> for additional details</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -304,7 +304,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10).</p>
+                    <p className="text-sm text-greyStatus-600">Pagination limit is 10 cards (e.g., 10/10)</p>
                   </div>              
                 </li> 
               </ol> 
@@ -318,7 +318,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -326,7 +326,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist.</p>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist</p>
                   </div>              
                 </li> 
               </ol> 
@@ -340,7 +340,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height.</p>
+                    <p className="text-sm text-greyStatus-600">Use when card size exceeds 55% of screen height</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -348,7 +348,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate.</p>
+                    <p className="text-sm text-greyStatus-600">Always reads as "View More." Do not deviate</p>
                   </div>              
                 </li>  
                 <li className="text-sm">
@@ -356,7 +356,7 @@ function ComponentsCardsSingleItemPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link>.</p>
+                    <p className="text-sm text-greyStatus-600">View More always leads to an <Link to="components/overlays/single-item" className="inline text-sm text-status-100 hover:text-red-900 underline">Overlay</Link></p>
                   </div>              
                 </li> 
               </ol> 

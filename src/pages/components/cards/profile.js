@@ -53,7 +53,7 @@ function ComponentsCardsProfilePage() {
             <li><Link to="components/cards/mail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Mail</Link></li>
             <li><Link to="components/cards/profile" className="block text-sm text-grey-400 w-full active bg-grey-700 font-semibold hover:bg-grey-100">Profile</Link>
               <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
+                <li><Link to="components/cards/list#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/cards/list#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
                 <li><Link to="components/cards/list#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/cards/list#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
@@ -92,7 +92,7 @@ function ComponentsCardsProfilePage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Profile</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Profile Card</Heading>
             <Download />
           </div> 
 
@@ -106,7 +106,7 @@ function ComponentsCardsProfilePage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You are looking for a visual way to display a small amount of information (e.g., 2 to 3 data points).</p>
+                <p className="text-greyStatus-600 ml-3">You are looking for a visual way to display a small amount of information about 1 topic (e.g., 2 to 3 data points).</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -114,16 +114,8 @@ function ComponentsCardsProfilePage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">The data on the card could be enhanced through an image.</p>
-              </li> 
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">All of the information being displayed is about a single item.</p>
-              </li> 
+                <p className="text-greyStatus-600 ml-3">You are only displaying text and an image.</p>
+              </li>  
               <li className="flex mb-3">
                 <div className="as-guidance">
                   <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +156,7 @@ function ComponentsCardsProfilePage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
             <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={paddingProfileCard1} className="lazyload " width="345" alt="Cards Profile Padding" />
             </div> 
@@ -179,7 +171,7 @@ function ComponentsCardsProfilePage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">The card details refer to elements that make up the card surface areas.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refer to elements that make up the card surface areas.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsProfileCard1} className="lazyload " width="375" alt="Cards Profile Details" />
             </div> 
@@ -191,7 +183,7 @@ function ComponentsCardsProfilePage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Should use <span className="as-type-medium">Avatar 100</span> or <span className="as-type-medium">Initial 100</span> if no avatar photo is available.</p>
+                    <p className="text-sm text-greyStatus-600">Should use <Link to="../design/icons" className="inline text-status-100 hover:text-red-900 underline">Avatar 100</Link> or <Link to="../design/icons" className="inline text-status-100 hover:text-red-900 underline">Initial 100</Link> if no avatar photo is available</p>
                   </div>              
                 </li> 
               </ol>  
@@ -204,7 +196,7 @@ function ComponentsCardsProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">May wrap to however long the content is.</p>
+                    <p className="text-sm text-greyStatus-600">May wrap to however long the content is</p>
                   </div>              
                 </li>  
               </ol> 
@@ -217,7 +209,7 @@ function ComponentsCardsProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Try to keep to one line.</p>
+                    <p className="text-sm text-greyStatus-600">Try to keep to one line</p>
                   </div>              
                 </li>  
               </ol> 
@@ -230,7 +222,7 @@ function ComponentsCardsProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Content may wrap. Dates should be written out in longform.</p>
+                    <p className="text-sm text-greyStatus-600">Content may wrap. Dates should be written out in longform</p>
                   </div>              
                 </li>  
               </ol> 
@@ -290,9 +282,9 @@ function ComponentsCardsProfilePage() {
                 <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 4" />                
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do replace an avatar with an initial image if the user has no available profile image.</p>
                 </div>    
@@ -302,9 +294,9 @@ function ComponentsCardsProfilePage() {
                 <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 5" />
                 <div className="flex mb-3">
                   <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
+                    <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
+                    </svg>  
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do wrap the profile subtitle content.</p>
                 </div>                     
