@@ -67,10 +67,10 @@ function ComponentsOverlaysTasksPage() {
             <li><Link to="components/overlays/progress-bar" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Progress Bar</Link></li>
             <li><Link to="components/overlays/highlighted-item-detail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
             <li><Link to="components/overlays/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100 active bg-grey-700 font-semibold">Tasks</Link>
-              <Scrollspy items={ ['ui-examples', 'details', 'padding', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/overlays/single-item#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
-                <li><Link to="components/overlays/single-item#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
+              <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
+                <li><Link to="components/overlays/single-item#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/overlays/single-item#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
+                <li><Link to="components/overlays/single-item#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/overlays/single-item#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
               </Scrollspy>              
             </li> 
@@ -89,7 +89,7 @@ function ComponentsOverlaysTasksPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Tasks</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">Tasks Overlay</Heading>
             <Download />
           </div> 
 
@@ -103,7 +103,7 @@ function ComponentsOverlaysTasksPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have multiple items that you want to be listed together.</p>
+                <p className="text-greyStatus-600 ml-3">You have a number of items that need to be tracked.</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -111,16 +111,8 @@ function ComponentsOverlaysTasksPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">The sequence has a state that can be considered "done".</p>
-              </li>
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">The information did not fit in the list card.</p>
-              </li>     
+                <p className="text-greyStatus-600 ml-3">You want to show completion with a checkmark.</p>
+              </li> 
             </ul>          
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
@@ -144,6 +136,21 @@ function ComponentsOverlaysTasksPage() {
             </Tabs>
           </section>   
 
+          <section id="padding" name="padding" className="as-section"> 
+            <span id="padding-anchor" className="page-anchor"></span> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Padding
+              <CopyToClipboard text={'http://localhost:8000/components/overlays/single-item#padding'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
+              <img data-src={paddingTasksOverlay1} className="lazyload " width="392" alt="Overlays Tasks Padding" />
+            </div> 
+          </section>   
+
           <section id="details" name="details" className="as-section"> 
             <span id="details-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Details
@@ -165,7 +172,7 @@ function ComponentsOverlaysTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">A required component.</p>
+                    <p className="text-sm text-greyStatus-600">A required component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -173,7 +180,7 @@ function ComponentsOverlaysTasksPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -181,7 +188,7 @@ function ComponentsOverlaysTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol> 
@@ -194,7 +201,7 @@ function ComponentsOverlaysTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">X - Use to leave overlay.</p>
+                    <p className="text-sm text-greyStatus-600">X - Use to leave overlay</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -202,7 +209,7 @@ function ComponentsOverlaysTasksPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">{"<"} - Only use back arrow on a second overlay screen.</p>
+                    <p className="text-sm text-greyStatus-600">{"<"} - Only use back arrow on a second overlay screen</p>
                   </div>              
                 </li> 
               </ol> 
@@ -215,49 +222,9 @@ function ComponentsOverlaysTasksPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">For a Single Item with Grouping, the card’s body must contain at least 2 groups of information.</p>
-                  </div>              
-                </li> 
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className="ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">New grouping is indicated by a <span className="as-medium-type">divider line</span>. Groups can be made of Body Title Content or Body Subtitle Content.</p>
-                  </div>              
-                </li> 
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className="ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">Body Title Content  and Body Subtitle Content maximum length is two lines. If either exceed that, use an ellipsis.</p>
-                  </div>              
-                </li> 
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className="ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
-                  </div>              
-                </li> 
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className="ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
                     <p className="text-sm text-greyStatus-600">Body Subtitle Content in Tasks are not clickable. The only action to be taken is checking off an item.</p>
                   </div>              
-                </li> 
-                <li className="text-sm">
-                  <div className="flex">
-                    <div className="ml-3">
-                      <p className="w-3 text-sm">- </p>
-                    </div>
-                    <p className="text-sm text-greyStatus-600">An optional component of Tasks is a checkmarked list.</p>
-                  </div>              
-                </li> 
+                </li>  
               </ol> 
             </div>   
             <div className="mb-6">
@@ -268,27 +235,12 @@ function ComponentsOverlaysTasksPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li> 
               </ol> 
             </div>    
-          </section>             
-
-          <section id="padding" name="padding" className="as-section"> 
-            <span id="padding-anchor" className="page-anchor"></span> 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Padding
-              <CopyToClipboard text={'http://localhost:8000/components/overlays/single-item#padding'}>
-                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
-                </svg> 
-              </CopyToClipboard>
-            </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-              <img data-src={paddingTasksOverlay1} className="lazyload " width="392" alt="Overlays Tasks Padding" />
-            </div> 
-          </section>           
+          </section>                     
 
           <section id="guidance" name="guidance" className="as-section mb-16">
             <span id="guidance-anchor" className="page-anchor"></span>

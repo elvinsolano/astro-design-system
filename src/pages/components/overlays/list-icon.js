@@ -66,10 +66,10 @@ function ComponentsOverlaysListIconPage() {
             <li><Link to="components/overlays/single-item" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Single Item</Link></li> 
             <li><Link to="components/overlays/list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">List</Link></li>
             <li><Link to="components/overlays/list-icon" className="block text-sm text-grey-400 w-full hover:bg-grey-100 active bg-grey-700 font-semibold">List with Icons</Link>
-              <Scrollspy items={ ['ui-examples', 'details', 'padding', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                <li><Link to="components/overlays/single-item#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI examples</Link></li>
-                <li><Link to="components/overlays/single-item#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
+              <Scrollspy items={ ['ui-examples', 'padding', 'details', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
+                <li><Link to="components/overlays/single-item#ui-examples-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="block text-sm text-grey-400 w-full bg-grey-200 font-semibold hover:bg-grey-100">UI Examples</Link></li>
                 <li><Link to="components/overlays/single-item#padding-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Padding</Link></li>
+                <li><Link to="components/overlays/single-item#details-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Details</Link></li>
                 <li><Link to="components/overlays/single-item#guidance-anchor" className="block text-sm text-grey-400 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li>
               </Scrollspy>               
             </li> 
@@ -93,7 +93,7 @@ function ComponentsOverlaysListIconPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">List Icon</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">List Icon Overlay</Heading>
             <Download />
           </div> 
 
@@ -107,7 +107,7 @@ function ComponentsOverlaysListIconPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have multiple items of the same structure.</p>
+                <p className="text-greyStatus-600 ml-3">You have repeating data points for different items. (E.g., invoice amount, status, and due date for different invoices).</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -115,7 +115,7 @@ function ComponentsOverlaysListIconPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">Items in list use icons. List can also be iconless. However, icons can appear when opening an overlay.</p>
+                <p className="text-greyStatus-600 ml-3">Your user needs to compare different information.</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -123,7 +123,7 @@ function ComponentsOverlaysListIconPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">The information does not fit in the card.</p>
+                <p className="text-greyStatus-600 ml-3">You are only displaying text and icons.</p>
               </li>  
             </ul>
 
@@ -149,6 +149,21 @@ function ComponentsOverlaysListIconPage() {
             </Tabs>
           </section>   
 
+          <section id="padding" name="padding" className="as-section"> 
+            <span id="padding-anchor" className="page-anchor"></span> 
+            <Heading level="2" className="as-h2 as-type-medium mb-3">Padding
+              <CopyToClipboard text={'http://localhost:8000/components/overlays/single-item#padding'}>
+                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
+                </svg> 
+              </CopyToClipboard>
+            </Heading> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
+            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
+              <img data-src={paddingListIconOverlay1} className="lazyload " width="396" alt="Overlays List With Icon Padding" />
+            </div> 
+          </section>   
+
           <section id="details" name="details" className="as-section"> 
             <span id="details-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Details
@@ -170,7 +185,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -178,7 +193,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -186,7 +201,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol> 
@@ -199,7 +214,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">X - Use to leave overlay.</p>
+                    <p className="text-sm text-greyStatus-600">X - Use to leave overlay</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -207,7 +222,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">{"<"} - Only use back arrow on a second overlay screen.</p>
+                    <p className="text-sm text-greyStatus-600">{"<"} - Only use back arrow on a second overlay screen</p>
                   </div>              
                 </li> 
               </ol> 
@@ -220,7 +235,15 @@ function ComponentsOverlaysListIconPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Must always have either a Body Title Content or Body Subtitle Content element for the overlay to exist.</p>
+                    <p className="text-sm text-greyStatus-600">Must always have either a Body Title Content or Body Subtitle Content element for the overlay to exist</p>
+                  </div>              
+                </li>
+                <li className="text-sm">
+                  <div className="flex">
+                    <div className=" ml-3">
+                      <p className="w-3 text-sm">- </p>
+                    </div>
+                    <p className="text-sm text-greyStatus-600">Icons are used to visually organize content. Please reference the <Link to="../design/icons" className="inline text-sm text-status-100 hover:text-red-900 underline">iconography guidelines</Link></p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -228,7 +251,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">A new row is indicated by a divider line.</p>
+                    <p className="text-sm text-greyStatus-600">A new row is indicated by a divider line</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -236,7 +259,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">There is no limit to the number of rows.</p>
+                    <p className="text-sm text-greyStatus-600">There is no limit to the number of rows</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -244,7 +267,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Titles’ maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Body Titles’ maximum length is two lines. If they exceed that, use an ellipsis</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -252,7 +275,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -260,7 +283,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum 4 subtitles per list item.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum 4 subtitles per list item</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -268,7 +291,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -276,7 +299,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link</p>
                   </div>              
                 </li> 
               </ol> 
@@ -289,7 +312,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">A grouping of information, typically separated by a divider.</p>
+                    <p className="text-sm text-greyStatus-600">A grouping of information, typically separated by a divider</p>
                   </div>              
                 </li> 
               </ol> 
@@ -302,7 +325,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -310,7 +333,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li> 
               </ol> 
@@ -323,7 +346,7 @@ function ComponentsOverlaysListIconPage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -331,27 +354,12 @@ function ComponentsOverlaysListIconPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist. Can lead to another Overlay, other intent, or out of the app.</p>
+                    <p className="text-sm text-greyStatus-600">Used when additional details to the content exist. Can lead to another Overlay, other intent, or out of the app</p>
                   </div>              
                 </li> 
               </ol> 
             </div>
-          </section>             
-
-          <section id="padding" name="padding" className="as-section"> 
-            <span id="padding-anchor" className="page-anchor"></span> 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Padding
-              <CopyToClipboard text={'http://localhost:8000/components/overlays/single-item#padding'}>
-                <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
-                </svg> 
-              </CopyToClipboard>
-            </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
-            <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-              <img data-src={paddingListIconOverlay1} className="lazyload " width="396" alt="Overlays List With Icon Padding" />
-            </div> 
-          </section>    
+          </section>              
 
           <section id="guidance" name="guidance" className="as-section mb-16">
             <span id="guidance-anchor" className="page-anchor"></span>
@@ -400,19 +408,7 @@ function ComponentsOverlaysListIconPage() {
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do not add multiple rows without a divider.</p>
                 </div>                 
-              </div> 
-              
-              <div className="w-grid px-4 mb-8">
-                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 3" />
-                <div className="flex mb-3">
-                  <div className="as-guidance">
-                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
-                    </svg> 
-                  </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not have different number of elements in each row..</p>
-                </div>                 
-              </div> 
+              </div>  
               
               <div className="w-grid px-4 mb-8">
                 <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Logo Guidance 3" />
