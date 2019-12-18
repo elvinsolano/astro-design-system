@@ -26,7 +26,7 @@ function ComponentsCardsProfilePage() {
   return (
     <Layout>
       <SEO
-        title="Design"
+        title="Astro"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
@@ -286,7 +286,7 @@ function ComponentsCardsProfilePage() {
                       <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                     </svg>  
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do replace an avatar with an initial image if the user has no available profile image.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do replace an avatar with an <Link to="../design/icons" className="inline text-status-100 hover:text-red-900 underline">initial image</Link> if the user has no available profile image.</p>
                 </div>    
               </div>
 

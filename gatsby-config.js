@@ -3,7 +3,7 @@ const whitelist = require('./config/purgecss-whitelist');
 
 module.exports = {
   siteMetadata: {
-    title: `Astro`,
+    title: `Design System`,
     description: `Astro Design System`
   },
   plugins: [

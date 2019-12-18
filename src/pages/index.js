@@ -92,7 +92,7 @@ function IndexPage() {
   return (
     <Layout>
       <SEO
-        title="Home"
+        title="Astro"
         keywords={[``, ``]}
       /> 
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
@@ -339,7 +339,7 @@ function IndexPage() {
               </div>              
               <div className="w-1/2 pl-10">
                 <p level="2" className="as-h2 as-type-medium mb-3">The Design System</p>
-                <p className="pb-12">This design system functions as a strategic and technological repository for all components of Astro. It contains guides on the vision, content and development of the software through a system of repeatable patterns that are clustered in a consistent, responsive grid for future reference.</p>
+                <p className="pb-12">This design system functions as a strategic and technological repository for all components of Astro. It contains guides on the vision, content and development of the software through a system of repeatable patterns that are clustered in a consistent, responsive grid for future reference. Astro's design system uses PwC Brand Simplification.</p>
               </div>
             </div>
             <div className="as-home-background"> 
@@ -517,31 +517,42 @@ function IndexPage() {
               <svg className="fill-current home-circle" width="500" height="500" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#f2f2f2" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
               </svg>
-            </div>              
+            </div>
           </section>
           <section className="as-home-section my-32">
             <div className="as-home-foreground">
               <div className="mx-32 flex justify-center items-center"> 
                 <div className="w-2/3 text-center">
                   <p level="2" className="as-h2 as-type-medium mb-3">Getting Started</p>
-                  <p className="pb-12">Anyone can and should use this resource when designing future components of Astro to ensure consistency and uniformity of the product in look, feel, and overall scope.</p>
+                  <p className="pb-12">Use this resource when designing any future components of Astro to ensure consistency and uniformity in Astro’s look, feel and overall scope.</p>
                 </div>
               </div>
               <div className="mx-32 flex justify-center items-center">
                 <Tabs>
                   <TabList>
+                    <Tab>Product Owners</Tab>  
                     <Tab>Designers</Tab>  
                     <Tab>Developers</Tab>  
-                    <Tab>Product Owners</Tab>  
                     <Tab>QA</Tab>  
                   </TabList>
-              
                   <TabPanel>                  
                     <div className="flex items-start justify-center">
                       <div className="w-1/2 py-8 pr-8">
-                        <p className="pb-4">Start with the following:</p>
+                        <p className="pb-4">View usage examples and become familiar with <Link to="content" className="inline text-status-100 hover:text-red-900 underline">Content</Link> rules for insights on how to best organize and display your requirements.</p>
+                        <p className="pb-4">The content rules are scalable and allow for different information hierarchies to be displayed.</p>
+                      </div>
+                      <div className="w-1/2 flex items-center justify-center">
+                        <video className="lazyload" autoPlay={true} muted={true} loop>
+                          <source src={vid3} type="video/mp4" />
+                        </video>   
+                      </div>
+                    </div> 
+                  </TabPanel>
+                  <TabPanel>                  
+                    <div className="flex items-start justify-center">
+                      <div className="w-1/2 py-8 pr-8"> 
                         <p className="pb-4">Explore the <Link to="design" className="inline text-status-100 hover:text-red-900 underline">Design</Link> section in order to learn the Astro design system and patterns.</p>
-                        <p className="pb-4">Then, review the Components section. There you can download Sketch file design samples to help you to become familiar with existing components and incorporate them into your designs.</p>                  
+                        <p className="pb-4">Then, review the <Link to="design" className="inline text-status-100 hover:text-red-900 underline">Components</Link> section. There you can download Sketch file design samples to help you to become familiar with existing components and incorporate them into your designs.</p>                  
                       </div>
                       <div className="w-1/2 flex items-center justify-center">
                         <video className="lazyload" autoPlay={true} muted={true} loop>
@@ -555,7 +566,7 @@ function IndexPage() {
                       <div className="w-1/2 py-8 pr-8">
                         <p className="pb-4">Explore Astro’s rules and guidelines to help build your solution.</p>
                         <p className="pb-4">The support resources available will give you the tools and knowledge you need.</p>
-                        <p className="pb-4">Access and find screen anatomy and structure, padding specs, icon files, and code snippets for typography.</p>
+                        <p className="pb-4">Access and find <Link to="design/screen-anatomy" className="inline text-status-100 hover:text-red-900 underline">Screen Anatomy</Link> and structure, padding specs, <Link to="design/icons" className="inline text-status-100 hover:text-red-900 underline">Icon</Link> files, and code snippets for <Link to="design/typography" className="inline text-status-100 hover:text-red-900 underline">Typography</Link>.</p>
                       </div>
                       <div className="w-1/2 flex items-center justify-center">
                         <video className="lazyload" autoPlay={true} muted={true} loop>
@@ -567,20 +578,7 @@ function IndexPage() {
                   <TabPanel>                  
                     <div className="flex items-start justify-center">
                       <div className="w-1/2 py-8 pr-8">
-                        <p className="pb-4">View usage examples and become familiar with content rules for insights on how to best organize and display your requirements.</p>
-                        <p className="pb-4">The content rules are scalable and allow for different information hierarchies to be displayed.</p>
-                      </div>
-                      <div className="w-1/2 flex items-center justify-center">
-                        <video className="lazyload" autoPlay={true} muted={true} loop>
-                          <source src={vid3} type="video/mp4" />
-                        </video>   
-                      </div>
-                    </div> 
-                  </TabPanel>  
-                  <TabPanel>                  
-                    <div className="flex items-start justify-center">
-                      <div className="w-1/2 py-8 pr-8">
-                        <p className="pb-4">View all of Astro’s rules, guidelines, elements and patterns to help execute a level of QA that ensures current build outputs are up to our design standards.</p>
+                        <p className="pb-4">View all of Astro’s rules, guidelines, <Link to="elements" className="inline text-status-100 hover:text-red-900 underline">Elements</Link> and <Link to="components" className="inline text-status-100 hover:text-red-900 underline">Components</Link> to help execute a level of QA that ensures current build outputs are up to our design standards.</p>
                       </div>
                       <div className="w-1/2 flex items-center justify-center">
                           <video className="lazyload" autoPlay={true} muted={true} loop>
@@ -801,7 +799,7 @@ function IndexPage() {
                 <div className="w-1/2">
                   <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 3</p>
                   <p level="2" className="as-h2 as-type-medium mb-3">Create Component</p>
-                  <p className="pb-12">Wireframe complete, we now leverage the visual design system to refine this structured information component. This phase integrates brand elements into the component such as color, typography and icons to give the entire experience a consistent look and feel.</p>
+                  <p className="pb-12">Once a wireframe is complete, we now leverage the visual design system to refine this structured information component. This phase integrates brand elements into the component such as color, typography and icons to give the entire experience a consistent look and feel.</p>
                 </div>
                 <div className="w-1/2 pl-10 text-center">
                   <img data-src={worksStep3} className="lazyload inline-block" width="337" alt="" /> 
@@ -998,8 +996,8 @@ function IndexPage() {
           </section>
         </main>
         <div className="footer bg-placeholder-400 p-16">
-          <p className="text-white text-sm mb-4">&copy; 2019 PwC</p>
-          <p className="text-white text-sm">Alle rettigheder forbeholdes. PwC refererer til PwC netværket og/eller et eller flere af dets medlemsfirmaer, hvor hver enkelt virksomhed er en særskilt juridisk enhed. Se www.pwc.com/structure for yderligere detaljer.</p>
+          <p className="text-white text-sm mb-4">&copy; 2019 PwC. All rights reserved.</p>
+          <p className="text-white text-sm">PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details.</p>
         </div>
       </div>
 

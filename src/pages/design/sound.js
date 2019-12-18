@@ -23,7 +23,7 @@ function DesignSoundPage() {
   return (
     <Layout>
       <SEO
-        title="Design"
+        title="Astro"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
@@ -143,7 +143,7 @@ function DesignSoundPage() {
                   <tr className="border border-b border-grey-105">
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Confirmations</p></td>
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Onboarding</p></td> 
-                    <td className="p-4">When user finish Onboarding and sees Homepage for first time.</td>
+                    <td className="p-4">When user finishes Onboarding and sees Homepage for first time.</td>
                   </tr>
                   <tr className="border border-b border-grey-105">
                     <td className="p-4 border-r border-grey-105"><p className="as-type-regular">Notifications</p></td>

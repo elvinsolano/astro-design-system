@@ -24,7 +24,7 @@ function ComponentsOverlaysSingleItemPage() {
   return (
     <Layout>
       <SEO
-        title="Design"
+        title="Astro"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 

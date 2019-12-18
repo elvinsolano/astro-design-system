@@ -26,7 +26,7 @@ function ContentPage() {
   return (
     <Layout>
       <SEO
-        title="Home"
+        title="Astro"
         keywords={[``, ``]}
       />
  

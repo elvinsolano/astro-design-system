@@ -80,7 +80,7 @@ function ElementsFormFieldsPage() {
   return (
     <Layout>
       <SEO
-        title="Element"
+        title="Astro"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
  

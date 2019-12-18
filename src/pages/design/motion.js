@@ -40,8 +40,8 @@ function DesignMotionPage() {
   return (
     <Layout>
       <SEO
-        title="Design"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        title="Astro"
+        keywords={['']}
       />
 
       <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid">
@@ -83,26 +83,8 @@ function DesignMotionPage() {
           </div>
 
           <section id="types" name="types" className="as-section"> 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Motion uses multiple images presented in rapid sequence in order to create the perception of real-time action.</p>
-            <p className="mb-2 text-greyStatus-600 tracking-wider as-type-medium text-sm">Use motion if:</p>
-            <ul className="mb-16 py-5 px-20 bg-placeholder-200 flex flex-col items-start justify-start">
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">You wish to add polish to an experience.</p>
-              </li>              
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">You wish to communicate that a change or activity is taking place.</p>
-              </li> 
-            </ul>              
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Motion uses multiple images presented in rapid sequence in order to create the perception of real-time action.</p>
+          
             <span id="types-anchor" className="page-anchor"></span>      
             
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types
@@ -976,38 +958,7 @@ function DesignMotionPage() {
                           <p className="text-sm">Item fades out of the screen.</p>
                         </div>     
                       </AccordionItemPanel>
-                    </AccordionItem>
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton className="as-accordion__button">
-                          3. Hamburger Button
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="flex mb-6">
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Duration</p>
-                            <p className="text-sm">0.3 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Easing</p>
-                            <p className="text-sm">Ease Both</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Delay</p>
-                            <p className="text-sm">0.04 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Action</p>
-                            <p className="text-sm text-status-400">Incoming</p>
-                          </div>
-                        </div>  
-                        <div className="">
-                          <p className="uppercase text-xs">Behavior</p>
-                          <p className="text-sm">From center of icon button placement, icon will scale into full size.</p>
-                        </div>     
-                      </AccordionItemPanel>
-                    </AccordionItem>
+                    </AccordionItem> 
                     <AccordionItem>
                       <AccordionItemHeading>
                         <AccordionItemButton className="as-accordion__button">

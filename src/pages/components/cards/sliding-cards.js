@@ -28,7 +28,7 @@ function ComponentsCardsSlidingCardsPage() {
   return (
     <Layout>
       <SEO
-        title="Design"
+        title="Astro"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
@@ -99,7 +99,7 @@ function ComponentsCardsSlidingCardsPage() {
           </div> 
 
           <section id="ui-examples" name="ui-examples" className="as-section"> 
-            <p className="mb-4 text-greyStatus-600 tracking-wider">Sliding cards allow a user to move between different content containing cards in order to allow the user to access content that would exceed a single card.</p>
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Swipe cards allow a user to move between different content containing cards in order to allow the user to access content that would exceed a single card.</p>
             <span id="ui-examples-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">UI Examples
               <CopyToClipboard text={'http://localhost:8000/components/cards/single-item#ui-examples'}>

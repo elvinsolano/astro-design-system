@@ -55,7 +55,7 @@ function DesignLogoPage() {
   return (
     <Layout>
       <SEO
-        title="Design"
+        title="Astro"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
@@ -128,7 +128,7 @@ function DesignLogoPage() {
                   </svg> 
                 </CopyToClipboard>            
               </Heading> 
-              <p className="mb-5 text-greyStatus-600 tracking-wider">Variations for presenting Astro “A” and wordmark together.</p>
+              <p className="mb-5 text-greyStatus-600 tracking-wider">Variations for presenting the Astro “A” and wordmark together.</p>
               <div className="flex flex-wrap -mx-4">
                 <div className="px-4 mb-8"> 
                   <div className="bg-black p-16">
@@ -409,7 +409,7 @@ function DesignLogoPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not put logo over any unapproved background colors.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not put the logo over any unapproved background colors.</p>
                 </div>
               </div>
 
