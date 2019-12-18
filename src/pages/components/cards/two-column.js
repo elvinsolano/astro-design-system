@@ -106,7 +106,7 @@ function ComponentsCardsTwoColumnPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have multiple items to be displayed that are composed of two columns of information.</p>
+                <p className="text-greyStatus-600 ml-3">You have data on multiple topics.</p>
               </li>
               <li className="flex mb-3">
                 <div className="as-guidance">
@@ -114,16 +114,8 @@ function ComponentsCardsTwoColumnPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="text-greyStatus-600 ml-3">You have values that need to be easily read, emphasized and/or compared.</p>
-              </li> 
-              <li className="flex mb-3">
-                <div className="as-guidance">
-                  <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                  </svg>  
-                </div>
-                <p className="text-greyStatus-600 ml-3">Your items must have subsections that show the same groupings of information.</p>
-              </li> 
+                <p className="text-greyStatus-600 ml-3">You have data points that need to be easily read, emphasized and/or compared (E.g., Monetary Amount).</p>
+              </li>  
               <li className="flex mb-3">
                 <div className="as-guidance">
                   <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
