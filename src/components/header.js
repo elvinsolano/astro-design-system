@@ -44,7 +44,7 @@ function Header({ siteTitle }) {
                 isExpanded ? `block` : `hidden`
               } md:block md:flex md:items-center w-full md:w-auto`}
             >
-              <div className="text-sm text-grey-600"> 
+              <div className="text-grey-600"> 
 
                 <Link
                   to="/content"

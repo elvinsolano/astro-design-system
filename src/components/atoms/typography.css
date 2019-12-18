@@ -473,10 +473,15 @@ aside nav ul li a:active {
   margin-left: 0;
 }
 .as-home-section {
-  position: relative;
-  min-height: 760px;
+  position: relative; 
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 60px auto;
+}
+.as-home-section:first-child {
+  margin-top: 120px;
+}
+.as-home-section:last-child {
+  margin-bottom: 120px;
 }
 .as-hero-section {
   position: relative;
