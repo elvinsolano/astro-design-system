@@ -250,7 +250,7 @@ function ComponentsCardsProfilePage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any other image than Avatar 100 or Initial 100. Image must be present.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use any other image than <Link to="../design/icons" className="inline text-status-100 hover:text-red-900 underline">Avatar 100</Link> or <Link to="../design/icons" className="inline text-status-100 hover:text-red-900 underline">Initial 100</Link>. Image must be present.</p>
                 </div>
               </div>
 

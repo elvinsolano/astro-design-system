@@ -61,22 +61,21 @@ function ContentPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">Personality</Heading>
-            <Download />
+            <Heading level="1" className="as-h1 as-type-medium">Content</Heading> 
           </div>  
           
           <section id="voicetone" name="voicetone" className="as-section"> 
             <span id="voicetone-anchor" className="page-anchor"></span> 
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Astro’s content is designed to create a seamless, efficient and intuitive experience for users. From voice to visual, Astro represents an evolution in the way users access information through a simple voice command or the touch of a button. Our style is sleek but unpretentious, information-driven, but not overwhelming. We seek to deliver insights that make users more efficient, knowledgeable and proactive throughout their day.</p>
-            <p className="mb-16 text-greyStatus-600 tracking-wider">The full writing <a className="inline text-sm text-status-100 hover:text-red-900 underline" target="_blank" href="https://docs.google.com/document/d/1Kv4gH9Ki_0Bj3eEWKpDjdhuRUC_0KsMl-lXGHdiBxPo/edit#heading=h.t7nurv6jq2u1">guide</a> is here.</p>
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Voice and Tone
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Astro’s content is designed to create a seamless, efficient and intuitive experience for users. From voice to visual, Astro represents an evolution in the way users access information through a simple voice command or the touch of a button. Our style is sleek but unpretentious, information-driven, but not overwhelming. We seek to deliver insights that make users more efficient, knowledgeable and proactive throughout their day.</p>
+            <p className="mb-8 text-greyStatus-600 tracking-wider">The full writing guide is <a className="inline text-status-100 hover:text-red-900 underline" target="_blank" href="https://docs.google.com/document/d/1Kv4gH9Ki_0Bj3eEWKpDjdhuRUC_0KsMl-lXGHdiBxPo/edit#heading=h.t7nurv6jq2u1">here</a>.</p>
+            <Heading level="2" className="as-h2 as-type-medium mb-6">Voice and Tone
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                 </svg> 
               </CopyToClipboard>
             </Heading>  
-            <p className="mb-10 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Voice</span> is what Astro says and does. As a user engagement point, Astro’s voice is <span className="as-type-medium">helpful, trustworthy and approachable.</span></p>
+            <p className="mb-6 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Voice</span> is what Astro says and does. As a user engagement point, Astro’s voice is <span className="as-type-medium">helpful, trustworthy and approachable.</span></p>
             <p className="mb-10 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Tone</span> is Astro’s character or attitude as it talks and behaves. Astro’s tone is <span className="as-type-medium">powerful, insightful and proactive.</span></p>
             <div className="mb-10">
               <p className="text-sm text-greyStatus-600 uppercase">Helpful</p>
@@ -94,7 +93,7 @@ function ContentPage() {
           
           <section id="guidelines" name="types" className="as-section"> 
             <span id="guidelines-anchor" className="page-anchor"></span>  
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Writing Guidelines
+            <Heading level="2" className="as-h2 as-type-medium mb-6">Writing Guidelines
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -103,7 +102,7 @@ function ContentPage() {
             </Heading>  
             <div className="mb-10"> 
               <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">We create simple, elegant phrases.</p>
-              <p className="mb-10 text-greyStatus-600 tracking-wider">Astro's voice responses are direct, conversational, and matter-of-fact.  Astro will never talk first. It's a passive agent, and waits for a question in order to surface information.</p>
+              <p className="mb-10 text-greyStatus-600 tracking-wider">Astro's voice responses are direct, conversational and matter-of-fact. Astro will never talk first. It waits for a question in order to surface information.</p>
             </div>        
             <div className="mb-10"> 
               <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">We prefer white space.</p>
@@ -115,7 +114,7 @@ function ContentPage() {
             </div>  
             <div className="mb-10">
               <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">We protect confidentiality.</p>
-              <p className="mb-10 text-greyStatus-600 tracking-wider">Astro does not speak aloud any client or personal information. Astro has a generic voice first approach, which means responses should use generic language that does not contain sensitive information.</p>
+              <p className="mb-10 text-greyStatus-600 tracking-wider">Astro does not speak any client or personal information aloud. Astro’s generic voice-first approach means responses should use generic language that does not contain sensitive information.</p>
             </div>                     
             <div className="mb-10">
               <p className="mb-5 text-sm text-greyStatus-600 uppercase">Examples</p>
@@ -156,7 +155,7 @@ function ContentPage() {
 
           <section id="utterances" name="utterances" className="as-section"> 
             <span id="utterances-anchor" className="page-anchor"></span> 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">User Utterances
+            <Heading level="2" className="as-h2 as-type-medium mb-6">User Utterances
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -183,15 +182,15 @@ function ContentPage() {
 
           <section id="cta" name="cta" className="as-section"> 
             <span id="cta-anchor" className="page-anchor"></span> 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Call to Action (CTA)
+            <Heading level="2" className="as-h2 as-type-medium mb-6">Call to Action (CTA)
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Our call to actions are buttons that exist at the end of each story and are designed to push users to the next actionable insight, redirect them outside of Astro, or help them to navigate to related stories. There must at least be one CTA per conversation. There should generally be no more than 5 CTAs per story.</p> 
-            <p className="mb-10 text-greyStatus-600 tracking-wider">A full list of CTAs can be found <a className="inline text-sm text-status-100 hover:text-red-900 underline" target="_blank" href="https://docs.google.com/spreadsheets/d/1nSpKhP1FcBh8KrtV4GHOMqvY1cMbbbnv/edit#gid=1209391679">here</a>.</p> 
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Call to actions are buttons that exist at the end of each story and are designed to push users to the next actionable insight, redirect them outside of Astro or help them to navigate to related stories. There must at least be one CTA per conversation. There should generally be no more than 5 CTAs per story.</p> 
+            <p className="mb-10 text-greyStatus-600 tracking-wider">A full list of CTAs can be found <a className="inline text-status-100 hover:text-red-900 underline" target="_blank" href="https://docs.google.com/spreadsheets/d/1nSpKhP1FcBh8KrtV4GHOMqvY1cMbbbnv/edit#gid=1209391679">here</a>.</p> 
             <div className="flex mb-16">
               <div className="w-1/2 pr-6">
                 <p className="mb-10 text-greyStatus-600 as-h3 as-type-medium">Our CTAs are:</p> 
@@ -252,7 +251,7 @@ function ContentPage() {
               </div> 
             </div>
             <div className="mb-16">
-              <Heading level="3" className="as-h3 as-type-medium mb-3">Examples</Heading> 
+              <Heading level="3" className="as-h3 as-type-medium mb-6">Examples</Heading> 
               <div className="mb-10">
                 <div className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap justify-start">
                   <div className="flex mb-6 as-grid-8">
@@ -321,7 +320,7 @@ function ContentPage() {
 
           <section id="nudges" name="nudges" className="as-section"> 
             <span id="nudges-anchor" className="page-anchor"></span> 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Nudges
+            <Heading level="2" className="as-h2 as-type-medium mb-6">Nudges
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
@@ -349,13 +348,14 @@ function ContentPage() {
           <section id="guidance" name="guidance" className="as-section mb-48">
             <span id="guidance-anchor" className="page-anchor"></span>
 
-            <Heading level="2" className="as-h2 as-type-medium mb-3">Guidance
+            <Heading level="2" className="as-h2 as-type-medium mb-6">Guidance
               <CopyToClipboard text={'http://localhost:8000/design/typography#guidance-anchor'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                 </svg> 
               </CopyToClipboard>
             </Heading>  
+            <p className="mb-12 text-greyStatus-600 tracking-wider">Principles to keep in mind when writing for Astro.</p> 
             <div className="flex -mx-5 mb-6">
               <div className="w-1/2 px-5"> 
                 <div className="flex"> 
