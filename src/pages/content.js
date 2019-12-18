@@ -68,27 +68,27 @@ function ContentPage() {
           <section id="voicetone" name="voicetone" className="as-section"> 
             <span id="voicetone-anchor" className="page-anchor"></span> 
             <p className="mb-16 text-greyStatus-600 tracking-wider">Astro’s content is designed to create a seamless, efficient and intuitive experience for users. From voice to visual, Astro represents an evolution in the way users access information through a simple voice command or the touch of a button. Our style is sleek but unpretentious, information-driven, but not overwhelming. We seek to deliver insights that make users more efficient, knowledgeable and proactive throughout their day.</p>
-            <p className="mb-16 text-greyStatus-600 tracking-wider">The full writing guide is here.</p>
+            <p className="mb-16 text-greyStatus-600 tracking-wider">The full writing <a className="inline text-sm text-status-100 hover:text-red-900 underline" target="_blank" href="https://docs.google.com/document/d/1Kv4gH9Ki_0Bj3eEWKpDjdhuRUC_0KsMl-lXGHdiBxPo/edit#heading=h.t7nurv6jq2u1">guide</a> is here.</p>
             <Heading level="2" className="as-h2 as-type-medium mb-3">Voice and Tone
               <CopyToClipboard text={'http://localhost:8000/elements/buttons#types'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#2D2D2D" d="M6.042 12.738c0.674-0.602 1.7-0.568 2.332 0.077s0.648 1.676 0.036 2.341v0l-3.298 3.309c-2.032 2.36-1.899 5.894 0.304 8.094s5.727 2.315 8.069 0.264v0l3.298-3.309c0.666-0.668 1.745-0.668 2.41 0s0.666 1.751 0 2.418v0l-3.341 3.352c-1.739 1.742-4.097 2.719-6.554 2.715-3.767-0.002-7.16-2.283-8.596-5.777s-0.63-7.511 2.041-10.176v0zM19.472 10.306c0.614-0.614 1.608-0.614 2.222 0s0.614 1.608 0 2.222v0l-9.16 9.16c-0.293 0.298-0.693 0.465-1.111 0.465s-0.818-0.168-1.111-0.465c-0.298-0.293-0.465-0.693-0.465-1.111s0.168-0.818 0.465-1.111v0zM15.573 2.81c3.749-3.746 9.825-3.746 13.574 0 1.818 1.796 2.845 4.244 2.853 6.8s-1.003 5.010-2.81 6.818v0l-2.75 2.75c-0.444 0.444-1.092 0.618-1.699 0.455s-1.081-0.637-1.244-1.244c-0.163-0.607 0.011-1.255 0.455-1.699v0l2.75-2.75c1.146-1.146 1.79-2.7 1.79-4.321s-0.644-3.175-1.79-4.321c-1.146-1.146-2.7-1.79-4.321-1.79s-3.175 0.644-4.321 1.79v0l-2.75 2.75c-0.687 0.687-1.801 0.687-2.488 0s-0.687-1.801 0-2.488v0z"></path>
                 </svg> 
               </CopyToClipboard>
-            </Heading> 
-            <p className="mb-10 text-greyStatus-600 tracking-wider">Voice is what Astro says and does. It defines the boundaries of Astro’s interactions, makes them predictable, and allows Astro’s behavior to consistently align with our expectations. Astro’s voice is helpful, trustworthy and approachable. </p>
-            <p className="mb-10 text-greyStatus-600 tracking-wider">Tone is how Astro sounds when it talks and behaves. It allows us to shift attitudes when speaking to users. Astro’s tone is powerful, insightful and proactive</p>
+            </Heading>  
+            <p className="mb-10 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Voice</span> is what Astro says and does. As a user engagement point, Astro’s voice is <span className="as-type-medium">helpful, trustworthy and approachable.</span></p>
+            <p className="mb-10 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Tone</span> is Astro’s character or attitude as it talks and behaves. Astro’s tone is <span className="as-type-medium">powerful, insightful and proactive.</span></p>
             <div className="mb-10">
               <p className="text-sm text-greyStatus-600 uppercase">Helpful</p>
               <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">"How can I help you today, Mary?"</p>
             </div>        
             <div className="mb-10">
               <p className="text-sm text-greyStatus-600 uppercase">Insightful</p>
-              <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">"You're meeting at 1:00 PM with the CEO of Target. Would you like to see this client's company insights?"</p>
+              <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">"Your meeting is at 1:00 PM with the CEO of Target. Would you like to see this client’s company insights?"</p>
             </div>        
             <div className="mb-10">
               <p className="text-sm text-greyStatus-600 uppercase">Proactive</p>
-              <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">"Your opportunity is expiring on September 4, 2018. Update it now before it expires."</p>
+              <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">"Your opportunity is expiring on September 4, 2020. Update it now before it expires."</p>
             </div>        
           </section> 
           
@@ -111,11 +111,11 @@ function ContentPage() {
             </div>  
             <div className="mb-10"> 
               <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">We always write with the next step in mind.</p>
-              <p className="mb-10 text-greyStatus-600 tracking-wider">Astro is a responsive and conversational assistant. We surface information in order to propel users to the next step, keeping in mind that their end goal may not be just one answer.</p>
+              <p className="mb-10 text-greyStatus-600 tracking-wider">We surface information in order to propel users to the next step, keeping in mind that their end goal may not be just one answer.</p>
             </div>  
             <div className="mb-10">
               <p className="as-type-medium as-h3 text-greyStatus-600 tracking-wider">We protect confidentiality.</p>
-              <p className="mb-10 text-greyStatus-600 tracking-wider">"Astro does not speak aloud any client or personal information. Astro has a generic voice first approach, which means responses should use generic language that does not contain sensitive information."</p>
+              <p className="mb-10 text-greyStatus-600 tracking-wider">Astro does not speak aloud any client or personal information. Astro has a generic voice first approach, which means responses should use generic language that does not contain sensitive information.</p>
             </div>                     
             <div className="mb-10">
               <p className="mb-5 text-sm text-greyStatus-600 uppercase">Examples</p>
@@ -125,7 +125,7 @@ function ContentPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="as-type-medium text-greyStatus-600 ml-3">"Do open an overlay when tapping View More."</p>
+                <p className="as-type-medium text-greyStatus-600 ml-3">"Here are your 15 open opportunities for Acme International."</p>
               </div>   
               <div className="flex mb-10">
                 <div className="as-guidance">
@@ -133,7 +133,7 @@ function ContentPage() {
                     <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                   </svg> 
                 </div>
-                <p className="as-type-medium text-greyStatus-600 ml-3">"Do not use text button suggestion for anything other then suggested voice."</p>
+                <p className="as-type-medium text-greyStatus-600 ml-3">"You have 15 open opportunities worth $45 million for Acme International."</p>
               </div>
               <div className="flex mb-6">
                 <div className="as-guidance">
@@ -141,7 +141,7 @@ function ContentPage() {
                     <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
                   </svg>  
                 </div>
-                <p className="as-type-medium text-greyStatus-600 ml-3">"Do open an overlay when tapping View More."</p>
+                <p className="as-type-medium text-greyStatus-600 ml-3">"Here’s your elective contribution to your 401k for this year."</p>
               </div>   
               <div className="flex mb-6">
                 <div className="as-guidance">
@@ -149,7 +149,7 @@ function ContentPage() {
                     <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                   </svg> 
                 </div>
-                <p className="as-type-medium text-greyStatus-600 ml-3">"Do not use text button suggestion for anything other then suggested voice."</p>
+                <p className="as-type-medium text-greyStatus-600 ml-3">"Your maximum 401k contribution is $500,000. You’re currently contributing $20,000."</p>
               </div>
             </div>                     
           </section> 
@@ -165,14 +165,14 @@ function ContentPage() {
             </Heading> 
             <div className="flex">
               <div className="w-1/2 pr-6">
-                <p className="mb-10 text-greyStatus-600 tracking-wider">Utterances are how a user asks a question to Astro. Create between 5-8 for each story. When creating utterances, specificity is key. The more specific the language, the higher the probability that the right conversation model will be triggered.</p>
+                <p className="mb-10 text-greyStatus-600 tracking-wider">Utterances are how a user asks a question to Astro. Create between 5-8 for each story. When creating utterances, specificity is key. The more specific the language, the higher the probability that the right conversation model will be triggered.</p>
                 <p className="mb-5 text-sm text-greyStatus-600 uppercase">Examples</p> 
                 <div className="mb-3">
-                  <p className="as-type-medium text-greyStatus-600 mb-6">Do I have any outstanding invoices?</p>
-                  <p className="as-type-medium text-greyStatus-600 mb-6">Can I see my past due bills?</p>
-                  <p className="as-type-medium text-greyStatus-600 mb-6">What are my past due ARs?</p>
-                  <p className="as-type-medium text-greyStatus-600 mb-6">I need to see my past due receivables?</p>
-                  <p className="as-type-medium text-greyStatus-600">Am I overdue in paying my bills?</p>
+                  <p className="as-type-medium text-greyStatus-600 mb-6">"Do I have any outstanding invoices?"</p>
+                  <p className="as-type-medium text-greyStatus-600 mb-6">"Can I see my past due bills?"</p>
+                  <p className="as-type-medium text-greyStatus-600 mb-6">"What are my past due ARs?"</p>
+                  <p className="as-type-medium text-greyStatus-600 mb-6">"I need to see my past due receivables?"</p>
+                  <p className="as-type-medium text-greyStatus-600">"Am I overdue in paying my bills?"</p>
                 </div>
               </div>
               <div className="w-1/2">
@@ -191,7 +191,7 @@ function ContentPage() {
               </CopyToClipboard>
             </Heading> 
             <p className="mb-5 text-greyStatus-600 tracking-wider">Our call to actions are buttons that exist at the end of each story and are designed to push users to the next actionable insight, redirect them outside of Astro, or help them to navigate to related stories. There must at least be one CTA per conversation. There should generally be no more than 5 CTAs per story.</p> 
-            <p className="mb-10 text-greyStatus-600 tracking-wider">A full list of CTAs can be found here.</p> 
+            <p className="mb-10 text-greyStatus-600 tracking-wider">A full list of CTAs can be found <a className="inline text-sm text-status-100 hover:text-red-900 underline" target="_blank" href="https://docs.google.com/spreadsheets/d/1nSpKhP1FcBh8KrtV4GHOMqvY1cMbbbnv/edit#gid=1209391679">here</a>.</p> 
             <div className="flex mb-16">
               <div className="w-1/2 pr-6">
                 <p className="mb-10 text-greyStatus-600 as-h3 as-type-medium">Our CTAs are:</p> 
@@ -272,7 +272,7 @@ function ContentPage() {
                     <img data-src={ctaBoard2} className="lazyload inline-block" width="227" alt="Buttons Specs Primary 3" />
                   </div>  
                 </div>
-                <p className="as-type-regular text-sm text-greyStatus-600">Action: CTA links to a list of a company's Boaord of Directors</p> 
+                <p className="as-type-regular text-sm text-greyStatus-600">Action: CTA links to a list of a company's Board of Directors</p> 
               </div>
               <div className="mb-10">
                 <div className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap justify-start">
@@ -328,7 +328,8 @@ function ContentPage() {
                 </svg> 
               </CopyToClipboard>
             </Heading> 
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Other apps have push notifications. We have nudges: a short message meant to gently guide the user through their day and help them stay ahead. Nudges are personal, actionable, and insightful. They should ideally draw from 2+ data points that are combined to give a user insight they wouldn’t otherwise receive. They are either scheduled nudges (ie, tax payment reminders), ad-hoc (the new Apple iPhone is out and you’re eligible for an upgrade!) or triggered (Christmas is coming up. Set a reminder for vacation now). </p> 
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Other apps have push notifications. We have <span className="as-type-medium">nudges:</span> a short message meant to gently guide the user through their day and help them stay ahead. Nudges are <span className="as-type-medium">personal, actionable and insightful</span>.</p> 
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Nudges should ideally draw from 2+ data points that are combined to give a user insight they wouldn’t otherwise receive. They are either scheduled nudges (i.e., tax payment reminders), ad-hoc (the new Apple iPhone is out and you’re eligible for an upgrade!) or triggered (Christmas is coming up. Set a reminder for vacation now)</p> 
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Nudge Copy</Heading> 
               <div className="mb-5 py-16 pl-20 pr-10 bg-placeholder-200 flex flex-wrap justify-start">
@@ -398,7 +399,7 @@ function ContentPage() {
                   </div>
                   <div>
                     <p className="mb-2 text-greyStatus-600 as-type-medium ml-3">Pretend Astro is human.</p>
-                    <p className="mb-6 text-greyStatus-600 ml-3 tracking-wider">Astro is a bot. It has limitations. Don’t try to mask errors or pretend that Astro knows. </p>
+                    <p className="mb-6 text-greyStatus-600 ml-3 tracking-wider">Don’t hide that Astro has limitations. Set expectations by telling users what Astro can and cannot do.</p>
                     <p className="mb-3 text-xs uppercase text-greyStatus-600 ml-3">For Example</p>
                     <p className="text-sm as-type-medium text-greyStatus-600 ml-3">User: "Astro, order me an Uber."<br /> Astro: "I can't do that yet. Here are some other things you can ask me."</p>
                   </div>
@@ -480,7 +481,7 @@ function ContentPage() {
                   <div>
                     <p className="mb-2 text-greyStatus-600 as-type-medium ml-3">Use date, month, year in voice responses.</p>
                     <p className="mb-3 text-xs uppercase text-greyStatus-600 ml-3">For Example</p>
-                    <p className="text-sm as-type-medium text-greyStatus-600 ml-3">"I've scheduled your task for November 28, 2018."</p>
+                    <p className="text-sm as-type-medium text-greyStatus-600 ml-3">"I've scheduled your task for November 28, 2020."</p>
                   </div>
                 </div>
               </div>  
@@ -494,7 +495,7 @@ function ContentPage() {
                   <div>
                     <p className="mb-2 text-greyStatus-600 as-type-medium ml-3">Use the day or alternative formats.</p>
                     <p className="mb-3 text-xs uppercase text-greyStatus-600 ml-3">Avoid using examples like these:</p>
-                    <p className="text-sm as-type-medium text-greyStatus-600 ml-3">"I’ve scheduled your task for November 28."<br />"I've scheduled your task for Wed 28 Nov 2018."</p>
+                    <p className="text-sm as-type-medium text-greyStatus-600 ml-3">"I’ve scheduled your task for November 28."<br />"I've scheduled your task for Wed 28 Nov 2020."</p>
                   </div>
                 </div>
               </div> 
@@ -507,4 +508,3 @@ function ContentPage() {
 }
 
 export default ContentPage;
- 

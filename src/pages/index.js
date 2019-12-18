@@ -361,7 +361,7 @@ function IndexPage() {
           <section className="as-home-section my-32">
             <div className="mx-32 flex justify-center items-center">
               <div className="w-2/3 text-center">
-                <p level="2" className="as-h2 as-type-medium mb-3">Hope It Works</p>
+                <p level="2" className="as-h2 as-type-medium mb-3">How It Works</p>
                 <p className="pb-12">Anyone can and should use this resource when designing future components of Astro to ensure consistency and uniformity of the product in look, feel, and overall scope.</p>
               </div>
             </div>
