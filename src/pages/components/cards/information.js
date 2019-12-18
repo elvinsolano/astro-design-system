@@ -365,7 +365,7 @@ function ComponentsCardsInformationPage() {
                       <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
                     </svg> 
                   </div>
-                  <p className="text-sm text-greyStatus-600 ml-3">Do not use a profile image or initial image other than small in an information card header.</p>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not use a <Link to="../design/icons" className="inline text-status-100 hover:text-red-900 underline">profile image</Link> or <Link to="../design/icons" className="inline text-status-100 hover:text-red-900 underline">initial image</Link> other than small in an information card header.</p>
                 </div>                 
               </div>
 
