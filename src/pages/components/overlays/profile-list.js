@@ -197,7 +197,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it.</p>
+                    <p className="text-sm text-greyStatus-600">Header Title can be as long as content requires. The recommended length is 2 lines. If a Header Title is longer, consider redacting it</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -205,7 +205,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum number of subtitles is 4</p>
                   </div>              
                 </li>  
               </ol> 
@@ -218,7 +218,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">X - Use to leave overlay.</p>
+                    <p className="text-sm text-greyStatus-600">X - Use to leave overlay</p>
                   </div>              
                 </li>
                 <li className="text-sm">
@@ -226,7 +226,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">{"<"} - Only use back arrow on a second overlay screen.</p>
+                    <p className="text-sm text-greyStatus-600">{"<"} - Only use back arrow on a second overlay screen</p>
                   </div>              
                 </li> 
               </ol> 
@@ -239,7 +239,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">In a Profile List overlay, all rows of the list must have the same elements.</p>
+                    <p className="text-sm text-greyStatus-600">In a Profile List overlay, all rows of the list must have the same elements</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -247,7 +247,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Maximum of 4 subtitles per list item.</p>
+                    <p className="text-sm text-greyStatus-600">Maximum of 4 subtitles per list item</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -255,7 +255,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Titles’ maximum length is two lines. If they exceed that, use an ellipsis.</p>
+                    <p className="text-sm text-greyStatus-600">Body Titles’ maximum length is two lines. If they exceed that, use an ellipsis</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -263,7 +263,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details.</p>
+                    <p className="text-sm text-greyStatus-600">If a card only contains Body Title Content, there must be an arrow leading to further details</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -271,7 +271,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Content can include a link</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -279,7 +279,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link.</p>
+                    <p className="text-sm text-greyStatus-600">Body Subtitle Labels never include a link</p>
                   </div>              
                 </li> 
               </ol> 
@@ -292,7 +292,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li> 
                 <li className="text-sm">
@@ -300,7 +300,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2.</p>
+                    <p className="text-sm text-greyStatus-600">If a card contains badges, the maximum is 2</p>
                   </div>              
                 </li> 
               </ol> 
@@ -313,7 +313,7 @@ function ComponentsOverlaysProfilePage() {
                     <div className=" ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">An optional component.</p>
+                    <p className="text-sm text-greyStatus-600">An optional component</p>
                   </div>              
                 </li>  
               </ol> 
