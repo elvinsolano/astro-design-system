@@ -160,7 +160,7 @@ function ComponentsOverlaysTasksPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up an overlay for a task card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Overlay details refer to elements that make up a task overlay.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsTasksOverlay1} className="lazyload " width="375" alt="Overlays Tasks Details" />
             </div> 

@@ -18,6 +18,7 @@ import paddingProfileOverlay1 from "../../../assets/components/overlays/Profile 
 import guidance1 from "../../../assets/components/overlays/Profile List Overlay/Guidance/01 Guidance.png";
 import guidance2 from "../../../assets/components/overlays/Profile List Overlay/Guidance/02 Guidance.png"; 
 import guidance3 from "../../../assets/components/overlays/Profile List Overlay/Guidance/03 Guidance.png"; 
+import guidance4 from "../../../assets/components/overlays/Profile List Overlay/Guidance/04 Guidance.png"; 
 
 function ComponentsOverlaysProfilePage() { 
 
@@ -177,7 +178,7 @@ function ComponentsOverlaysProfilePage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a profile list card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Overlay details refer to elements that make up a profile list overlay.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsProfileOverlay1} className="lazyload " width="375" alt="Overlays Profile List Details" />
             </div> 
@@ -366,6 +367,18 @@ function ComponentsOverlaysProfilePage() {
                     </svg> 
                   </div>
                   <p className="text-sm text-greyStatus-600 ml-3">Do not hide value on list if a value is not found. Use “n/a”.</p>
+                </div>
+              </div>
+              
+              <div className="w-grid px-4 mb-8">
+                <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Logo Guidance 2" />
+                <div className="flex mb-3">
+                  <div className="as-guidance">
+                    <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                    </svg> 
+                  </div>
+                  <p className="text-sm text-greyStatus-600 ml-3">Do not hyperlink contact information within a profile list. Each contact should have an arrow leading to their individual contact info.</p>
                 </div>
               </div>
 

@@ -166,7 +166,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a highlighted item and detail card.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Overlay details refer to elements that make up a grouped list overlay.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsHighlightedItemDetailOverlay1} className="lazyload " width="375" alt="Overlays Highlighted Item Details Details" />
             </div> 
@@ -260,7 +260,7 @@ function ComponentsOverlaysHighlightedItemDetailPage() {
                     <div className="ml-3">
                       <p className="w-3 text-sm">- </p>
                     </div>
-                    <p className="text-sm text-greyStatus-600">Please refer to documentation for <Link to="../elements/charts" className="inline text-sm text-status-100 hover:text-red-900 underline">Horizontal Graphs</Link> in Graphs</p>
+                    <p className="text-sm text-greyStatus-600">Please refer to documentation for Horizontal Graphs in <Link to="../elements/charts" className="inline text-sm text-status-100 hover:text-red-900 underline">Graphs</Link></p>
                   </div>              
                 </li> 
               </ol> 

@@ -170,7 +170,7 @@ function ComponentsOverlaysSingleItemPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a single-item overlay.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Overlay details refer to elements that make up a single-item overlay.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsSingleItemOverlay1} className="lazyload " width="375" alt="Overlays Single Item Details" />
             </div> 

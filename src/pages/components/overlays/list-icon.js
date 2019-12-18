@@ -93,7 +93,7 @@ function ComponentsOverlaysListIconPage() {
         <main className=" pl-16 pr-16 pt-16">
 
           <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
-            <Heading level="1" className="as-h1 as-type-medium">List Icon Overlay</Heading>
+            <Heading level="1" className="as-h1 as-type-medium">List with Icon Overlay</Heading>
             <Download />
           </div> 
 
@@ -142,7 +142,7 @@ function ComponentsOverlaysListIconPage() {
               </TabList>
           
               <TabPanel>                  
-                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
+                <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
                   <img data-src={uiexamplesListIconOverlay1} className="lazyload " width="335" alt="Overlays List With Icon UI Examples" />
                 </div> 
               </TabPanel>  
@@ -173,7 +173,7 @@ function ComponentsOverlaysListIconPage() {
               </svg> 
             </CopyToClipboard>
             </Heading> 
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Elements that make up a list with icons overlay.</p>
+            <p className="mb-5 text-greyStatus-600 tracking-wider">Overlay details refer to elements that make up a icons overlay.</p>
             <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
               <img data-src={detailsListIconOverlay1} className="lazyload " width="375" alt="Overlays List With Icon Details" />
             </div> 
