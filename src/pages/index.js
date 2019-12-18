@@ -97,7 +97,7 @@ function IndexPage() {
       /> 
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className="as-home">
-          <section className="as-home-section as-hero-section bg-placeholder-400">
+          <section className="as-hero-section bg-placeholder-400">
             <div className="as-hero-background"> 
               <div className="layer-shapes">
                 <div className="large-circle"></div> 
@@ -540,7 +540,7 @@ function IndexPage() {
                     <div className="flex items-start justify-center">
                       <div className="w-1/2 py-8 pr-8">
                         <p className="pb-4">Start with the following:</p>
-                        <p className="pb-4">Explore the Design section in order to learn the Astro design system and patterns.</p>
+                        <p className="pb-4">Explore the <Link to="design" className="inline text-status-100 hover:text-red-900 underline">Design</Link> section in order to learn the Astro design system and patterns.</p>
                         <p className="pb-4">Then, review the Components section. There you can download Sketch file design samples to help you to become familiar with existing components and incorporate them into your designs.</p>                  
                       </div>
                       <div className="w-1/2 flex items-center justify-center">
