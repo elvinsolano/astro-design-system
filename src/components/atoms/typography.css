@@ -646,3 +646,11 @@ aside nav ul li a:active {
 }
 
 /* borderColor="#5A130C" */
+
+#cursor-pointer:active {
+  content: "copied!";
+  width: 20px;
+  height: 20px;
+  background-color: red;
+
+}

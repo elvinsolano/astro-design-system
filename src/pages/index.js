@@ -540,7 +540,7 @@ function IndexPage() {
                       </div>
                       <div className="w-1/2 flex items-center justify-center">
                         <video className="lazyload" autoPlay={true} muted={true} loop>
-                          <source src={vid3} type="video/mp4" />
+                          <source src={vid2} type="video/mp4" />
                         </video>   
                       </div>
                     </div> 
@@ -567,7 +567,7 @@ function IndexPage() {
                       </div>
                       <div className="w-1/2 flex items-center justify-center">
                         <video className="lazyload" autoPlay={true} muted={true} loop>
-                          <source src={vid2} type="video/mp4" />
+                          <source src={vid4} type="video/mp4" />
                         </video>   
                       </div>
                     </div> 
@@ -579,7 +579,7 @@ function IndexPage() {
                       </div>
                       <div className="w-1/2 flex items-center justify-center">
                           <video className="lazyload" autoPlay={true} muted={true} loop>
-                          <source src={vid4} type="video/mp4" />
+                          <source src={vid3} type="video/mp4" />
                         </video>   
                       </div>
                     </div> 

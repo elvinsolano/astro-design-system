@@ -34,6 +34,139 @@ import typesMicrophone3 from "../../assets/design/motion/types and details/Micro
 import typesMicrophone4 from "../../assets/design/motion/types and details/Microphone/MicStates_Thinking.gif";
 import typesMicrophone5 from "../../assets/design/motion/types and details/Microphone/MicStates_Delayed.gif";
 
+class Block extends Component {
+  render() {  
+    return ( 
+        
+      <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'0'}>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton className="as-accordion__button">
+              1. Voice Answer
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <div className="flex mb-6">
+              <div className="mr-10">
+                <p className="uppercase text-xs">Duration</p>
+                <p className="text-sm">0.3 sec</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Easing</p>
+                <p className="text-sm">Ease Both</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Delay</p>
+                <p className="text-sm">0 sec</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Action</p>
+                <p className="text-sm text-status-300">Incoming</p>
+              </div>
+            </div>  
+            <div className="">
+              <p className="uppercase text-xs">Behavior</p>
+              <p className="text-sm">Item fades into the screen from below (60px).</p>
+            </div>              
+          </AccordionItemPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton className="as-accordion__button">
+              2. Card
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <div className="flex mb-6">
+              <div className="mr-10">
+                <p className="uppercase text-xs">Duration</p>
+                <p className="text-sm">0.3 sec</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Easing</p>
+                <p className="text-sm">Ease Both</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Delay</p>
+                <p className="text-sm">0.02 sec</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Action</p>
+                <p className="text-sm text-status-300">Incoming</p>
+              </div>
+            </div>  
+            <div className="">
+              <p className="uppercase text-xs">Behavior</p>
+              <p className="text-sm">Item fades into the screen from below (60px).</p>
+            </div>   
+          </AccordionItemPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton className="as-accordion__button">
+              3. In Line Feedback
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <div className="flex mb-6">
+              <div className="mr-10">
+                <p className="uppercase text-xs">Duration</p>
+                <p className="text-sm">0.3 sec</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Easing</p>
+                <p className="text-sm">Ease Both</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Delay</p>
+                <p className="text-sm">0.04 sec</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Action</p>
+                <p className="text-sm text-status-300">Incoming</p>
+              </div>
+            </div>  
+            <div className="">
+              <p className="uppercase text-xs">Behavior</p>
+              <p className="text-sm">Item fades into the screen from below (60px).</p>
+            </div>   
+          </AccordionItemPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton className="as-accordion__button">
+              4. Next Steps
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <div className="flex mb-6">
+              <div className="mr-10">
+                <p className="uppercase text-xs">Duration</p>
+                <p className="text-sm">0.3 sec</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Easing</p>
+                <p className="text-sm">Ease Both</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Delay</p>
+                <p className="text-sm">0 sec</p>
+              </div>
+              <div className="mr-10">
+                <p className="uppercase text-xs">Action</p>
+                <p className="text-sm text-status-300">Incoming</p>
+              </div>
+            </div>  
+            <div className="">
+              <p className="uppercase text-xs">Behavior</p>
+              <p className="text-sm">Item fades into the screen from below (60px).</p>
+            </div>   
+          </AccordionItemPanel>
+        </AccordionItem>
+      </Accordion>
+    ); 
+  }
+}
 
 function DesignMotionPage() { 
 
@@ -77,16 +210,14 @@ function DesignMotionPage() {
       </aside>
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className=" pl-16 pr-16 pt-16">
-          <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
+          <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-5">
             <Heading level="1" className="as-h1 as-type-medium">Motion</Heading>
             <Download />
           </div>
-
-          <section id="types" name="types" className="as-section"> 
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Motion uses multiple images presented in rapid sequence in order to create the perception of real-time action.</p>
+          <p className="mb-16 text-greyStatus-600 tracking-wider">Motion uses multiple images presented in rapid sequence in order to create the perception of real-time action.</p>
           
+          <section id="types" name="types" className="as-section">             
             <span id="types-anchor" className="page-anchor"></span>      
-            
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +232,7 @@ function DesignMotionPage() {
                 URL Copied
               </ReactTooltip>              
             </Heading> 
-            <p className="mb-16 text-greyStatus-600 tracking-wider">These animations help users register that a transition is taking place or provide additional delight to an experience.</p>
+            <p className="mb-12 text-greyStatus-600 tracking-wider">These animations help users register that a transition is taking place or provide additional delight to an experience.</p>
 
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Card Incoming
@@ -117,132 +248,7 @@ function DesignMotionPage() {
                 <img data-src={typesCardIncoming1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
                 <div className="as-accordion-container ml-10">
                   <p className="mb-6">Animation timeframe (approx): 0.4 sec.</p>
-                  <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'0'}>
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton className="as-accordion__button">
-                          1. Voice Answer
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="flex mb-6">
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Duration</p>
-                            <p className="text-sm">0.3 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Easing</p>
-                            <p className="text-sm">Ease Both</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Delay</p>
-                            <p className="text-sm">0 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Action</p>
-                            <p className="text-sm text-status-300">Incoming</p>
-                          </div>
-                        </div>  
-                        <div className="">
-                          <p className="uppercase text-xs">Behavior</p>
-                          <p className="text-sm">Item fades into the screen from below (60px).</p>
-                        </div>              
-                      </AccordionItemPanel>
-                    </AccordionItem>
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton className="as-accordion__button">
-                          2. Card
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="flex mb-6">
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Duration</p>
-                            <p className="text-sm">0.3 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Easing</p>
-                            <p className="text-sm">Ease Both</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Delay</p>
-                            <p className="text-sm">0.02 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Action</p>
-                            <p className="text-sm text-status-300">Incoming</p>
-                          </div>
-                        </div>  
-                        <div className="">
-                          <p className="uppercase text-xs">Behavior</p>
-                          <p className="text-sm">Item fades into the screen from below (60px).</p>
-                        </div>   
-                      </AccordionItemPanel>
-                    </AccordionItem>
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton className="as-accordion__button">
-                          3. In Line Feedback
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="flex mb-6">
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Duration</p>
-                            <p className="text-sm">0.3 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Easing</p>
-                            <p className="text-sm">Ease Both</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Delay</p>
-                            <p className="text-sm">0.04 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Action</p>
-                            <p className="text-sm text-status-300">Incoming</p>
-                          </div>
-                        </div>  
-                        <div className="">
-                          <p className="uppercase text-xs">Behavior</p>
-                          <p className="text-sm">Item fades into the screen from below (60px).</p>
-                        </div>   
-                      </AccordionItemPanel>
-                    </AccordionItem>
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton className="as-accordion__button">
-                          4. Next Steps
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="flex mb-6">
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Duration</p>
-                            <p className="text-sm">0.3 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Easing</p>
-                            <p className="text-sm">Ease Both</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Delay</p>
-                            <p className="text-sm">0 sec</p>
-                          </div>
-                          <div className="mr-10">
-                            <p className="uppercase text-xs">Action</p>
-                            <p className="text-sm text-status-300">Incoming</p>
-                          </div>
-                        </div>  
-                        <div className="">
-                          <p className="uppercase text-xs">Behavior</p>
-                          <p className="text-sm">Item fades into the screen from below (60px).</p>
-                        </div>   
-                      </AccordionItemPanel>
-                    </AccordionItem>
-                  </Accordion>
+                  <Block />
                 </div>
               </div>  
 

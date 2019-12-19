@@ -57,14 +57,14 @@ function DesignColorPage() {
       <div className="flex flex-col flex-1 mx-auto as-body w-full pb-5.5">
         <main className=" pl-16 pr-16 pt-16">
 
-          <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-16">
+          <div className="block md:flex justify-between pb-2 border-b border-greyStatus-200 mb-5">
             <Heading level="1" className="as-h1 as-type-medium">Color</Heading> 
             <Download /> 
           </div>         
-
+          <p className="mb-16 text-greyStatus-600 tracking-wider">The design system uses a carefully considered and approved color palette. Use it to ensure Astro delivers a consistent and robustly branded experience.</p>
+          
           <section id="primary" name="primary" className="as-section"> 
-            <span id="primary-anchor" className="page-anchor"></span> 
-            <p className="mb-16 text-greyStatus-600 tracking-wider">The design system uses a carefully considered and approved color palette. Use it to ensure Astro delivers a consistent and robustly branded experience.</p>
+            <span id="primary-anchor" className="page-anchor"></span>             
             <Heading level="2" className="as-h2 as-type-medium mb-3">Primary
               <CopyToClipboard text={'http://localhost:8000/design/color#primary'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
