@@ -87,10 +87,9 @@ function DesignPictogramsPage() {
             <Heading level="1" className="as-h1 as-type-medium">Pictograms</Heading>
             <Download />
           </div> 
-          
+          <p className="mb-16 text-greyStatus-600 tracking-wider">Pictograms are visual symbols used to represent objects or to help simplify and communicate complex ideas. The variations contained within the design system show how you can apply them to Astro.</p>
           <section id="types" name="types" className="as-section">
             <span id="types-anchor" className="page-anchor"></span>
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Pictograms are visual symbols used to represent objects or to help simplify and communicate complex ideas. The variations contained within the design system show how you can apply them to Astro.</p>
             <Heading level="2" className="as-h2 as-type-medium mb-12">Types
               <CopyToClipboard text={'http://localhost:8000/design/pictograms#types-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='types' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

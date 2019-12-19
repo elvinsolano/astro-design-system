@@ -66,10 +66,9 @@ function DesignSoundPage() {
             <Heading level="1" className="as-h1 as-type-medium">Sound</Heading>
             <Download />
           </div>  
-
+          <p className="mb-16 text-greyStatus-600 tracking-wider">Sound allows Astro to communicate information in ways that improve the user experience. Use of sound can also help define Astro's personality and aesthetic.</p>
           <section id="types" name="types" className="as-section mb-16">
-            <span id="types-anchor" className="page-anchor"></span>
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Sound allows Astro to communicate information in ways that improve the user experience. Use of sound can also help define Astro's personality and aesthetic.</p>
+            <span id="types-anchor" className="page-anchor"></span> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types
               <CopyToClipboard text={'https://astro-design-system.netlify.com/design/sound#types-anchor'}>
                 <svg className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

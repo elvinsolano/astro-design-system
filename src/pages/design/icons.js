@@ -173,10 +173,9 @@ function DesignIconsPage() {
               </a>
             </div> 
           </div>         
-
+          <p className="mb-16 text-greyStatus-600 tracking-wider">Icons are a powerful way to communicate independent of language. Please review how we integrate iconography into the design system.</p>
           <section id="types" name="types" className="as-section">
             <span id="types-anchor" className="page-anchor"></span>
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Icons are a powerful way to communicate independent of language. Please review how we integrate iconography into the design system.</p>
             <Heading level="2" className="as-h2 as-type-medium mb-12">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

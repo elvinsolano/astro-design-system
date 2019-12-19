@@ -101,9 +101,8 @@ function DesignLogoPage() {
             <Heading level="1" className="as-h1 as-type-medium">Logo</Heading>
             <Download />
           </div> 
-
+          <p className="mb-16 text-greyStatus-600 tracking-wider">As the key image that visually anchors the user experience, the Astro logo is made of three rectangles that connect to form the "A" icon. The concept reflects Astro's core purpose to connect us and simplify the way we work. </p>
           <section className="as-section"> 
-            <p className="mb-16 text-greyStatus-600 tracking-wider">As the key image that visually anchors the user experience, the Astro logo is made of three rectangles that connect to form the "A" icon. The concept reflects Astro's core purpose to connect us and simplify the way we work. </p>
             <div className="mb-16 py-10 px-20 bg-placeholder-400 flex flex-wrap items-center justify-center">
               <img data-src={overviewLogo1} className="lazyload" width="414" alt="Logo Overview" />
             </div>

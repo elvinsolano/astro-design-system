@@ -64,10 +64,9 @@ function DesignHapticsPage() {
             <Heading level="1" className="as-h1 as-type-medium">Haptics</Heading>
             <Download />
           </div>  
-
+          <p className="mb-16 text-greyStatus-600 tracking-wider">Haptics are sensory feedback that an interface delivers to the user. They often expand user engagement by stimulating the user's sense of pressure, touch or ability to detect motion or action.</p>
           <section id="types" name="types" className="as-section mb-16">
             <span id="types-anchor" className="page-anchor"></span>
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Haptics are sensory feedback that an interface delivers to the user. They often expand user engagement by stimulating the user's sense of pressure, touch or ability to detect motion or action.</p>
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

@@ -106,10 +106,10 @@ function ElementsAlertsPage() {
             <Heading level="1" className="as-h1 as-type-medium">Alerts and Notifications</Heading>
             <Download />
           </div> 
-
+          <p className="mb-16 text-greyStatus-600 tracking-wider">Alerts and notifications helps to provide users with context, urgency or informational updates.</p> 
+          
           <section id="types" name="types" className="as-section">
             <span id="types-anchor" className="page-anchor"></span>
-            <p className="mb-16 text-greyStatus-600 tracking-wider">Alerts and notifications helps to provide users with context, urgency or informational updates.</p> 
             <Heading level="2" className="as-h2 as-type-medium mb-3">Types
               <CopyToClipboard text={'http://localhost:8000/design/typography#primary-anchor'}>
                 <svg data-tip='custom show' data-event='click' data-for='applying-type-scale' className="fill-current inline-block ml-2 cursor-pointer" width="13" height="13" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +124,7 @@ function ElementsAlertsPage() {
                 URL Copied
               </ReactTooltip>              
             </Heading>  
-            <p className="mb-5 text-greyStatus-600 tracking-wider">Alerts communicate context as to the status or validity around information. Notifications are messages from the system that bring something to the user’s attention</p>
+            <p className="mb-16 text-greyStatus-600 tracking-wider">Alerts communicate context as to the status or validity around information. Notifications are messages from the system that bring something to the user’s attention</p>
             <div className="mb-16">
               <Heading level="3" className="as-h3 as-type-medium mb-3">Field Alert
                 <CopyToClipboard text={'http://localhost:8000/elements/buttons#types-primary-button'}>
