@@ -608,7 +608,9 @@ aside nav ul li a:active {
 } 
 .as-home-background {
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
+  max-width: 1600px;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
   top: 0;
@@ -627,7 +629,7 @@ aside nav ul li a:active {
 }
 .home-triangle {  
   position: absolute;
-  right: -100px;
+  right: -250px;
   top: 1630px;
 }
 .home-cross {  

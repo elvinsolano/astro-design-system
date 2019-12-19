@@ -806,7 +806,7 @@ function IndexPage() {
                 <path fill="#e0301e" d="M0.19 29.311l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
                 <path fill="#e0301e" d="M0.19 31.9l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
               </svg> 
-              <svg className="fill-current home-triangle" width="500" height="500" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
+              <svg className="fill-current home-triangle" width="500" height="500" viewBox="0 0 41 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#f2f2f2" d="M17.885 0.017l18.237 31.926-36.123 0.010z"></path>
               </svg> 
               <svg className="fill-current home-pattern-4" width="250" height="250" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
