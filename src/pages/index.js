@@ -122,35 +122,168 @@ function IndexPage() {
               </div>
             </div>
           </section>
-          <section className="as-home-section my-32 pt-16">
-            <div className="as-home-foreground mx-32 flex justify-center items-center">
-              <div className="w-1/2">
-                <p level="2" className="as-h2 as-type-medium mb-3">What is Astro?</p>
-                <p className="pb-12">As your voice-enabled cognitive agent, I help to simplify your work day by bringing together 300+ of the firm’s systems, saving you time and energy on administrative tasks and information searches. </p> 
-                <p className="pb-4 text-sm uppercase text-greyStatus-600">How to communicate with Astro</p>
-                <div className="flex">
-                  <div className="">
-                    <div className="flex mb-4 pr-8 border-r border-gray-300 mr-8">
-                      <svg className="fill-current mx-auto cursor-pointer" width="60" height="80" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">  
-                        <path fill="#e0301e" d="M12 0c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12s-12-5.373-12-12v-8c0-6.627 5.373-12 12-12z"></path>
-                        <path fill="#fff" d="M12.2 10c0.994 0 1.8 0.806 1.8 1.8v8.4c0 0.994-0.806 1.8-1.8 1.8s-1.8-0.806-1.8-1.8v-8.4c0-0.994 0.806-1.8 1.8-1.8zM7.4 12.4c0.773 0 1.4 0.627 1.4 1.4v4.8c0 0.773-0.627 1.4-1.4 1.4s-1.4-0.627-1.4-1.4v-4.8c0-0.773 0.627-1.4 1.4-1.4zM17 12.4c0.773 0 1.4 0.627 1.4 1.4v4c0 0.773-0.627 1.4-1.4 1.4s-1.4-0.627-1.4-1.4v-4c0-0.773 0.627-1.4 1.4-1.4z"></path>
-                      </svg>
+          <div className="as-home-wrapper relative">
+            <div className="as-home-foreground flex flex-col">
+              <section className="as-home-section">
+                <div className="mx-32 flex justify-center items-center">
+                  <div className="w-1/2">
+                    <p level="2" className="as-h2 as-type-medium mb-3">What is Astro?</p>
+                    <p className="pb-12 as-home-copy">As your voice-enabled cognitive agent, I help to simplify your work day by bringing together 300+ of the firm’s systems, saving you time and energy on administrative tasks and information searches. </p> 
+                    <p className="pb-4 text-sm uppercase text-greyStatus-600">How to communicate with Astro</p>
+                    <div className="flex">
+                      <div className="">
+                        <div className="flex mb-4 pr-8 border-r border-grey mr-8">
+                          <svg className="fill-current mx-auto cursor-pointer" width="60" height="80" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">  
+                            <path fill="#e0301e" d="M12 0c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12s-12-5.373-12-12v-8c0-6.627 5.373-12 12-12z"></path>
+                            <path fill="#fff" d="M12.2 10c0.994 0 1.8 0.806 1.8 1.8v8.4c0 0.994-0.806 1.8-1.8 1.8s-1.8-0.806-1.8-1.8v-8.4c0-0.994 0.806-1.8 1.8-1.8zM7.4 12.4c0.773 0 1.4 0.627 1.4 1.4v4.8c0 0.773-0.627 1.4-1.4 1.4s-1.4-0.627-1.4-1.4v-4.8c0-0.773 0.627-1.4 1.4-1.4zM17 12.4c0.773 0 1.4 0.627 1.4 1.4v4c0 0.773-0.627 1.4-1.4 1.4s-1.4-0.627-1.4-1.4v-4c0-0.773 0.627-1.4 1.4-1.4z"></path>
+                          </svg>
+                        </div>
+                        <p className="pl-3">Voice</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="bg-placeholder-400 px-3 h-20 mb-4 flex items-center">  
+                          <svg className="fill-current mx-auto cursor-pointer" width="30" height="30" viewBox="0 0 77 32" xmlns="http://www.w3.org/2000/svg">    
+                            <path fill="#ababab" d="M77.333 26.667v5.333h-77.333v-5.333h77.333zM56 13.333v5.333h-13.333v-5.333h13.333zM34.667 13.333v5.333h-13.333v-5.333h13.333zM13.333 13.333v5.333h-13.333v-5.333h13.333zM77.333 13.333v5.333h-13.333v-5.333h13.333zM56 0v5.333h-13.333v-5.333h13.333zM77.333 0v5.333h-13.333v-5.333h13.333zM34.667 0v5.333h-13.333v-5.333h13.333zM13.333 0v5.333h-13.333v-5.333h13.333z"></path>
+                          </svg>
+                        </div>
+                        <p className="">Text</p>
+                      </div>
                     </div>
-                    <p className="pl-3">Voice</p>
                   </div>
-                  <div className="text-center">
-                    <div className="bg-placeholder-400 px-3 h-20 mb-4 flex items-center">  
-                      <svg className="fill-current mx-auto cursor-pointer" width="30" height="30" viewBox="0 0 77 32" xmlns="http://www.w3.org/2000/svg">    
-                        <path fill="#ababab" d="M77.333 26.667v5.333h-77.333v-5.333h77.333zM56 13.333v5.333h-13.333v-5.333h13.333zM34.667 13.333v5.333h-13.333v-5.333h13.333zM13.333 13.333v5.333h-13.333v-5.333h13.333zM77.333 13.333v5.333h-13.333v-5.333h13.333zM56 0v5.333h-13.333v-5.333h13.333zM77.333 0v5.333h-13.333v-5.333h13.333zM34.667 0v5.333h-13.333v-5.333h13.333zM13.333 0v5.333h-13.333v-5.333h13.333z"></path>
-                      </svg>
-                    </div>
-                    <p className="">Text</p>
+                  <div className="w-1/2">
+                    <Lottie options={whatOptions} width={420} />
+                  </div>
+                </div> 
+              </section>
+              <section className="as-home-section"> 
+                <div className="flex justify-center items-center my-14">
+                  <div className="w-1/2">
+                    <img data-src={designsystem} className="lazyload inline-block" width="523" alt="" /> 
+                  </div>              
+                  <div className="w-1/2">
+                    <p level="2" className="as-h2 as-type-medium mb-3">The Design System</p>
+                    <p className="as-home-copy pb-12">This design system functions as a strategic and technological repository for all components of Astro. It contains guides on the vision, content and development of the software through a system of repeatable patterns that are clustered in a consistent, responsive grid for future reference. Astro's design system uses PwC Brand Simplification.</p>
                   </div>
                 </div>
-              </div>
-              <div className="w-1/2">
-                <Lottie options={whatOptions} width={420} />
-              </div>
+              </section>
+              <section className="as-home-section "> 
+                <div className="mx-32 flex justify-center items-center"> 
+                  <div className="w-2/3 text-center">
+                    <p level="2" className="as-h2 as-type-medium mb-3">Getting Started</p>
+                    <p className="pb-12">Use this resource when designing any future components of Astro to ensure consistency and uniformity in Astro’s look, feel and overall scope.</p>
+                  </div>
+                </div>
+                <div className="mx-16 flex justify-center items-center as-home-tab">
+                  <Tabs>
+                    <TabList>
+                      <Tab>Product Owners</Tab>  
+                      <Tab>Designers</Tab>  
+                      <Tab>Developers</Tab>  
+                      <Tab>QA</Tab>  
+                    </TabList>
+                    <TabPanel>                  
+                      <div className="flex items-start justify-center">
+                        <div className="w-1/2 pt-2 pb-4 pr-12">
+                          <p className="pb-4">View usage examples and become familiar with <Link to="content" className="inline text-status-100 hover:text-red-900 underline">Content</Link> rules for insights on how to best organize and display your requirements.</p>
+                          <p className="pb-4">The content rules are scalable and allow for different information hierarchies to be displayed.</p>
+                        </div>
+                        <div className="w-1/2 flex items-center justify-center mt-2">
+                          <video className="lazyload" autoPlay={true} muted={true} loop>
+                            <source src={vid2} type="video/mp4" />
+                          </video>   
+                        </div>
+                      </div> 
+                    </TabPanel>
+                    <TabPanel>                  
+                      <div className="flex items-start justify-center">
+                        <div className="w-1/2 pt-2 pb-4 pr-12"> 
+                          <p className="pb-4">Explore the <Link to="design" className="inline text-status-100 hover:text-red-900 underline">Design</Link> section in order to learn the Astro design system and patterns.</p>
+                          <p className="pb-4">Then, review the <Link to="design" className="inline text-status-100 hover:text-red-900 underline">Components</Link> section. There you can download Sketch file design samples to help you to become familiar with existing components and incorporate them into your designs.</p>                  
+                        </div>
+                        <div className="w-1/2 flex items-center justify-center mt-2">
+                          <video className="lazyload" autoPlay={true} muted={true} loop>
+                            <source src={vid1} type="video/mp4" />
+                          </video>                         
+                        </div>
+                      </div> 
+                    </TabPanel>  
+                    <TabPanel>                  
+                      <div className="flex items-start justify-center">
+                        <div className="w-1/2 pt-2 pb-4 pr-12">
+                          <p className="pb-4">Explore Astro’s rules and guidelines to help build your solution.</p>
+                          <p className="pb-4">The support resources available will give you the tools and knowledge you need.</p>
+                          <p className="pb-4">Access and find <Link to="design/screen-anatomy" className="inline text-status-100 hover:text-red-900 underline">Screen Anatomy</Link> and structure, padding specs, <Link to="design/icons" className="inline text-status-100 hover:text-red-900 underline">Icon</Link> files, and code snippets for <Link to="design/typography" className="inline text-status-100 hover:text-red-900 underline">Typography</Link>.</p>
+                        </div>
+                        <div className="w-1/2 flex items-center justify-center mt-2">
+                          <video className="lazyload" autoPlay={true} muted={true} loop>
+                            <source src={vid4} type="video/mp4" />
+                          </video>   
+                        </div>
+                      </div> 
+                    </TabPanel>  
+                    <TabPanel>                  
+                      <div className="flex items-start justify-center">
+                        <div className="w-1/2 pt-2 pb-4 pr-12">
+                          <p className="pb-4">View all of Astro’s rules, guidelines, <Link to="elements" className="inline text-status-100 hover:text-red-900 underline">Elements</Link> and <Link to="components" className="inline text-status-100 hover:text-red-900 underline">Components</Link> to help execute a level of QA that ensures current build outputs are up to our design standards.</p>
+                        </div>
+                        <div className="w-1/2 flex items-center justify-center mt-2">
+                            <video className="lazyload" autoPlay={true} muted={true} loop>
+                            <source src={vid3} type="video/mp4" />
+                          </video>   
+                        </div>
+                      </div> 
+                    </TabPanel>  
+                  </Tabs>        
+                </div>
+              </section>
+              <section className="as-home-section"> 
+                <div className="mx-32 flex justify-center items-center">
+                  <div className="w-2/3 text-center">
+                    <p level="2" className="as-h2 as-type-medium mb-3">How It Works</p>
+                    <p className="pb-12">Anyone can and should use this resource when designing future components of Astro to ensure consistency and uniformity of the product in look, feel, and overall scope.</p>
+                  </div>
+                </div>
+                <div className="mx-32 mb-32 flex justify-center items-start">            
+                  <div className="w-1/2">
+                    <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 1</p>
+                    <p level="2" className="as-h2 as-type-medium mb-3">Define Task or Objective</p>
+                    <p className="pb-12">We start with clearly identifying the desired business or user objective. Once defined, we strategically research relevant data points and formulate content to best satisfy that goal.</p>
+                  </div>
+                  <div className="w-1/2 pl-10 text-center">
+                    <img data-src={worksStep1} className="lazyload inline-block" width="458" alt="" /> 
+                  </div>  
+                </div>
+                <div className="mx-32 mb-32 flex justify-center items-start">            
+                  <div className="w-1/2">
+                    <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 2</p>
+                    <p level="2" className="as-h2 as-type-medium mb-3">Solve through Design</p>
+                    <p className="pb-12">Once the strategy and content are agreed upon, design focuses on how to best present this information clearly and precisely via wireframe format. Design also ensures this effort is consistent with the Astro Design System.</p>
+                  </div>
+                  <div className="w-1/2 pl-10 text-center">
+                    <img data-src={worksStep2} className="lazyload inline-block" width="411" alt="" /> 
+                  </div>  
+                </div>
+                <div className="mx-32 mb-32 flex justify-center items-start">            
+                  <div className="w-1/2">
+                    <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 3</p>
+                    <p level="2" className="as-h2 as-type-medium mb-3">Create Component</p>
+                    <p className="pb-12">Once a wireframe is complete, we now leverage the visual design system to refine this structured information component. This phase integrates brand elements into the component such as color, typography and icons to give the entire experience a consistent look and feel.</p>
+                  </div>
+                  <div className="w-1/2 pl-10 text-center">
+                    <img data-src={worksStep3} className="lazyload inline-block" width="337" alt="" /> 
+                  </div>  
+                </div>
+                <div className="mx-32 flex justify-center items-start">            
+                  <div className="w-1/2">
+                    <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 4</p>
+                    <p level="2" className="as-h2 as-type-medium mb-3">Apply Component</p>
+                    <p className="pb-12">Once a component is complete, we then use it within Astro's application framework. This process brings the component to life with full functionality.</p>
+                  </div>
+                  <div className="w-1/2 pl-10">
+                    <img data-src={worksStep4} className="lazyload inline-block" width="621" style={{ marginLeft: -55 + 'px' }} alt="" /> 
+                  </div>  
+                </div>  
+              </section>
             </div>
             <div className="as-home-background"> 
               <svg className="fill-current home-pattern" width="250" height="250" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -324,22 +457,10 @@ function IndexPage() {
                 <path fill="#e0301e" d="M0.19 29.311l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
                 <path fill="#e0301e" d="M0.19 31.9l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
               </svg>
-              <svg className="fill-current home-diamond" width="600" height="600" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+              <svg className="fill-current home-diamond" width="500" height="500" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
                 <path fill="#f2f2f2" d="M0.020 16l15.98-15.98 15.98 15.98-15.98 15.98-15.98-15.98z"></path>
               </svg> 
-            </div>
-          </section>
-          <section className="as-home-section my-32"> 
-            <div className="as-home-foreground mx-32 flex justify-center items-center">
-              <div className="w-1/2">
-                <img data-src={designsystem} className="lazyload inline-block" width="490" alt="" /> 
-              </div>              
-              <div className="w-1/2 pl-10">
-                <p level="2" className="as-h2 as-type-medium mb-3">The Design System</p>
-                <p className="pb-12">This design system functions as a strategic and technological repository for all components of Astro. It contains guides on the vision, content and development of the software through a system of repeatable patterns that are clustered in a consistent, responsive grid for future reference. Astro's design system uses PwC Brand Simplification.</p>
-              </div>
-            </div>
-            <div className="as-home-background"> 
+
               <svg className="fill-current home-pattern-2" width="250" height="250" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#e0301e" d="M31.253 6.014l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
                 <path fill="#e0301e" d="M31.253 3.426l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
@@ -514,80 +635,6 @@ function IndexPage() {
               <svg className="fill-current home-circle" width="500" height="500" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#f2f2f2" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
               </svg>
-            </div>
-          </section>
-          <section className="as-home-section my-32">
-            <div className="as-home-foreground">
-              <div className="mx-32 flex justify-center items-center"> 
-                <div className="w-2/3 text-center">
-                  <p level="2" className="as-h2 as-type-medium mb-3">Getting Started</p>
-                  <p className="pb-12">Use this resource when designing any future components of Astro to ensure consistency and uniformity in Astro’s look, feel and overall scope.</p>
-                </div>
-              </div>
-              <div className="mx-32 flex justify-center items-center">
-                <Tabs>
-                  <TabList>
-                    <Tab>Product Owners</Tab>  
-                    <Tab>Designers</Tab>  
-                    <Tab>Developers</Tab>  
-                    <Tab>QA</Tab>  
-                  </TabList>
-                  <TabPanel>                  
-                    <div className="flex items-start justify-center">
-                      <div className="w-1/2 py-8 pr-8">
-                        <p className="pb-4">View usage examples and become familiar with <Link to="content" className="inline text-status-100 hover:text-red-900 underline">Content</Link> rules for insights on how to best organize and display your requirements.</p>
-                        <p className="pb-4">The content rules are scalable and allow for different information hierarchies to be displayed.</p>
-                      </div>
-                      <div className="w-1/2 flex items-center justify-center">
-                        <video className="lazyload" autoPlay={true} muted={true} loop>
-                          <source src={vid2} type="video/mp4" />
-                        </video>   
-                      </div>
-                    </div> 
-                  </TabPanel>
-                  <TabPanel>                  
-                    <div className="flex items-start justify-center">
-                      <div className="w-1/2 py-8 pr-8"> 
-                        <p className="pb-4">Explore the <Link to="design" className="inline text-status-100 hover:text-red-900 underline">Design</Link> section in order to learn the Astro design system and patterns.</p>
-                        <p className="pb-4">Then, review the <Link to="design" className="inline text-status-100 hover:text-red-900 underline">Components</Link> section. There you can download Sketch file design samples to help you to become familiar with existing components and incorporate them into your designs.</p>                  
-                      </div>
-                      <div className="w-1/2 flex items-center justify-center">
-                        <video className="lazyload" autoPlay={true} muted={true} loop>
-                          <source src={vid1} type="video/mp4" />
-                        </video>                         
-                      </div>
-                    </div> 
-                  </TabPanel>  
-                  <TabPanel>                  
-                    <div className="flex items-start justify-center">
-                      <div className="w-1/2 py-8 pr-8">
-                        <p className="pb-4">Explore Astro’s rules and guidelines to help build your solution.</p>
-                        <p className="pb-4">The support resources available will give you the tools and knowledge you need.</p>
-                        <p className="pb-4">Access and find <Link to="design/screen-anatomy" className="inline text-status-100 hover:text-red-900 underline">Screen Anatomy</Link> and structure, padding specs, <Link to="design/icons" className="inline text-status-100 hover:text-red-900 underline">Icon</Link> files, and code snippets for <Link to="design/typography" className="inline text-status-100 hover:text-red-900 underline">Typography</Link>.</p>
-                      </div>
-                      <div className="w-1/2 flex items-center justify-center">
-                        <video className="lazyload" autoPlay={true} muted={true} loop>
-                          <source src={vid4} type="video/mp4" />
-                        </video>   
-                      </div>
-                    </div> 
-                  </TabPanel>  
-                  <TabPanel>                  
-                    <div className="flex items-start justify-center">
-                      <div className="w-1/2 py-8 pr-8">
-                        <p className="pb-4">View all of Astro’s rules, guidelines, <Link to="elements" className="inline text-status-100 hover:text-red-900 underline">Elements</Link> and <Link to="components" className="inline text-status-100 hover:text-red-900 underline">Components</Link> to help execute a level of QA that ensures current build outputs are up to our design standards.</p>
-                      </div>
-                      <div className="w-1/2 flex items-center justify-center">
-                          <video className="lazyload" autoPlay={true} muted={true} loop>
-                          <source src={vid3} type="video/mp4" />
-                        </video>   
-                      </div>
-                    </div> 
-                  </TabPanel>  
-                </Tabs>        
-              </div>
-            </div>
-            <div className="as-home-background"> 
               <svg className="fill-current home-pattern-3" width="250" height="250" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#e0301e" d="M31.253 6.014l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
                 <path fill="#e0301e" d="M31.253 3.426l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
@@ -762,58 +809,6 @@ function IndexPage() {
               <svg className="fill-current home-triangle" width="500" height="500" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#f2f2f2" d="M17.885 0.017l18.237 31.926-36.123 0.010z"></path>
               </svg> 
-            </div> 
-          </section>
-          <section className="as-home-section my-32 pb-16">
-            <div className="as-home-foreground">
-              <div className="mx-32 flex justify-center items-center">
-                <div className="w-2/3 text-center">
-                  <p level="2" className="as-h2 as-type-medium mb-3">How It Works</p>
-                  <p className="pb-12">Anyone can and should use this resource when designing future components of Astro to ensure consistency and uniformity of the product in look, feel, and overall scope.</p>
-                </div>
-              </div>
-              <div className="mx-32 mb-32 flex justify-center items-start">            
-                <div className="w-1/2">
-                  <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 1</p>
-                  <p level="2" className="as-h2 as-type-medium mb-3">Define Task or Objective</p>
-                  <p className="pb-12">We start with clearly identifying the desired business or user objective. Once defined, we strategically research relevant data points and formulate content to best satisfy that goal.</p>
-                </div>
-                <div className="w-1/2 pl-10 text-center">
-                  <img data-src={worksStep1} className="lazyload inline-block" width="458" alt="" /> 
-                </div>  
-              </div>
-              <div className="mx-32 mb-32 flex justify-center items-start">            
-                <div className="w-1/2">
-                  <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 2</p>
-                  <p level="2" className="as-h2 as-type-medium mb-3">Solve through Design</p>
-                  <p className="pb-12">Once the strategy and content are agreed upon, design focuses on how to best present this information clearly and precisely via wireframe format. Design also ensures this effort is consistent with the Astro Design System.</p>
-                </div>
-                <div className="w-1/2 pl-10 text-center">
-                  <img data-src={worksStep2} className="lazyload inline-block" width="411" alt="" /> 
-                </div>  
-              </div>
-              <div className="mx-32 mb-32 flex justify-center items-start">            
-                <div className="w-1/2">
-                  <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 3</p>
-                  <p level="2" className="as-h2 as-type-medium mb-3">Create Component</p>
-                  <p className="pb-12">Once a wireframe is complete, we now leverage the visual design system to refine this structured information component. This phase integrates brand elements into the component such as color, typography and icons to give the entire experience a consistent look and feel.</p>
-                </div>
-                <div className="w-1/2 pl-10 text-center">
-                  <img data-src={worksStep3} className="lazyload inline-block" width="337" alt="" /> 
-                </div>  
-              </div>
-              <div className="mx-32 flex justify-center items-start">            
-                <div className="w-1/2">
-                  <p level="2" className="text-sm uppercase mb-3 text-greyStatus-600">Step 4</p>
-                  <p level="2" className="as-h2 as-type-medium mb-3">Apply Component</p>
-                  <p className="pb-12">Once a component is complete, we then use it within Astro's application framework. This process brings the component to life with full functionality.</p>
-                </div>
-                <div className="w-1/2 pl-10">
-                  <img data-src={worksStep4} className="lazyload inline-block" width="621" alt="" /> 
-                </div>  
-              </div>
-            </div>
-            <div className="as-home-background"> 
               <svg className="fill-current home-pattern-4" width="250" height="250" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#e0301e" d="M31.253 6.014l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
                 <path fill="#e0301e" d="M31.253 3.426l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
@@ -988,9 +983,9 @@ function IndexPage() {
               <svg className="fill-current home-cross" width="500" height="500" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#f2f2f2" d="M22.869 0.048l9.102 9.102-22.833 22.833-9.102-9.102z"></path>
                 <path fill="#f2f2f2" d="M31.972 22.881l-9.102 9.102-22.833-22.833 9.102-9.102z"></path>
-                </svg> 
-            </div>               
-          </section>
+              </svg>  
+            </div>
+          </div>
         </main>
         <div className="footer bg-placeholder-400 p-16">
           <p className="text-white text-sm mb-4">&copy; 2019 PwC. All rights reserved.</p>
