@@ -28,6 +28,8 @@ import vid4 from "../assets/home/developer.mp4";
 
 class Block extends Component {
   render() {  
+    
+
     return (
       <div className="layer-icons">
         <div className="left-offset">
@@ -459,8 +461,7 @@ function IndexPage() {
               </svg>
               <svg className="fill-current home-diamond" width="500" height="500" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
                 <path fill="#f2f2f2" d="M0.020 16l15.98-15.98 15.98 15.98-15.98 15.98-15.98-15.98z"></path>
-              </svg> 
-
+              </svg>
               <svg className="fill-current home-pattern-2" width="250" height="250" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#e0301e" d="M31.253 6.014l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
                 <path fill="#e0301e" d="M31.253 3.426l0.647-0.647c0.025-0.025 0.025-0.065 0-0.090s-0.065-0.025-0.090 0l-0.647 0.647c-0.025 0.025-0.025 0.065 0 0.090s0.065 0.025 0.090 0z"></path>
