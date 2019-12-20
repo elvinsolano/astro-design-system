@@ -256,19 +256,6 @@ pre {
   min-width: 451.25px;
 }
 
-.tooltip > div {
-  padding: 6px 10px;
-  border: 2px solid #4EAD58;
-  background-color: #fff !important;
-  color: black !important;
-  font-family: HelveticaNeueMedium;
-}
-
-.tooltip > div:after {
-  border-left-color: #4EAD58 !important;
-  border-right-color: #4EAD58 !important;
-}
-
 .h-355 {
   height: 355px;
 }
@@ -661,3 +648,22 @@ aside nav ul li a:active {
   left: -190px;
   top: 2280px;
 }
+ 
+.as-tooltip-wrapper {
+  display: inline-block;
+}
+.as-tooltip {
+  margin-left: 10px;
+  padding: 5px 8px;
+  border: 1px solid #4EAD58;
+  background-color: #E7FFE9 !important;
+  color: black !important;
+  font-family: HelveticaNeueMedium;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  -webkit-animation: fadein 0.35s ease-in-out;
+  animation: fadein 0.35s ease-in-out;
+} 
