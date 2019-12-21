@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types"; 
 import {CopyToClipboard} from 'react-copy-to-clipboard'; 
+import window from 'global';
 
 class Copy extends Component { 
   constructor(){
