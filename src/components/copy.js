@@ -7,8 +7,7 @@ import window from 'global';
 class Copy extends Component { 
   constructor(){
     super();
-    this.state = {
-      Canonical: window.location.href,
+    this.state = { 
       value: 'some\ntext', 
       copied: false
     }
@@ -25,12 +24,8 @@ class Copy extends Component {
       setTimeout(function(){
         this.setState({copied:false});
       }.bind(this),1000);
-    };  
-    // const windowGlobal = typeof window !== 'undefined' && window;
-    
-    // console.log('this is the url ' + windowGlobal.location);
-
-    const url = this.state.Canonical;
+    };   
+    const url = window.location;
 
     return (  
       <span>
