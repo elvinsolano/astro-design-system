@@ -28,8 +28,14 @@ class Copy extends Component {
     const windowGlobal = typeof window !== 'undefined' && window;
     
     console.log('this is the url ' + windowGlobal.location);
-    const url = windowGlobal.location;
 
+    const url = '';
+
+    if (typeof window === `undefined`) {
+      return false;
+    } else {
+      const url = window.location.href;
+    } 
     return (  
       <span>
         <CopyToClipboard onCopy={this.onCopy} text={url + '#' + this.props.id + '-anchor'}>
