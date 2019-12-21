@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react"; 
 import Scrollspy from 'react-scrollspy';  
-import {Link} from 'gatsby';
+import {Link} from 'gatsby'; 
 import {Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel} from 'react-accessible-accordion';
 import 'lazysizes';
 
@@ -34,9 +34,8 @@ import typesMicrophone5 from "../../assets/design/motion/types and details/Micro
 
 class Block extends Component {
   render() {  
-    return ( 
-        
-      <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'0'}>
+    return (  
+      <Accordion className="as-accordion" allowZeroExpanded={true}>
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton className="as-accordion__button">
@@ -198,7 +197,7 @@ class DesignMotionPage extends Component {
               <li><Link to="design/screen-anatomy" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Screen Anatomy</Link></li>
               <li><Link to="design/motion" className="block text-sm text-grey-400 w-full active font-semibold bg-grey-700">Motion</Link>
                 <Scrollspy items={ ['types', 'guidance'] } offset={-80} className="block" currentClassName="is-current">
-                  <li><Link to="design/motion#types-details-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types &amp; Details</Link></li>
+                  <li><Link to="design/motion#types-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100">Types &amp; Details</Link></li>
                   <li><Link to="design/motion#guidance-anchor" className="block text-sm text-grey-400 pl-16 py-2 w-full hover:bg-grey-100" activeClassName="active-link">Guidance</Link></li> 
                 </Scrollspy>             
               </li>
@@ -249,7 +248,7 @@ class DesignMotionPage extends Component {
                   <img data-src={typesCardOutgoing1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
                   <div className="as-accordion-container ml-10">
                     <p className="mb-6"><span className="as-type-medium">Part 1</span> - Animation timeframe (approx): 0.4 sec.</p>
-                    <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'voice-answer'}>
+                    <Accordion className="as-accordion" allowZeroExpanded={true}>
                       <AccordionItem uuid={'voice-answer'}>
                         <AccordionItemHeading>
                           <AccordionItemButton className="as-accordion__button">
@@ -382,7 +381,7 @@ class DesignMotionPage extends Component {
                   <img data-src={typesCardOutgoing2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
                   <div className="as-accordion-container ml-10">
                     <p className="mb-6"><span className="as-type-medium">Part 2</span> - Animation timeframe (approx): 0.4 sec.</p>
-                    <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'voice-answer'}>
+                    <Accordion className="as-accordion" allowZeroExpanded={true}>
                       <AccordionItem uuid={'voice-answer'}>
                         <AccordionItemHeading>
                           <AccordionItemButton className="as-accordion__button">
@@ -538,7 +537,7 @@ class DesignMotionPage extends Component {
                   <img data-src={typesMenu1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
                   <div className="as-accordion-container ml-10">
                     <p className="mb-6"><span className="as-type-medium">Opening</span> - Animation timeframe (approx): 0.4 sec.</p>
-                    <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'microphone-button'}>
+                    <Accordion className="as-accordion" allowZeroExpanded={true} >
                       <AccordionItem uuid={'microphone-button'}>
                         <AccordionItemHeading>
                           <AccordionItemButton className="as-accordion__button">
@@ -702,7 +701,7 @@ class DesignMotionPage extends Component {
                   <img data-src={typesMenu2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
                   <div className="as-accordion-container ml-10">
                     <p className="mb-6"><span className="as-type-medium">Closing</span> - Animation timeframe (approx): 0.4 sec.</p>
-                    <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'microphone-button'}>
+                    <Accordion className="as-accordion" allowZeroExpanded={true} >
                       <AccordionItem uuid={'microphone-button'}>
                         <AccordionItemHeading>
                           <AccordionItemButton className="as-accordion__button">
@@ -874,7 +873,7 @@ class DesignMotionPage extends Component {
                   <img data-src={typesKeyboard1} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
                   <div className="as-accordion-container ml-10">
                     <p className="mb-6"><span className="as-type-medium">Opening</span> - Animation timeframe (approx): 0.4 sec.</p>
-                    <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'microphone-button'}>
+                    <Accordion className="as-accordion" allowZeroExpanded={true} >
                       <AccordionItem uuid={'microphone-button'}>
                         <AccordionItemHeading>
                           <AccordionItemButton className="as-accordion__button">
@@ -1069,7 +1068,7 @@ class DesignMotionPage extends Component {
                   <img data-src={typesKeyboard2} className="lazyload " width="375px" alt="Loaders Usage Pull Down Loader 1" /> 
                   <div className="as-accordion-container ml-10">
                     <p className="mb-6"><span className="as-type-medium">Closing</span> - Animation timeframe (approx): 0.6 sec.</p>
-                    <Accordion className="as-accordion" allowZeroExpanded={true} preExpanded={'microphone-button'}>
+                    <Accordion className="as-accordion" allowZeroExpanded={true}>
                       <AccordionItem uuid={'microphone-button'}>
                         <AccordionItemHeading>
                           <AccordionItemButton className="as-accordion__button">
