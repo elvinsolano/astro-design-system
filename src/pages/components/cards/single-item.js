@@ -1,17 +1,16 @@
-import React, { Component, useState } from "react"; 
+import React, { Component } from "react"; 
 import Scrollspy from 'react-scrollspy';   
 import {Link} from 'gatsby'; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'lazysizes';
 
 import Layout from "../../../components/layout";
-import SEO from "../../../components/seo"; 
-import { Row, Col, Button } from 'tailwind-react-ui';
+import SEO from "../../../components/seo";
 import Heading from '../../../components/atoms/heading';
 import Download from "../../../components/download";
 import Copy from "../../../components/copy";
 
-import uiexamplesSingleItemCard1 from "../../../assets/components/cards/Single Item Card/UI Examples/Single Item Card 01.png";
+//import uiexamplesSingleItemCard1 from "../../../assets/components/cards/Single Item Card/UI Examples/Single Item Card 01.png";
 import uiexamplesSingleItemCard2 from "../../../assets/components/cards/Single Item Card/UI Examples/Single Item Card 02.png";
 import uiexamplesSingleItemCard3 from "../../../assets/components/cards/Single Item Card/UI Examples/Single Item Card 03.png";
 import detailsSingleItemCard1 from "../../../assets/components/cards/Single Item Card/Details/Single Item Card Details.png";
@@ -23,7 +22,7 @@ import guidance3 from "../../../assets/components/cards/Single Item Card/Guidanc
 import guidance4 from "../../../assets/components/cards/Single Item Card/Guidance/04 Guidance.png"; 
 
 class ComponentsCardsSingleItemPage extends Component {   
-  render() { 
+  render() {
 
     return (
       <Layout>
@@ -149,12 +148,12 @@ class ComponentsCardsSingleItemPage extends Component {
             
                 <TabPanel>
                   <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
-                    <img data-src={uiexamplesSingleItemCard2} className="lazyload " width="335" />
+                    <img data-src={uiexamplesSingleItemCard2} className="lazyload " width="335" alt="Single item ui example" />
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
-                    <img data-src={uiexamplesSingleItemCard3} className="lazyload " width="335" />
+                    <img data-src={uiexamplesSingleItemCard3} className="lazyload " width="335" alt="Single item ui example" />
                   </div>
                 </TabPanel>
               </Tabs>
@@ -167,7 +166,7 @@ class ComponentsCardsSingleItemPage extends Component {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Card padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
               <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-                <img data-src={paddingSingleItemCard1} className="lazyload " width="363" />
+                <img data-src={paddingSingleItemCard1} className="lazyload " width="363" alt="Single item padding" />
               </div> 
             </section>            
 
@@ -178,7 +177,7 @@ class ComponentsCardsSingleItemPage extends Component {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Card details refer to elements that make up the card surface areas.</p>
               <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-                <img data-src={detailsSingleItemCard1} className="lazyload " width="375" />
+                <img data-src={detailsSingleItemCard1} className="lazyload " width="375" alt="Single item details" />
               </div> 
               <div className="mb-6">
                 <p className="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Card Header</span> </p>

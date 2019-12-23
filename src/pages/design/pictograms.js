@@ -1,12 +1,11 @@
-import React, { Component, useState } from "react"; 
+import React, { Component } from "react"; 
 import Scrollspy from 'react-scrollspy';  
 import {Link} from 'gatsby';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'lazysizes';
 
 import Layout from "../../components/layout";
-import SEO from "../../components/seo"; 
-import { Row, Col, Button } from 'tailwind-react-ui';
+import SEO from "../../components/seo";  
 import Heading from '../../components/atoms/heading';
 import Download from "../../components/download";
 import Copy from "../../components/copy";
@@ -34,9 +33,7 @@ import guidance2 from "../../assets/design/pictograms/guidance/02 Guidance.png";
 import guidance3 from "../../assets/design/pictograms/guidance/03 Guidance.png";
 import guidance4 from "../../assets/design/pictograms/guidance/04 Guidance.png";
 import guidance5 from "../../assets/design/pictograms/guidance/05 Guidance.png";
-import guidance6 from "../../assets/design/pictograms/guidance/06 Guidance.png";
-import guidance7 from "../../assets/design/pictograms/guidance/07 Guidance.png";
-import guidance8 from "../../assets/design/pictograms/guidance/08 Guidance.png";
+import guidance6 from "../../assets/design/pictograms/guidance/06 Guidance.png"; 
 
 class DesignPictogramsPage extends Component {   
   render() {  

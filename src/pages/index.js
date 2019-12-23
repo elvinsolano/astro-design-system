@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react"; 
+import React, { Component } from "react"; 
 import { Link } from "gatsby"; 
 import Layout from "../components/layout";
 import SEO from "../components/seo"; 
@@ -10,9 +10,7 @@ import Lottie from 'react-lottie'
 
 import animationHero from '../assets/home/hero.json'
 import animationWhat from '../assets/home/whatis.js'
-
-import test from "../assets/home/test.png"; 
-import whatis from "../assets/home/whatis.png"; 
+ 
 import designsystem from "../assets/home/ds illustration.png"; 
 
 import worksStep1 from "../assets/home/define task.png";

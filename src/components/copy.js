@@ -1,6 +1,4 @@
-import React, { Component, useState } from "react"; 
-import { Link } from "gatsby";
-import PropTypes from "prop-types"; 
+import React, { Component } from "react";
 import {CopyToClipboard} from 'react-copy-to-clipboard'; 
 import window from 'global';
 
@@ -20,7 +18,7 @@ class Copy extends Component {
   };
 
   render() { 
-    if(this.state.copied==true){
+    if(this.state.copied===true){
       setTimeout(function(){
         this.setState({copied:false});
       }.bind(this),2000);

@@ -1,12 +1,11 @@
-import React, { Component, useState } from "react"; 
+import React, { Component } from "react"; 
 import Scrollspy from 'react-scrollspy';   
 import {Link} from 'gatsby'; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'lazysizes';
 
 import Layout from "../../../components/layout";
-import SEO from "../../../components/seo"; 
-import { Row, Col, Button } from 'tailwind-react-ui';
+import SEO from "../../../components/seo";
 import Heading from '../../../components/atoms/heading';
 import Download from "../../../components/download";
 import Copy from "../../../components/copy";
@@ -18,7 +17,7 @@ import paddingMailCard1 from "../../../assets/components/cards/Mail Card/Padding
 import guidance1 from "../../../assets/components/cards/Mail Card/Guidance/01 Guidance.png";
 import guidance2 from "../../../assets/components/cards/Mail Card/Guidance/02 Guidance.png";
 import guidance3 from "../../../assets/components/cards/Mail Card/Guidance/03 Guidance.png"; 
-import guidance4 from "../../../assets/components/cards/Mail Card/Guidance/04 Guidance.png"; 
+// import guidance4 from "../../../assets/components/cards/Mail Card/Guidance/04 Guidance.png"; 
 import guidance5 from "../../../assets/components/cards/Mail Card/Guidance/05 Guidance.png"; 
 
 class ComponentsCardsMailPage extends Component {   

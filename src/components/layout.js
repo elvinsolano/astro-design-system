@@ -4,8 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 
 import { TailwindThemeProvider } from 'tailwind-react-ui';
 
-import Header from "./header";
-import Sidebar from "./sidebar";
+import Header from "./header"; 
 
 function Layout({ children }) {
   const data = useStaticQuery(graphql`

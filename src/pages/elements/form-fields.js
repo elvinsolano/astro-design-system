@@ -1,12 +1,11 @@
-import React, { Component, useState } from "react"; 
+import React, { Component } from "react"; 
 import Scrollspy from 'react-scrollspy';   
 import {Link} from 'gatsby';  
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'lazysizes';
 
 import Layout from "../../components/layout";
-import SEO from "../../components/seo"; 
-import { Row, Col, Button } from 'tailwind-react-ui';
+import SEO from "../../components/seo";  
 import Heading from '../../components/atoms/heading';
 import Download from "../../components/download";
 import Copy from "../../components/copy";
@@ -22,12 +21,12 @@ import typesInputFieldSingle4 from "../../assets/elements/form/types/Input Field
 import typesInputFieldSingle5 from "../../assets/elements/form/types/Input Fields/Single/05 Single.png";
 import typesInputFieldSingle6 from "../../assets/elements/form/types/Input Fields/Single/06 Single.png";
 
-import typesInputFieldMultiple1 from "../../assets/elements/form/types/Input Fields/Multiple/01 Multiple.png"; 
-import typesInputFieldMultiple2 from "../../assets/elements/form/types/Input Fields/Multiple/02 Multiple.png"; 
-import typesInputFieldMultiple3 from "../../assets/elements/form/types/Input Fields/Multiple/03 Multiple.png"; 
-import typesInputFieldMultiple4 from "../../assets/elements/form/types/Input Fields/Multiple/04 Multiple.png"; 
-import typesInputFieldMultiple5 from "../../assets/elements/form/types/Input Fields/Multiple/05 Multiple.png"; 
-import typesInputFieldMultiple6 from "../../assets/elements/form/types/Input Fields/Multiple/06 Multiple.png"; 
+// import typesInputFieldMultiple1 from "../../assets/elements/form/types/Input Fields/Multiple/01 Multiple.png"; 
+// import typesInputFieldMultiple2 from "../../assets/elements/form/types/Input Fields/Multiple/02 Multiple.png"; 
+// import typesInputFieldMultiple3 from "../../assets/elements/form/types/Input Fields/Multiple/03 Multiple.png"; 
+// import typesInputFieldMultiple4 from "../../assets/elements/form/types/Input Fields/Multiple/04 Multiple.png"; 
+// import typesInputFieldMultiple5 from "../../assets/elements/form/types/Input Fields/Multiple/05 Multiple.png"; 
+// import typesInputFieldMultiple6 from "../../assets/elements/form/types/Input Fields/Multiple/06 Multiple.png"; 
 
 import typesInputFieldPassword1 from "../../assets/elements/form/types/Input Fields/Password/01 Password.png";
 import typesInputFieldPassword2 from "../../assets/elements/form/types/Input Fields/Password/02 Password.png";
@@ -39,11 +38,11 @@ import typesInputFieldPassword7 from "../../assets/elements/form/types/Input Fie
 
 import typesPickerFieldsDate1 from "../../assets/elements/form/types/Picker Fields/Date/01 Date.png";
 import typesPickerFieldsDate2 from "../../assets/elements/form/types/Picker Fields/Date/02 Date.png";
-import typesPickerFieldsDate3 from "../../assets/elements/form/types/Picker Fields/Date/03 Date.png";
+// import typesPickerFieldsDate3 from "../../assets/elements/form/types/Picker Fields/Date/03 Date.png";
 
-import typesPickerFieldsDropdown1 from "../../assets/elements/form/types/Picker Fields/Dropdown/01 Dropdown.png";
-import typesPickerFieldsDropdown2 from "../../assets/elements/form/types/Picker Fields/Dropdown/02 Dropdown.png";
-import typesPickerFieldsDropdown3 from "../../assets/elements/form/types/Picker Fields/Dropdown/03 Dropdown.png";
+// import typesPickerFieldsDropdown1 from "../../assets/elements/form/types/Picker Fields/Dropdown/01 Dropdown.png";
+// import typesPickerFieldsDropdown2 from "../../assets/elements/form/types/Picker Fields/Dropdown/02 Dropdown.png";
+// import typesPickerFieldsDropdown3 from "../../assets/elements/form/types/Picker Fields/Dropdown/03 Dropdown.png";
 
 import typesFeedbackFields1 from "../../assets/elements/form/types/Feedback Fields/01 Feedback.png";
 import typesFeedbackFields2 from "../../assets/elements/form/types/Feedback Fields/02 Feedback.png";
@@ -140,8 +139,8 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Radio Buttons:</span> Used when there is a list of 2 or more options but user can only select one.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsRadio1} className="lazyload inline-block" width="108" /> </li>
-                    <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsRadio2} className="lazyload inline-block" width="108" /> </li>
+                    <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsRadio1} className="lazyload inline-block" width="108" alt="Radio Active" /> </li>
+                    <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsRadio2} className="lazyload inline-block" width="108" alt="Radio Inactive" /> </li>
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Active</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive</p>
@@ -149,8 +148,8 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Checkboxes:</span> Used when there is a list of 2 or more options and user can make multiple selections.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsCheck3} className="lazyload inline-block" width="135" /> </li>
-                    <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsCheck4} className="lazyload inline-block" width="135" /> </li>
+                    <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsCheck3} className="lazyload inline-block" width="135" alt="Checkbox Active" /> </li>
+                    <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsCheck4} className="lazyload inline-block" width="135" alt="Checkbox Inactive" /> </li>
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Active</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive</p>
@@ -158,8 +157,8 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Checkbox Strikethroughs:</span> Used to imply a state of completion in tasks.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsStrike5} className="lazyload inline-block" width="156" /> </li>
-                    <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsStrike6} className="lazyload inline-block" width="156" /> </li>
+                    <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsStrike5} className="lazyload inline-block" width="156" alt="Checkbox Strikethrough Active" /> </li>
+                    <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsStrike6} className="lazyload inline-block" width="156" alt="Checkbox Strikethrough Inactive" /> </li>
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Active</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive</p>
@@ -167,8 +166,8 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Toggles:</span> Digital representation of a physical switch that allows users to turn things on or off.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsToggle7} className="lazyload inline-block" width="144" /> </li>
-                    <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsToggle8} className="lazyload inline-block" width="144" /> </li>
+                    <li className="as-grid-8 relative"><span className="list-circle">1</span><img data-src={typesSelectFieldsToggle7} className="lazyload inline-block" width="144" alt="Toggle Active" /> </li>
+                    <li className="as-grid-8 relative"><span className="list-circle">2</span><img data-src={typesSelectFieldsToggle8} className="lazyload inline-block" width="144" alt="Toggle Inactive" /> </li>
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Active</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Inactive</p>
@@ -184,12 +183,12 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Single Text Area:</span> A basic text control field that allows the user to type a small amount of text. Maximum character count: 50.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="mr-8 mb-12 relative"><span className="list-circle">1</span><img data-src={typesInputFieldSingle1} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mb-12 relative"><span className="list-circle">2</span><img data-src={typesInputFieldSingle2} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mr-8 mb-12 relative"><span className="list-circle">3</span><img data-src={typesInputFieldSingle3} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mb-12 relative"><span className="list-circle">4</span><img data-src={typesInputFieldSingle4} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mr-8 relative"><span className="list-circle">5</span><img data-src={typesInputFieldSingle5} className="lazyload inline-block" width="335" /> </li>
-                    <li className="relative"><span className="list-circle">6</span><img data-src={typesInputFieldSingle6} className="lazyload inline-block" width="335" /> </li>
+                    <li className="mr-8 mb-12 relative"><span className="list-circle">1</span><img data-src={typesInputFieldSingle1} className="lazyload inline-block" width="335" alt="Single Text Area Unfilled" /> </li>
+                    <li className="mb-12 relative"><span className="list-circle">2</span><img data-src={typesInputFieldSingle2} className="lazyload inline-block" width="335" alt="Single Text Area Focused" /> </li>
+                    <li className="mr-8 mb-12 relative"><span className="list-circle">3</span><img data-src={typesInputFieldSingle3} className="lazyload inline-block" width="335" alt="Single Text Area Filled" /> </li>
+                    <li className="mb-12 relative"><span className="list-circle">4</span><img data-src={typesInputFieldSingle4} className="lazyload inline-block" width="335" alt="Single Text Area Mandatory Text with Asterisk" /> </li>
+                    <li className="mr-8 relative"><span className="list-circle">5</span><img data-src={typesInputFieldSingle5} className="lazyload inline-block" width="335" alt="Single Text Area Successful Green Alert" /> </li>
+                    <li className="relative"><span className="list-circle">6</span><img data-src={typesInputFieldSingle6} className="lazyload inline-block" width="335" alt="Single Text Area Error Red Alert" /> </li>
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Focused</p>
@@ -201,9 +200,9 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Number Fields:</span> Is commonly used for numeric inputs such as date, time or telephone number.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="mr-12 relative"><span className="list-circle">1</span><img data-src={typesInputFieldNumber1} className="lazyload inline-block" width="110" /> </li>
-                    <li className="mr-12 relative"><span className="list-circle">2</span><img data-src={typesInputFieldNumber2} className="lazyload inline-block" width="110" /> </li>
-                    <li className="relative"><span className="list-circle">3</span><img data-src={typesInputFieldNumber3} className="lazyload inline-block" width="110" /> </li> 
+                    <li className="mr-12 relative"><span className="list-circle">1</span><img data-src={typesInputFieldNumber1} className="lazyload inline-block" width="110" alt="Number Fields Unfilled" /> </li>
+                    <li className="mr-12 relative"><span className="list-circle">2</span><img data-src={typesInputFieldNumber2} className="lazyload inline-block" width="110" alt="Number Fields Focused" /> </li>
+                    <li className="relative"><span className="list-circle">3</span><img data-src={typesInputFieldNumber3} className="lazyload inline-block" width="110" alt="Number Fields Filled" /> </li> 
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Focused</p>
@@ -219,8 +218,8 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Feedback Fields:</span> Allows user to provide feedback to a story or action by selecting a response.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-start">
-                    <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={typesFeedbackFields1} className="lazyload inline-block" width="218" /> </li>
-                    <li className="relative"><span className="list-circle">2</span><img data-src={typesFeedbackFields2} className="lazyload inline-block" width="284" /> </li> 
+                    <li className="as-grid-10 relative"><span className="list-circle">1</span><img data-src={typesFeedbackFields1} className="lazyload inline-block" width="218" alt="Feedback Fields Unfilled" /> </li>
+                    <li className="relative"><span className="list-circle">2</span><img data-src={typesFeedbackFields2} className="lazyload inline-block" width="284" alt="Feedback Fields Filled" /> </li> 
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p> 
                   <p className="as-type-regular text-sm text-greyStatus-600">3. Filled</p> 
@@ -235,8 +234,8 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Date:</span> A field used to pick from a list of dates.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
-                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
+                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" alt="Date Unfilled" /> </li>
+                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" alt="Date Filled" /> </li> 
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
@@ -244,8 +243,8 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Time:</span> A field used to pick from a list of times.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
-                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
+                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" alt="Time Unfilled" /> </li>
+                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" alt="Time Filled" /> </li> 
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
@@ -253,8 +252,8 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">List:</span> A field used to pick from a list of selections.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
-                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
+                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" alt="List Unfilled" /> </li>
+                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" alt="List Filled" /> </li> 
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
@@ -269,27 +268,27 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider">A field where the user can input their password.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="mb-8 mr-8 relative"><span className="list-circle">1</span><img data-src={typesInputFieldPassword1} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mb-8 relative"><span className="list-circle">2</span><img data-src={typesInputFieldPassword2} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mb-8 mr-8 relative"><span className="list-circle">3</span><img data-src={typesInputFieldPassword3} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mb-8 relative"><span className="list-circle">4</span><img data-src={typesInputFieldPassword4} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mb-8 mr-8 relative"><span className="list-circle">5</span><img data-src={typesInputFieldPassword5} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mb-8 relative"><span className="list-circle">6</span><img data-src={typesInputFieldPassword6} className="lazyload inline-block" width="335" /> </li>
-                    <li className="mr-8 relative"><span className="list-circle">7</span><img data-src={typesInputFieldPassword7} className="lazyload inline-block" width="335" /> </li> 
+                    <li className="mb-8 mr-8 relative"><span className="list-circle">1</span><img data-src={typesInputFieldPassword1} className="lazyload inline-block" width="335" alt="Password Field Unfilled" /> </li>
+                    <li className="mb-8 relative"><span className="list-circle">2</span><img data-src={typesInputFieldPassword2} className="lazyload inline-block" width="335" alt="Password Field Focused" /> </li>
+                    <li className="mb-8 mr-8 relative"><span className="list-circle">3</span><img data-src={typesInputFieldPassword3} className="lazyload inline-block" width="335" alt="Password Field Filled" /> </li>
+                    <li className="mb-8 relative"><span className="list-circle">4</span><img data-src={typesInputFieldPassword4} className="lazyload inline-block" width="335" alt="Password Field Mandatory Text with Asterisk" /> </li>
+                    <li className="mb-8 mr-8 relative"><span className="list-circle">5</span><img data-src={typesInputFieldPassword5} className="lazyload inline-block" width="335" alt="Password Field Successful Green Alert" /> </li>
+                    <li className="mb-8 relative"><span className="list-circle">6</span><img data-src={typesInputFieldPassword6} className="lazyload inline-block" width="335" alt="Password Field Error Red Alert" /> </li>
+                    <li className="mr-8 relative"><span className="list-circle">7</span><img data-src={typesInputFieldPassword7} className="lazyload inline-block" width="335" alt="Password Field Show Password Dots Turn to Text" /> </li> 
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Focused</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">3. Filled</p>  
-                  <p className="as-type-regular text-sm text-greyStatus-600">4. Mandatory: Text w/ Asterisk</p>  
-                  <p className="as-type-regular text-sm text-greyStatus-600">5. Successful: Green Alert</p>  
-                  <p className="as-type-regular text-sm text-greyStatus-600">6. Error: Red Alert</p>  
-                  <p className="as-type-regular text-sm text-greyStatus-600">7. Show Password: Dots Turn to Text</p>   
+                  <p className="as-type-regular text-sm text-greyStatus-600">4. Mandatory - Text w/ Asterisk</p>  
+                  <p className="as-type-regular text-sm text-greyStatus-600">5. Successful - Green Alert</p>  
+                  <p className="as-type-regular text-sm text-greyStatus-600">6. Error - Red Alert</p>  
+                  <p className="as-type-regular text-sm text-greyStatus-600">7. Show Password - Dots Turn to Text</p>   
                 </div>  
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Time:</span> A field used to pick from a list of times.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
-                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
+                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" alt="Time Unfilled" /> </li>
+                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" alt="Time Filled" /> </li> 
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
@@ -297,8 +296,8 @@ class ElementsFormFieldsPage extends Component {
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">List:</span> A field used to pick from a list of selections.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
-                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" /> </li>
-                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" /> </li> 
+                    <li className="mr-8 relative"><span className="list-circle">1</span><img data-src={typesPickerFieldsDate1} className="lazyload inline-block" width="335" alt="List Unfilled" /> </li>
+                    <li className="relative"><span className="list-circle">2</span><img data-src={typesPickerFieldsDate2} className="lazyload inline-block" width="335" alt="List Filled" /> </li> 
                   </ol>  
                   <p className="as-type-regular text-sm text-greyStatus-600">1. Unfilled</p>
                   <p className="as-type-regular text-sm text-greyStatus-600">2. Filled</p> 
@@ -389,7 +388,7 @@ class ElementsFormFieldsPage extends Component {
                 </div>
 
                 <div className="w-grid px-5 mb-5">
-                  <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Guidance 1" />
+                  <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Guidance 3" />
                   <div className="flex mb-3">
                     <div className="as-guidance">
                       <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -401,7 +400,7 @@ class ElementsFormFieldsPage extends Component {
                 </div>
 
                 <div className="w-grid px-5 mb-5">
-                  <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                  <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Guidance 4" />
                   <div className="flex mb-3">
                     <div className="as-guidance">
                       <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

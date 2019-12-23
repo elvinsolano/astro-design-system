@@ -1,12 +1,11 @@
-import React, { Component, useState } from "react"; 
+import React, { Component } from "react"; 
 import Scrollspy from 'react-scrollspy';   
 import {Link} from 'gatsby'; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'lazysizes';
 
 import Layout from "../../../components/layout";
-import SEO from "../../../components/seo"; 
-import { Row, Col, Button } from 'tailwind-react-ui';
+import SEO from "../../../components/seo";  
 import Heading from '../../../components/atoms/heading';
 import Download from "../../../components/download";
 import Copy from "../../../components/copy";
@@ -28,7 +27,7 @@ class ComponentsCardsSingleItemGroupingPage extends Component {
       <Layout>
         <SEO
           title="Astro"
-          keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+          keywords={[``]}
         />
 
         <aside className="fixed overflow-y-auto as-nav bg-white top-auto h-full border-r border-grey-500 border-solid">

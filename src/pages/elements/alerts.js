@@ -1,12 +1,11 @@
-import React, { Component, useState } from "react"; 
+import React, { Component } from "react"; 
 import Scrollspy from 'react-scrollspy';  
 import {Link} from 'gatsby';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'lazysizes';
 
 import Layout from "../../components/layout";
-import SEO from "../../components/seo"; 
-import { Row, Col, Button } from 'tailwind-react-ui';
+import SEO from "../../components/seo";  
 import Heading from '../../components/atoms/heading'; 
 import Download from "../../components/download";
 import Copy from "../../components/copy";
@@ -16,7 +15,7 @@ import typesFieldAlert2 from "../../assets/elements/alerts/types/Field Alert/02 
 import typesFieldAlert3 from "../../assets/elements/alerts/types/Field Alert/03 Red Alert.png"; 
 import typesSystemAlert1 from "../../assets/elements/alerts/types/System Alert/01 Validation.png";   
 import typesSystemAlert2 from "../../assets/elements/alerts/types/System Alert/02 Continue.png";   
-import typesAuthorizationMessage1 from "../../assets/elements/alerts/types/Authorization Message/01 Authorization Message.png";   
+// import typesAuthorizationMessage1 from "../../assets/elements/alerts/types/Authorization Message/01 Authorization Message.png";   
 import typesOverlayMessage1 from "../../assets/elements/alerts/types/Overlay Message/Overlay Message.png";
 import typesCoachmarks1 from "../../assets/elements/alerts/types/Coachmarks/01 Voice.png";
 import typesCoachmarks2 from "../../assets/elements/alerts/types/Coachmarks/02 Keyboard.png";
@@ -42,16 +41,15 @@ import specsFieldAlert2 from "../../assets/elements/alerts/specs/Field Alert/02 
 import specsFieldAlert3 from "../../assets/elements/alerts/specs/Field Alert/03 Red Alert.png"; 
 import specsSystemAlert1 from "../../assets/elements/alerts/specs/System Alert/01 Validation Specs.png";   
 import specsSystemAlert2 from "../../assets/elements/alerts/specs/System Alert/02 Continue Specs.png";   
-import specsSystemAlert3 from "../../assets/elements/alerts/specs/System Alert/01 Continue Specs.png";   
+// import specsSystemAlert3 from "../../assets/elements/alerts/specs/System Alert/01 Continue Specs.png";   
 import specsAuthorizationMessage1 from "../../assets/elements/alerts/specs/Authorization Message/01 Authorization Message Specs.png";   
-import specsOverlayMessage1 from "../../assets/elements/alerts/specs/Overlay Message/Overlay Message.png";
+// import specsOverlayMessage1 from "../../assets/elements/alerts/specs/Overlay Message/Overlay Message.png";
 import specsCoachmarks1 from "../../assets/elements/alerts/specs/Coachmarks/01 Coachmarks Specs.png"; 
 import specsToasts1 from "../../assets/elements/alerts/specs/Toasts/01 Toasts Specs FPO.png"; 
 import specsToasts2 from "../../assets/elements/alerts/specs/Toasts/02 Toasts Specs FPO.png"; 
 import specsToasts3 from "../../assets/elements/alerts/specs/Toasts/03 Toasts Specs FPO.png"; 
 import specsToasts4 from "../../assets/elements/alerts/specs/Toasts/04 Toasts Specs FPO.png"; 
 
-import guidance1 from "../../assets/elements/alerts/guidance/01 Alerts Notifications Guidance FPO.png"; 
 import guidance2 from "../../assets/elements/alerts/guidance/02 Alerts Notifications Guidance.png"; 
 import guidance3 from "../../assets/elements/alerts/guidance/03 Alerts Notifications Guidance.png"; 
 import guidance4 from "../../assets/elements/alerts/guidance/04 Alerts Notifications Guidance.png"; 
@@ -354,7 +352,7 @@ class ElementsAlertsPage extends Component {
               <div className="flex flex-wrap -mx-5 mb-12">  
 
                 <div className="w-grid px-5 mb-5">
-                  <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                  <img data-src={guidance2} className="lazyload mb-3" width="290" alt="Guidance 1" />
                   <div className="flex mb-3">
                     <div className="as-guidance">
                       <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -366,7 +364,7 @@ class ElementsAlertsPage extends Component {
                 </div>
 
                 <div className="w-grid px-5 mb-5">
-                  <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Guidance 1" />
+                  <img data-src={guidance3} className="lazyload mb-3" width="290" alt="Guidance 2" />
                   <div className="flex mb-3">
                     <div className="as-guidance">
                       <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -378,7 +376,7 @@ class ElementsAlertsPage extends Component {
                 </div>
 
                 <div className="w-grid px-5 mb-5">
-                  <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                  <img data-src={guidance4} className="lazyload mb-3" width="290" alt="Guidance 3" />
                   <div className="flex mb-3">
                     <div className="as-guidance">
                       <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -390,7 +388,7 @@ class ElementsAlertsPage extends Component {
                 </div>
 
                 <div className="w-grid px-5 mb-5">
-                  <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Guidance 1" />
+                  <img data-src={guidance5} className="lazyload mb-3" width="290" alt="Guidance 4" />
                   <div className="flex mb-3">
                     <div className="as-guidance">
                       <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -402,7 +400,7 @@ class ElementsAlertsPage extends Component {
                 </div>
 
                 <div className="w-grid px-5 mb-5">
-                  <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Guidance 2" />
+                  <img data-src={guidance6} className="lazyload mb-3" width="290" alt="Guidance 5" />
                   <div className="flex mb-3">
                     <div className="as-guidance">
                       <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

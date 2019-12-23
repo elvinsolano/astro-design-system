@@ -1,12 +1,11 @@
-import React, { Component, useState } from "react"; 
+import React, { Component } from "react"; 
 import Scrollspy from 'react-scrollspy';   
 import {Link} from 'gatsby'; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'lazysizes';
 
 import Layout from "../../../components/layout";
-import SEO from "../../../components/seo"; 
-import { Row, Col, Button } from 'tailwind-react-ui';
+import SEO from "../../../components/seo";  
 import Heading from '../../../components/atoms/heading';
 import Download from "../../../components/download";
 import Copy from "../../../components/copy";
@@ -116,7 +115,7 @@ class ComponentsPopoversExternalPage extends Component {
              
                 <TabPanel>
                   <div className="mb-12 py-16 px-20 bg-placeholder-300 flex flex-wrap items-start justify-center">
-                    <img data-src={uiexamplesExternal1} className="lazyload " width="335" />
+                    <img data-src={uiexamplesExternal1} className="lazyload " width="335" alt="Popover example" />
                   </div>
                 </TabPanel> 
               </Tabs>
@@ -129,7 +128,7 @@ class ComponentsPopoversExternalPage extends Component {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Padding refers to the space between UI elements. Padding should be used in combination with the responsive layout grid to place elements consistently across a design.</p>
               <div className="py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-                <img data-src={paddingExternal1} className="lazyload " width="375" />
+                <img data-src={paddingExternal1} className="lazyload " width="375" alt="Popover padding example" />
               </div> 
             </section>     
   
@@ -140,7 +139,7 @@ class ComponentsPopoversExternalPage extends Component {
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">The popover details refer to elements that make up the popover surface areas.</p>
               <div className="mb-5 py-16 px-20 bg-placeholder-300 flex flex-wrap items-center justify-center">
-                <img data-src={detailsExternal1} className="lazyload " width="375" />
+                <img data-src={detailsExternal1} className="lazyload " width="375" alt="Popover detail example" />
               </div> 
               <div className="mb-6">
                 <p className="as-type-regular text-sm text-greyStatus-600">1. <span className="as-type-medium">Popover Body</span> </p>

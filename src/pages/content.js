@@ -1,13 +1,11 @@
-import React, { Component, useState } from "react"; 
+import React, { Component } from "react"; 
 import Scrollspy from 'react-scrollspy';   
 import {Link} from 'gatsby';
 import 'lazysizes';
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { Row, Col, Button } from 'tailwind-react-ui';
+import SEO from "../components/seo"; 
 import Heading from '../components/atoms/heading';
-import Download from "../components/download";
 import Copy from "../components/copy";
 
 import ctaBoard1 from "../assets/content/Call to Action/01 Board of Directors/01 Board of Directors.png"; 
@@ -68,7 +66,7 @@ class ContentPage extends Component {
             <section id="voicetone" name="voicetone" className="as-section"> 
               <span id="voicetone-anchor" className="page-anchor"></span> 
               <p className="mb-12 text-greyStatus-600 tracking-wider">Astro’s content is designed to create a seamless, efficient and intuitive experience for users. From voice to visual, Astro represents an evolution in the way users access information through a simple voice command or the touch of a button. Our style is sleek but unpretentious, information-driven, but not overwhelming. We seek to deliver insights that make users more efficient, knowledgeable and proactive throughout their day.</p>
-              <p className="mb-8 text-greyStatus-600 tracking-wider">The full writing guide is <a className="inline text-status-100 hover:text-red-900 underline" target="_blank" href="https://docs.google.com/document/d/1Kv4gH9Ki_0Bj3eEWKpDjdhuRUC_0KsMl-lXGHdiBxPo/edit#heading=h.t7nurv6jq2u1">here</a>.</p>
+              <p className="mb-8 text-greyStatus-600 tracking-wider">The full writing guide is <a className="inline text-status-100 hover:text-red-900 underline" rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1Kv4gH9Ki_0Bj3eEWKpDjdhuRUC_0KsMl-lXGHdiBxPo/edit#heading=h.t7nurv6jq2u1">here</a>.</p>
               <Heading level="2" className="as-h2 as-type-medium mb-6">Voice and Tone
                 <Copy id="voicetone" />
               </Heading>  
@@ -175,7 +173,7 @@ class ContentPage extends Component {
                 <Copy id="cta" />
               </Heading> 
               <p className="mb-5 text-greyStatus-600 tracking-wider">Call to actions are buttons that exist at the end of each story and are designed to push users to the next actionable insight, redirect them outside of Astro or help them to navigate to related stories. There must at least be one CTA per conversation. There should generally be no more than 5 CTAs per story.</p> 
-              <p className="mb-10 text-greyStatus-600 tracking-wider">A full list of CTAs can be found <a className="inline text-status-100 hover:text-red-900 underline" target="_blank" href="https://docs.google.com/spreadsheets/d/1nSpKhP1FcBh8KrtV4GHOMqvY1cMbbbnv/edit#gid=1209391679">here</a>.</p> 
+              <p className="mb-10 text-greyStatus-600 tracking-wider">A full list of CTAs can be found <a className="inline text-status-100 hover:text-red-900 underline"  rel="noopener noreferrer" target="_blank" href="https://docs.google.com/spreadsheets/d/1nSpKhP1FcBh8KrtV4GHOMqvY1cMbbbnv/edit#gid=1209391679">here</a>.</p> 
               <div className="flex mb-16">
                 <div className="w-1/2 pr-6">
                   <p className="mb-10 text-greyStatus-600 as-h3 as-type-medium">Our CTAs are:</p> 

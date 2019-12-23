@@ -1,9 +1,7 @@
-import React, { useState } from "react"; 
+import React from "react"; 
 
 import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import dogIllustration from "../../images/dog-illustration.svg";
-import { Row, Col, Button } from 'tailwind-react-ui';
+import SEO from "../../components/seo"; 
 import Heading from '../../components/atoms/heading';
 
 function ApplicationsMenuNavigationPage() { 
@@ -12,7 +10,7 @@ function ApplicationsMenuNavigationPage() {
     <Layout>
       <SEO
         title="Design"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[``]}
       />
  
       <aside className="fixed overflow-y-auto pt-20 bg-white top-auto h-full border-r border-grey-500 border-solid">
