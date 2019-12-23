@@ -23,7 +23,7 @@ class Copy extends Component {
         this.setState({copied:false});
       }.bind(this),2000);
     };   
-    const url = window.location.href;
+    const url = window.location;
 
     return (  
       <span className="as-copyto">
