@@ -277,27 +277,6 @@ class ComponentsOverlaysSingleItemPage extends Component {
                     </div>              
                   </li> 
                 </ol> 
-              </div> 
-              <div className="mb-6">
-                <p className="as-type-regular text-sm text-greyStatus-600">5. <span className="as-type-medium">Arrow</span></p>
-                <ol className="ml-3">
-                  <li className="text-sm">
-                    <div className="flex">
-                      <div className=" ml-3">
-                        <p className="w-3 text-sm">- </p>
-                      </div>
-                      <p className="text-sm text-greyStatus-600">An optional component</p>
-                    </div>              
-                  </li>
-                  <li className="text-sm">
-                    <div className="flex">
-                      <div className="ml-3">
-                        <p className="w-3 text-sm">- </p>
-                      </div>
-                      <p className="text-sm text-greyStatus-600">Used when additional details to the content exist. Can lead to another Overlay, other intent, or out of the app</p>
-                    </div>              
-                  </li> 
-                </ol> 
               </div>
            
             </section>              
