@@ -27,6 +27,7 @@ exports.components = {
   "component---src-pages-components-cards-sliding-cards-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/sliding-cards.js"))),
   "component---src-pages-components-cards-tasks-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/tasks.js"))),
   "component---src-pages-components-cards-two-column-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/cards/two-column.js"))),
+  "component---src-pages-components-overlays-form-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/form.js"))),
   "component---src-pages-components-overlays-grouped-lists-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/grouped-lists.js"))),
   "component---src-pages-components-overlays-highlighted-item-detail-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/highlighted-item-detail.js"))),
   "component---src-pages-components-overlays-list-icon-js": hot(preferDefault(require("/Users/esolano002/dev/netlify/astro-design-system/src/pages/components/overlays/list-icon.js"))),

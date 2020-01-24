@@ -65,6 +65,7 @@ class ComponentsPopoversExternalPage extends Component {
               <li><Link to="components/overlays/highlighted-item-detail" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Highlighted Item &amp; Detail</Link></li>
               <li><Link to="components/overlays/tasks" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Tasks</Link></li> 
               <li><Link to="components/overlays/profile-list" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Profile List</Link></li> 
+              <li><Link to="components/overlays/form" className="block text-sm text-grey-400 w-full hover:bg-grey-100">Form</Link></li>
             </ul> 
             <ul className="">
               <li><div className="block text-white uppercase text-sm w-full bg-grey-300">Popovers</div></li>
