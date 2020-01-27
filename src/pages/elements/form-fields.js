@@ -38,11 +38,11 @@ import typesInputFieldPassword7 from "../../assets/elements/form/types/Input Fie
 
 import typesPickerFieldsDate1 from "../../assets/elements/form/types/Picker Fields/Date/01 Date.png";
 import typesPickerFieldsDate2 from "../../assets/elements/form/types/Picker Fields/Date/02 Date.png";
-// import typesPickerFieldsDate3 from "../../assets/elements/form/types/Picker Fields/Date/03 Date.png";
+import typesPickerFieldsDate3 from "../../assets/elements/form/types/Picker Fields/Date/03 Date.png";
 
-// import typesPickerFieldsDropdown1 from "../../assets/elements/form/types/Picker Fields/Dropdown/01 Dropdown.png";
-// import typesPickerFieldsDropdown2 from "../../assets/elements/form/types/Picker Fields/Dropdown/02 Dropdown.png";
-// import typesPickerFieldsDropdown3 from "../../assets/elements/form/types/Picker Fields/Dropdown/03 Dropdown.png";
+import typesPickerFieldsDropdown1 from "../../assets/elements/form/types/Picker Fields/Dropdown/01 Dropdown.png";
+import typesPickerFieldsDropdown2 from "../../assets/elements/form/types/Picker Fields/Dropdown/02 Dropdown.png";
+import typesPickerFieldsDropdown3 from "../../assets/elements/form/types/Picker Fields/Dropdown/03 Dropdown.png";
 
 import typesFeedbackFields1 from "../../assets/elements/form/types/Feedback Fields/01 Feedback.png";
 import typesFeedbackFields2 from "../../assets/elements/form/types/Feedback Fields/02 Feedback.png";
@@ -230,7 +230,7 @@ class ElementsFormFieldsPage extends Component {
                 <span id="pickers-fields-anchor" className="page-anchor"></span>
                 <Heading level="3" className="as-h3 as-type-medium mb-3">Pickers Fields
                   <Copy id="pickers-fields" />
-                </Heading>
+                </Heading> 
                 <div className="mb-12">
                   <p className="mb-5 text-greyStatus-600 tracking-wider"><span className="as-type-medium">Date:</span> A field used to pick from a list of dates.</p>
                   <ol className="mb-5 py-16 px-20 bg-placeholder-200 flex flex-wrap items-start justify-start">
