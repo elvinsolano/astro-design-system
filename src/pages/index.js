@@ -987,7 +987,7 @@ function IndexPage() {
           </div>
         </main>
         <div className="footer bg-placeholder-400 p-16">
-          <p className="text-white text-sm mb-4">&copy; 2019 PwC. All rights reserved.</p>
+          <p className="text-white text-sm mb-4">&copy; 2020 PwC. All rights reserved.</p>
           <p className="text-white text-sm">PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details.</p>
         </div>
       </div>
