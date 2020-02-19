@@ -400,9 +400,9 @@ class ContentPage extends Component {
                 <div className="w-1/2 px-5 mb-5"> 
                   <div className="flex mb-3">
                     <div className="as-guidance">
-                      <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                      </svg>  
+                      <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                      </svg> 
                     </div>
                     <div>
                       <p className="mb-2 text-greyStatus-600 as-type-medium ml-3">Use “We, Us or Astro.”</p>
@@ -433,9 +433,9 @@ class ContentPage extends Component {
                 <div className="w-1/2 px-5 mb-5"> 
                   <div className="flex mb-3">
                     <div className="as-guidance">
-                      <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                      </svg>  
+                      <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                      </svg> 
                     </div>
                     <div>
                       <p className="mb-2 text-greyStatus-600 as-type-medium ml-3">Abbreviate assuming users will naturally understand.</p> 
@@ -463,9 +463,9 @@ class ContentPage extends Component {
                 <div className="w-1/2 px-5 mb-5"> 
                   <div className="flex mb-3">
                     <div className="as-guidance">
-                      <svg className="fill-current mt-1" width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#4ead58" d="M12 28.093l-12-11.517 3.721-3.827 8.208 7.832 16.28-16.581 3.791 3.756z"></path> 
-                      </svg>  
+                      <svg className="fill-current mt-1" width="14" height="14" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#c52a1a" d="M28.586 0.586l2.828 2.828-12.584 12.586 12.584 12.586-2.828 2.828-12.586-12.584-12.586 12.584-2.828-2.828 12.584-12.586-12.584-12.586 2.828-2.828 12.586 12.584z"></path>
+                      </svg> 
                     </div>
                     <div>
                       <p className="mb-2 text-greyStatus-600 as-type-medium ml-3">Use the day or alternative formats.</p>
