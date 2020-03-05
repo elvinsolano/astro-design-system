@@ -229,7 +229,7 @@ class DesignTypographyPage extends Component {
                     <tr className="">
                       <td className="p-4 border-r border-grey-105"><p className="as-type-subtitle as-type-medium">Subtitle 1</p></td>
                       <td className="p-4 border-r border-grey-105">Helvetica Neue</td>
-                      <td className="p-4 border-r border-grey-105">Regular</td>
+                      <td className="p-4 border-r border-grey-105">Medium</td>
                       <td className="p-4 border-r border-grey-105">16 px</td>
                       <td className="p-4 border-r border-grey-105">22 px</td>
                       <td className="p-4">Sentence</td>
@@ -253,7 +253,7 @@ class DesignTypographyPage extends Component {
                     <tr className="bg-grey-100">
                       <td className="p-4 border-r border-grey-105"><p className="as-type-body as-type-medium">Body Medium</p></td>
                       <td className="p-4 border-r border-grey-105">Helvetica Neue</td>
-                      <td className="p-4 border-r border-grey-105">Regular</td>
+                      <td className="p-4 border-r border-grey-105">Medium</td>
                       <td className="p-4 border-r border-grey-105">14 px</td>
                       <td className="p-4 border-r border-grey-105">23 px</td>
                       <td className="p-4">Sentence</td>
